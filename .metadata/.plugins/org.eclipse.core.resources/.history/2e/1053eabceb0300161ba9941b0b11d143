@@ -1,0 +1,38 @@
+package frsf.cidisi.exercise.tpia2016.modelo;
+
+public class Conexion {
+	private int idOrigen;
+	private int idDestino;
+	private int distancia;
+	
+	public Conexion (int idO, int idD, int distancia){
+		this.setIdOrigen(idO);
+		this.setIdDestino(idD);
+		this.setDistancia(distancia);
+	}
+
+	public void setIdOrigen(int idOrigen) {
+		this.idOrigen = idOrigen;
+	}
+
+	public int getIdOrigen() {
+		return idOrigen;
+	}
+
+	public void setIdDestino(int idDestino) {
+		this.idDestino = idDestino;
+	}
+
+	public int getIdDestino() {
+		return idDestino;
+	}
+
+	public void setDistancia(int distancia) {
+		this.distancia = distancia;
+	}
+
+	public int getDistancia() {
+		return distancia;
+	}
+
+}

@@ -1,0 +1,9 @@
+package frsf.cidisi.exercise.tpia2016.modelo;
+
+public class Aula {
+
+	public Aula(int id, int nivel) {
+		super(id,nivel);
+	}
+
+}

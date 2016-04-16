@@ -1,0 +1,9 @@
+1460820841863	Encapsulate field 'idHabitacion'
+1460820848511	Encapsulate field 'nivel'
+1460820943082	Encapsulate field 'listaHabitaciones'
+1460820948487	Encapsulate field 'listaConexiones'
+1460821670503	Encapsulate field 'idOrigen'
+1460821682030	Encapsulate field 'idDestino'
+1460821686153	Encapsulate field 'distancia'
+1460831428185	Delete element
+1460832212541	Encapsulate field 'ingresoTipo'

@@ -1,0 +1,17 @@
+package interfaces;
+
+import javax.swing.ImageIcon;
+
+public class PnlFondo extends javax.swing.JPanel {
+	
+	public PnlFondo (){
+		initComponents();
+		this.setSize(180,100);
+		Icon ImgBoton = new ImageIcon(getClass().getResource(""));
+		
+	}
+	
+	public paintComponent(){
+		
+	}
+}

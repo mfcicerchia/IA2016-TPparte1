@@ -1,0 +1,45 @@
+package frsf.cidisi.exercise.tpia2016.modelo;
+import java.util.ArrayList;
+
+
+// Clase que representa la estructura de datos utilizada para modelar
+// el edificio de la universidad con sus respectivos pisos (grafo)
+
+/**
+ * @author martin
+ * Clase: Edificio
+ * Descripcion: 
+ *
+ */
+public class MapaEdificio {
+	private ArrayList<Habitacion> listaHabitaciones;
+	private ArrayList<Conexion> listaConexiones;
+	
+	
+	public void Edficio(ArrayList<Habitacion> habitaciones, ArrayList<Conexion> conexiones){
+		this.setListaHabitaciones(listaHabitaciones);
+		this.setListaConexiones(conexiones);
+	}
+
+
+	public void setListaHabitaciones(ArrayList<Habitacion> listaHabitaciones) {
+		this.listaHabitaciones = listaHabitaciones;
+	}
+
+
+	public ArrayList<Habitacion> getListaHabitaciones() {
+		return listaHabitaciones;
+	}
+
+
+	public void setListaConexiones(ArrayList<Conexion> conexiones) {
+		this.listaConexiones = conexiones;
+	}
+
+
+	public ArrayList<Conexion> getListaConexiones() {
+		return listaConexiones;
+	}
+	
+
+}
