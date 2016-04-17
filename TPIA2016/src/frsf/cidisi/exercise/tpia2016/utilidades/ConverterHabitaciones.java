@@ -35,7 +35,6 @@ public class ConverterHabitaciones {
 	 */
 	public ConverterHabitaciones(File archivo) throws IOException {
 		listaDeHabitaciones = new ArrayList<Habitacion>();
-		//listaDeConexiones = new ArrayList<Conexion>();
 
 		// metodo que toma como parametro el archivo y lo trata para crear los
 		// objetos
@@ -139,15 +138,21 @@ public class ConverterHabitaciones {
 				listaDeHabitaciones.add(escalera);
 			}
 			
+			if(categoria.equals("Biblioteca") || categoria.equals("biblioteca")){
+				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
+				Habitacion biblioteca = new Biblioteca(Integer.parseInt(listaDeDatos.get(i).get(1)),
+						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
+						  						   listaDeDatos.get(i).get(3));
+				listaDeHabitaciones.add(biblioteca);
+			}
 			
-//			if(categoria.equals("Enlace") || categoria.equals("enlace")){
-//				//creo una instancia de Enlace y lo agrego a la lista de enlaces
-//				Conexion enlace = new Conexion(Integer.parseInt(listaDeDatos.get(i).get(1)),
-//										   Integer.parseInt(listaDeDatos.get(i).get(2)),
-//										   Integer.parseInt(listaDeDatos.get(i).get(3)));
-//				//lo agrego a la ista de enlaces
-//				listaDeConexiones.add(enlace);
-//			}
+			if(categoria.equals("Cantina") || categoria.equals("cantina")){
+				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
+				Habitacion cantina = new Cantina(Integer.parseInt(listaDeDatos.get(i).get(1)),
+						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
+						  						   listaDeDatos.get(i).get(3));
+				listaDeHabitaciones.add(cantina);
+			}
 		}
 	}
 

@@ -1,4 +1,4 @@
-Aula,1,0,aula de Estudio de consulta
+Aula,1,0,aula de estudio
 Aula,2,0,Laboratorio de mecanica
 Aula,3,0,aula de usos multiples
 Aula,4,0,ocupada
@@ -27,3 +27,5 @@ departamento,24,0,electrica
 departamento,25,1,civil
 departamento,26,1,industrial
 departamento,27,3,sistemas
+cantina,1000,0,Sheldon
+Biblioteca,999,0,Biblioteca Universitaria Jorge O. Conca

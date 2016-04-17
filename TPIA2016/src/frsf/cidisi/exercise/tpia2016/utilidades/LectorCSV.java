@@ -16,8 +16,9 @@ import java.util.StringTokenizer;
  * (comma-separated values - valores separados por comas) en una lista de listas
  * de strings, que representa la matriz contenida en el archivo procesado.<br/>
  * <u><em>Importante:</em></u> Esta clase no debe ser modificada.
- * 
- * @author TP InteligenciaArtificial 2015
+ *  
+ * @author martin
+ *
  */
 public class LectorCSV {
 
