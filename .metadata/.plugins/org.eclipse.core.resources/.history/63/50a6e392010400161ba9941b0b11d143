@@ -1,9 +1,0 @@
-package frsf.cidisi.exercise.tpia2016.modelo;
-
-public class Ascensor {
-
-	public Ascensor() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

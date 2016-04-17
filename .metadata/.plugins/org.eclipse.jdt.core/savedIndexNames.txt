@@ -1,4 +1,0 @@
-INDEX VERSION 1.126+C:\Users\martin.marta\Documents\GitHub\IA2016-TPparte1\.metadata\.plugins\org.eclipse.jdt.core
-4146874359.index
-898289412.index
-3792919871.index

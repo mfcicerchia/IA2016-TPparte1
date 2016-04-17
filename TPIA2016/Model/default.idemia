@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idemia:AgentModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:idemia="utn.frsf.cidisi">
   <Environment name="Universidad">
-    <EnvironmentState name="EstadoAmbienteUniversidad">
-      <DataStructure name="mapaEdificio" type="Other"/>
-      <DataStructure name="posicionActualAgente" type="Other"/>
+    <EnvironmentState name="EstadoAmbiente">
+      <DataStructure name="mapa_ambiente" type="Other"/>
+      <DataStructure name="posicion_agente" type="Other"/>
+      <DataStructure name="energía_eléctrica" type="boolean"/>
     </EnvironmentState>
   </Environment>
-  <Agent name="AgenteGuia">
+  <Agent name="Agente">
     <Strategy xsi:type="idemia:Search" searchStrategy="BreathFirstSearch"/>
-    <Goal name="ObjetivoAgente" value="destino.tipo==habitacion.tipo &amp;&amp; destino.numero == habitacion.numero  "/>
-    <AgentState name="EstadoAgenteGuia">
-      <DataStructure name="habitacionesVisitadas" type="Other"/>
-      <DataStructure name="PosicionAgente" type="Other"/>
+    <Goal name="Objetivo" value="destino.tipo==habitacion.tipo &amp;&amp; destino.numero == habitacion.numero  "/>
+    <AgentState name="EstadoAgente">
+      <DataStructure name="mapa_ambiente" type="Other"/>
+      <DataStructure name="energía_agente"/>
+      <DataStructure name="posicion" type="Other"/>
+      <DataStructure name="costo_actual"/>
+      <DataStructure name="habitaciones_visitadas" type="Other"/>
     </AgentState>
   </Agent>
   <Actions execute_by="//@Agent" executed_on="//@Environment" name="IrAula"/>
@@ -22,9 +26,10 @@
   <Actions execute_by="//@Agent" executed_on="//@Environment" name="IrPasillo"/>
   <Actions execute_by="//@Agent" executed_on="//@Environment" name="SubirNivel"/>
   <Actions execute_by="//@Agent" executed_on="//@Environment" name="BajarNivel"/>
-  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="energia"/>
-  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="obstáculo"/>
-  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="pasillo"/>
-  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="ascensor"/>
-  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="escalera"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="existe_obstáculo"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="hay_energía_eléctrica"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="hay_bip_ascensor"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="hay_bloqueo_escalera"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="hay_bloqueo_pasillo"/>
+  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="energía_remanente_agente"/>
 </idemia:AgentModel>
