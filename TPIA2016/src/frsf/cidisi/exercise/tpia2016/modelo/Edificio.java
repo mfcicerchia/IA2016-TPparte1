@@ -18,11 +18,15 @@ public class Edificio {
 	private ArrayList<Habitacion> listaHabitaciones;
 	private ArrayList<Conexion> listaConexiones;
 
+	public Edificio(){
+		
+	}
+
 	/**
 	 * @param habitaciones
 	 * @param conexiones
 	 */
-	public void Edficio(ArrayList<Habitacion> habitaciones,
+	public  Edificio(ArrayList<Habitacion> habitaciones,
 			ArrayList<Conexion> conexiones) {
 		this.setListaHabitaciones(listaHabitaciones);
 		this.setListaConexiones(conexiones);
@@ -48,5 +52,55 @@ public class Edificio {
 
 	public ArrayList<Conexion> getListaConexiones() {
 		return listaConexiones;
+	}
+	
+	public boolean existeHabitacion(int id) {
+
+		boolean flag1 = false;
+		boolean flag2 = false;
+
+		for (int i = 0; i < this.getListaConexiones().size(); i++) {
+			if (this.getListaConexiones().get(i).getIdOrigen() == id
+					|| this.getListaConexiones().get(i).getIdDestino() == id) {
+				flag1 = true;
+				
+			}
+		}
+		
+		for (int i = 0; i < this.getListaHabitaciones().size(); i++) {
+			if (this.getListaHabitaciones().get(i).getIdHabitacion() == id){
+				flag2 = true;
+			}
+		}
+		
+		
+		if(flag1 && flag2){
+			return true;	
+		}
+		else return false;
+		
+	}
+	
+	public int cantidadDeHabitacionesAsociadas(int id) {
+		int contador = 0;
+		for (int i = 0; i < this.getListaConexiones().size(); i++) {
+			if (this.getListaConexiones().get(i).getIdOrigen() == id
+					|| this.getListaConexiones().get(i).getIdDestino() == id) {
+				contador++;
+			}
+		}
+		return contador;
+	}
+	
+	public Habitacion getHabitacionToId(int id){
+		
+		if(existeHabitacion(id)){
+			for(int i=0; i<getListaHabitaciones().size(); i++){
+				if(getListaHabitaciones().get(i).getIdHabitacion()== id){
+					return getListaHabitaciones().get(i);
+				}
+			}
+		}
+		return null;
 	}
 }

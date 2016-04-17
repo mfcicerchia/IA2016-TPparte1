@@ -9,7 +9,7 @@ public class Ingreso extends Habitacion {
 	}
 
 	public Ingreso(int id, int nivel, String tipoIngreso) {
-		super(id, nivel);
+		super(id, nivel,tipoIngreso);
 		this.setIngresoTipo(tipoIngreso);
 	}
 

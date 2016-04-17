@@ -1,0 +1,29 @@
+Aula,1,0,aula de Estudio de consulta
+Aula,2,0,Laboratorio de mecanica
+Aula,3,0,aula de usos multiples
+Aula,4,0,ocupada
+Aula,5,0, vacia
+Pasillo,6,0,interno
+Pasillo,7,0,externo
+Pasillo,12,0,interno
+Pasillo,13,0,externo
+Ascensor,8,0,bloqueado
+Ascensor,9,1,bloqueado
+Ascensor,10,2,bloqueado
+Ascensor,11,3,bloqueado
+Escalera,15,0,libre
+Escalera,15,1,libre
+Escalera,15,2,libre
+Escalera,15,3,bloqueada
+baño,16,0,clausurado
+baño,17,2,libre
+baño,18,2,ocupado
+baño,19,1,libre
+fotocopiadora,20,0,llena
+ingreso,21,0,HALL
+ingreso,22,0,TORRE
+departamento,23,0,mecanica
+departamento,24,0,electrica
+departamento,25,1,civil
+departamento,26,1,industrial
+departamento,27,3,sistemas

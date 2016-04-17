@@ -4,7 +4,7 @@ public class Departamento extends Habitacion {
 	
 	private String deptoTipo;
 	public Departamento(int id, int nivel, String dpto) {
-		super(id,nivel);
+		super(id,nivel,dpto);
 		this.setDeptoTipo(dpto);
 	}
 	public String getDeptoTipo() {

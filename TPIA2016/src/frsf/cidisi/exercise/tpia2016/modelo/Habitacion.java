@@ -3,7 +3,9 @@ package frsf.cidisi.exercise.tpia2016.modelo;
 import java.util.ArrayList;
 
 /**
- * @author martin Clase: Habitacion Descripcion: Representa un nodo del grafo
+ * @author martin 
+ * Clase: Habitacion 
+ * Descripcion: Representa un nodo del grafo
  *         mapaEdificio. Es una super-clase de los subtipos de habitaciones.
  *         Contiene los atributos comunes de las habitaciones: atributo:
  *         idHabitacion atributo: nivel
@@ -13,11 +15,27 @@ public class Habitacion {
 
 	private int idHabitacion;
 	private int nivel;
+	private String descripcion;
+	
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
 
 	/**
 	 * @param id
 	 * @param nivel
 	 */
+	public Habitacion(int id, int nivel, String desc) {
+		this.setIdHabitacion(id);
+		this.setNivel(nivel);
+		this.setDescripcion(desc);
+	}
+
 	public Habitacion(int id, int nivel) {
 		this.setIdHabitacion(id);
 		this.setNivel(nivel);
@@ -94,6 +112,7 @@ public class Habitacion {
 	 *         pertenece
 	 */
 	private boolean existeHabitacion(ArrayList<Conexion> conexiones) {
+		//revisar este metodo que no esta pasando
 		int position = 0;
 		while (position < conexiones.size()) {
 			if (this.getIdHabitacion() == conexiones.get(position)

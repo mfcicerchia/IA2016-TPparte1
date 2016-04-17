@@ -10,8 +10,8 @@ public class Pasillo extends Habitacion {
 		super();
 	}
 
-	public Pasillo(int id, int nivel) {
-		super(id, nivel);
+	public Pasillo(int id, int nivel,String desc) {
+		super(id, nivel,desc);
 	}
 
 }
