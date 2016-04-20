@@ -3,6 +3,8 @@ package frsf.cidisi.exercise.tpia2016.utilidades;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import frsf.cidisi.exercise.tpia2016.interfaz.Principal;
 import frsf.cidisi.exercise.tpia2016.modelo.*;
 
 
@@ -21,8 +23,10 @@ public class Ejecutar {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
 		Edificio mapa = new Edificio();
-
+		Principal ventana;
+		
 		File archivoCSV = new File("archivosCSV" + "\\" + "habitaciones.csv");
 		ConverterHabitaciones datosHabitaciones;
 		try {
@@ -97,11 +101,11 @@ public class Ejecutar {
 		//System.out.println("¿Existe la habitacion con el id 3? --> " + mapa.existeHabitacion(3) + " -- nodos asociados: "+ mapa.cantidadDeHabitacionesAsociadas(3));
 		//System.out.println("¿Existe la habitacion con el id 7? --> " + mapa.existeHabitacion(7) + " -- nodos asociados: "+ mapa.cantidadDeHabitacionesAsociadas(7));
 		
-		System.out.println("¿Existe la habitacion con el id 12? --> " + mapa.existeHabitacion(12) + " -- nodos asociados: "+ mapa.cantidadDeHabitacionesAsociadas(12));
-		adyacentes = mapa.getHabitacionToId(12).getAdyacentes(mapa.getListaHabitaciones(),mapa.getListaConexiones());
+		System.out.println("¿Existe la habitacion con el id 15? --> " + mapa.existeHabitacion(15) + " -- nodos asociados: "+ mapa.cantidadDeHabitacionesAsociadas(15));
+		adyacentes = mapa.getHabitacionPorIDporNivel(15, 0).getAdyacentes(mapa.getListaHabitaciones(),mapa.getListaConexiones());
 //		System.out.println("habitaciones adyacentes: " + adyacentes);
 		
-		System.out.println("los adyacentes a la habitacion 12 son: ");
+		System.out.println("los adyacentes a la habitacion 15 son: ");
 		for (int i=0; i<adyacentes.size(); i++ ){
 			if(adyacentes.get(i)!=null){
 				System.out.println("habitacion: " + adyacentes.get(i).getIdHabitacion()+"- Tipo: "+ adyacentes.get(i).getClass().getSimpleName() + " - Descripcion: " + adyacentes.get(i).getDescripcion());	
@@ -113,6 +117,26 @@ public class Ejecutar {
 //			System.out.println(adyacentes.get(i).getIdHabitacion());
 //		}
 		
+		
+	//	ventana = new Principal(mapa);
+		
+		/*modificar estos atributos*/
+		int id=22;
+		
+		System.out.println("#################################################################");
+		System.out.println("Obtengo las instancias de los Objetos: " + mapa.getHabitacionPorID(id).getClass().getSimpleName());
+		System.out.println("#################################################################");
+		
+		ArrayList<Habitacion> resultado=new ArrayList<Habitacion>();
+		
+		resultado=mapa.getHabitacionesPorID(id);
+		
+		for(int i=0; i<resultado.size(); i++){
+			System.out.println("-> Habitacion: "+ resultado.get(i).getClass().getSimpleName() +
+							   " - id: " + resultado.get(i).getIdHabitacion() + 
+							   " - nivel: " + resultado.get(i).getNivel() +
+							   " - desc: " + resultado.get(i).getDescripcion());	
+		}
 		
 		
 		

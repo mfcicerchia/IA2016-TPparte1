@@ -1,0 +1,27 @@
+
+archivo: habitaciones.CSV
+
+Este archivo contiene en cada fila los datos necesarios para crear
+una instancias de cada objeto.
+Cada fila se compone de los datos del objeto separados por coma.
+El formato de cada fila es el siguiente:
+fila --> [NombreObjeto,identificador,nivel,descripcion]
+
+Ejemplo: NombreObjeto: Aula
+		 identificador: 1
+		 nivel: 0 (planta baja)
+		 descripcion: una descripción del aula
+		 
+---------------------------------------------------------------
+
+archivo: conexiones.CSV
+
+Este archivo contiene en cada fila los datos necesarios para crear
+una instancia de la clase Conexion.
+Cada fila se compone de los datos de cada enlace.
+El formato de cada fila es el siguiente:
+fila --> [identificadorOrigen, distancia, identificadorDestino]
+
+Ejemplo: identificadorOrigen: 1
+		 distancia: 10
+		 identificadorDestino: 2

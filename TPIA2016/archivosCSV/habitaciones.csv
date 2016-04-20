@@ -8,9 +8,9 @@ Pasillo,7,0,externo
 Pasillo,12,0,interno
 Pasillo,13,0,externo
 Ascensor,8,0,bloqueado
-Ascensor,9,1,bloqueado
-Ascensor,10,2,bloqueado
-Ascensor,11,3,bloqueado
+Ascensor,8,1,bloqueado
+Ascensor,8,2,bloqueado
+Ascensor,8,3,bloqueado
 Escalera,15,0,libre
 Escalera,15,1,libre
 Escalera,15,2,libre

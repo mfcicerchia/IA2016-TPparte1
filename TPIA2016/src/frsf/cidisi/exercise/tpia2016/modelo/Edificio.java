@@ -92,11 +92,38 @@ public class Edificio {
 		return contador;
 	}
 	
-	public Habitacion getHabitacionToId(int id){
+	public ArrayList<Habitacion> getHabitacionesPorID(int id){
+		ArrayList resultado = new ArrayList<Habitacion>();
 		
 		if(existeHabitacion(id)){
 			for(int i=0; i<getListaHabitaciones().size(); i++){
 				if(getListaHabitaciones().get(i).getIdHabitacion()== id){
+					resultado.add(getListaHabitaciones().get(i));
+				}
+			}
+		}
+		
+		
+		return resultado;
+		
+	}
+	
+	public Habitacion getHabitacionPorID(int id){
+		
+		if(existeHabitacion(id)){
+			for(int i=0; i<getListaHabitaciones().size(); i++){
+				if(getListaHabitaciones().get(i).getIdHabitacion()== id){
+					return getListaHabitaciones().get(i);
+				}
+			}
+		}
+		return null;
+	}
+	
+	public Habitacion getHabitacionPorIDporNivel(int id, int nivel){
+		if(existeHabitacion(id)){
+			for(int i=0; i<getListaHabitaciones().size(); i++){
+				if(getListaHabitaciones().get(i).getIdHabitacion()== id && getListaHabitaciones().get(i).getNivel() == nivel){
 					return getListaHabitaciones().get(i);
 				}
 			}
