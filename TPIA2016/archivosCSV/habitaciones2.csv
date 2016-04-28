@@ -8,7 +8,7 @@ Pasillo,p5-0,0,pasillo 5 planta baja
 Pasillo,p6-6,0,pasillo 6 planta baja
 escalera,esc1,0,escalera 1
 escalera,esc2,0,escalera de torre
-escalera,esc3,0,escalera ala oeste
+escalera,esc3,0,Esto en Planta Baja
 escalera,esc4,0,escalera 4
 escalera,esc5,0,escalera 5
 escalera,esc6,0,escalera 6
@@ -36,3 +36,6 @@ Laboratorio,lab2,0,Laboratorio de Fluidica
 Departamento,mecanica,0,Departamento de Mecanica
 Departamento,electrica,0,Departamento de Electrica
 Fotocopiadora,fotocopiadora,0,Fotocopiadora FRSF
+Escalera,esc3,1, Estoy en el primer piso
+Escalera,esc3,2,Estoy en el segundo nivel
+Escalera,esc3,3,Estoy en el tercer nivel

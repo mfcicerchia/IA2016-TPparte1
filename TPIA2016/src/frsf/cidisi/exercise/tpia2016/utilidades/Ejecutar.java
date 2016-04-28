@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import frsf.cidisi.exercise.tpia2016.interfaz.Principal;
-import frsf.cidisi.exercise.tpia2016.modelo.*;
+
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Edificio;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
@@ -101,7 +101,7 @@ public class Ejecutar {
 		ArrayList<Habitacion> adyacentes = new ArrayList<Habitacion>();
 		
 		
-		System.out.println("¿Existe la habitacion con el id: "+mapa.getHabitacionPorID("ingreso")+" ? --> " + mapa.existeHabitacion("ingreso1") + " -- nodos asociados: "+ mapa.cantidadDeHabitacionesAsociadas("ingreso1"));
+		System.out.println("¿Existe la habitacion con el id: "+mapa.getHabitacionPorID("ingreso1").getIdHabitacion()+" ? --> " + mapa.existeHabitacion("ingreso1") + " -- nodos asociados: "+ mapa.cantidadDeHabitacionesAsociadas("ingreso1"));
 		
 		System.out.println(mapa.existeHabitacion("ingreso1"));
 		
@@ -145,6 +145,11 @@ public class Ejecutar {
 //							   " - nivel: " + resultado.get(i).getNivel() +
 //							   " - desc: " + resultado.get(i).getDescripcion());	
 //		}
+		
+		ArrayList<Habitacion> habs = mapa.getHabitacionesPorID("esc3");
+		for(int i=0; i<habs.size(); i++){
+			System.out.println(habs.get(i).getIdHabitacion()+" "+ habs.get(i).getNivel()+" "+ habs.get(i).getDescripcion());
+		}
 		
 		
 		
