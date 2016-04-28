@@ -23,8 +23,9 @@ public class Ejecutar {
 
 	/**
 	 * @param args
+	 * @throws IOException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		Edificio mapa = new Edificio();
 		Principal ventana;
@@ -36,6 +37,10 @@ public class Ejecutar {
 			System.out.println("Creando instancias de HABITACIONES: ");
 			System.out.println("#################################################################");
 
+			//Esperar que el usuario presione enter para continuar...
+			System.out.println("Pulsa \'intro\' para continuar");
+			System.in.read();
+			
 
 			
 			datosHabitaciones = new ConverterHabitaciones(archivoCSV);
@@ -65,6 +70,9 @@ public class Ejecutar {
 			e.printStackTrace();
 		}
 		
+		System.out.println("Pulsa \'intro\' para continuar");
+		System.in.read();
+		
 		File conexionesCSV = new File("archivosCSV" + "\\" + "conexiones2.csv");
 		ConverterConexiones datosConexiones;
 		try {
@@ -72,6 +80,11 @@ public class Ejecutar {
 		    System.out.println("Creando instancias de CONEXIONES: ");
 		    System.out.println("#################################################################");
 			datosConexiones = new ConverterConexiones(conexionesCSV);
+		
+			//Esperar que el usuario presione enter para continuar...
+			System.out.println("Pulsa \'intro\' para continuar");
+			System.in.read();
+			
 			for (int i = 0; i < datosConexiones.getListaConexiones().size(); i++) {
 				System.out.println("origen: "
 						+ datosConexiones.getListaConexiones().get(i)
@@ -98,8 +111,14 @@ public class Ejecutar {
 		System.out.println("Probando algunos metodos: ");
 		System.out.println("#################################################################");
 		
+		
+		
 		ArrayList<Habitacion> adyacentes = new ArrayList<Habitacion>();
 		
+		//Esperar que el usuario presione enter para continuar...
+		System.out.println("Pulsa \'intro\' para continuar");
+		System.in.read();
+		System.in.read();
 		
 		System.out.println("¿Existe la habitacion con el id: "+mapa.getHabitacionPorID("ingreso1").getIdHabitacion()+" ? --> " + mapa.existeHabitacion("ingreso1") + " -- nodos asociados: "+ mapa.cantidadDeHabitacionesAsociadas("ingreso1"));
 		
@@ -145,6 +164,8 @@ public class Ejecutar {
 //							   " - nivel: " + resultado.get(i).getNivel() +
 //							   " - desc: " + resultado.get(i).getDescripcion());	
 //		}
+		
+		System.out.println("Ingresar el id del objeto a buscar");
 		
 		ArrayList<Habitacion> habs = mapa.getHabitacionesPorID("esc3");
 		for(int i=0; i<habs.size(); i++){

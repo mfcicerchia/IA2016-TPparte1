@@ -1,9 +1,12 @@
 package frsf.cidisi.exercise.tpia2016.excepciones;
 
-public class NoExisteHabitacionException {
-	
-	
-	public void imprimirMensaje(){
-		System.out.println("No existe la habitacion en la lista de Conexiones");
+/**
+ * @author martin
+ * 
+ */
+public class NoExisteHabitacionException extends Exception {
+
+	public NoExisteHabitacionException() {
+		super("No existe la Habitacion");
 	}
 }
