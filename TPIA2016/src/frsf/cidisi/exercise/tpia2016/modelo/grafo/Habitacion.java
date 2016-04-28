@@ -1,4 +1,4 @@
-package frsf.cidisi.exercise.tpia2016.modelo;
+package frsf.cidisi.exercise.tpia2016.modelo.grafo;
 
 import java.util.ArrayList;
 
@@ -13,7 +13,7 @@ public class Habitacion {
 
 	// Identificador id; /implementar luego/
 
-	private int idHabitacion;
+	private String idHabitacion;
 	private int nivel;
 	private String descripcion;
 
@@ -30,17 +30,17 @@ public class Habitacion {
 	// this.id = new Identificador(id, nivel, desc);
 	// }
 
-	public Habitacion(int id, int nivel, String desc) {
+	public Habitacion(String id, int nivel, String desc) {
 		this.setIdHabitacion(id);
 		this.setNivel(nivel);
 		this.setDescripcion(desc);
 	}
 
-	public int getIdHabitacion() {
+	public String getIdHabitacion() {
 		return idHabitacion;
 	}
 
-	public void setIdHabitacion(int idHabitacion) {
+	public void setIdHabitacion(String idHabitacion) {
 		this.idHabitacion = idHabitacion;
 	}
 
@@ -78,14 +78,14 @@ public class Habitacion {
 			// recorro la lista de conexiones
 			for (int i = 0; i < conexiones.size(); i++) {
 				// si el idHabitacion es igual al Origen
-				if (this.getIdHabitacion() == conexiones.get(i).getIdOrigen()) {
+				if (this.getIdHabitacion().equals(conexiones.get(i).getIdOrigen())) {
 					// Recupero el objeto Destino y lo agrego a la lista de
 					// adyacentes
 					habitacionesAdyacentes.add(recuperarHabitacionAdyacente(
 							conexiones.get(i).getIdDestino(), habitaciones));
 				}
 				// si el idHabitacion es igual al Destino
-				if (this.getIdHabitacion() == conexiones.get(i).getIdDestino()) {
+				if (this.getIdHabitacion().equals(conexiones.get(i).getIdDestino())) {
 					// Recupero el objeto Origen y lo agrego a la lista de
 					// adyacentes
 					habitacionesAdyacentes.add(recuperarHabitacionAdyacente(
@@ -111,10 +111,10 @@ public class Habitacion {
 		// revisar este metodo que no esta pasando
 		int position = 0;
 		while (position < conexiones.size()) {
-			if (this.getIdHabitacion() == conexiones.get(position)
-					.getIdOrigen()
-					|| this.getIdHabitacion() == conexiones.get(position)
-							.getIdDestino()) {
+			if (this.getIdHabitacion().equals(conexiones.get(position)
+					.getIdOrigen()) 
+					|| this.getIdHabitacion().equals(conexiones.get(position)
+							.getIdDestino())) {
 				return true;
 			} else {
 				position++;
@@ -123,10 +123,10 @@ public class Habitacion {
 		return false;
 	}
 
-	private Habitacion recuperarHabitacionAdyacente(int idHabitacionDestino,
+	private Habitacion recuperarHabitacionAdyacente(String idHabitacionDestino,
 			ArrayList<Habitacion> habitaciones) {
 		for (int i = 0; i < habitaciones.size(); i++) {
-			if (idHabitacionDestino == habitaciones.get(i).getIdHabitacion()) {
+			if (idHabitacionDestino.equals(habitaciones.get(i).getIdHabitacion())   ) {
 				return habitaciones.get(i);
 			}
 		}

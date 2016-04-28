@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 import frsf.cidisi.exercise.tpia2016.interfaz.Principal;
 import frsf.cidisi.exercise.tpia2016.modelo.*;
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Edificio;
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
 
 
@@ -27,13 +29,17 @@ public class Ejecutar {
 		Edificio mapa = new Edificio();
 		Principal ventana;
 		
-		File archivoCSV = new File("archivosCSV" + "\\" + "habitaciones.csv");
+		File archivoCSV = new File("archivosCSV" + "\\" + "habitaciones2.csv");
 		ConverterHabitaciones datosHabitaciones;
 		try {
 			System.out.println("#################################################################");
 			System.out.println("Creando instancias de HABITACIONES: ");
 			System.out.println("#################################################################");
+
+
+			
 			datosHabitaciones = new ConverterHabitaciones(archivoCSV);
+			
 			for (int i = 0; i < datosHabitaciones.getListaHabitaciones().size(); i++) {
 				System.out.println("Id: "
 						+ datosHabitaciones.getListaHabitaciones().get(i)
@@ -43,6 +49,7 @@ public class Ejecutar {
 						+ datosHabitaciones.getListaHabitaciones().get(i)
 								.getNivel()
 						+ "  "
+						+ "Clase: "
 						+ datosHabitaciones.getListaHabitaciones().get(i)
 								.getClass().getSimpleName()
 						+ "  "
@@ -50,6 +57,7 @@ public class Ejecutar {
 						+ datosHabitaciones.getListaHabitaciones().get(i)
 								.getDescripcion());
 			}
+			/**########### se le Asigna al mapa su lista de habitaciones ###########**/
 			mapa.setListaHabitaciones(datosHabitaciones.getListaHabitaciones());
 			
 		} catch (IOException e) {
@@ -57,7 +65,7 @@ public class Ejecutar {
 			e.printStackTrace();
 		}
 		
-		File conexionesCSV = new File("archivosCSV" + "\\" + "conexiones.csv");
+		File conexionesCSV = new File("archivosCSV" + "\\" + "conexiones2.csv");
 		ConverterConexiones datosConexiones;
 		try {
 			System.out.println("\n#################################################################");
@@ -77,6 +85,8 @@ public class Ejecutar {
 						+ datosConexiones.getListaConexiones().get(i)
 								.getDistancia());
 			}
+			
+			/**########### se le Asigna al mapa su lista de habitaciones ###########**/
 			mapa.setListaConexiones(datosConexiones.getListaConexiones());
 		} catch (IOException e) {
 
@@ -90,53 +100,51 @@ public class Ejecutar {
 		
 		ArrayList<Habitacion> adyacentes = new ArrayList<Habitacion>();
 		
-//		System.out.println("Id habitacion: "+ mapa.getListaHabitaciones().get(8).getIdHabitacion());
-//		System.out.println("Piso donde esta la habitacion:" + mapa.getListaHabitaciones().get(8).getNivel());
-//		System.out.println("descripcion " + mapa.getListaHabitaciones().get(8).getDescripcion());
-//		adyacentes = mapa.getListaHabitaciones().get(8).getAdyacentes(mapa.getListaHabitaciones(), mapa.getListaConexiones());
+		
+		System.out.println("¿Existe la habitacion con el id: "+mapa.getHabitacionPorID("ingreso")+" ? --> " + mapa.existeHabitacion("ingreso1") + " -- nodos asociados: "+ mapa.cantidadDeHabitacionesAsociadas("ingreso1"));
+		
+		System.out.println(mapa.existeHabitacion("ingreso1"));
 		
 		
 		
-		//System.out.println("¿Existe la habitacion con el id 1? --> " + mapa.existeHabitacion(1) + " -- nodos asociados: "+ mapa.cantidadDeHabitacionesAsociadas(1));
-		//System.out.println("¿Existe la habitacion con el id 3? --> " + mapa.existeHabitacion(3) + " -- nodos asociados: "+ mapa.cantidadDeHabitacionesAsociadas(3));
-		//System.out.println("¿Existe la habitacion con el id 7? --> " + mapa.existeHabitacion(7) + " -- nodos asociados: "+ mapa.cantidadDeHabitacionesAsociadas(7));
+		adyacentes = mapa.getHabitacionPorIDporNivel("p1-0", 0).getAdyacentes(mapa.getListaHabitaciones(),mapa.getListaConexiones());
 		
-		System.out.println("¿Existe la habitacion con el id 15? --> " + mapa.existeHabitacion(15) + " -- nodos asociados: "+ mapa.cantidadDeHabitacionesAsociadas(15));
-		adyacentes = mapa.getHabitacionPorIDporNivel(15, 0).getAdyacentes(mapa.getListaHabitaciones(),mapa.getListaConexiones());
-//		System.out.println("habitaciones adyacentes: " + adyacentes);
 		
-		System.out.println("los adyacentes a la habitacion 15 son: ");
+		System.out.println("los adyacentes al nodo: " +mapa.getHabitacionPorID("p1-0").getClass().getSimpleName() +" son: ");
 		for (int i=0; i<adyacentes.size(); i++ ){
 			if(adyacentes.get(i)!=null){
 				System.out.println("habitacion: " + adyacentes.get(i).getIdHabitacion()+"- Tipo: "+ adyacentes.get(i).getClass().getSimpleName() + " - Descripcion: " + adyacentes.get(i).getDescripcion());	
 			}
 		}
 		
-//		System.out.println("Elementos de la lista de adyacentes: "+ adyacentes.size());
-//		for(int i=0; i<adyacentes.size(); i++){
-//			System.out.println(adyacentes.get(i).getIdHabitacion());
-//		}
 		
 		
 	//	ventana = new Principal(mapa);
 		
 		/*modificar estos atributos*/
-		int id=22;
+
 		
-		System.out.println("#################################################################");
-		System.out.println("Obtengo las instancias de los Objetos: " + mapa.getHabitacionPorID(id).getClass().getSimpleName());
-		System.out.println("#################################################################");
 		
-		ArrayList<Habitacion> resultado=new ArrayList<Habitacion>();
 		
-		resultado=mapa.getHabitacionesPorID(id);
 		
-		for(int i=0; i<resultado.size(); i++){
-			System.out.println("-> Habitacion: "+ resultado.get(i).getClass().getSimpleName() +
-							   " - id: " + resultado.get(i).getIdHabitacion() + 
-							   " - nivel: " + resultado.get(i).getNivel() +
-							   " - desc: " + resultado.get(i).getDescripcion());	
-		}
+		
+		/**Probar obtener datos**/
+		//		String id="I1";
+//		
+//		System.out.println("#################################################################");
+//		System.out.println("Obtengo las instancias de los Objetos: " + mapa.getHabitacionPorID(id).getClass().getSimpleName());
+//		System.out.println("#################################################################");
+//		
+//		ArrayList<Habitacion> resultado=new ArrayList<Habitacion>();
+//		
+//		resultado=mapa.getHabitacionesPorID(id);
+//		
+//		for(int i=0; i<resultado.size(); i++){
+//			System.out.println("-> Habitacion: "+ resultado.get(i).getClass().getSimpleName() +
+//							   " - id: " + resultado.get(i).getIdHabitacion() + 
+//							   " - nivel: " + resultado.get(i).getNivel() +
+//							   " - desc: " + resultado.get(i).getDescripcion());	
+//		}
 		
 		
 		

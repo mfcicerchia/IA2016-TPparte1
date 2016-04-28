@@ -6,6 +6,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 import frsf.cidisi.exercise.tpia2016.modelo.*;
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Conexion;
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Ascensor;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Aula;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Baño;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Biblioteca;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Cantina;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Departamento;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Fotocopiadora;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Ingreso;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Laboratorio;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Oficina;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Pasillo;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Taller;
 
 /**
  * @author martin Clase: Esta clase es la encargada de manipular la clase
@@ -74,7 +89,7 @@ public class ConverterHabitaciones {
 			
 			if(categoria.equals("Aula") || categoria.equals("Aula") ){
 				// Creo una instancia de Aula y lo agrego a la lista de Habitaciones
-				Habitacion aula = new Aula(Integer.parseInt(listaDeDatos.get(i).get(1)),
+				Habitacion aula = new Aula(listaDeDatos.get(i).get(1),
 									       Integer.parseInt(listaDeDatos.get(i).get(2)),
 									       listaDeDatos.get(i).get(3));
 				//lo agrego a la lista de Habitaciones
@@ -83,7 +98,7 @@ public class ConverterHabitaciones {
 			
 			if(categoria.equals("Pasillo") || categoria.equals("pasillo")){
 				// Creo una instancia de Pasillo y lo agrego a la lista de Habitaciones
-				Habitacion pasillo = new Pasillo(Integer.parseInt(listaDeDatos.get(i).get(1)),
+				Habitacion pasillo = new Pasillo(listaDeDatos.get(i).get(1),
 											  Integer.parseInt(listaDeDatos.get(i).get(2)),
 									          listaDeDatos.get(i).get(3));
 				//lo agrego a la lista de Habitaciones
@@ -92,7 +107,7 @@ public class ConverterHabitaciones {
 			
 			if (categoria.equals("Ascensor")||categoria.equals("ascensor")){
 				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
-				Habitacion ascensor = new Ascensor(Integer.parseInt(listaDeDatos.get(i).get(1)),
+				Habitacion ascensor = new Ascensor(listaDeDatos.get(i).get(1),
 						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
 						  						   listaDeDatos.get(i).get(3));
 				listaDeHabitaciones.add(ascensor);
@@ -101,14 +116,14 @@ public class ConverterHabitaciones {
 			
 			if(categoria.equals("Baño")|| categoria.equals("baño")){
 				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
-				Habitacion baño = new Baño(Integer.parseInt(listaDeDatos.get(i).get(1)),
+				Habitacion baño = new Baño(listaDeDatos.get(i).get(1),
 						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
 						  						   listaDeDatos.get(i).get(3));
 				listaDeHabitaciones.add(baño);
 			}
 			if(categoria.equals("Departamento") || categoria.equals("departamento")){
 				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
-				Habitacion departamento = new Departamento(Integer.parseInt(listaDeDatos.get(i).get(1)),
+				Habitacion departamento = new Departamento(listaDeDatos.get(i).get(1),
 						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
 						  						   listaDeDatos.get(i).get(3));
 				listaDeHabitaciones.add(departamento);
@@ -116,7 +131,7 @@ public class ConverterHabitaciones {
 			
 			if(categoria.equals("Fotocopiadora") || categoria.equals("fotocopiadora")){
 				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
-				Habitacion fotocopiadora = new Fotocopiadora(Integer.parseInt(listaDeDatos.get(i).get(1)),
+				Habitacion fotocopiadora = new Fotocopiadora(listaDeDatos.get(i).get(1),
 						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
 						  						   listaDeDatos.get(i).get(3));
 				listaDeHabitaciones.add(fotocopiadora);
@@ -124,7 +139,7 @@ public class ConverterHabitaciones {
 			
 			if(categoria.equals("Ingreso") || categoria.equals("ingreso")){
 				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
-				Habitacion ingreso = new Ingreso(Integer.parseInt(listaDeDatos.get(i).get(1)),
+				Habitacion ingreso = new Ingreso(listaDeDatos.get(i).get(1),
 						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
 						  						   listaDeDatos.get(i).get(3));
 				listaDeHabitaciones.add(ingreso);
@@ -132,7 +147,7 @@ public class ConverterHabitaciones {
 			
 			if(categoria.equals("Escalera") || categoria.equals("escalera")){
 				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
-				Habitacion escalera = new Escalera(Integer.parseInt(listaDeDatos.get(i).get(1)),
+				Habitacion escalera = new Escalera(listaDeDatos.get(i).get(1),
 						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
 						  						   listaDeDatos.get(i).get(3));
 				listaDeHabitaciones.add(escalera);
@@ -140,7 +155,7 @@ public class ConverterHabitaciones {
 			
 			if(categoria.equals("Biblioteca") || categoria.equals("biblioteca")){
 				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
-				Habitacion biblioteca = new Biblioteca(Integer.parseInt(listaDeDatos.get(i).get(1)),
+				Habitacion biblioteca = new Biblioteca(listaDeDatos.get(i).get(1),
 						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
 						  						   listaDeDatos.get(i).get(3));
 				listaDeHabitaciones.add(biblioteca);
@@ -148,10 +163,34 @@ public class ConverterHabitaciones {
 			
 			if(categoria.equals("Cantina") || categoria.equals("cantina")){
 				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
-				Habitacion cantina = new Cantina(Integer.parseInt(listaDeDatos.get(i).get(1)),
+				Habitacion cantina = new Cantina(listaDeDatos.get(i).get(1),
 						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
 						  						   listaDeDatos.get(i).get(3));
 				listaDeHabitaciones.add(cantina);
+			}
+			
+			if(categoria.equals("Laboratorio") || categoria.equals("laboratorio")){
+				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
+				Habitacion laboratorio = new Laboratorio(listaDeDatos.get(i).get(1),
+						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
+						  						   listaDeDatos.get(i).get(3));
+				listaDeHabitaciones.add(laboratorio);
+			}
+			
+			if(categoria.equals("Oficina") || categoria.equals("oficina")){
+				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
+				Habitacion oficina = new Oficina(listaDeDatos.get(i).get(1),
+						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
+						  						   listaDeDatos.get(i).get(3));
+				listaDeHabitaciones.add(oficina);
+			}
+			
+			if(categoria.equals("Taller") || categoria.equals("Taller")){
+				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
+				Habitacion taller = new Taller(listaDeDatos.get(i).get(1),
+						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
+						  						   listaDeDatos.get(i).get(3));
+				listaDeHabitaciones.add(taller);
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-package frsf.cidisi.exercise.tpia2016.modelo;
+package frsf.cidisi.exercise.tpia2016.modelo.grafo;
 /**
  * @author martin
  * Clase: Conexion
@@ -12,8 +12,8 @@ package frsf.cidisi.exercise.tpia2016.modelo;
  * que la movilidad es bilateral: idO<->idD == idD<->idO 
  */
 public class Conexion {
-	private int idOrigen;
-	private int idDestino;
+	private String idOrigen;
+	private String idDestino;
 	private int distancia;
 	
 	/**
@@ -21,7 +21,7 @@ public class Conexion {
 	 * @param idD: identificado de la habitacion DESTINO
 	 * @param distancia: representa la distancia entre dos habitaciones
 	 */
-	public Conexion (int idO, int idD, int distancia){
+	public Conexion (String idO, String idD, int distancia){
 		this.setIdOrigen(idO);
 		this.setIdDestino(idD);
 		this.setDistancia(distancia);
@@ -30,23 +30,23 @@ public class Conexion {
 	/**
 	 * @param idOrigen
 	 */
-	public void setIdOrigen(int idOrigen) {
+	public void setIdOrigen(String idOrigen) {
 		this.idOrigen = idOrigen;
 	}
 
 
-	public int getIdOrigen() {
+	public String getIdOrigen() {
 		return idOrigen;
 	}
 
 	/**
 	 * @param idDestino
 	 */
-	public void setIdDestino(int idDestino) {
+	public void setIdDestino(String idDestino) {
 		this.idDestino = idDestino;
 	}
 
-	public int getIdDestino() {
+	public String getIdDestino() {
 		return idDestino;
 	}
 

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import frsf.cidisi.exercise.tpia2016.modelo.*;
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Conexion;
 
 /**
  * @author martin Clase: Esta clase es la encargada de manipular la clase
@@ -71,8 +72,8 @@ public class ConverterConexiones {
 			// categoria = listaDeDatos.get(i).get(0);
 
 			// creo una instancia de Conexion y lo agrego a la lista de enlaces
-			Conexion enlace = new Conexion(Integer.parseInt(listaDeDatos.get(i).get(0)), 
-										   Integer.parseInt(listaDeDatos.get(i).get(1)),
+			Conexion enlace = new Conexion(listaDeDatos.get(i).get(0), 
+										   listaDeDatos.get(i).get(1),
 										   Integer.parseInt(listaDeDatos.get(i).get(2)));
 			// lo agrego a la ista de enlaces
 			listaDeConexiones.add(enlace);

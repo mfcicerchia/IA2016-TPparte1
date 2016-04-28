@@ -1,4 +1,6 @@
-package frsf.cidisi.exercise.tpia2016.modelo;
+package frsf.cidisi.exercise.tpia2016.modelo.nodos;
+
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
 public class Ascensor extends Habitacion{
 	public Ascensor() {
@@ -9,7 +11,7 @@ public class Ascensor extends Habitacion{
 	/**
 	 * @param pitido
 	 */
-	public Ascensor(int id, int nivel, String desc) {
+	public Ascensor(String id, int nivel, String desc) {
 		super(id, nivel, desc);
 		//this.setPitido(pitido);
 	}

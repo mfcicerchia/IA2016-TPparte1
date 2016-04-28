@@ -1,0 +1,38 @@
+Ingreso,ingreso1,0,entrada principal a la facultad
+Ingreso,ingreso2,0,entrada por torre
+Pasillo,p1-0,0,pasillo 1 planta baja
+Pasillo,p2-0,0,pasillo 2 planta baja
+Pasillo,p3-0,0,pasillo 3 planta baja
+Pasillo,p3-0,0,pasillo 4 planta baja
+Pasillo,p5-0,0,pasillo 5 planta baja
+Pasillo,p6-6,0,pasillo 6 planta baja
+escalera,esc1,0,escalera 1
+escalera,esc2,0,escalera de torre
+escalera,esc3,0,escalera ala oeste
+escalera,esc4,0,escalera 4
+escalera,esc5,0,escalera 5
+escalera,esc6,0,escalera 6
+escalera,esc7,0,escalera 7
+Ascensor,asc1,0,ascensor planta baja
+Ascensor,asc1,1,ascensor primer piso
+Ascensor,asc1,2,ascensor segundo piso
+Ascensor,asc,3,ascensor tercer piso
+Aula,au1,0,aula1
+Aula,au2,0,aula2
+Aula,au3,0,aula3
+Aula,au4,0,aula4
+Aula,au5,0,aula5
+Aula,au6,0,aula6
+Aula,au7,0,quimica
+Aula,au8,0,Fisica
+cantina,cantina,0,Sheldon Bar
+biblioteca,biblioteca1,0,Biblioteca Moreno
+Oficina,oficina1,0,Alumnado
+Oficina,oficina2,0,SAE
+Ba¤o,ba¤o1,0,ba¤o1
+Ba¤o,ba¤o2,0,ba¤o2
+Laboratorio,lab1,0,Laboratorio de Mecanica
+Laboratorio,lab2,0,Laboratorio de Fluidica
+Departamento,mecanica,0,Departamento de Mecanica
+Departamento,electrica,0,Departamento de Electrica
+Fotocopiadora,fotocopiadora,0,Fotocopiadora FRSF

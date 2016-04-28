@@ -3,7 +3,8 @@ package frsf.cidisi.exercise.tpia2016.interfaz;
 import java.awt.*;
 
 import javax.swing.*;
-import frsf.cidisi.exercise.tpia2016.modelo.Edificio;
+
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Edificio;
 
 public class Principal extends JFrame {
 

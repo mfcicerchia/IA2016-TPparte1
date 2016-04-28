@@ -5,6 +5,10 @@ import frsf.cidisi.faia.simulator.SearchBasedAgentSimulator;
 
 public class AgenteMain {
 
+	/**
+     * @param args
+     * @throws PrologConnectorException
+     */
     public static void main(String[] args) throws PrologConnectorException {
         Agente agent = new Agente();
 
@@ -13,6 +17,8 @@ public class AgenteMain {
         SearchBasedAgentSimulator simulator =
                 new SearchBasedAgentSimulator(environment, agent);
         
+        
+       //punto donde inicializar la interfaz 
         simulator.start();
     }
 

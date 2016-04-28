@@ -1,4 +1,4 @@
-package frsf.cidisi.exercise.tpia2016.modelo;
+package frsf.cidisi.exercise.tpia2016.modelo.grafo;
 
 import java.util.ArrayList;
 
@@ -54,21 +54,21 @@ public class Edificio {
 		return listaConexiones;
 	}
 	
-	public boolean existeHabitacion(int id) {
+	public boolean existeHabitacion(String id) {
 
 		boolean flag1 = false;
 		boolean flag2 = false;
 
 		for (int i = 0; i < this.getListaConexiones().size(); i++) {
-			if (this.getListaConexiones().get(i).getIdOrigen() == id
-					|| this.getListaConexiones().get(i).getIdDestino() == id) {
+			if (this.getListaConexiones().get(i).getIdOrigen().equals(id)
+					|| this.getListaConexiones().get(i).getIdDestino().equals(id)) {
 				flag1 = true;
 				
 			}
 		}
 		
 		for (int i = 0; i < this.getListaHabitaciones().size(); i++) {
-			if (this.getListaHabitaciones().get(i).getIdHabitacion() == id){
+			if (this.getListaHabitaciones().get(i).getIdHabitacion().equals(id)){
 				flag2 = true;
 			}
 		}
@@ -81,23 +81,23 @@ public class Edificio {
 		
 	}
 	
-	public int cantidadDeHabitacionesAsociadas(int id) {
+	public int cantidadDeHabitacionesAsociadas(String id) {
 		int contador = 0;
 		for (int i = 0; i < this.getListaConexiones().size(); i++) {
-			if (this.getListaConexiones().get(i).getIdOrigen() == id
-					|| this.getListaConexiones().get(i).getIdDestino() == id) {
+			if (this.getListaConexiones().get(i).getIdOrigen().equals( id)
+					|| this.getListaConexiones().get(i).getIdDestino().equals(id)) {
 				contador++;
 			}
 		}
 		return contador;
 	}
 	
-	public ArrayList<Habitacion> getHabitacionesPorID(int id){
+	public ArrayList<Habitacion> getHabitacionesPorID(String id){
 		ArrayList resultado = new ArrayList<Habitacion>();
 		
 		if(existeHabitacion(id)){
 			for(int i=0; i<getListaHabitaciones().size(); i++){
-				if(getListaHabitaciones().get(i).getIdHabitacion()== id){
+				if(getListaHabitaciones().get(i).getIdHabitacion().equals(id)){
 					resultado.add(getListaHabitaciones().get(i));
 				}
 			}
@@ -108,11 +108,11 @@ public class Edificio {
 		
 	}
 	
-	public Habitacion getHabitacionPorID(int id){
+	public Habitacion getHabitacionPorID(String id){
 		
 		if(existeHabitacion(id)){
 			for(int i=0; i<getListaHabitaciones().size(); i++){
-				if(getListaHabitaciones().get(i).getIdHabitacion()== id){
+				if(getListaHabitaciones().get(i).getIdHabitacion().equals(id)){
 					return getListaHabitaciones().get(i);
 				}
 			}
@@ -120,10 +120,10 @@ public class Edificio {
 		return null;
 	}
 	
-	public Habitacion getHabitacionPorIDporNivel(int id, int nivel){
+	public Habitacion getHabitacionPorIDporNivel(String id, int nivel){
 		if(existeHabitacion(id)){
 			for(int i=0; i<getListaHabitaciones().size(); i++){
-				if(getListaHabitaciones().get(i).getIdHabitacion()== id && getListaHabitaciones().get(i).getNivel() == nivel){
+				if(getListaHabitaciones().get(i).getIdHabitacion().equals(id) && getListaHabitaciones().get(i).getNivel() == nivel){
 					return getListaHabitaciones().get(i);
 				}
 			}

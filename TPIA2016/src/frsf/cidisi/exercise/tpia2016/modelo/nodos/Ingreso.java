@@ -1,4 +1,6 @@
-package frsf.cidisi.exercise.tpia2016.modelo;
+package frsf.cidisi.exercise.tpia2016.modelo.nodos;
+
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
 public class Ingreso extends Habitacion {
 
@@ -8,7 +10,7 @@ public class Ingreso extends Habitacion {
 		super();
 	}
 
-	public Ingreso(int id, int nivel, String tipoIngreso) {
+	public Ingreso(String id, int nivel, String tipoIngreso) {
 		super(id, nivel,tipoIngreso);
 		this.setIngresoTipo(tipoIngreso);
 	}

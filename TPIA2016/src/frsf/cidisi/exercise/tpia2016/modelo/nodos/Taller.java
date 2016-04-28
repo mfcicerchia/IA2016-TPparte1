@@ -1,13 +1,15 @@
-package frsf.cidisi.exercise.tpia2016.modelo;
+package frsf.cidisi.exercise.tpia2016.modelo.nodos;
 
-public class Aula extends Habitacion {
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
+
+public class Taller extends Habitacion {
 	private String descripcion;
 	
-	public Aula() {
+	public Taller() {
 		super();
 	}
 
-	public Aula(int id, int nivel, String desc) {
+	public Taller(String id, int nivel, String desc) {
 		super(id, nivel, desc);
 		this.setDescripcion(desc);
 	}
@@ -19,7 +21,4 @@ public class Aula extends Habitacion {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-
-
-
 }
