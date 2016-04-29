@@ -1,5 +1,7 @@
 package frsf.cidisi.exercise.tpia2016.search;
 
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Edificio;
+import frsf.cidisi.exercise.tpia2016.utilidades.CargarPlanos;
 import frsf.cidisi.faia.exceptions.PrologConnectorException;
 import frsf.cidisi.faia.simulator.SearchBasedAgentSimulator;
 
@@ -7,21 +9,32 @@ public class AgenteMain {
 	
 	/**
      * @param args
-     * @throws PrologConnectorException
+	 * @throws Exception 
      */
-    public static void main(String[] args) throws PrologConnectorException {
+    public static void main(String[] args) throws Exception {
         
-//    	Edificio plano = CargarPlano();
-//    	Principal ventana = new Principal(plano);
+    	//Se cargan los planos del edificio en el atributo edificio
+    	CargarPlanos mapaInformation = new CargarPlanos();
+    	Edificio edificio = mapaInformation.getMapa();
+    	edificio.getHabitacionPorID("esc1");
+    	
+    	// Se crea la ventana principal y desde aca se da el OK 
+    	// para que inicie la simulacion
+    	
+    	//// Principal ventana = new Principal(edificio);
+    	
+    	
+    	// Setear el estado del agente y del ambiente con los datos 
+    	// ya cargados
     	Agente agent = new Agente();
         Universidad environment = new Universidad();
 
-        SearchBasedAgentSimulator simulator =
-                new SearchBasedAgentSimulator(environment, agent);
+        SearchBasedAgentSimulator simulator = new SearchBasedAgentSimulator(environment, agent);
         
         
-       //punto donde inicializar la interfaz
-        //System.
+       //posible punto donde inicializar la interfaz
+        System.out.println("Aprente \'intro\' para iniciar la simulacion");
+        System.in.read();
         simulator.start();
     }
 
