@@ -7,8 +7,8 @@ Pasillo,p3-0,0,pasillo 4 planta baja
 Pasillo,p5-0,0,pasillo 5 planta baja
 Pasillo,p6-0,0,pasillo 6 planta baja
 escalera,esc1,0,escalera 1
-escalera,esc2,0,escalera de torre
-escalera,esc3,0,Esto en Planta Baja
+escalera,esc2,0,escalera 2
+escalera,esc3,0,escalera 3
 escalera,esc4,0,escalera 4
 escalera,esc5,0,escalera 5
 escalera,esc6,0,escalera 6
@@ -29,16 +29,15 @@ cantina,cantina,0,Sheldon Bar
 biblioteca,biblioteca1,0,Biblioteca Moreno
 Oficina,oficina1,0,Alumnado
 Oficina,oficina2,0,SAE
-Ba¤o,ba¤o1,0,ba¤o1
-Ba¤o,ba¤o2,0,ba¤o2
+Baño,baño1,0,baño1
+Baño,baño2,0,baño2
 Laboratorio,lab1,0,Laboratorio de Mecanica
 Laboratorio,lab2,0,Laboratorio de Fluidica
 Departamento,mecanica,0,Departamento de Mecanica
 Departamento,electrica,0,Departamento de Electrica
 Fotocopiadora,fotocopiadora,0,Fotocopiadora FRSF
-Escalera,esc3,1, Estoy en el primer piso
-Escalera,esc3,2,Estoy en el segundo nivel
-Escalera,esc3,3,Estoy en el tercer nivel
+Escalera,esc3,2,escalera 3
+Escalera,esc3,3,escalera 3
 Aula,au9,1,aula9
 Aula,au10,1,aula10
 Aula,au11,1,aula11
@@ -50,8 +49,9 @@ Aula,au16,1,aula16
 Aula,au17,1,aula17
 Aula,au18,1,aula18
 Aula,au19,1,aula19
+Laboratorio,lab2,1,Laboratorio CECOVI
 Laboratorio,lab1,1,Laboratorio de Ensayos
-Aula,auMT,1,Aula de Materiales
+Aula,mt1,1,Aula de Materiales
 Pasillo,p1-1,1,pasillo 1 primer piso
 Pasillo,p2-1,1,pasillo 2 primer piso
 Pasillo,p3-1,1,pasillo 3 primer piso
@@ -60,3 +60,49 @@ Pasillo,p5-1,1,pasillo 5 primer piso
 Pasillo,p6-1,1,pasillo 6 primer pisp
 Departamento,Civil,1,Departamento de Civil
 Departamento,Básicas,1,Departamento de Materias Básicas
+Departamento,Industrial,1,Departamento de Industrial
+Escalera,esc3,1,escalera 3
+Escalera,esc1,1,escalera 1
+Escalera,esc2,1,escalera 2
+Escalera,esc4,1,escalera 4 
+Escalera,esc5,1,escalera 5
+Escalera,esc6,1,escalera 6
+Escalera,esc7,1,escalera 7
+Biblioteca,biblioteca2,1,Biblioteca IRAM
+Aula,if1,1,Informática 1
+Aula,if2,2,Informática 2
+Aula,cn1,1,Consulta 1
+Baño,baño1,1,baño1
+Baño,baño2,1,baño2
+Baño,baño3,1,baño3
+Aula,ae3,1,Aula E03
+Aula,ae2,1,Aula E02
+Aula,ae1,1,Aula E01
+Aula,vd1,Aula video 
+Oficina,oficina1,1,Materias Básicas
+Oficina,oficina2,1,Varios
+Aula,au22,2,Aula 22
+Aula,au20,2,Aula 20
+Aula,au21,2,Aula 21
+Aula,cd1,2,Aula CIDISI
+Pasillo,p2-2,2,pasillo 2 segundo piso
+Pasillo,p1-2,2,pasillo 1 segundo piso
+Escalera,esc5,2,escalera 5
+Escalera,esc6,2,escalera 6
+Escalera,esc8,2,escalera 7
+Laboratorio,lab1,2,JAVALAB
+Laboratorio,lab2,2,GESE
+Laboratorio,lab1,3,Laboratorio Informatica 1
+Laboratorio,lab3,3,Laboratorio Informatica 3
+Laboratorio,lab4,3,Laboratorio Informatica 4
+Laboratorio,lab2,3,Laboratorio Conectividad
+Oficina,oficina1,3,CIDISI
+Oficina,oficina3,3,Varios
+Oficina,oficina2,3,TICS
+Depatamento,Sistemas,3,Departemanto de Sitemas
+Escalera,esc8,3,escalera 8
+Escalera,esc3,3,escalera 3
+Pasillo,p2-3,3,pasillo 2 tercer piso
+Pasillo,p1-3,3,pasillo 2 tercer piso
+Aula,cs1,3,Aula Consultas 1
+Aula,cs2,3,Aula Consultas 2
