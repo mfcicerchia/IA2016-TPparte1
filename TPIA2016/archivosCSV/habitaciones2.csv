@@ -5,7 +5,7 @@ Pasillo,p2-0,0,pasillo 2 planta baja
 Pasillo,p3-0,0,pasillo 3 planta baja
 Pasillo,p3-0,0,pasillo 4 planta baja
 Pasillo,p5-0,0,pasillo 5 planta baja
-Pasillo,p6-6,0,pasillo 6 planta baja
+Pasillo,p6-0,0,pasillo 6 planta baja
 escalera,esc1,0,escalera 1
 escalera,esc2,0,escalera de torre
 escalera,esc3,0,Esto en Planta Baja
@@ -39,3 +39,24 @@ Fotocopiadora,fotocopiadora,0,Fotocopiadora FRSF
 Escalera,esc3,1, Estoy en el primer piso
 Escalera,esc3,2,Estoy en el segundo nivel
 Escalera,esc3,3,Estoy en el tercer nivel
+Aula,au9,1,aula9
+Aula,au10,1,aula10
+Aula,au11,1,aula11
+Aula,au12,1,aula12
+Aula,au13,1,aula13
+Aula,au14,1,aula14
+Aula,au15,1,aula15
+Aula,au16,1,aula16
+Aula,au17,1,aula17
+Aula,au18,1,aula18
+Aula,au19,1,aula19
+Laboratorio,lab1,1,Laboratorio de Ensayos
+Aula,auMT,1,Aula de Materiales
+Pasillo,p1-1,1,pasillo 1 primer piso
+Pasillo,p2-1,1,pasillo 2 primer piso
+Pasillo,p3-1,1,pasillo 3 primer piso
+Pasillo,p4-1,1,pasillo 4 primer piso
+Pasillo,p5-1,1,pasillo 5 primer piso
+Pasillo,p6-1,1,pasillo 6 primer pisp
+Departamento,Civil,1,Departamento de Civil
+Departamento,Básicas,1,Departamento de Materias Básicas
