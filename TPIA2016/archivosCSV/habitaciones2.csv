@@ -16,7 +16,7 @@ escalera,esc7,0,escalera 7
 Ascensor,asc1,0,ascensor planta baja
 Ascensor,asc1,1,ascensor primer piso
 Ascensor,asc1,2,ascensor segundo piso
-Ascensor,asc,3,ascensor tercer piso
+Ascensor,asc1,3,ascensor tercer piso
 Aula,au1,0,aula1
 Aula,au2,0,aula2
 Aula,au3,0,aula3
@@ -27,8 +27,8 @@ Aula,au7,0,quimica
 Aula,au8,0,Fisica
 cantina,cantina,0,Sheldon Bar
 biblioteca,biblioteca1,0,Biblioteca Moreno
-Oficina,oficina1,0,Alumnado
-Oficina,oficina2,0,SAE
+Oficina,ofc1-0,0,Alumnado
+Oficina,ofc2-0,0,SAE
 Baño,baño1,0,baño1
 Baño,baño2,0,baño2
 Laboratorio,lab1,0,Laboratorio de Mecanica
@@ -49,8 +49,8 @@ Aula,au16,1,aula16
 Aula,au17,1,aula17
 Aula,au18,1,aula18
 Aula,au19,1,aula19
-Laboratorio,lab2,1,Laboratorio CECOVI
-Laboratorio,lab1,1,Laboratorio de Ensayos
+Laboratorio,ccv1,1,Laboratorio CECOVI
+Laboratorio,esy1,1,Laboratorio de Ensayos
 Aula,mt1,1,Aula de Materiales
 Pasillo,p1-1,1,pasillo 1 primer piso
 Pasillo,p2-1,1,pasillo 2 primer piso
@@ -72,6 +72,9 @@ Biblioteca,biblioteca2,1,Biblioteca IRAM
 Aula,if1,1,Informática 1
 Aula,if2,2,Informática 2
 Aula,cn1,1,Consulta 1
+Aula,cn2,1,Consulta 2
+Aula,cn3,1,Consulta 3
+Aula,cn4,1,Consulta 4
 Baño,baño1,1,baño1
 Baño,baño2,1,baño2
 Baño,baño3,1,baño3
@@ -79,8 +82,8 @@ Aula,ae3,1,Aula E03
 Aula,ae2,1,Aula E02
 Aula,ae1,1,Aula E01
 Aula,vd1,Aula video 
-Oficina,oficina1,1,Materias Básicas
-Oficina,oficina2,1,Varios
+Oficina,ofc1-1,1,Materias Básicas
+Oficina,ofc2-1,1,Varios
 Aula,au22,2,Aula 22
 Aula,au20,2,Aula 20
 Aula,au21,2,Aula 21
@@ -90,15 +93,15 @@ Pasillo,p1-2,2,pasillo 1 segundo piso
 Escalera,esc5,2,escalera 5
 Escalera,esc6,2,escalera 6
 Escalera,esc8,2,escalera 7
-Laboratorio,lab1,2,JAVALAB
-Laboratorio,lab2,2,GESE
+Laboratorio,jvl1,2,JAVALAB
+Laboratorio,gse1,2,GESE
 Laboratorio,lab1,3,Laboratorio Informatica 1
 Laboratorio,lab3,3,Laboratorio Informatica 3
 Laboratorio,lab4,3,Laboratorio Informatica 4
 Laboratorio,lab2,3,Laboratorio Conectividad
-Oficina,oficina1,3,CIDISI
-Oficina,oficina3,3,Varios
-Oficina,oficina2,3,TICS
+Oficina,ofc1-3,3,CIDISI
+Oficina,ofc3-3,3,Varios
+Oficina,ofc2-3,3,TICS
 Depatamento,Sistemas,3,Departemanto de Sitemas
 Escalera,esc8,3,escalera 8
 Escalera,esc3,3,escalera 3
