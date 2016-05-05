@@ -60,5 +60,8 @@ public class Conexion {
 	public int getDistancia() {
 		return distancia;
 	}
-
+	
+	public String toString(){
+		return idOrigen+"-"+idDestino+"-"+distancia;
+	}
 }

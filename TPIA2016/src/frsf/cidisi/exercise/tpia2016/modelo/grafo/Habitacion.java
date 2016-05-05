@@ -132,4 +132,8 @@ public class Habitacion {
 		}
 		return null;
 	}
+	
+	public String toString(){
+		return idHabitacion+"-"+nivel+"-"+descripcion;
+	}
 }

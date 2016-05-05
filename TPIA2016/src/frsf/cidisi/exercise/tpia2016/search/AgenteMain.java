@@ -1,3 +1,4 @@
+
 package frsf.cidisi.exercise.tpia2016.search;
 
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Edificio;
@@ -27,7 +28,7 @@ public class AgenteMain {
     	// Setear el estado del agente y del ambiente con los datos 
     	// ya cargados
     	Agente agent = new Agente();
-        Universidad environment = new Universidad();
+        Universidad environment = new Universidad(edificio);
 
         SearchBasedAgentSimulator simulator = new SearchBasedAgentSimulator(environment, agent);
         

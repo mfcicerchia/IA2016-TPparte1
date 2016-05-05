@@ -1,5 +1,6 @@
 package frsf.cidisi.exercise.tpia2016.search;
 
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
 import frsf.cidisi.faia.agent.Agent;
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.environment.Environment;
@@ -7,7 +8,7 @@ import frsf.cidisi.faia.environment.Environment;
 public class AgentePerception extends Perception {
 
 	//TODO: Setup Statics
-    //public static int UNKNOWN_PERCEPTION = -1;   
+    public static int UNKNOWN_PERCEPTION = -1;   
 	
 	
 	//TODO: Setup Sensors
@@ -21,7 +22,16 @@ public class AgentePerception extends Perception {
  
 
     public  AgentePerception() {
+    	
     	//TODO: Complete Method
+    	existe_obstáculo=UNKNOWN_PERCEPTION;
+    	hay_energía_eléctrica=UNKNOWN_PERCEPTION;
+    	hay_bip_ascensor=UNKNOWN_PERCEPTION;
+    	hay_bloqueo_escalera=UNKNOWN_PERCEPTION;
+    	hay_bloqueo_pasillo=UNKNOWN_PERCEPTION;
+    	energía_remanente_agente=UNKNOWN_PERCEPTION;
+    	
+    	
     }
 
     public AgentePerception(Agent agent, Environment environment) {
@@ -36,11 +46,13 @@ public class AgentePerception extends Perception {
     	
     	//TODO: Complete Method
         
-        //Agente agent = (Agente) agentIn;
-        //Universidad environment = (Universidad) environmentIn;
-        //EstadoAmbiente environmentState =
-        //        environment.getEnvironmentState();
+        Agente agent = (Agente) agentIn;
+        Universidad environment = (Universidad) environmentIn;
+        EstadoAmbiente environmentState =  environment.getEnvironmentState();
        
+        Habitacion h = environmentState.get_posicion_agente();
+        
+       // boolean hayObtaculo = 
         
     }
     

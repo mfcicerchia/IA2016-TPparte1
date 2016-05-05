@@ -1,14 +1,14 @@
 package frsf.cidisi.exercise.tpia2016.search;
 
 import frsf.cidisi.faia.agent.Action;
-import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.environment.Environment;
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
 
 public class Universidad extends Environment {
 
-    public Universidad() {
+    public Universidad(Edificio edificio) {
         // Create the environment state
-        this.environmentState = new EstadoAmbiente();
+        this.environmentState = new EstadoAmbiente(edificio);
     }
 
     public EstadoAmbiente getEnvironmentState() {
