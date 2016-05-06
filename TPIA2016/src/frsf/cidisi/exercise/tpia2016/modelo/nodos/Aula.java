@@ -3,6 +3,7 @@ package frsf.cidisi.exercise.tpia2016.modelo.nodos;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
 public class Aula extends Habitacion {
+
 	private String descripcion;
 	
 	public Aula() {
@@ -22,6 +23,8 @@ public class Aula extends Habitacion {
 		this.descripcion = descripcion;
 	}
 
-
-
+	@Override
+	public String toString() {
+		return super.toString() +" Aula [descripcion=" + descripcion + "]";
+	}
 }

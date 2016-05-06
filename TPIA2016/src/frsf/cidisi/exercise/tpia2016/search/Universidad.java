@@ -3,6 +3,9 @@ package frsf.cidisi.exercise.tpia2016.search;
 import frsf.cidisi.faia.agent.Action;
 import frsf.cidisi.faia.environment.Environment;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Ascensor;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Pasillo;
 
 public class Universidad extends Environment {
 
@@ -26,7 +29,39 @@ public class Universidad extends Environment {
         // Create a new perception to return
          AgentePerception perception = new AgentePerception();
 		
-		//TODO : Set the perceptions sensors
+         Habitacion h = this.getEnvironmentState().getPosicion_agente();
+         
+ 		if(h.getClass()==Pasillo.class){
+ 			Pasillo p=(Pasillo)h;
+ 			if(p.isBloqueado()){
+ 				perception.setHay_bip_ascensor(1);
+ 			}
+ 			else{
+ 				perception.setHay_bip_ascensor(0);
+ 			}
+ 		}
+ 		else{
+ 			if(h.getClass()==Ascensor.class){
+ 				Ascensor p=(Ascensor)h;
+ 				if(p.isPitido()){
+ 					perception.setHay_bip_ascensor(1);
+ 				} 
+ 				else{
+ 					perception.setHay_bip_ascensor(0);
+ 				}					
+ 			}
+ 			else{
+ 				if(h.getClass()==Escalera.class){
+ 					Escalera p=(Escalera)h;
+ 					if(p.isBloqueada()){
+ 						perception.setHay_bloqueo_escalera(1);
+ 					}
+ 					else{
+ 						perception.setHay_bloqueo_escalera(0);
+ 					}
+ 				}
+ 			}
+ 		}
         
         // Return the perception
         return perception;
@@ -39,13 +74,15 @@ public class Universidad extends Environment {
 
     
     public boolean agentFailed(Action actionReturned) {
+    	boolean falla=false;
+        EstadoAmbiente envState = this.getEnvironmentState();
 
-        EstadoAmbiente envState =
-                this.getEnvironmentState();
-
-        // TODO: Complete Method        
-
-        return false;
+        // TODO: Complete Method     
+        
+        if(envState.isFalla()){
+        	falla=true;
+        }
+        return falla;
     }
 
 	//TODO: Complete this section with agent-specific methods

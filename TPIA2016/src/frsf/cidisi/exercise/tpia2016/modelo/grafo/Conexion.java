@@ -64,4 +64,8 @@ public class Conexion {
 	public String toString(){
 		return idOrigen+"-"+idDestino+"-"+distancia;
 	}
+	
+    public Conexion clone() {
+        return new Conexion(this.getIdOrigen(),this.getIdDestino(),this.getDistancia());
+    }
 }

@@ -1,5 +1,8 @@
 package frsf.cidisi.exercise.tpia2016.search;
 
+import java.util.ArrayList;
+
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
 
@@ -7,50 +10,25 @@ import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
  * Represent the internal state of the Agent.
  */
 public class EstadoAgente extends SearchBasedAgentState {
-	
-	//TODO: Setup Variables
-    //private Other mapa_ambiente;
+    private Edificio mapa_ambiente;
     private int energía_agente;
-    //private Other posicion;
+    private Habitacion posicion;
     private int costo_actual;
-    //private Other habitaciones_visitadas;
+    private ArrayList<Habitacion> habitaciones_visitadas;
 	
-
     public EstadoAgente() {
+
+    }
+
+    public EstadoAgente(Edificio mapa, int energía, Habitacion post, int cost, ArrayList<Habitacion> visitadas) {
+    	
+			 mapa_ambiente = mapa;
+			 energía_agente = energía;
+			 posicion = post;
+			 costo_actual = cost;
+			 habitaciones_visitadas = visitadas;
+    }
     
-    	//TODO: Complete Method
-    	/*
-			// mapa_ambiente = initData0;
-			// energía_agente = initData1;
-			// posicion = initData2;
-			// costo_actual = initData3;
-			// habitaciones_visitadas = initData4;
-        */
-        this.initState();
-    }
-
-    /**
-     * This method clones the state of the agent. It's used in the search
-     * process, when creating the search tree.
-     */
-    @Override
-    public SearchBasedAgentState clone() {
-        
-		//TODO: Complete Method
-		
-        return null;
-    }
-
-    /**
-     * This method is used to update the Agent State when a Perception is
-     * received by the Simulator.
-     */
-    @Override
-    public void updateState(Perception p) {
-        
-        //TODO: Complete Method
-    }
-
     /**
      * This method is optional, and sets the initial state of the agent.
      */
@@ -60,6 +38,59 @@ public class EstadoAgente extends SearchBasedAgentState {
 	//TODO: Complete Method
 
     }
+
+    /**
+     * This method clones the state of the agent. It's used in the search
+     * process, when creating the search tree.
+     */
+    @Override
+    public SearchBasedAgentState clone() {
+    	
+    	ArrayList<Habitacion> habitaciones= new ArrayList<Habitacion>();
+    	for(Habitacion h: this.getMapa_ambiente().getListaHabitaciones()){
+    		habitaciones.add(h.clone());
+    	}
+    	
+    	ArrayList<Conexion> conexiones= new ArrayList<Conexion>();
+    	for(Conexion c: this.getMapa_ambiente().getListaConexiones()){
+    		conexiones.add(c.clone());
+    	}
+    	
+    	int energia=this.getEnergía_agente();
+    	Habitacion habitacion=this.getPosicion().clone();
+    	int costo=this.getCosto_actual();
+    	ArrayList<Habitacion> visitadas= this.getHabitaciones_visitadas();
+		
+        return new EstadoAgente(new Edificio(habitaciones,conexiones),energia,habitacion,costo,visitadas);
+    }
+    
+    
+
+    /**
+     * This method is used to update the Agent State when a Perception is
+     * received by the Simulator.
+     */
+    @Override
+    public void updateState(Perception p) {
+     
+        //TODO: Complete Method
+    	
+    	AgentePerception perception=(AgentePerception)p;
+    	Habitacion posicionActual= this.getPosicion();
+    	
+    	int hay_bip=perception.getHay_bip_ascensor();
+    	int hay_bloqueo_escalera=perception.getHay_bloqueo_escalera();
+    	int hay_bloqueo_pasillo=perception.getHay_bloqueo_pasillo();
+    	
+    	if(hay_bip==1){
+    		
+    	}
+    	else{
+    		
+    	}
+    }
+
+
 
     /**
      * This method returns the String representation of the agent state.
@@ -79,45 +110,50 @@ public class EstadoAgente extends SearchBasedAgentState {
      */
     @Override
     public boolean equals(Object obj) {
-       
        //TODO: Complete Method
-        
-        return true;
-    }
+    	boolean equals=false;
+    	EstadoAgente nuevoEstado = (EstadoAgente) obj;
+    	
+    	Habitacion postActual = this.getPosicion();
+    	Habitacion postNueva = nuevoEstado.getPosicion();
+    	
+    	if(postActual.equals(postNueva) && this.getEnergía_agente()==nuevoEstado.getEnergía_agente()){
+    		equals = true;
+    	}
 
-    //TODO: Complete this section with agent-specific methods
-    // The following methods are agent-specific:
+    	return equals;
+    }
    	
-//     public Other getmapa_ambiente(){
-//        return mapa_ambiente;
-//     }
-//     public void setmapa_ambiente(Other arg){
-//        mapa_ambiente = arg;
-//     }
-     public int getenergía_agente(){
+     public Edificio getMapa_ambiente(){
+        return mapa_ambiente;
+     }
+     public void setMapa_ambiente(Edificio arg){
+        mapa_ambiente = arg;
+     }
+     public int getEnergía_agente(){
         return energía_agente;
      }
-     public void setenergía_agente(int arg){
+     public void setEnergía_agente(int arg){
         energía_agente = arg;
      }
-//     public Other getposicion(){
-//        return posicion;
-//     }
-//     public void setposicion(Other arg){
-//        posicion = arg;
-//     }
-     public int getcosto_actual(){
+     public Habitacion getPosicion(){
+        return posicion;
+     }
+     public void setPosicion(Habitacion arg){
+        posicion = arg;
+     }
+     public int getCosto_actual(){
         return costo_actual;
      }
-     public void setcosto_actual(int arg){
+     public void setCosto_actual(int arg){
         costo_actual = arg;
      }
-//     public Other gethabitaciones_visitadas(){
-//        return habitaciones_visitadas;
-//     }
-//     public void sethabitaciones_visitadas(Other arg){
-//        habitaciones_visitadas = arg;
-//     }
+     public ArrayList<Habitacion> getHabitaciones_visitadas(){
+        return habitaciones_visitadas;
+     }
+     public void setHabitaciones_visitadas(ArrayList<Habitacion> arg){
+        habitaciones_visitadas = arg;
+    }
 	
 }
 

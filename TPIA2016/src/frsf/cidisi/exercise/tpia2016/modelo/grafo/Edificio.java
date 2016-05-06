@@ -26,8 +26,7 @@ public class Edificio {
 	 * @param habitaciones
 	 * @param conexiones
 	 */
-	public  Edificio(ArrayList<Habitacion> habitaciones,
-			ArrayList<Conexion> conexiones) {
+	public  Edificio(ArrayList<Habitacion> habitaciones,ArrayList<Conexion> conexiones) {
 		this.setListaHabitaciones(listaHabitaciones);
 		this.setListaConexiones(conexiones);
 	}

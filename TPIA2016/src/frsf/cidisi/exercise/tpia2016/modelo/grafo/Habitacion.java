@@ -2,6 +2,9 @@ package frsf.cidisi.exercise.tpia2016.modelo.grafo;
 
 import java.util.ArrayList;
 
+import frsf.cidisi.exercise.tpia2016.search.EstadoAgente;
+import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
+
 /**
  * @author martin Clase: Habitacion Descripcion: Representa un nodo del grafo
  *         mapaEdificio. Es una super-clase de los subtipos de habitaciones.
@@ -12,6 +15,11 @@ import java.util.ArrayList;
 public class Habitacion {
 
 	// Identificador id; /implementar luego/
+
+	@Override
+	public String toString() {
+		return "Habitacion [idHabitacion=" + idHabitacion + ", nivel=" + nivel + ", descripcion=" + descripcion + "]";
+	}
 
 	private String idHabitacion;
 	private int nivel;
@@ -132,8 +140,33 @@ public class Habitacion {
 		}
 		return null;
 	}
-	
-	public String toString(){
-		return idHabitacion+"-"+nivel+"-"+descripcion;
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Habitacion other = (Habitacion) obj;
+		if (descripcion == null) {
+			if (other.descripcion != null)
+				return false;
+		} else if (!descripcion.equals(other.descripcion))
+			return false;
+		if (idHabitacion == null) {
+			if (other.idHabitacion != null)
+				return false;
+		} else if (!idHabitacion.equals(other.idHabitacion))
+			return false;
+		if (nivel != other.nivel)
+			return false;
+		return true;
 	}
+	
+    public Habitacion clone() {
+        return new Habitacion(this.getIdHabitacion(),this.getNivel(),this.getDescripcion());
+    }
+	
 }

@@ -1,37 +1,24 @@
 package frsf.cidisi.exercise.tpia2016.search;
 
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.*;
 import frsf.cidisi.faia.agent.Agent;
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.environment.Environment;
 
 public class AgentePerception extends Perception {
 
-	//TODO: Setup Statics
     public static int UNKNOWN_PERCEPTION = -1;   
-	
-	
-	//TODO: Setup Sensors
-	private int existe_obstáculo;
-	private int hay_energía_eléctrica;
 	private int hay_bip_ascensor;
 	private int hay_bloqueo_escalera;
 	private int hay_bloqueo_pasillo;
-	private int energía_remanente_agente;
 	
  
 
     public  AgentePerception() {
-    	
-    	//TODO: Complete Method
-    	existe_obstáculo=UNKNOWN_PERCEPTION;
-    	hay_energía_eléctrica=UNKNOWN_PERCEPTION;
     	hay_bip_ascensor=UNKNOWN_PERCEPTION;
     	hay_bloqueo_escalera=UNKNOWN_PERCEPTION;
-    	hay_bloqueo_pasillo=UNKNOWN_PERCEPTION;
-    	energía_remanente_agente=UNKNOWN_PERCEPTION;
-    	
-    	
+    	hay_bloqueo_pasillo=UNKNOWN_PERCEPTION;	
     }
 
     public AgentePerception(Agent agent, Environment environment) {
@@ -43,67 +30,75 @@ public class AgentePerception extends Perception {
      */
     @Override
     public void initPerception(Agent agentIn, Environment environmentIn) {
-    	
-    	//TODO: Complete Method
         
-        Agente agent = (Agente) agentIn;
+       // Agente agent = (Agente) agentIn;
         Universidad environment = (Universidad) environmentIn;
         EstadoAmbiente environmentState =  environment.getEnvironmentState();
        
-        Habitacion h = environmentState.get_posicion_agente();
-        
-       // boolean hayObtaculo = 
-        
+        Habitacion h = environmentState.getPosicion_agente();
+    
+		if(h.getClass()==Pasillo.class){
+			Pasillo p=(Pasillo)h;
+			if(p.isBloqueado()){
+				hay_bloqueo_pasillo=1;
+			}
+			else{
+				hay_bloqueo_pasillo=0;
+			}
+		}
+		else{
+			if(h.getClass()==Ascensor.class){
+				Ascensor p=(Ascensor)h;
+				if(p.isPitido()){
+					hay_bip_ascensor=1;
+				} 
+				else{
+					hay_bip_ascensor=0;
+				}					
+			}
+			else{
+				if(h.getClass()==Escalera.class){
+					Escalera p=(Escalera)h;
+					if(p.isBloqueada()){
+						hay_bloqueo_escalera=1;
+					}
+					else{
+						hay_bloqueo_escalera=0;
+					}
+				}
+			}
+		}
+
     }
     
     @Override
-    public String toString() {
-        StringBuffer str = new StringBuffer();
+	public String toString() {
+		return "AgentePerception [hay_bip_ascensor="
+				+ hay_bip_ascensor + ", hay_bloqueo_escalera=" + hay_bloqueo_escalera + ", hay_bloqueo_pasillo="
+				+ hay_bloqueo_pasillo + "]";
+	}
 
-        //TODO: Complete Method
+	public int getHay_bip_ascensor() {
+		return hay_bip_ascensor;
+	}
 
-        return str.toString();
-    }
+	public void setHay_bip_ascensor(int hay_bip_ascensor) {
+		this.hay_bip_ascensor = hay_bip_ascensor;
+	}
 
-    // The following methods are agent-specific:
-    //TODO: Complete this section with the agent-specific methods
-	
-     public int getexiste_obstáculo(){
-        return existe_obstáculo;
-     }
-     public void setexiste_obstáculo(int arg){
-        this.existe_obstáculo = arg;
-     }
-     public int gethay_energía_eléctrica(){
-        return hay_energía_eléctrica;
-     }
-     public void sethay_energía_eléctrica(int arg){
-        this.hay_energía_eléctrica = arg;
-     }
-     public int gethay_bip_ascensor(){
-        return hay_bip_ascensor;
-     }
-     public void sethay_bip_ascensor(int arg){
-        this.hay_bip_ascensor = arg;
-     }
-     public int gethay_bloqueo_escalera(){
-        return hay_bloqueo_escalera;
-     }
-     public void sethay_bloqueo_escalera(int arg){
-        this.hay_bloqueo_escalera = arg;
-     }
-     public int gethay_bloqueo_pasillo(){
-        return hay_bloqueo_pasillo;
-     }
-     public void sethay_bloqueo_pasillo(int arg){
-        this.hay_bloqueo_pasillo = arg;
-     }
-     public int getenergía_remanente_agente(){
-        return energía_remanente_agente;
-     }
-     public void setenergía_remanente_agente(int arg){
-        this.energía_remanente_agente = arg;
-     }
-	
-   
+	public int getHay_bloqueo_escalera() {
+		return hay_bloqueo_escalera;
+	}
+
+	public void setHay_bloqueo_escalera(int hay_bloqueo_escalera) {
+		this.hay_bloqueo_escalera = hay_bloqueo_escalera;
+	}
+
+	public int getHay_bloqueo_pasillo() {
+		return hay_bloqueo_pasillo;
+	}
+
+	public void setHay_bloqueo_pasillo(int hay_bloqueo_pasillo) {
+		this.hay_bloqueo_pasillo = hay_bloqueo_pasillo;
+	}
 }

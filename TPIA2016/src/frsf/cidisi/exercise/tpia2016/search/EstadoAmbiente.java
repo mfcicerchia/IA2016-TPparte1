@@ -12,10 +12,10 @@ public class EstadoAmbiente extends EnvironmentState {
 	//TODO: Setup Variables
     private Edificio mapa_ambiente;
     private Habitacion posicion_agente;
-    private boolean energía_eléctrica;
-	
-    public EstadoAmbiente(Edificio mapa) {
-    	set_mapa_ambiente(mapa); 	
+    private boolean falla;
+
+	public EstadoAmbiente(Edificio mapa) {
+    	setMapa_ambiente(mapa); 	
         this.initState();
     }
 
@@ -23,10 +23,9 @@ public class EstadoAmbiente extends EnvironmentState {
      * This method is used to setup the initial real world.
      */
     
-    public void initState() {
-    	
+    public void initState() {	
     	posicion_agente.setIdHabitacion("ingreso1"); 
-    	
+    	falla=false;  	
     }
 
     /**
@@ -51,31 +50,33 @@ public class EstadoAmbiente extends EnvironmentState {
         str += "Posición del agente: ";
         str += posicion_agente.toString();
         
-        str += "Energía eléctrica: ";
-        str += energía_eléctrica;
+        str += "Falla: ";
+        str += falla;
         return str;
     }
 
-	//TODO: Complete this section with agent-specific methods
-    // The following methods are agent-specific:
-	
-     public Edificio get_mapa_ambiente(){
-        return mapa_ambiente;
-     }
-     public void set_mapa_ambiente(Edificio arg){
-        mapa_ambiente = arg;
-     }
-     public Habitacion get_posicion_agente(){
-        return posicion_agente;
-     }
-     public void set_posicion_agente(Habitacion arg){
-        posicion_agente = arg;
-     }
-     public boolean get_energía_eléctrica(){
-        return energía_eléctrica;
-     }
-     public void set_energía_eléctrica(boolean arg){
-        energía_eléctrica = arg;
-     }
+	public Edificio getMapa_ambiente() {
+		return mapa_ambiente;
+	}
+
+	public void setMapa_ambiente(Edificio mapa_ambiente) {
+		this.mapa_ambiente = mapa_ambiente;
+	}
+
+	public Habitacion getPosicion_agente() {
+		return posicion_agente;
+	}
+
+	public void setPosicion_agente(Habitacion posicion_agente) {
+		this.posicion_agente = posicion_agente;
+	}
+
+	public boolean isFalla() {
+		return falla;
+	}
+
+	public void setFalla(boolean falla) {
+		this.falla = falla;
+	}
 }
 

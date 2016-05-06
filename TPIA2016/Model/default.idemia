@@ -4,7 +4,6 @@
     <EnvironmentState name="EstadoAmbiente">
       <DataStructure name="mapa_ambiente" type="Other"/>
       <DataStructure name="posicion_agente" type="Other"/>
-      <DataStructure name="energía_eléctrica" type="boolean"/>
     </EnvironmentState>
   </Environment>
   <Agent name="Agente">
@@ -26,7 +25,6 @@
   <Actions execute_by="//@Agent" executed_on="//@Environment" name="IrPasillo"/>
   <Actions execute_by="//@Agent" executed_on="//@Environment" name="SubirNivel"/>
   <Actions execute_by="//@Agent" executed_on="//@Environment" name="BajarNivel"/>
-  <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="existe_obstáculo"/>
   <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="hay_energía_eléctrica"/>
   <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="hay_bip_ascensor"/>
   <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="hay_bloqueo_escalera"/>
