@@ -129,4 +129,37 @@ public class Edificio {
 		}
 		return null;
 	}
+	
+	public ArrayList<Habitacion> getHabitacionesAdyacentes(String identificador){
+	
+		ArrayList<Habitacion> adyacentes = new ArrayList<Habitacion>();
+		
+		ArrayList<String> idAdyacentes= new ArrayList<String>(); 
+		
+		for(int i=0; i<this.listaConexiones.size(); i++){
+			if(this.listaConexiones.get(i).getIdOrigen().equals(identificador)){
+					adyacentes.add(this.getHabitacionPorID(listaConexiones.get(i).getIdDestino()));
+			}
+		}
+		
+		for(int i=0; i<this.listaConexiones.size(); i++){
+			if(this.listaConexiones.get(i).getIdDestino().equals(identificador)){
+				adyacentes.add(this.getHabitacionPorID(listaConexiones.get(i).getIdOrigen()));
+			}
+		}
+
+		return adyacentes;
+	}
+
+	public int getCosto(Habitacion h1, Habitacion h2){
+		int costo=0;
+		
+		for(Conexion c: this.getListaConexiones()){
+			if(h1.getIdHabitacion().equals(c.getIdOrigen())&& h2.getIdHabitacion().equals(c.getIdDestino())
+					|| h1.getIdHabitacion().equals(c.getIdDestino())&& h2.getIdHabitacion().equals(c.getIdOrigen())){
+				costo=c.getDistancia();
+			}
+		}
+		return costo;
+	}
 }

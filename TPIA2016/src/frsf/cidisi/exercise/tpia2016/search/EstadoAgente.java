@@ -181,5 +181,6 @@ public class EstadoAgente extends SearchBasedAgentState {
         habitaciones_visitadas = arg;
     }
 	
+  
 }
 
