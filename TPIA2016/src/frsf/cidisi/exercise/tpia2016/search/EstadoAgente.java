@@ -3,6 +3,7 @@ package frsf.cidisi.exercise.tpia2016.search;
 import java.util.ArrayList;
 
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.*;
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
 
@@ -13,19 +14,17 @@ public class EstadoAgente extends SearchBasedAgentState {
     private Edificio mapa_ambiente;
     private int energía_agente;
     private Habitacion posicion;
-    private int costo_actual;
     private ArrayList<Habitacion> habitaciones_visitadas;
 	
     public EstadoAgente() {
 
     }
 
-    public EstadoAgente(Edificio mapa, int energía, Habitacion post, int cost, ArrayList<Habitacion> visitadas) {
+    public EstadoAgente(Edificio mapa, int energía, Habitacion post, ArrayList<Habitacion> visitadas) {
     	
 			 mapa_ambiente = mapa;
 			 energía_agente = energía;
 			 posicion = post;
-			 costo_actual = cost;
 			 habitaciones_visitadas = visitadas;
     }
     
@@ -58,10 +57,9 @@ public class EstadoAgente extends SearchBasedAgentState {
     	
     	int energia=this.getEnergía_agente();
     	Habitacion habitacion=this.getPosicion().clone();
-    	int costo=this.getCosto_actual();
     	ArrayList<Habitacion> visitadas= this.getHabitaciones_visitadas();
 		
-        return new EstadoAgente(new Edificio(habitaciones,conexiones),energia,habitacion,costo,visitadas);
+        return new EstadoAgente(new Edificio(habitaciones,conexiones),energia,habitacion,visitadas);
     }
     
     
@@ -84,23 +82,57 @@ public class EstadoAgente extends SearchBasedAgentState {
     	
     	if(hay_bip==1){
     		
+    		for(Habitacion i: this.mapa_ambiente.getHabitacionesPorID(this.getPosicion().getIdHabitacion())){
+    			Ascensor j = (Ascensor)i;
+    			j.setPitido(true);
+    		}
     	}
-    	else{
-
+    	if(hay_bloqueo_escalera==1){
+    		for(Habitacion i: this.mapa_ambiente.getHabitacionesPorID(this.getPosicion().getIdHabitacion())){
+    			Escalera j = (Escalera)i;
+    			j.setBloqueada(true);;
+    		}
+    	}
+    	if(hay_bloqueo_pasillo==1){	
+    		for(Habitacion i: this.mapa_ambiente.getHabitacionesPorID(this.getPosicion().getIdHabitacion())){
+    			Pasillo j = (Pasillo)i;
+    			j.setBloqueado(true);;
+    		}
     	}
     }
 
 
 
     /**
-     * This method returns the String representation of the agent state.
+     * String representation of the real world state.
      */
     @Override
     public String toString() {
         String str = "";
-
-        //TODO: Complete Method
-
+ 
+        str += "Habitaciones: {";
+        for(Habitacion h : mapa_ambiente.getListaHabitaciones())
+        	str+= h.toString() + ", ";
+        str = str.substring(0,str.length()-2);
+        str += "}\n";
+        
+        str += "Conexiones: {";
+        for(Conexion h : mapa_ambiente.getListaConexiones())
+        	str+= h.toString() + ", ";
+        str = str.substring(0,str.length()-2);
+        str += "}\n";
+        
+        str += "Visitadas: {";
+        for(Habitacion h : habitaciones_visitadas)
+        	str+= h.toString() + ", ";
+        str = str.substring(0,str.length()-2);
+        str += "}\n";
+        
+        str += "Posición del agente: ";
+        str += posicion.toString();
+        
+        str += "Energia: ";
+        str += energía_agente;
         return str;
     }
 
@@ -141,12 +173,6 @@ public class EstadoAgente extends SearchBasedAgentState {
      }
      public void setPosicion(Habitacion arg){
         posicion = arg;
-     }
-     public int getCosto_actual(){
-        return costo_actual;
-     }
-     public void setCosto_actual(int arg){
-        costo_actual = arg;
      }
      public ArrayList<Habitacion> getHabitaciones_visitadas(){
         return habitaciones_visitadas;
