@@ -13,19 +13,17 @@ public class EstadoAgente extends SearchBasedAgentState {
     private Edificio mapa_ambiente;
     private int energía_agente;
     private Habitacion posicion;
-    private int costo_actual;
     private ArrayList<Habitacion> habitaciones_visitadas;
 	
     public EstadoAgente() {
 
     }
 
-    public EstadoAgente(Edificio mapa, int energía, Habitacion post, int cost, ArrayList<Habitacion> visitadas) {
+    public EstadoAgente(Edificio mapa, int energía, Habitacion post, ArrayList<Habitacion> visitadas) {
     	
 			 mapa_ambiente = mapa;
 			 energía_agente = energía;
 			 posicion = post;
-			 costo_actual = cost;
 			 habitaciones_visitadas = visitadas;
     }
     
@@ -58,10 +56,9 @@ public class EstadoAgente extends SearchBasedAgentState {
     	
     	int energia=this.getEnergía_agente();
     	Habitacion habitacion=this.getPosicion().clone();
-    	int costo=this.getCosto_actual();
     	ArrayList<Habitacion> visitadas= this.getHabitaciones_visitadas();
 		
-        return new EstadoAgente(new Edificio(habitaciones,conexiones),energia,habitacion,costo,visitadas);
+        return new EstadoAgente(new Edificio(habitaciones,conexiones),energia,habitacion,visitadas);
     }
     
     
@@ -90,38 +87,57 @@ public class EstadoAgente extends SearchBasedAgentState {
     	}
     }
 
-
-
     /**
-     * This method returns the String representation of the agent state.
+     * String representation of the real world state.
      */
     @Override
     public String toString() {
         String str = "";
-
-        //TODO: Complete Method
-
+ 
+        str += "Habitaciones: {";
+        for(Habitacion h : mapa_ambiente.getListaHabitaciones())
+        	str+= h.toString() + ", ";
+        str = str.substring(0,str.length()-2);
+        str += "}\n";
+        
+        str += "Conexiones: {";
+        for(Conexion h : mapa_ambiente.getListaConexiones())
+        	str+= h.toString() + ", ";
+        str = str.substring(0,str.length()-2);
+        str += "}\n";
+        
+        str += "Habitaciones Visistadas: {";
+        for(Habitacion h : this.getHabitaciones_visitadas())
+        	str+= h.toString() + ", ";
+        str = str.substring(0,str.length()-2);
+        str += "}\n";
+        
+        str += "Posición del agente: ";
+        str += this.getPosicion().toString();
+        
+        str += "Energía: ";
+        str += this.getEnergía_agente();
         return str;
     }
-
-    /**
+	/**
      * This method is used in the search process to verify if the node already
      * exists in the actual search.
      */
     @Override
     public boolean equals(Object obj) {
        //TODO: Complete Method
-    	boolean equals=false;
     	EstadoAgente nuevoEstado = (EstadoAgente) obj;
-    	
     	Habitacion postActual = this.getPosicion();
     	Habitacion postNueva = nuevoEstado.getPosicion();
-    	
-    	if(postActual.equals(postNueva) && this.getEnergía_agente()==nuevoEstado.getEnergía_agente()){
-    		equals = true;
-    	}
+    	boolean mismaPosicion=postActual.equals(postNueva) ;
+    	boolean mismasHabitacionesVisitadas = true && nuevoEstado.getHabitaciones_visitadas().size()==this.getHabitaciones_visitadas().size();
 
-    	return equals;
+    	if(nuevoEstado.getHabitaciones_visitadas().size()==this.getHabitaciones_visitadas().size()){
+    		for(Habitacion i: nuevoEstado.getHabitaciones_visitadas()){
+        		mismasHabitacionesVisitadas = mismasHabitacionesVisitadas && this.getHabitaciones_visitadas().contains(i);
+        	}
+    	}
+    	return mismasHabitacionesVisitadas && mismaPosicion;
     }
    	
      public Edificio getMapa_ambiente(){
@@ -141,12 +157,6 @@ public class EstadoAgente extends SearchBasedAgentState {
      }
      public void setPosicion(Habitacion arg){
         posicion = arg;
-     }
-     public int getCosto_actual(){
-        return costo_actual;
-     }
-     public void setCosto_actual(int arg){
-        costo_actual = arg;
      }
      public ArrayList<Habitacion> getHabitaciones_visitadas(){
         return habitaciones_visitadas;
