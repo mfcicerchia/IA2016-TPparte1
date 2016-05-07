@@ -86,7 +86,7 @@ public class EstadoAgente extends SearchBasedAgentState {
     		
     	}
     	else{
-    		
+
     	}
     }
 
