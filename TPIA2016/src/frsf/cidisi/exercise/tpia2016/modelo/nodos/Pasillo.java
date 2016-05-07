@@ -3,6 +3,8 @@ package frsf.cidisi.exercise.tpia2016.modelo.nodos;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
 public class Pasillo extends Habitacion {
+
+
 	boolean bloqueado;
 	int posicion_bloqueada;
 
@@ -10,10 +12,18 @@ public class Pasillo extends Habitacion {
 		super();
 	}
 
-	public Pasillo(String id, int nivel,String desc, boolean bloqueado_,int post) {
-		super(id, nivel,desc);
-		bloqueado=bloqueado_;
-		posicion_bloqueada=post;
+	/**
+	 * @param id: identificador del Objeto Pasillo
+	 * @param nivel: identifica a que nivel pertenece
+	 * @param desc: es una descripcion del objeto (puede ser info del estado o general)
+	 * @param bloqueado_: 
+	 * @param post
+	 */
+	public Pasillo(String id, int nivel, String desc, boolean bloqueado,
+			int post) {
+		super(id, nivel, desc);
+		this.bloqueado = bloqueado;
+		posicion_bloqueada = post;
 	}
 
 	public boolean isBloqueado() {
@@ -34,7 +44,8 @@ public class Pasillo extends Habitacion {
 
 	@Override
 	public String toString() {
-		return super.toString() + "bloqueado=" + bloqueado + ", posicion_bloqueada=" + posicion_bloqueada + "]";
+		return super.toString() + "bloqueado=" + bloqueado
+				+ ", posicion_bloqueada=" + posicion_bloqueada + "]";
 	}
-	
+
 }

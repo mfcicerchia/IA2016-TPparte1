@@ -99,8 +99,10 @@ public class ConverterHabitaciones {
 			if(categoria.equals("Pasillo") || categoria.equals("pasillo")){
 				// Creo una instancia de Pasillo y lo agrego a la lista de Habitaciones
 				Habitacion pasillo = new Pasillo(listaDeDatos.get(i).get(1),
-											  Integer.parseInt(listaDeDatos.get(i).get(2)),
-									          listaDeDatos.get(i).get(3));
+											  	 Integer.parseInt(listaDeDatos.get(i).get(2)),
+											  	 listaDeDatos.get(i).get(3),
+											  	 Boolean.parseBoolean(listaDeDatos.get(i).get(4)),
+											  	 Integer.parseInt(listaDeDatos.get(i).get(5)));
 				//lo agrego a la lista de Habitaciones
 				listaDeHabitaciones.add(pasillo);
 			}
@@ -149,7 +151,7 @@ public class ConverterHabitaciones {
 				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
 				Habitacion escalera = new Escalera(listaDeDatos.get(i).get(1),
 						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
-						  						   listaDeDatos.get(i).get(3));
+						  						   listaDeDatos.get(i).get(3),Boolean.parseBoolean(listaDeDatos.get(i).get(4)));
 				listaDeHabitaciones.add(escalera);
 			}
 			
