@@ -17,26 +17,32 @@ public class EstadoAgente extends SearchBasedAgentState {
     private ArrayList<Habitacion> habitaciones_visitadas;
 	
     public EstadoAgente() {
-
+    	
     }
 
     public EstadoAgente(Edificio mapa, int energía, Habitacion post, ArrayList<Habitacion> visitadas) {
-    	
-			 mapa_ambiente = mapa;
-			 energía_agente = energía;
-			 posicion = post;
-			 habitaciones_visitadas = visitadas;
+    	initState(mapa, energía, post,  visitadas);
+			
     }
     
     /**
      * This method is optional, and sets the initial state of the agent.
      */
-    @Override
-    public void initState() {
-        
-	//TODO: Complete Method
+    public void initState(Edificio mapa, int energía, Habitacion post, ArrayList<Habitacion> visitadas) {
+    	 // TODO: LISTO
+    	
+    	 this.mapa_ambiente = mapa;
+		 this.energía_agente = energía;
+		 this.posicion = post;
+		 this.habitaciones_visitadas = visitadas;
 
     }
+    
+    @Override
+	public void initState() {
+
+		
+	}
 
     /**
      * This method clones the state of the agent. It's used in the search
@@ -180,7 +186,5 @@ public class EstadoAgente extends SearchBasedAgentState {
      public void setHabitaciones_visitadas(ArrayList<Habitacion> arg){
         habitaciones_visitadas = arg;
     }
-	
-  
 }
 

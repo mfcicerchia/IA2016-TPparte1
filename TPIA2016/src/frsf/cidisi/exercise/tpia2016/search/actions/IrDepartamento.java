@@ -19,7 +19,7 @@ public class IrDepartamento extends SearchAction {
     public SearchBasedAgentState execute(SearchBasedAgentState s) {
         EstadoAgente agState = (EstadoAgente) s;
         
-        // TODO: Use this conditions
+        // TODO: LISTO
       
     	// PREcondicion: 
 		// * Si el agente tiene alguna habitacion adyacente del tipo DEPARTAMENTO
