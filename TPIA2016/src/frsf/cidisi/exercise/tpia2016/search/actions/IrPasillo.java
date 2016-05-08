@@ -20,35 +20,42 @@ public class IrPasillo extends SearchAction {
 	public SearchBasedAgentState execute(SearchBasedAgentState s) {
 		EstadoAgente agState = (EstadoAgente) s;
 
-		// TODO: Use this conditions
-		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente()
-				.getHabitacionesAdyacentes(
-						agState.getPosicion().getIdHabitacion());
+		// TODO: LISTO
+		// PREcondicion: 
+		// * Si el agente tiene alguna habitacion adyacente del tipo Pasillo
+		// * Si el agente tiene energia suficiente para moverse a la siguiente habitacion
+		// * Si la habitacion a la que se va a mover NO fue visitada
+		// POScondicion
+		// * El agente cambia de posision a la habitacion del tipo Pasillo
+		// * Decrementa su energia segun la distancia asociada en el enlace
+		// * Retorna el estado actualizado
+		
+		
+		Habitacion posicionActual = agState.getPosicion();
+		int energiaDisponible = agState.getEnergía_agente();
+		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
 
-		// PreConditions:
+
 		for (Habitacion h : adyacentes) {
-			if ((h.getClass().getSimpleName().equals("Pasillo"))
-					&& !(agState.getHabitaciones_visitadas().contains(h))
-					&& (agState.getEnergía_agente()
-							- agState.getMapa_ambiente().getCosto(
-									agState.getPosicion(), h) > 0)) {
-
-				Pasillo pas = (Pasillo) h;
-				if (pas.isBloqueado()) {
+			if ((h.getClass().getSimpleName().equals(posicionActual.getClass().getSimpleName())) &&
+			   !(agState.getHabitaciones_visitadas().contains(h))&&
+			   (energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), h) > 0)) {
+				
+				Pasillo pasillo = (Pasillo) h;
+				if (pasillo.isBloqueado()) {
 					break;
 				} else {
-
-					// PostConditions:
-					agState.setPosicion(h);
-					agState.setEnergía_agente(agState.getEnergía_agente()
-							- agState.getMapa_ambiente().getCosto(
-									agState.getPosicion(), h));
-					agState.getHabitaciones_visitadas().add(h);
-
+					// decremento la energia
+					agState.setEnergía_agente(energiaDisponible- agState.getMapa_ambiente().getCosto(agState.getPosicion(), pasillo));
+					// me muevo a la siguiente habitacion
+					agState.setPosicion(pasillo);
+					// agrego la habitacion que visité
+					agState.getHabitaciones_visitadas().add(pasillo);
+					// retorno el estado actualizado
+					return agState;
 				}
 			}
 		}
-
 		return null;
 	}
 
