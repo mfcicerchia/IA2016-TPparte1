@@ -37,7 +37,7 @@ public class IrAula extends SearchAction {
 		
 
 		for (Habitacion h : adyacentes) {
-			if ((h.getClass().getSimpleName().equals(posicionActual.getClass().getSimpleName())) &&
+			if ((h.getClass().getSimpleName().equals("Aula")) &&
 			   !(agState.getHabitaciones_visitadas().contains(h)) &&
 			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 					//decremento la energia 

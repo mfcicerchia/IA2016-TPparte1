@@ -1,5 +1,10 @@
 package frsf.cidisi.exercise.tpia2016.search.actions;
 
+import java.util.ArrayList;
+
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Ascensor;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Pasillo;
 import frsf.cidisi.exercise.tpia2016.search.*;
 import frsf.cidisi.faia.agent.search.SearchAction;
 import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
@@ -16,9 +21,42 @@ public class IrAscensor extends SearchAction {
     public SearchBasedAgentState execute(SearchBasedAgentState s) {
         EstadoAgente agState = (EstadoAgente) s;
         
-        // TODO: Use this conditions
-        // PreConditions: null
-        // PostConditions: null
+        // TODO: LISTO
+        
+    	// PREcondicion: 
+		// * Si el agente tiene alguna habitacion adyacente del tipo ASCENSOR
+        // * Si el ascensor no tiene pitido
+		// * Si el agente tiene energia suficiente para moverse
+		// POScondicion
+		// * El agente cambia de posicion, se mueve a la habitacion ASCENSOR
+		// * Decrementa su energia segun el costo de moverse al ascensor
+		// * Retorna el estado actualizado
+		
+	
+		Habitacion posicionActual = agState.getPosicion();
+		int energiaDisponible = agState.getEnergía_agente();
+		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
+		
+
+		for (Habitacion h : adyacentes) {
+			if ((h.getClass().getSimpleName().equals("Ascensor")) &&
+			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual,h) > 0)){
+				
+				Ascensor ascensor = (Ascensor) h;
+				if (ascensor.isPitido()) {
+					return null;
+				} else {
+					//decremento la energia 
+					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
+					// me muevo a la siguiente habitacion
+					agState.setPosicion(h);
+					// agrego la habitacion que visité
+					agState.getHabitaciones_visitadas().add(h);
+					// retorno el estado actualizado
+					return agState;
+				}
+			}
+		}
         
         return null;
     }

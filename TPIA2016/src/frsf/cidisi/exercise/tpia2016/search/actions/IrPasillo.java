@@ -21,10 +21,10 @@ public class IrPasillo extends SearchAction {
 		EstadoAgente agState = (EstadoAgente) s;
 
 		// TODO: LISTO
+		
 		// PREcondicion: 
 		// * Si el agente tiene alguna habitacion adyacente del tipo Pasillo
 		// * Si el agente tiene energia suficiente para moverse a la siguiente habitacion
-		// * Si la habitacion a la que se va a mover NO fue visitada
 		// POScondicion
 		// * El agente cambia de posision a la habitacion del tipo Pasillo
 		// * Decrementa su energia segun la distancia asociada en el enlace
@@ -37,8 +37,7 @@ public class IrPasillo extends SearchAction {
 
 
 		for (Habitacion h : adyacentes) {
-			if ((h.getClass().getSimpleName().equals(posicionActual.getClass().getSimpleName())) &&
-			   !(agState.getHabitaciones_visitadas().contains(h))&&
+			if ((h.getClass().getSimpleName().equals("Pasillo")) &&
 			   (energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), h) > 0)) {
 				
 				Pasillo pasillo = (Pasillo) h;

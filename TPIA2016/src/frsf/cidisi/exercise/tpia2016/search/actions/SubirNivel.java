@@ -20,38 +20,43 @@ public class SubirNivel extends SearchAction {
         EstadoAgente agState = (EstadoAgente) s;
         
         // TODO: LISTO
+        
     	// PREcondicion: 
-		// * Si el agente tiene alguna habitacion adyacente del tipo Escalera
-        // * Si esa habitacion escalera se encuentra en un nivel SUPERIOR al actual
-		// * Si el agente tiene energia suficiente bajar el nivel
-		// * Si la habitacion Escalera a la que se va a mover NO fue visitada
+		// * Si el agente tiene alguna habitacion adyacente del tipo ESCALERA
+        // 		* Si esa habitacion escalera se encuentra en un nivel SUPERIOR al actual
+		// 		* Si el agente tiene energia suficiente bajar el nivel
+		// 		* Si la habitacion Escalera a la que se va a mover NO fue visitada
+        
+        // * Si el agente tiene alguna habitacion adyacente del tipo ASCENSOR
+        //		* Si ese nodo Ascensor esta en un nivel superior
+        //		* Si el agente tiene energia para moverse para subir X niveles (o podriamos considerar que no tiene costo
+        //			ya que el agente no gasta energia mientras baja el/los niveles por el ascensor)
 		// POScondicion
-		// * El agente cambia de posicion, se mueve un nivel hacia ARRIBA en la misma escalera
-		// * Decrementa su energia segun el costo de SUBIR ese nivel
-		// * Retorna el estado actualizado
+        // * De moverse por la escalera
+		// 		* El agente cambia de posicion, se mueve un nivel hacia ARRIBA en la misma escalera
+		// 		* Decrementa su energia segun el costo de SUBIR ese nivel
+		// 		* Retorna el estado actualizado
+        // * De moverse por el ascensor
+        // 		* El agente cambia de posicion, se mueve por el ascensor a un nodo de nivel superior
+        //		* Decrementa su energia segun el costo de SUBIR el/los nivels
+        //		* Retorna el estado actualizado
 		
-		int nivelActual = agState.getPosicion().getNivel();
+		
 		Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
 		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(agState.getPosicion().getIdHabitacion());
 		
 
-		for (Habitacion h : adyacentes) {
-			if ((h.getClass().getSimpleName().equals(posicionActual.getClass().getSimpleName())) &&
-			   (h.getNivel()>nivelActual) &&
-			   !(agState.getHabitaciones_visitadas().contains(h)) &&
-			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
-					//decremento la energia 
-					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
-					// me muevo a la siguiente habitacion
-					agState.setPosicion(h);
-					// agrego la habitacion que visité
-					agState.getHabitaciones_visitadas().add(h);
-					// retorno el estado actualizado
-					return agState;
-			}
+		
+		if(posicionActual.getClass().getSimpleName().equals("Escalera")){
+			subirPorEscalera(posicionActual, adyacentes, energiaDisponible, agState);
 		}
-        return null;
+		
+		if(posicionActual.getClass().getSimpleName().equals("Ascensor")){
+			subirPorAscensor(posicionActual, adyacentes, energiaDisponible, agState);
+		}
+		
+		return null;
     }
 
     /**
@@ -92,5 +97,59 @@ public class SubirNivel extends SearchAction {
     @Override
     public String toString() {
         return "SubirNivel";
+    }
+    
+    
+    
+    
+    /**
+     * @param posicionActual
+     * @param adyacentes
+     * @param energiaDisponible
+     * @param agState
+     * @return agState; si actualiza el estado
+     * 		   null; si no se puede expandir
+     */
+    private EstadoAgente subirPorEscalera(Habitacion posicionActual, ArrayList<Habitacion> adyacentes, int energiaDisponible, EstadoAgente agState){
+    	for (Habitacion h : adyacentes) {
+			if ((h.getClass().getSimpleName().equals(posicionActual.getClass().getSimpleName())) &&
+			   (h.getNivel()>posicionActual.getNivel()) &&
+			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
+					//decremento la energia 
+					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
+					// me muevo a la siguiente habitacion
+					agState.setPosicion(h);
+					// agrego la habitacion que visité
+					agState.getHabitaciones_visitadas().add(h);
+					// retorno el estado actualizado
+					return agState;
+			}
+		}
+    	return null;
+    }
+    
+    /**
+     * @param posicionActual
+     * @param adyacentes
+     * @param energiaDisponible
+     * @param agState
+     * @return agState; si actualiza el estado
+     * 		   null; si no se puede expandir
+     */
+    private EstadoAgente subirPorAscensor(Habitacion posicionActual, ArrayList<Habitacion> adyacentes, int energiaDisponible, EstadoAgente agState){
+    	for (Habitacion h : adyacentes) {
+			if ((h.getNivel()>posicionActual.getNivel()) &&
+			   (energiaDisponible-agState.getMapa_ambiente().getCosto(agState.getPosicion(), h) > 0)){
+					//decremento la energia 
+					agState.setEnergía_agente(energiaDisponible- agState.getMapa_ambiente().getCosto(agState.getPosicion(), h));
+					// me muevo a la siguiente habitacion
+					agState.setPosicion(h);
+					// agrego la habitacion que visité
+					agState.getHabitaciones_visitadas().add(h);
+					// retorno el estado actualizado
+					return agState;
+			}
+		}
+    	return null;
     }
 }

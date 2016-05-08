@@ -1,5 +1,8 @@
 package frsf.cidisi.exercise.tpia2016.search.actions;
 
+import java.util.ArrayList;
+
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 import frsf.cidisi.exercise.tpia2016.search.*;
 import frsf.cidisi.faia.agent.search.SearchAction;
 import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
@@ -17,8 +20,36 @@ public class IrDepartamento extends SearchAction {
         EstadoAgente agState = (EstadoAgente) s;
         
         // TODO: Use this conditions
-        // PreConditions: null
-        // PostConditions: null
+      
+    	// PREcondicion: 
+		// * Si el agente tiene alguna habitacion adyacente del tipo DEPARTAMENTO
+		// * Si el agente tiene energia suficiente para moverse
+		// * Si la habitacion DEPARTAMENTO a la que se va a mover NO fue visitada
+		// POScondicion
+		// * El agente cambia de posicion, se mueve a la habitacion DEPARTAMENTO
+		// * Decrementa su energia segun el costo de moverse a ese DEPARTAMENTO
+		// * Retorna el estado actualizado
+		
+	
+		Habitacion posicionActual = agState.getPosicion();
+		int energiaDisponible = agState.getEnergía_agente();
+		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
+		
+
+		for (Habitacion h : adyacentes) {
+			if ((h.getClass().getSimpleName().equals("Departamento")) &&
+			   !(agState.getHabitaciones_visitadas().contains(h)) &&
+			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
+					//decremento la energia 
+					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
+					// me muevo a la siguiente habitacion
+					agState.setPosicion(h);
+					// agrego la habitacion que visité
+					agState.getHabitaciones_visitadas().add(h);
+					// retorno el estado actualizado
+					return agState;
+			}
+		}
         
         return null;
     }
