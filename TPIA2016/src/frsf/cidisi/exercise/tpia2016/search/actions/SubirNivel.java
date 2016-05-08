@@ -26,12 +26,13 @@ public class SubirNivel extends SearchAction {
 		// * Si el agente tiene energia suficiente bajar el nivel
 		// * Si la habitacion Escalera a la que se va a mover NO fue visitada
 		// POScondicion
+		// * El agente cambia de posicion, se mueve un nivel hacia ARRIBA en la misma escalera
 		// * Decrementa su energia segun el costo de SUBIR ese nivel
 		// * Retorna el estado actualizado
 		
 		int nivelActual = agState.getPosicion().getNivel();
 		Habitacion posicionActual = agState.getPosicion();
-		int energiaDisponible = agState.getEnergï¿½a_agente();
+		int energiaDisponible = agState.getEnergía_agente();
 		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(agState.getPosicion().getIdHabitacion());
 		
 
@@ -41,10 +42,10 @@ public class SubirNivel extends SearchAction {
 			   !(agState.getHabitaciones_visitadas().contains(h)) &&
 			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 					//decremento la energia 
-					agState.setEnergï¿½a_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
+					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
 					// me muevo a la siguiente habitacion
 					agState.setPosicion(h);
-					// agrego la habitacion que visitï¿½
+					// agrego la habitacion que visité
 					agState.getHabitaciones_visitadas().add(h);
 					// retorno el estado actualizado
 					return agState;
