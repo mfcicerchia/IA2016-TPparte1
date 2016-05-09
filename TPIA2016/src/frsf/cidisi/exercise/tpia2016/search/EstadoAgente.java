@@ -15,8 +15,11 @@ public class EstadoAgente extends SearchBasedAgentState {
     private int energía_agente;
     private Habitacion posicion;
     private ArrayList<Habitacion> habitaciones_visitadas;
-	
-    public EstadoAgente() {
+    private Habitacion posicionObjetivo;
+
+    
+
+	public EstadoAgente() {
     	
     }
 
@@ -186,5 +189,13 @@ public class EstadoAgente extends SearchBasedAgentState {
      public void setHabitaciones_visitadas(ArrayList<Habitacion> arg){
         habitaciones_visitadas = arg;
     }
+ 	
+     public Habitacion getPosicionObjetivo() {
+ 		return posicionObjetivo;
+ 	}
+
+ 	public void setPosicionObjetivo(Habitacion posicionObjetivo) {
+ 		this.posicionObjetivo = posicionObjetivo;
+ 	}
 }
 
