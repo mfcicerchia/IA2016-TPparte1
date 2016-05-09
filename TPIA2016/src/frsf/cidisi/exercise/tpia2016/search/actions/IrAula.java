@@ -86,7 +86,7 @@ public class IrAula extends SearchAction {
 		}
         
 		// Si se puede mover informo el cambio de posicion en el ambiente.
-        if (seMueve==true) {
+        if (seMueve) {
             // Update the real world
         	// actualizo la posicion del agente en el Ambiente
         	environmentState.setPosicion_agente(agState.getPosicion());
