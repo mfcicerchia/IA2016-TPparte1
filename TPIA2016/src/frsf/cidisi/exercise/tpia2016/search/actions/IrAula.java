@@ -62,15 +62,34 @@ public class IrAula extends SearchAction {
         EstadoAmbiente environmentState = (EstadoAmbiente) est;
         EstadoAgente agState = ((EstadoAgente) ast);
 
-        // TODO: Use this conditions
-        // PreConditions: null
-        // PostConditions: null
+        // TODO: LISTO...
         
-        if (true) {
+        Habitacion posicionActual = agState.getPosicion();
+		int energiaDisponible = agState.getEnergía_agente();
+		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
+		boolean seMueve=false;
+
+		for (Habitacion h : adyacentes) {
+			if ((h.getClass().getSimpleName().equals("Aula")) &&
+			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
+					// Update the agent state
+					//decremento la energia en el mundo real
+					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
+					// me muevo a la siguiente habitacion en el mundo real
+					agState.setPosicion(h);
+					// agrego la habitacion que visité 
+					agState.getHabitaciones_visitadas().add(h);
+					// aviso que puedo moverme en el mundo real para actualizar la posicion
+					// del agente en el ambiente
+					seMueve=true;
+			}
+		}
+        
+		// Si se puede mover informo el cambio de posicion en el ambiente.
+        if (seMueve==true) {
             // Update the real world
-            
-            // Update the agent state
-            
+        	// actualizo la posicion del agente en el Ambiente
+        	environmentState.setPosicion_agente(agState.getPosicion());
             return environmentState;
         }
 
