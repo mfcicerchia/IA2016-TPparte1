@@ -13,8 +13,8 @@
       <DataStructure name="mapa_ambiente" type="Other"/>
       <DataStructure name="energía_agente"/>
       <DataStructure name="posicion" type="Other"/>
-      <DataStructure name="costo_actual"/>
       <DataStructure name="habitaciones_visitadas" type="Other"/>
+      <DataStructure name="objetivo_agente"/>
     </AgentState>
   </Agent>
   <Actions execute_by="//@Agent" executed_on="//@Environment" name="IrAula"/>

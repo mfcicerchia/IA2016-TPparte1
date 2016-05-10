@@ -2,6 +2,7 @@ package frsf.cidisi.exercise.tpia2016.search;
 
 import frsf.cidisi.faia.agent.Action;
 import frsf.cidisi.faia.environment.Environment;
+import frsf.cidisi.faia.state.AgentState;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.Ascensor;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
@@ -73,20 +74,13 @@ public class Universidad extends Environment {
     }
 
     
-    public boolean agentFailed(Action actionReturned) {
-    	boolean falla=false;
-        EstadoAmbiente envState = this.getEnvironmentState();
-
+    public boolean agentFailed(AgentState state) {
         // TODO: Complete Method     
-        
-        if(envState.isFalla()){
+    	boolean falla=false;
+    	EstadoAgente p =(EstadoAgente) state;
+        if(p.getEnergía_agente()>0){
         	falla=true;
         }
         return falla;
-    }
-
-	//TODO: Complete this section with agent-specific methods
-    // The following methods are agent-specific:
-    
-    
+    }    
 }

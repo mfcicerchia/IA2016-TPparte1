@@ -12,7 +12,7 @@ public class EstadoAmbiente extends EnvironmentState {
 	//TODO: Setup Variables
     private Edificio mapa_ambiente;
     private Habitacion posicion_agente;
-    private boolean falla;
+
 
 	public EstadoAmbiente(Edificio mapa) {
     	setMapa_ambiente(mapa); 	
@@ -24,8 +24,7 @@ public class EstadoAmbiente extends EnvironmentState {
      */
     
     public void initState() {	
-    	posicion_agente.setIdHabitacion("ingreso1"); 
-    	falla=false;  	
+    	posicion_agente.setIdHabitacion("ingreso1"); 	
     }
 
     /**
@@ -50,8 +49,6 @@ public class EstadoAmbiente extends EnvironmentState {
         str += "Posición del agente: ";
         str += posicion_agente.toString();
         
-        str += "Falla: ";
-        str += falla;
         return str;
     }
 
@@ -69,14 +66,6 @@ public class EstadoAmbiente extends EnvironmentState {
 
 	public void setPosicion_agente(Habitacion posicion_agente) {
 		this.posicion_agente = posicion_agente;
-	}
-
-	public boolean isFalla() {
-		return falla;
-	}
-
-	public void setFalla(boolean falla) {
-		this.falla = falla;
 	}
 }
 

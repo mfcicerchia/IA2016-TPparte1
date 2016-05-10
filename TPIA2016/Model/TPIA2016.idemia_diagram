@@ -43,23 +43,23 @@
             <element xmi:type="idemia:DataStructure" href="default.idemia#//@Agent/@AgentState/@DataStructure.2"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ab29kgTQEeatnffW5Fz3SQ"/>
           </children>
-          <children xmi:type="notation:Shape" xmi:id="_hrkFgATQEeatnffW5Fz3SQ" type="3002" fontName="Segoe UI">
-            <children xmi:type="notation:DecorationNode" xmi:id="_hrkskATQEeatnffW5Fz3SQ" type="5001"/>
-            <children xmi:type="notation:DecorationNode" xmi:id="_hrkskQTQEeatnffW5Fz3SQ" type="5002">
-              <styles xmi:type="notation:DescriptionStyle" xmi:id="_hrkskgTQEeatnffW5Fz3SQ"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_hrkskwTQEeatnffW5Fz3SQ" type="5003"/>
-            <element xmi:type="idemia:DataStructure" href="default.idemia#//@Agent/@AgentState/@DataStructure.3"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hrkFgQTQEeatnffW5Fz3SQ"/>
-          </children>
           <children xmi:type="notation:Shape" xmi:id="_o0AH0ATQEeatnffW5Fz3SQ" type="3002" fontName="Segoe UI">
             <children xmi:type="notation:DecorationNode" xmi:id="_o0Au4ATQEeatnffW5Fz3SQ" type="5001"/>
             <children xmi:type="notation:DecorationNode" xmi:id="_o0Au4QTQEeatnffW5Fz3SQ" type="5002">
               <styles xmi:type="notation:DescriptionStyle" xmi:id="_o0Au4gTQEeatnffW5Fz3SQ"/>
             </children>
             <children xmi:type="notation:DecorationNode" xmi:id="_o0Au4wTQEeatnffW5Fz3SQ" type="5003"/>
-            <element xmi:type="idemia:DataStructure" href="default.idemia#//@Agent/@AgentState/@DataStructure.4"/>
+            <element xmi:type="idemia:DataStructure" href="default.idemia#//@Agent/@AgentState/@DataStructure.3"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o0AH0QTQEeatnffW5Fz3SQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_s4pZgRVZEeaBr67yEv6NUw" type="3002" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_s4qnoBVZEeaBr67yEv6NUw" type="5001"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_s4rOsBVZEeaBr67yEv6NUw" type="5002">
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_s4rOsRVZEeaBr67yEv6NUw"/>
+            </children>
+            <children xmi:type="notation:DecorationNode" xmi:id="_s4rOshVZEeaBr67yEv6NUw" type="5003"/>
+            <element xmi:type="idemia:DataStructure" href="default.idemia#//@Agent/@AgentState/@DataStructure.4"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s4qAkBVZEeaBr67yEv6NUw"/>
           </children>
           <styles xmi:type="notation:SortingStyle" xmi:id="_xicTofajEeWcp_3GTnbW8Q"/>
           <styles xmi:type="notation:FilteringStyle" xmi:id="_xicTovajEeWcp_3GTnbW8Q"/>
