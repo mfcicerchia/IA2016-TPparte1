@@ -14,6 +14,7 @@ public class EstadoAgente extends SearchBasedAgentState {
     private Edificio mapa_ambiente;
     private int energía_agente;
     private Habitacion posicion;
+    private Habitacion destino;
     private ArrayList<Habitacion> habitaciones_visitadas;
     private Habitacion posicionObjetivo;
 
@@ -23,21 +24,26 @@ public class EstadoAgente extends SearchBasedAgentState {
     	
     }
 
-    public EstadoAgente(Edificio mapa, int energía, Habitacion post, ArrayList<Habitacion> visitadas) {
-    	initState(mapa, energía, post,  visitadas);
+    public EstadoAgente(Edificio mapa, int energía, Habitacion post,Habitacion destino) {
+    	initState(mapa, energía, post,destino);
 			
+    }
+    
+    public EstadoAgente(Edificio mapa, int energía, Habitacion post,Habitacion destino, ArrayList<Habitacion> visitadas) {
+    	initState(mapa, energía, post,destino);
+		habitaciones_visitadas=visitadas;
     }
     
     /**
      * This method is optional, and sets the initial state of the agent.
      */
-    public void initState(Edificio mapa, int energía, Habitacion post, ArrayList<Habitacion> visitadas) {
+    public void initState(Edificio mapa, int energía, Habitacion post,Habitacion dest) {
     	 // TODO: LISTO
     	
     	 this.mapa_ambiente = mapa;
 		 this.energía_agente = energía;
 		 this.posicion = post;
-		 this.habitaciones_visitadas = visitadas;
+		 this.destino=dest;
 
     }
     
@@ -66,21 +72,30 @@ public class EstadoAgente extends SearchBasedAgentState {
     	
     	int energia=this.getEnergía_agente();
     	Habitacion habitacion=this.getPosicion().clone();
+    	Habitacion destino=this.getDestino().clone();
     	ArrayList<Habitacion> visitadas= this.getHabitaciones_visitadas();
 		
-        return new EstadoAgente(new Edificio(habitaciones,conexiones),energia,habitacion,visitadas);
+        return new EstadoAgente(new Edificio(habitaciones,conexiones),energia,habitacion,destino,visitadas);
     }
     
     
 
-    /**
+    public Habitacion getDestino() {
+		return destino;
+	}
+
+	public void setDestino(Habitacion destino) {
+		this.destino = destino;
+	}
+
+	/**
      * This method is used to update the Agent State when a Perception is
      * received by the Simulator.
      */
     @Override
     public void updateState(Perception p) {
      
-        //TODO: Complete Method
+        //TODO: Listo
     	
     	AgentePerception perception=(AgentePerception)p;
     	Habitacion posicionActual= this.getPosicion();
@@ -145,25 +160,54 @@ public class EstadoAgente extends SearchBasedAgentState {
         return str;
     }
 
-    /**
-     * This method is used in the search process to verify if the node already
-     * exists in the actual search.
-     */
-    @Override
-    public boolean equals(Object obj) {
-       //TODO: Complete Method
-    	boolean equals=false;
-    	EstadoAgente nuevoEstado = (EstadoAgente) obj;
-    	
-    	Habitacion postActual = this.getPosicion();
-    	Habitacion postNueva = nuevoEstado.getPosicion();
-    	
-    	if(postActual.equals(postNueva) && this.getEnergía_agente()==nuevoEstado.getEnergía_agente()){
-    		equals = true;
-    	}
 
-    	return equals;
-    }
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		EstadoAgente other = (EstadoAgente) obj;
+		if (energía_agente != other.energía_agente)
+			return false;
+		if (habitaciones_visitadas == null) {
+			if (other.habitaciones_visitadas != null)
+				return false;
+		} 
+		else if (!habitaciones_visitadas.equals(other.habitaciones_visitadas))
+			return false;
+		if (mapa_ambiente == null) {
+			if (other.mapa_ambiente != null)
+				return false;
+		} 
+		else{ 
+			if (!mapa_ambiente.equals(other.mapa_ambiente)){
+				return false;
+			}
+			else{
+				if(mapa_ambiente.getListaHabitaciones().size()==other.getMapa_ambiente().getListaHabitaciones().size()){
+					
+					for(Habitacion i: mapa_ambiente.getListaHabitaciones()){
+						
+					}
+				}
+				else{
+					return false;
+				}
+			}			
+		}
+		if (posicion == null) {
+			if (other.posicion != null)
+				return false;
+		} 
+		else if (!posicion.equals(other.posicion))
+			return false;
+		return true;
+	}
+    
+    
    	
      public Edificio getMapa_ambiente(){
         return mapa_ambiente;

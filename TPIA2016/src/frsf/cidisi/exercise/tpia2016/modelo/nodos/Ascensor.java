@@ -3,18 +3,18 @@ package frsf.cidisi.exercise.tpia2016.modelo.nodos;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
 public class Ascensor extends Habitacion{
-
+	boolean pitido;
+	
 	public Ascensor() {
 		super();
 	}
-	boolean pitido;
 	
 	/**
 	 * @param pitido
 	 */
-	public Ascensor(String id, int nivel, String desc) {
+	public Ascensor(String id, int nivel, String desc, boolean pitido) {
 		super(id, nivel, desc);
-		//this.setPitido(pitido);
+		this.setPitido(pitido);
 	}
 	/**
 	 * @param pitido
@@ -30,6 +30,35 @@ public class Ascensor extends Habitacion{
 	@Override
 	public String toString() {
 		return super.toString() + "pitido=" + pitido;
+	}
+	
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Ascensor other = (Ascensor) obj;
+		if (this.getDescripcion() == null) {
+			if (other.getDescripcion() != null)
+				return false;
+		} else if (!this.getDescripcion().equals(other.getDescripcion()))
+			return false;
+		if (this.getIdHabitacion() == null) {
+			if (other.getIdHabitacion() != null)
+				return false;
+		} else if (!this.getIdHabitacion().equals(other.getIdHabitacion()))
+			return false;
+		if (this.getNivel() != other.getNivel())
+			return false;
+		if (pitido != other.pitido)
+			return false;
+		return true;
+	}
+	
+	public Ascensor clone(){
+		return new Ascensor(this.getIdHabitacion(),this.getNivel(), this.getDescripcion(), this.isPitido());
 	}
 	
 }

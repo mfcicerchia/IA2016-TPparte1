@@ -100,7 +100,7 @@ public class ConverterHabitaciones {
 				// Creo una instancia de Pasillo y lo agrego a la lista de Habitaciones
 				Habitacion pasillo = new Pasillo(listaDeDatos.get(i).get(1),
 											  Integer.parseInt(listaDeDatos.get(i).get(2)),
-									          listaDeDatos.get(i).get(3),false,-1);
+									          listaDeDatos.get(i).get(3),false);
 				//lo agrego a la lista de Habitaciones
 				listaDeHabitaciones.add(pasillo);
 			}
@@ -109,7 +109,7 @@ public class ConverterHabitaciones {
 				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
 				Habitacion ascensor = new Ascensor(listaDeDatos.get(i).get(1),
 						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
-						  						   listaDeDatos.get(i).get(3));
+						  						   listaDeDatos.get(i).get(3),false);
 				listaDeHabitaciones.add(ascensor);
 				
 			}

@@ -51,6 +51,29 @@ public class EstadoAmbiente extends EnvironmentState {
         
         return str;
     }
+ 
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		EstadoAmbiente other = (EstadoAmbiente) obj;
+		if (mapa_ambiente == null) {
+			if (other.mapa_ambiente != null)
+				return false;
+		} else if (!mapa_ambiente.equals(other.mapa_ambiente))
+			return false;
+		if (posicion_agente == null) {
+			if (other.posicion_agente != null)
+				return false;
+		} else if (!posicion_agente.equals(other.posicion_agente))
+			return false;
+		return true;
+	}
 
 	public Edificio getMapa_ambiente() {
 		return mapa_ambiente;

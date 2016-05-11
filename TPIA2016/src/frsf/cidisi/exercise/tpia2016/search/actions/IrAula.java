@@ -10,6 +10,13 @@ import frsf.cidisi.faia.state.AgentState;
 import frsf.cidisi.faia.state.EnvironmentState;
 
 public class IrAula extends SearchAction {
+	
+	
+	
+	String idAula;
+	public IrAula(String idAula){
+		this.idAula = idAula;
+	}
 
     /**
      * This method updates a tree node state when the search process is running.
@@ -34,10 +41,10 @@ public class IrAula extends SearchAction {
 		Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
 		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
-		
-
+			
 		for (Habitacion h : adyacentes) {
 			if ((h.getClass().getSimpleName().equals("Aula")) &&
+				(h.getIdHabitacion().equals(idAula)) &&				
 			   !(agState.getHabitaciones_visitadas().contains(h)) &&
 			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 					//decremento la energia 
@@ -71,6 +78,7 @@ public class IrAula extends SearchAction {
 
 		for (Habitacion h : adyacentes) {
 			if ((h.getClass().getSimpleName().equals("Aula")) &&
+				(h.getIdHabitacion().equals(idAula)) &&	
 			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 					// Update the agent state
 					//decremento la energia en el mundo real

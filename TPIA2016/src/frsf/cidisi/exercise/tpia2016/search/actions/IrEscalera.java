@@ -13,6 +13,11 @@ import frsf.cidisi.faia.state.EnvironmentState;
 
 public class IrEscalera extends SearchAction {
 
+	
+	String idEscalera;
+	public IrEscalera(String idEscalera){
+		this.idEscalera = idEscalera;
+	}
     /**
      * This method updates a tree node state when the search process is running.
      * It does not updates the real world state.

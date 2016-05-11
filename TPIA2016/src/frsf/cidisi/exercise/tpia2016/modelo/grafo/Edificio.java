@@ -2,6 +2,8 @@ package frsf.cidisi.exercise.tpia2016.modelo.grafo;
 
 import java.util.ArrayList;
 
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.*;
+
 /**
  * @author martin Clase: Edificio Descripcion: esta clase define la estructura
  *         de datos necesaria para representarel grafo que utilizado para
@@ -161,5 +163,29 @@ public class Edificio {
 			}
 		}
 		return costo;
+	}
+	
+	public ArrayList<Aula> getAulas(){
+		ArrayList<Aula> aulas = new ArrayList<Aula>();
+		
+		for(Habitacion h: this.getListaHabitaciones()){
+			if(h.getClass().getSimpleName().equals("Aula")){
+				aulas.add((Aula) h);
+			}
+		}
+		
+		return aulas;
+	}
+	
+	public ArrayList<Pasillo> getPaillos(){
+		ArrayList<Pasillo> pasillos = new ArrayList<Pasillo>();
+		
+		for(Habitacion h: this.getListaHabitaciones()){
+			if(h.getClass().getSimpleName().equals("Aula")){
+				pasillos.add((Pasillo) h);
+			}
+		}
+		
+		return pasillos;
 	}
 }

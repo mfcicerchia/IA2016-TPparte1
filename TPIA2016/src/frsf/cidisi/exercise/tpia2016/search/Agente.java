@@ -7,6 +7,10 @@ import frsf.cidisi.exercise.tpia2016.search.actions.IrDepartamento;
 import frsf.cidisi.exercise.tpia2016.search.actions.IrBaño;
 import frsf.cidisi.exercise.tpia2016.search.actions.IrPasillo;
 import frsf.cidisi.exercise.tpia2016.search.actions.SubirNivel;
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Edificio;
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Aula;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Pasillo;
 import frsf.cidisi.exercise.tpia2016.search.actions.BajarNivel;
 
 import frsf.cidisi.faia.agent.Perception;
@@ -17,27 +21,38 @@ import frsf.cidisi.faia.agent.Action;
 import frsf.cidisi.faia.solver.search.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.ArrayList;
 import java.util.Vector;
 
 public class Agente extends SearchBasedAgent {
 
-    public Agente() {
+    public Agente(Edificio mapa, int energía, Habitacion post,Habitacion dest) {
 
         // The Agent Goal
         Objetivo agGoal = new Objetivo();
+       
 
         // The Agent State
-        EstadoAgente agState = new EstadoAgente();
+        EstadoAgente agState = new EstadoAgente(mapa, energía, post, dest);
         this.setAgentState(agState);
 
         // Create the operators
         Vector<SearchAction> operators = new Vector<SearchAction>();
-        operators.addElement(new IrAula());	
-        operators.addElement(new IrAscensor());	
-        operators.addElement(new IrEscalera());	
+        
+        for(Aula a: mapa.getAulas()){
+            operators.addElement(new IrAula(a.getIdHabitacion()));
+        }
+ 	
+        operators.addElement(new IrAscensor());
+        for(Escalera e: mapa.){
+        	operators.addElement(new IrEscalera());
+        }
         operators.addElement(new IrDepartamento());	
         operators.addElement(new IrBaño());	
-        operators.addElement(new IrPasillo());	
+        for(Pasillo p: mapa.getPaillos()){
+        	operators.addElement(new IrPasillo(p.getIdHabitacion()));
+        }
+        	
         operators.addElement(new SubirNivel());	
         operators.addElement(new BajarNivel());	
 

@@ -12,7 +12,7 @@ import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
  *         idHabitacion atributo: nivel
  * 
  */
-public class Habitacion {
+public abstract class Habitacion {
 
 	// Identificador id; /implementar luego/
 
@@ -142,31 +142,8 @@ public class Habitacion {
 	}
 
 	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Habitacion other = (Habitacion) obj;
-		if (descripcion == null) {
-			if (other.descripcion != null)
-				return false;
-		} else if (!descripcion.equals(other.descripcion))
-			return false;
-		if (idHabitacion == null) {
-			if (other.idHabitacion != null)
-				return false;
-		} else if (!idHabitacion.equals(other.idHabitacion))
-			return false;
-		if (nivel != other.nivel)
-			return false;
-		return true;
-	}
-	
-    public Habitacion clone() {
-        return new Habitacion(this.getIdHabitacion(),this.getNivel(),this.getDescripcion());
-    }
-	
+	public abstract boolean equals(Object obj);
+    public abstract Habitacion clone();
+    
+    
 }

@@ -12,6 +12,11 @@ import frsf.cidisi.faia.state.EnvironmentState;
 
 public class IrPasillo extends SearchAction {
 
+	private String idPasillo;
+	public IrPasillo(String idPasillo) {
+		this.idPasillo = idPasillo;
+	}
+
 	/**
 	 * This method updates a tree node state when the search process is running.
 	 * It does not updates the real world state.
@@ -38,6 +43,7 @@ public class IrPasillo extends SearchAction {
 
 		for (Habitacion h : adyacentes) {
 			if ((h.getClass().getSimpleName().equals("Pasillo")) &&
+			   (h.getIdHabitacion().equals(idPasillo)) &&	
 			   (energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), h) > 0)) {
 				
 				Pasillo pasillo = (Pasillo) h;
@@ -62,24 +68,44 @@ public class IrPasillo extends SearchAction {
 	 * This method updates the agent state and the real world state.
 	 */
 	@Override
-	public EnvironmentState execute(AgentState ast, EnvironmentState est) {
-		EstadoAmbiente environmentState = (EstadoAmbiente) est;
-		EstadoAgente agState = ((EstadoAgente) ast);
+	   public EnvironmentState execute(AgentState ast, EnvironmentState est) {
+        EstadoAmbiente environmentState = (EstadoAmbiente) est;
+        EstadoAgente agState = ((EstadoAgente) ast);
 
-		// TODO: Use this conditions
-		// PreConditions: null
-		// PostConditions: null
+        // TODO: LISTO...
+        
+        Habitacion posicionActual = agState.getPosicion();
+		int energiaDisponible = agState.getEnergía_agente();
+		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
+		boolean seMueve=false;
 
-		if (true) {
-			// Update the real world
-
-			// Update the agent state
-
-			return environmentState;
+		for (Habitacion h : adyacentes) {
+			if ((h.getClass().getSimpleName().equals("Pasillo")) &&
+				(h.getIdHabitacion().equals(idPasillo)) &&	
+			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
+					// Update the agent state
+					//decremento la energia en el mundo real
+					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
+					// me muevo a la siguiente habitacion en el mundo real
+					agState.setPosicion(h);
+					// agrego la habitacion que visité 
+					agState.getHabitaciones_visitadas().add(h);
+					// aviso que puedo moverme en el mundo real para actualizar la posicion
+					// del agente en el ambiente
+					seMueve=true;
+			}
 		}
+        
+		// Si se puede mover informo el cambio de posicion en el ambiente.
+        if (seMueve) {
+            // Update the real world
+        	// actualizo la posicion del agente en el Ambiente
+        	environmentState.setPosicion_agente(agState.getPosicion());
+            return environmentState;
+        }
 
-		return null;
-	}
+        return null;
+    }
 
 	/**
 	 * This method returns the action cost.
