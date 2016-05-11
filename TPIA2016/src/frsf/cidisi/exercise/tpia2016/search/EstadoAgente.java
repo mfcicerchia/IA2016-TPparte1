@@ -155,6 +155,9 @@ public class EstadoAgente extends SearchBasedAgentState {
         str += "Posición del agente: ";
         str += posicion.toString();
         
+        str += "Destino: ";
+        str += destino.toString();
+        
         str += "Energia: ";
         str += energía_agente;
         return str;
@@ -187,10 +190,25 @@ public class EstadoAgente extends SearchBasedAgentState {
 				return false;
 			}
 			else{
-				if(mapa_ambiente.getListaHabitaciones().size()==other.getMapa_ambiente().getListaHabitaciones().size()){
+				if(mapa_ambiente.getListaHabitaciones().size()==other.getMapa_ambiente().getListaHabitaciones().size() 
+						&& mapa_ambiente.getListaConexiones().size()==other.getMapa_ambiente().getListaConexiones().size()){
 					
+					int cuenta_h =0, cuenta_c=0;
 					for(Habitacion i: mapa_ambiente.getListaHabitaciones()){
-						
+						if(other.getMapa_ambiente().getListaHabitaciones().contains(i)){
+							cuenta_h++;
+						}
+					}
+					for(Conexion i: mapa_ambiente.getListaConexiones()){
+						if(other.getMapa_ambiente().getListaConexiones().contains(i)){
+							cuenta_c++;
+						}
+					}
+					if(cuenta_h==mapa_ambiente.getListaHabitaciones().size()  && cuenta_c==mapa_ambiente.getListaConexiones().size()){
+						return true;
+					}
+					else{
+						return false;
 					}
 				}
 				else{
