@@ -205,9 +205,6 @@ public class EstadoAgente extends SearchBasedAgentState {
 						}
 					}
 					if(cuenta_h==mapa_ambiente.getListaHabitaciones().size()  && cuenta_c==mapa_ambiente.getListaConexiones().size()){
-						return true;
-					}
-					else{
 						return false;
 					}
 				}
