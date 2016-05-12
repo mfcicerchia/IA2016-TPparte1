@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
-import frsf.cidisi.exercise.tpia2016.modelo.nodos.Pasillo;
 import frsf.cidisi.exercise.tpia2016.search.*;
 import frsf.cidisi.faia.agent.search.SearchAction;
 import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
@@ -18,6 +17,7 @@ public class IrEscalera extends SearchAction {
 	public IrEscalera(String idEscalera){
 		this.idEscalera = idEscalera;
 	}
+	
     /**
      * This method updates a tree node state when the search process is running.
      * It does not updates the real world state.
@@ -26,7 +26,7 @@ public class IrEscalera extends SearchAction {
     public SearchBasedAgentState execute(SearchBasedAgentState s) {
         EstadoAgente agState = (EstadoAgente) s;
         
-        // TODO: LISTO
+        // TODO: LISTO - pensando
         
     	// PREcondicion: 
 		// * Si el agente tiene alguna habitacion adyacente del tipo ESCALERA
@@ -44,8 +44,9 @@ public class IrEscalera extends SearchAction {
 
 		for (Habitacion h : adyacentes) {
 			if ((h.getClass().getSimpleName().equals("Escalera")) &&
+			   (h.getIdHabitacion().equals(this.idEscalera)) &&
 			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual,h) > 0)){
-				Escalera escalera = (Escalera) h;
+			    Escalera escalera = (Escalera) h;
 				if (escalera.isBloqueada()) {
 					break;
 				} else {
@@ -54,7 +55,7 @@ public class IrEscalera extends SearchAction {
 					// me muevo a la siguiente habitacion
 					agState.setPosicion(h);
 					// agrego la habitacion que visité
-					agState.getHabitaciones_visitadas().add(h);
+					// agState.getHabitaciones_visitadas().add(h);
 					// retorno el estado actualizado
 					return agState;
 				}
@@ -64,7 +65,15 @@ public class IrEscalera extends SearchAction {
         return null;
     }
 
-    /**
+    public String getIdEscalera() {
+		return idEscalera;
+	}
+
+	public void setIdEscalera(String idEscalera) {
+		this.idEscalera = idEscalera;
+	}
+
+	/**
      * This method updates the agent state and the real world state.
      */
     @Override
@@ -72,15 +81,40 @@ public class IrEscalera extends SearchAction {
         EstadoAmbiente environmentState = (EstadoAmbiente) est;
         EstadoAgente agState = ((EstadoAgente) ast);
 
-        // TODO: Use this conditions
-        // PreConditions: null
-        // PostConditions: null
+        // TODO: LISTO - real world
         
-        if (true) {
+        Habitacion posicionActual = agState.getPosicion();
+		int energiaDisponible = agState.getEnergía_agente();
+		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
+		boolean seMueve=false;
+       
+		for (Habitacion h : adyacentes) {
+			if ((h.getClass().getSimpleName().equals("Escalera")) &&
+			   (h.getIdHabitacion().equals(this.idEscalera)) &&
+			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual,h) > 0)){
+			    Escalera escalera = (Escalera) h;
+				if (escalera.isBloqueada()) {
+					break;
+				} else {
+					//decremento la energia 
+					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
+					// me muevo a la siguiente habitacion
+					agState.setPosicion(h);
+					// agrego la habitacion que visité
+					 agState.getHabitaciones_visitadas().add(h);
+					// retorno el estado actualizado
+					seMueve=true;
+				}
+			}
+		}
+		
+		
+		// Si se puede mover informo el cambio de posicion en el ambiente.
+        if (seMueve) {
             // Update the real world
-            
-            // Update the agent state
-            
+        	// actualizo la posicion del agente en el Ambiente
+        	environmentState.setPosicion_agente(agState.getPosicion());
+        	// retorno el estado del Ambiente
             return environmentState;
         }
 

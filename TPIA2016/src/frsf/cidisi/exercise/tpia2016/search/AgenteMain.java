@@ -3,6 +3,7 @@ package frsf.cidisi.exercise.tpia2016.search;
 
 import java.util.ArrayList;
 
+import frsf.cidisi.exercise.tpia2016.interfaz.Principal;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Edificio;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 import frsf.cidisi.exercise.tpia2016.utilidades.CargarPlanos;
@@ -25,20 +26,22 @@ public class AgenteMain {
     	// Se crea la ventana principal y desde aca se da el OK 
     	// para que inicie la simulacion
     	
-    	//// Principal ventana = new Principal(edificio);
+    	Principal ventana = new Principal(edificio);
     	
     	
     	// Setear el estado del agente y del ambiente con los datos 
     	// ya cargados
-    	Agente agent = new Agente(edificio, 1000, edificio.getHabitacionPorID("ingreso1"),edificio.getHabitacionPorID("au8"));
+    	Agente agent = new Agente(edificio, 1000, edificio.getHabitacionPorID("ingreso1"),edificio.getHabitacionPorID("ingreso1"));
         Universidad environment = new Universidad(edificio);
 
+        
         SearchBasedAgentSimulator simulator = new SearchBasedAgentSimulator(environment, agent);
+        
         
         
        //posible punto donde inicializar la interfaz
         System.out.println("Aprente \'intro\' para iniciar la simulacion");
-        System.in.read();
+        //System.in.read();
         simulator.start();
     }
 

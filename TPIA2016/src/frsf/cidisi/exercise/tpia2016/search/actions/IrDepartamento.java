@@ -10,7 +10,16 @@ import frsf.cidisi.faia.state.AgentState;
 import frsf.cidisi.faia.state.EnvironmentState;
 
 public class IrDepartamento extends SearchAction {
-
+	
+	String idDepto;
+	public IrDepartamento(String idDepto){
+		this.idDepto = idDepto;
+	}
+	
+	public IrDepartamento(){
+	
+	}
+	
     /**
      * This method updates a tree node state when the search process is running.
      * It does not updates the real world state.
@@ -19,7 +28,7 @@ public class IrDepartamento extends SearchAction {
     public SearchBasedAgentState execute(SearchBasedAgentState s) {
         EstadoAgente agState = (EstadoAgente) s;
         
-        // TODO: LISTO
+        // TODO: LISTO - pensando
       
     	// PREcondicion: 
 		// * Si el agente tiene alguna habitacion adyacente del tipo DEPARTAMENTO
@@ -62,19 +71,37 @@ public class IrDepartamento extends SearchAction {
         EstadoAmbiente environmentState = (EstadoAmbiente) est;
         EstadoAgente agState = ((EstadoAgente) ast);
 
-        // TODO: Use this conditions
-        // PreConditions: null
-        // PostConditions: null
+        // TODO: LISTO - real world!
         
-        if (true) {
-            // Update the real world
-            
-            // Update the agent state
-            
+        
+    	Habitacion posicionActual = agState.getPosicion();
+		int energiaDisponible = agState.getEnergía_agente();
+		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
+		boolean seMueve = false;
+
+		for (Habitacion h : adyacentes) {
+			if ((h.getClass().getSimpleName().equals("Departamento")) &&
+			   !(agState.getHabitaciones_visitadas().contains(h)) &&
+			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
+					//decremento la energia 
+					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
+					// me muevo a la siguiente habitacion
+					agState.setPosicion(h);
+					// agrego la habitacion que visité
+					agState.getHabitaciones_visitadas().add(h);
+					
+					seMueve = true;
+			}
+		}
+    
+        
+        if (seMueve) {
+        	environmentState.setPosicion_agente(agState.getPosicion());
             return environmentState;
         }
-
-        return null;
+        else{
+        	return null;	
+        }
     }
 
     /**

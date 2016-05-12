@@ -26,7 +26,7 @@ public class IrAula extends SearchAction {
     public SearchBasedAgentState execute(SearchBasedAgentState s) {
         EstadoAgente agState = (EstadoAgente) s;
         
-        // TODO: LISTO
+        // TODO: LISTO - pensando
         
     	// PREcondicion: 
 		// * Si el agente tiene alguna habitacion adyacente del tipo AULA
@@ -38,25 +38,25 @@ public class IrAula extends SearchAction {
 		// * Retorna el estado actualizado
 		
 	
-		Habitacion posicionActual = agState.getPosicion();
-		int energiaDisponible = agState.getEnergía_agente();
-		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
-			
-		for (Habitacion h : adyacentes) {
-			if ((h.getClass().getSimpleName().equals("Aula")) &&
-				(h.getIdHabitacion().equals(idAula)) &&				
-			   !(agState.getHabitaciones_visitadas().contains(h)) &&
-			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
-					//decremento la energia 
-					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
-					// me muevo a la siguiente habitacion
-					agState.setPosicion(h);
-					// agrego la habitacion que visité
-					agState.getHabitaciones_visitadas().add(h);
-					// retorno el estado actualizado
-					return agState;
-			}
-		}
+//		Habitacion posicionActual = agState.getPosicion();
+//		int energiaDisponible = agState.getEnergía_agente();
+//		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
+//			
+//		for (Habitacion h : adyacentes) {
+//			if ((h.getClass().getSimpleName().equals("Aula")) &&
+//			   (h.getIdHabitacion().equals(this.idAula)) &&				
+//			   !(agState.getHabitaciones_visitadas().contains(h)) &&
+//			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
+//					//decremento la energia 
+//					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
+//					// me muevo a la siguiente habitacion
+//					agState.setPosicion(h);
+//					// agrego la habitacion que visité
+//					// agState.getHabitaciones_visitadas().add(h);
+//					// retorno el estado actualizado
+//					return agState;
+//			}
+//		}
         
         return null;
     }
@@ -69,7 +69,7 @@ public class IrAula extends SearchAction {
         EstadoAmbiente environmentState = (EstadoAmbiente) est;
         EstadoAgente agState = ((EstadoAgente) ast);
 
-        // TODO: LISTO...
+        // TODO: LISTO - real world!
         
         Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
@@ -78,7 +78,7 @@ public class IrAula extends SearchAction {
 
 		for (Habitacion h : adyacentes) {
 			if ((h.getClass().getSimpleName().equals("Aula")) &&
-				(h.getIdHabitacion().equals(idAula)) &&	
+			   (h.getIdHabitacion().equals(this.idAula)) &&	
 			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 					// Update the agent state
 					//decremento la energia en el mundo real
@@ -87,8 +87,7 @@ public class IrAula extends SearchAction {
 					agState.setPosicion(h);
 					// agrego la habitacion que visité 
 					agState.getHabitaciones_visitadas().add(h);
-					// aviso que puedo moverme en el mundo real para actualizar la posicion
-					// del agente en el ambiente
+				
 					seMueve=true;
 			}
 		}

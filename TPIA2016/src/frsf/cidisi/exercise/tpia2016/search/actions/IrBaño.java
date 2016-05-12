@@ -18,7 +18,7 @@ public class IrBaño extends SearchAction {
     @Override
     public SearchBasedAgentState execute(SearchBasedAgentState s) {
         EstadoAgente agState = (EstadoAgente) s;
-        // TODO: LISTO
+        // TODO: LISTO - pensando
         
     	// PREcondicion: 
 		// * Si el agente tiene alguna habitacion adyacente del tipo BAÑO
@@ -44,12 +44,11 @@ public class IrBaño extends SearchAction {
 					// me muevo a la siguiente habitacion
 					agState.setPosicion(h);
 					// agrego la habitacion que visité
-					agState.getHabitaciones_visitadas().add(h);
+					// agState.getHabitaciones_visitadas().add(h);
 					// retorno el estado actualizado
 					return agState;
 			}
 		}
-        
         return null;
     }
 
@@ -61,19 +60,35 @@ public class IrBaño extends SearchAction {
         EstadoAmbiente environmentState = (EstadoAmbiente) est;
         EstadoAgente agState = ((EstadoAgente) ast);
 
-        // TODO: Use this conditions
-        // PreConditions: null
-        // PostConditions: null
+        // TODO: LISTO - real world
+        Habitacion posicionActual = agState.getPosicion();
+		int energiaDisponible = agState.getEnergía_agente();
+		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
+		boolean seMueve = false;
+
+		for (Habitacion h : adyacentes) {
+			if ((h.getClass().getSimpleName().equals("Baño")) &&
+			   !(agState.getHabitaciones_visitadas().contains(h)) &&
+			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
+					//decremento la energia 
+					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
+					// me muevo a la siguiente habitacion
+					agState.setPosicion(h);
+					// agrego la habitacion que visité
+					agState.getHabitaciones_visitadas().add(h);
+					
+					seMueve = true;
+			}
+		}
+    
         
-        if (true) {
-            // Update the real world
-            
-            // Update the agent state
-            
+        if (seMueve) {
+        	environmentState.setPosicion_agente(agState.getPosicion());
             return environmentState;
         }
-
-        return null;
+        else{
+        	return null;	
+        }
     }
 
     /**

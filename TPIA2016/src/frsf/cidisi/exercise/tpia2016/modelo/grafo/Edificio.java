@@ -181,11 +181,22 @@ public class Edificio {
 		ArrayList<Pasillo> pasillos = new ArrayList<Pasillo>();
 		
 		for(Habitacion h: this.getListaHabitaciones()){
-			if(h.getClass().getSimpleName().equals("Aula")){
+			if(h.getClass().getSimpleName().equals("Pasillo")){
 				pasillos.add((Pasillo) h);
 			}
 		}
 		
 		return pasillos;
+	}
+	
+	public ArrayList<Escalera> getEscaleras(){
+		ArrayList<Escalera> escaleras = new ArrayList<Escalera>();
+		
+		for(Habitacion e: this.getListaHabitaciones()){
+			if(e.getClass().getSimpleName().equals("Escalera")){
+				escaleras.add((Escalera) e);
+			}
+		}
+		return escaleras;
 	}
 }

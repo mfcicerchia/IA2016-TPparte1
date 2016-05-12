@@ -13,10 +13,10 @@ import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
 public class EstadoAgente extends SearchBasedAgentState {
     private Edificio mapa_ambiente;
     private int energía_agente;
-    private Habitacion posicion;
-    private Habitacion destino;
+    private Habitacion posicionActual;
+    private Habitacion posicionDestino;
     private ArrayList<Habitacion> habitaciones_visitadas;
-    private Habitacion posicionObjetivo;
+  
 
     
 
@@ -24,8 +24,8 @@ public class EstadoAgente extends SearchBasedAgentState {
     	
     }
 
-    public EstadoAgente(Edificio mapa, int energía, Habitacion post,Habitacion destino) {
-    	initState(mapa, energía, post,destino);
+    public EstadoAgente(Edificio mapa, int energía, Habitacion posicionInicial,Habitacion posicionDestino) {
+    	initState(mapa, energía, posicionInicial,posicionDestino);
 			
     }
     
@@ -37,13 +37,13 @@ public class EstadoAgente extends SearchBasedAgentState {
     /**
      * This method is optional, and sets the initial state of the agent.
      */
-    public void initState(Edificio mapa, int energía, Habitacion post,Habitacion dest) {
+    public void initState(Edificio mapa, int energía, Habitacion posicionActual,Habitacion posicionDestino) {
     	 // TODO: LISTO
     	
     	 this.mapa_ambiente = mapa;
 		 this.energía_agente = energía;
-		 this.posicion = post;
-		 this.destino=dest;
+		 this.posicionActual = posicionActual;
+		 this.posicionDestino=posicionDestino;
 
     }
     
@@ -81,11 +81,11 @@ public class EstadoAgente extends SearchBasedAgentState {
     
 
     public Habitacion getDestino() {
-		return destino;
+		return posicionDestino;
 	}
 
 	public void setDestino(Habitacion destino) {
-		this.destino = destino;
+		this.posicionDestino = destino;
 	}
 
 	/**
@@ -95,7 +95,7 @@ public class EstadoAgente extends SearchBasedAgentState {
     @Override
     public void updateState(Perception p) {
      
-        //TODO: Listo
+        //TODO: LISTO - UpdateState
     	
     	AgentePerception perception=(AgentePerception)p;
     	Habitacion posicionActual= this.getPosicion();
@@ -146,14 +146,17 @@ public class EstadoAgente extends SearchBasedAgentState {
         str = str.substring(0,str.length()-2);
         str += "}\n";
         
-        str += "Visitadas: {";
-        for(Habitacion h : habitaciones_visitadas)
-        	str+= h.toString() + ", ";
-        str = str.substring(0,str.length()-2);
-        str += "}\n";
+        if(habitaciones_visitadas!=null){
+        	 str += "Visitadas: {";
+             for(Habitacion h : habitaciones_visitadas)
+             	str+= h.toString() + ", ";
+             str = str.substring(0,str.length()-2);
+             str += "}\n";
+        }
+       
         
         str += "Posición del agente: ";
-        str += posicion.toString();
+        str += posicionActual.toString();
         
         str += "Energia: ";
         str += energía_agente;
@@ -198,11 +201,11 @@ public class EstadoAgente extends SearchBasedAgentState {
 				}
 			}			
 		}
-		if (posicion == null) {
-			if (other.posicion != null)
+		if (posicionActual == null) {
+			if (other.posicionActual != null)
 				return false;
 		} 
-		else if (!posicion.equals(other.posicion))
+		else if (!posicionActual.equals(other.posicionActual))
 			return false;
 		return true;
 	}
@@ -222,10 +225,10 @@ public class EstadoAgente extends SearchBasedAgentState {
         energía_agente = arg;
      }
      public Habitacion getPosicion(){
-        return posicion;
+        return this.posicionActual;
      }
      public void setPosicion(Habitacion arg){
-        posicion = arg;
+        this.posicionActual = arg;
      }
      public ArrayList<Habitacion> getHabitaciones_visitadas(){
         return habitaciones_visitadas;
@@ -234,12 +237,12 @@ public class EstadoAgente extends SearchBasedAgentState {
         habitaciones_visitadas = arg;
     }
  	
-     public Habitacion getPosicionObjetivo() {
- 		return posicionObjetivo;
+     public Habitacion getPosicionDestino() {
+ 		return posicionDestino;
  	}
 
- 	public void setPosicionObjetivo(Habitacion posicionObjetivo) {
- 		this.posicionObjetivo = posicionObjetivo;
+ 	public void setPosicionObjetivo(Habitacion posicionDestino) {
+ 		this.posicionDestino = posicionDestino;
  	}
 }
 

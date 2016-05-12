@@ -25,7 +25,7 @@ public class IrPasillo extends SearchAction {
 	public SearchBasedAgentState execute(SearchBasedAgentState s) {
 		EstadoAgente agState = (EstadoAgente) s;
 
-		// TODO: LISTO
+		// TODO: LISTO - pensando
 		
 		// PREcondicion: 
 		// * Si el agente tiene alguna habitacion adyacente del tipo Pasillo
@@ -72,7 +72,7 @@ public class IrPasillo extends SearchAction {
         EstadoAmbiente environmentState = (EstadoAmbiente) est;
         EstadoAgente agState = ((EstadoAgente) ast);
 
-        // TODO: LISTO...
+        // TODO: LISTO - real world!
         
         Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
@@ -123,5 +123,4 @@ public class IrPasillo extends SearchAction {
 	public String toString() {
 		return "IrPasillo";
 	}
-
 }

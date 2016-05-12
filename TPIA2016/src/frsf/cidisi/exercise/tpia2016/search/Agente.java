@@ -10,6 +10,7 @@ import frsf.cidisi.exercise.tpia2016.search.actions.SubirNivel;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Edificio;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.Aula;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.Pasillo;
 import frsf.cidisi.exercise.tpia2016.search.actions.BajarNivel;
 
@@ -39,22 +40,37 @@ public class Agente extends SearchBasedAgent {
         // Create the operators
         Vector<SearchAction> operators = new Vector<SearchAction>();
         
+        for(Pasillo p: mapa.getPaillos()){
+        	operators.addElement(new IrPasillo(p.getIdHabitacion()));
+        }
+        
         for(Aula a: mapa.getAulas()){
             operators.addElement(new IrAula(a.getIdHabitacion()));
         }
  	
         operators.addElement(new IrAscensor());
-        for(Escalera e: mapa.){
-        	operators.addElement(new IrEscalera());
+        
+        for(Escalera e: mapa.getEscaleras()){
+        	operators.addElement(new IrEscalera(e.getIdHabitacion()));
         }
         operators.addElement(new IrDepartamento());	
+        
         operators.addElement(new IrBaño());	
-        for(Pasillo p: mapa.getPaillos()){
-        	operators.addElement(new IrPasillo(p.getIdHabitacion()));
+        
+        
+        	
+        ArrayList<Habitacion> listaDeEscalerasYAscensores = new ArrayList<Habitacion>();
+        listaDeEscalerasYAscensores.addAll(mapa.getEscaleras());
+        listaDeEscalerasYAscensores.addAll(mapa.getEscaleras());
+        
+        for(Habitacion h: listaDeEscalerasYAscensores){
+        	operators.addElement(new SubirNivel(h.getIdHabitacion()));
         }
         	
-        operators.addElement(new SubirNivel());	
-        operators.addElement(new BajarNivel());	
+        for(Habitacion h: listaDeEscalerasYAscensores){
+        	operators.addElement(new BajarNivel(h.getIdHabitacion()));
+        }
+        	
 
         // Create the Problem which the agent will resolve
         Problem problem = new Problem(agGoal, agState, operators);
@@ -75,7 +91,7 @@ public class Agente extends SearchBasedAgent {
 
         /* Generate an XML file with the search tree. It can also be generated
          * in other formats like PDF with PDF_TREE */
-        searchSolver.setVisibleTree(Search.GRAPHVIZ_TREE);
+        searchSolver.setVisibleTree(Search.EFAIA_TREE);
 
         // Set the Search searchSolver.
         this.setSolver(searchSolver);

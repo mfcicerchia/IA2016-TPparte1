@@ -24,7 +24,7 @@ public class EstadoAmbiente extends EnvironmentState {
      */
     
     public void initState() {	
-    	posicion_agente.setIdHabitacion("ingreso1"); 	
+    	posicion_agente = mapa_ambiente.getHabitacionPorID("ingreso1"); 	
     }
 
     /**
