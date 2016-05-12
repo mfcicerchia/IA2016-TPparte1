@@ -159,7 +159,7 @@ public class EstadoAgente extends SearchBasedAgentState {
         str += posicionActual.toString();
         
         str += "Destino: ";
-        str += destino.toString();
+        str += posicionDestino.toString();
         
         str += "Energia: ";
         str += energía_agente;
