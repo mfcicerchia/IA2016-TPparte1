@@ -65,12 +65,40 @@ public class EstadoAmbiente extends EnvironmentState {
 		if (mapa_ambiente == null) {
 			if (other.mapa_ambiente != null)
 				return false;
-		} else if (!mapa_ambiente.equals(other.mapa_ambiente))
-			return false;
-		if (posicion_agente == null) {
-			if (other.posicion_agente != null)
+		} 
+		else{ 
+			if (!mapa_ambiente.equals(other.mapa_ambiente)){
 				return false;
-		} else if (!posicion_agente.equals(other.posicion_agente))
+			}
+			else{
+				if(mapa_ambiente.getListaHabitaciones().size()==other.getMapa_ambiente().getListaHabitaciones().size() 
+						&& mapa_ambiente.getListaConexiones().size()==other.getMapa_ambiente().getListaConexiones().size()){
+					
+					int cuenta_h =0, cuenta_c=0;
+					for(Habitacion i: mapa_ambiente.getListaHabitaciones()){
+						if(other.getMapa_ambiente().getListaHabitaciones().contains(i)){
+							cuenta_h++;
+						}
+					}
+					for(Conexion i: mapa_ambiente.getListaConexiones()){
+						if(other.getMapa_ambiente().getListaConexiones().contains(i)){
+							cuenta_c++;
+						}
+					}
+					if(cuenta_h!=mapa_ambiente.getListaHabitaciones().size()  && cuenta_c!=mapa_ambiente.getListaConexiones().size()){
+						return false;
+					}
+				}
+				else{
+					return false;
+				}
+			}			
+		}
+		if (posicion_agente == null) {
+			if (other.getPosicion_agente() != null)
+				return false;
+		} 
+		else if (!posicion_agente.equals(other.getPosicion_agente()))
 			return false;
 		return true;
 	}
