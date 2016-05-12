@@ -38,25 +38,25 @@ public class IrAula extends SearchAction {
 		// * Retorna el estado actualizado
 		
 	
-//		Habitacion posicionActual = agState.getPosicion();
-//		int energiaDisponible = agState.getEnergía_agente();
-//		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
-//			
-//		for (Habitacion h : adyacentes) {
-//			if ((h.getClass().getSimpleName().equals("Aula")) &&
-//			   (h.getIdHabitacion().equals(this.idAula)) &&				
-//			   !(agState.getHabitaciones_visitadas().contains(h)) &&
-//			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
-//					//decremento la energia 
-//					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
-//					// me muevo a la siguiente habitacion
-//					agState.setPosicion(h);
-//					// agrego la habitacion que visité
-//					// agState.getHabitaciones_visitadas().add(h);
-//					// retorno el estado actualizado
-//					return agState;
-//			}
-//		}
+		Habitacion posicionActual = agState.getPosicion();
+		int energiaDisponible = agState.getEnergía_agente();
+		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
+			
+		for (Habitacion h : adyacentes) {
+			if ((h.getClass().getSimpleName().equals("Aula")) &&
+			   (h.getIdHabitacion().equals(this.idAula)) &&				
+			   !(agState.getHabitaciones_visitadas().contains(h)) &&
+			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
+					//decremento la energia 
+					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
+					// me muevo a la siguiente habitacion
+					agState.setPosicion(h);
+					// agrego la habitacion que visité
+					// agState.getHabitaciones_visitadas().add(h);
+					// retorno el estado actualizado
+					return agState;
+			}
+		}
         
         return null;
     }

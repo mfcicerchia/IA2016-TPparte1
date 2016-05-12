@@ -36,32 +36,38 @@ public class IrPasillo extends SearchAction {
 		// * Retorna el estado actualizado
 		
 		
+		
+		
 		Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
-		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
+		ArrayList<Habitacion> adyacentes = new ArrayList<Habitacion>();
+		adyacentes= agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
 
-
-		for (Habitacion h : adyacentes) {
-			if ((h.getClass().getSimpleName().equals("Pasillo")) &&
-			   (h.getIdHabitacion().equals(idPasillo)) &&	
-			   (energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), h) > 0)) {
-				
-				Pasillo pasillo = (Pasillo) h;
-				if (pasillo.isBloqueado()) {
-					break;
-				} else {
-					// decremento la energia
-					agState.setEnergía_agente(energiaDisponible- agState.getMapa_ambiente().getCosto(agState.getPosicion(), pasillo));
-					// me muevo a la siguiente habitacion
-					agState.setPosicion(pasillo);
-					// agrego la habitacion que visité
-					agState.getHabitaciones_visitadas().add(pasillo);
-					// retorno el estado actualizado
-					return agState;
+		if(adyacentes!=null){
+			for (Habitacion h : adyacentes) {
+				if ((h.getClass().getSimpleName().equals("Pasillo")) &&
+						(h.getIdHabitacion().equals(idPasillo)) &&	
+						(energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), h) > 0)) {
+					
+					Pasillo pasillo = (Pasillo) h;
+					if (pasillo.isBloqueado()) {
+						break;
+					} else {
+						// 	decremento la energia
+						agState.setEnergía_agente(energiaDisponible- agState.getMapa_ambiente().getCosto(agState.getPosicion(), pasillo));
+						// me muevo a la siguiente habitacion
+						agState.setPosicion(pasillo);
+						// 	agrego la habitacion que visité
+						agState.getHabitaciones_visitadas().add(pasillo);
+						// retorno el estado actualizado
+						return agState;
+					}
 				}
 			}
+		}else{
+		return null;	
 		}
-		return null;
+			return null;
 	}
 
 	/**
@@ -78,32 +84,34 @@ public class IrPasillo extends SearchAction {
 		int energiaDisponible = agState.getEnergía_agente();
 		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
 		boolean seMueve=false;
-
-		for (Habitacion h : adyacentes) {
-			if ((h.getClass().getSimpleName().equals("Pasillo")) &&
-				(h.getIdHabitacion().equals(idPasillo)) &&	
-			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
-					// Update the agent state
-					//decremento la energia en el mundo real
-					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
-					// me muevo a la siguiente habitacion en el mundo real
-					agState.setPosicion(h);
-					// agrego la habitacion que visité 
-					agState.getHabitaciones_visitadas().add(h);
-					// aviso que puedo moverme en el mundo real para actualizar la posicion
-					// del agente en el ambiente
-					seMueve=true;
+		
+		if(adyacentes!= null){
+			for (Habitacion h : adyacentes) {
+				if ((h.getClass().getSimpleName().equals("Pasillo")) &&
+					(h.getIdHabitacion().equals(idPasillo)) &&	
+				   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
+						// Update the agent state
+						//decremento la energia en el mundo real
+						agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
+						// me muevo a la siguiente habitacion en el mundo real
+						agState.setPosicion(h);
+						// agrego la habitacion que visité 
+						agState.getHabitaciones_visitadas().add(h);
+						// aviso que puedo moverme en el mundo real para actualizar la posicion
+						// del agente en el ambiente
+						seMueve=true;
+				}
 			}
+	        
+			// Si se puede mover informo el cambio de posicion en el ambiente.
+	        if (seMueve) {
+	            // Update the real world
+	        	// actualizo la posicion del agente en el Ambiente
+	        	environmentState.setPosicion_agente(agState.getPosicion());
+	            return environmentState;
+	        }
 		}
-        
-		// Si se puede mover informo el cambio de posicion en el ambiente.
-        if (seMueve) {
-            // Update the real world
-        	// actualizo la posicion del agente en el Ambiente
-        	environmentState.setPosicion_agente(agState.getPosicion());
-            return environmentState;
-        }
-
+		
         return null;
     }
 

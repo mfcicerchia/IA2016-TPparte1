@@ -2,9 +2,11 @@ package frsf.cidisi.exercise.tpia2016.search;
 
 import frsf.cidisi.exercise.tpia2016.search.actions.IrAula;
 import frsf.cidisi.exercise.tpia2016.search.actions.IrAscensor;
+import frsf.cidisi.exercise.tpia2016.search.actions.IrBiblioteca;
 import frsf.cidisi.exercise.tpia2016.search.actions.IrEscalera;
 import frsf.cidisi.exercise.tpia2016.search.actions.IrDepartamento;
 import frsf.cidisi.exercise.tpia2016.search.actions.IrBaño;
+import frsf.cidisi.exercise.tpia2016.search.actions.IrLaboratorio;
 import frsf.cidisi.exercise.tpia2016.search.actions.IrPasillo;
 import frsf.cidisi.exercise.tpia2016.search.actions.SubirNivel;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Edificio;
@@ -58,6 +60,7 @@ public class Agente extends SearchBasedAgent {
         operators.addElement(new IrBaño());	
         
         
+        
         	
         ArrayList<Habitacion> listaDeEscalerasYAscensores = new ArrayList<Habitacion>();
         listaDeEscalerasYAscensores.addAll(mapa.getEscaleras());
@@ -70,6 +73,10 @@ public class Agente extends SearchBasedAgent {
         for(Habitacion h: listaDeEscalerasYAscensores){
         	operators.addElement(new BajarNivel(h.getIdHabitacion()));
         }
+        
+        
+        operators.addElement(new IrBiblioteca());
+        operators.addElement(new IrLaboratorio());
         	
 
         // Create the Problem which the agent will resolve
@@ -91,7 +98,7 @@ public class Agente extends SearchBasedAgent {
 
         /* Generate an XML file with the search tree. It can also be generated
          * in other formats like PDF with PDF_TREE */
-        searchSolver.setVisibleTree(Search.EFAIA_TREE);
+        searchSolver.setVisibleTree(Search.XML_TREE);
 
         // Set the Search searchSolver.
         this.setSolver(searchSolver);

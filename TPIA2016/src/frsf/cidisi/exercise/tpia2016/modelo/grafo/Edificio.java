@@ -78,8 +78,9 @@ public class Edificio {
 		if(flag1 && flag2){
 			return true;	
 		}
-		else return false;
-		
+		else{
+			return false;
+		}
 	}
 	
 	public int cantidadDeHabitacionesAsociadas(String id) {
@@ -135,18 +136,17 @@ public class Edificio {
 	public ArrayList<Habitacion> getHabitacionesAdyacentes(String identificador){
 	
 		ArrayList<Habitacion> adyacentes = new ArrayList<Habitacion>();
+	 
 		
-		ArrayList<String> idAdyacentes= new ArrayList<String>(); 
-		
-		for(int i=0; i<this.listaConexiones.size(); i++){
-			if(this.listaConexiones.get(i).getIdOrigen().equals(identificador)){
-					adyacentes.add(this.getHabitacionPorID(listaConexiones.get(i).getIdDestino()));
+		for(Conexion c: this.listaConexiones){
+			if(c.getIdOrigen().equals(identificador)){
+					adyacentes.add(this.getHabitacionPorID(c.getIdDestino()));
 			}
 		}
 		
-		for(int i=0; i<this.listaConexiones.size(); i++){
-			if(this.listaConexiones.get(i).getIdDestino().equals(identificador)){
-				adyacentes.add(this.getHabitacionPorID(listaConexiones.get(i).getIdOrigen()));
+		for(Conexion c: this.listaConexiones){
+			if(c.getIdDestino().equals(identificador)){
+				adyacentes.add(this.getHabitacionPorID(c.getIdOrigen()));
 			}
 		}
 

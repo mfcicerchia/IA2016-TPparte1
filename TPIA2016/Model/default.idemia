@@ -25,6 +25,7 @@
   <Actions execute_by="//@Agent" executed_on="//@Environment" name="IrPasillo"/>
   <Actions execute_by="//@Agent" executed_on="//@Environment" name="SubirNivel"/>
   <Actions execute_by="//@Agent" executed_on="//@Environment" name="BajarNivel"/>
+  <Actions execute_by="//@Agent" executed_on="//@Environment" name="IrBiblioteca"/>
   <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="hay_energía_eléctrica"/>
   <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="hay_bip_ascensor"/>
   <Perceptions perceived_on="//@Environment" perceived_by="//@Agent" name="hay_bloqueo_escalera"/>

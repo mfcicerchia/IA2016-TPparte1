@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.Ascensor;
-import frsf.cidisi.exercise.tpia2016.modelo.nodos.Pasillo;
 import frsf.cidisi.exercise.tpia2016.search.*;
 import frsf.cidisi.faia.agent.search.SearchAction;
 import frsf.cidisi.faia.agent.search.SearchBasedAgentState;

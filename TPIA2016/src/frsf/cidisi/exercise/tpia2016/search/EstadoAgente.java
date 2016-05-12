@@ -19,19 +19,15 @@ public class EstadoAgente extends SearchBasedAgentState {
   
 
     
-
-	public EstadoAgente() {
-    	
-    }
+	public EstadoAgente(){   }
 
     public EstadoAgente(Edificio mapa, int energía, Habitacion posicionInicial,Habitacion posicionDestino) {
     	initState(mapa, energía, posicionInicial,posicionDestino);
-			
     }
     
-    public EstadoAgente(Edificio mapa, int energía, Habitacion post,Habitacion destino, ArrayList<Habitacion> visitadas) {
-    	initState(mapa, energía, post,destino);
-		habitaciones_visitadas=visitadas;
+    public EstadoAgente(Edificio mapa, int energía, Habitacion posicionActual,Habitacion posicionDestino, ArrayList<Habitacion> visitadas) {
+    	initState(mapa, energía, posicionActual,posicionDestino);
+		this.habitaciones_visitadas.addAll(visitadas);
     }
     
     /**
@@ -44,14 +40,9 @@ public class EstadoAgente extends SearchBasedAgentState {
 		 this.energía_agente = energía;
 		 this.posicionActual = posicionActual;
 		 this.posicionDestino=posicionDestino;
-
+		 this.habitaciones_visitadas=new ArrayList<Habitacion>();
+	     this.habitaciones_visitadas.add(posicionActual);
     }
-    
-    @Override
-	public void initState() {
-
-		
-	}
 
     /**
      * This method clones the state of the agent. It's used in the search
@@ -259,5 +250,11 @@ public class EstadoAgente extends SearchBasedAgentState {
  	public void setPosicionObjetivo(Habitacion posicionDestino) {
  		this.posicionDestino = posicionDestino;
  	}
+
+	@Override
+	public void initState() {
+		// TODO Auto-generated method stub
+		
+	}
 }
 
