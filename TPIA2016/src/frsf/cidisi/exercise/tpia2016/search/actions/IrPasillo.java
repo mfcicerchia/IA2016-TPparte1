@@ -34,26 +34,21 @@ public class IrPasillo extends SearchAction {
 		// * El agente cambia de posision a la habitacion del tipo Pasillo
 		// * Decrementa su energia segun la distancia asociada en el enlace
 		// * Retorna el estado actualizado
+	
 		
-		
-		
-		
-		Habitacion posicionActual = agState.getPosicion();
-		int energiaDisponible = agState.getEnergía_agente();
-		ArrayList<Habitacion> adyacentes = new ArrayList<Habitacion>();
-		adyacentes= agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
 
-		if(adyacentes!=null){
-			for (Habitacion h : adyacentes) {
-				
-				if ((h.getClass().getSimpleName().equals("Pasillo")) &&
-						(h.getIdHabitacion().equals(idPasillo)) &&	
-						(energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), h) > 0)) {
+			Habitacion posicionActual = agState.getPosicion();
+			int energiaDisponible = agState.getEnergía_agente();
+			
+			//obtengo la habitacion que cuyo id recibo como parametro
+			Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idPasillo);
+			
+				if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
+					!(agState.getHabitaciones_visitadas().contains(h)) &&
+					(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 					
 					Pasillo pasillo = (Pasillo) h;
-					if (pasillo.isBloqueado()) {
-						break;
-					} else {
+					if (!pasillo.isBloqueado()) {
 						// 	decremento la energia
 						agState.setEnergía_agente(energiaDisponible- agState.getMapa_ambiente().getCosto(agState.getPosicion(), pasillo));
 						// me muevo a la siguiente habitacion
@@ -63,12 +58,7 @@ public class IrPasillo extends SearchAction {
 						// retorno el estado actualizado
 						return agState;
 					}
-				}
 			}
-		}
-		else{
-			return null;	
-		}
 		return null;
 	}
 
@@ -82,17 +72,17 @@ public class IrPasillo extends SearchAction {
 
         // TODO: LISTO - real world!
         
-        Habitacion posicionActual = agState.getPosicion();
+ 
+		Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
-		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
 		boolean seMueve=false;
 		
-		if(adyacentes!= null){
-			for (Habitacion h : adyacentes) {
-				
-				if ((h.getClass().getSimpleName().equals("Pasillo")) &&
-					(h.getIdHabitacion().equals(idPasillo)) &&	
-				   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
+		//obtengo la habitacion que cuyo id recibo como parametro
+		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idPasillo);
+		
+			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
+				!(agState.getHabitaciones_visitadas().contains(h)) &&
+				(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 					
 						// Update the agent state
 						//decremento la energia en el mundo real
@@ -105,7 +95,7 @@ public class IrPasillo extends SearchAction {
 						// del agente en el ambiente
 						seMueve=true;
 				}
-			}
+			
 	        
 			// Si se puede mover informo el cambio de posicion en el ambiente.
 	        if (seMueve) {
@@ -114,7 +104,7 @@ public class IrPasillo extends SearchAction {
 	        	environmentState.setPosicion_agente(agState.getPosicion());
 	            return environmentState;
 	        }
-		}
+		
 		
         return null;
     }

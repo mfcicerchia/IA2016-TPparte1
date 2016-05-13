@@ -144,6 +144,8 @@ public abstract class Habitacion {
 	@Override
 	public abstract boolean equals(Object obj);
     public abstract Habitacion clone();
+
+
     
     
 }

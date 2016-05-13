@@ -289,7 +289,7 @@ public class NTree implements Cloneable, Comparable<NTree> {
         return agentState.equals(((NTree) obj).getAgentState());
     }
 
-    @Override
+    
     public int compareTo(NTree o) {
         if (this.cost == o.cost) {
         	// If both nodes have the same cost then it is necessary to check the order

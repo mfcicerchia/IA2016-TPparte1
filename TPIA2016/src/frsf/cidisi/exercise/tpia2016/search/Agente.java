@@ -42,38 +42,44 @@ public class Agente extends SearchBasedAgent {
         // Create the operators
         Vector<SearchAction> operators = new Vector<SearchAction>();
         
+        
         for(Pasillo p: mapa.getPasillos()){
         	operators.addElement(new IrPasillo(p.getIdHabitacion()));
         }
         
         for(Aula a: mapa.getAulas()){
-            operators.addElement(new IrAula(a.getIdHabitacion()));
+        	System.out.println(a.getClass().getSimpleName() +" - "+ a.getIdHabitacion()+" ");
+        	IrAula irAula = new IrAula(a.getIdHabitacion());
+            operators.addElement(irAula);
         }
- 	
-        operators.addElement(new IrAscensor());
-        
         for(Escalera e: mapa.getEscaleras()){
         	operators.addElement(new IrEscalera(e.getIdHabitacion()));
         }
-        operators.addElement(new IrDepartamento());	
-        
-        operators.addElement(new IrBaño());	
-        	
-        ArrayList<Habitacion> listaDeEscalerasYAscensores = new ArrayList<Habitacion>();
-        listaDeEscalerasYAscensores.addAll(mapa.getEscaleras());
-        listaDeEscalerasYAscensores.addAll(mapa.getEscaleras());
-        
-        for(Habitacion h: listaDeEscalerasYAscensores){
-        	operators.addElement(new SubirNivel(h.getIdHabitacion()));
-        }
-        	
-        for(Habitacion h: listaDeEscalerasYAscensores){
-        	operators.addElement(new BajarNivel(h.getIdHabitacion()));
-        }
-        
-        
-        operators.addElement(new IrBiblioteca());
-        operators.addElement(new IrLaboratorio());
+//        
+//       
+// 	
+//        operators.addElement(new IrAscensor());
+//        
+     
+//        operators.addElement(new IrDepartamento());	
+//        
+//        operators.addElement(new IrBaño());	
+//        	
+//        ArrayList<Habitacion> listaDeEscalerasYAscensores = new ArrayList<Habitacion>();
+//        listaDeEscalerasYAscensores.addAll(mapa.getEscaleras());
+//        listaDeEscalerasYAscensores.addAll(mapa.getEscaleras());
+//        
+//        for(Habitacion h: listaDeEscalerasYAscensores){
+//        	operators.addElement(new SubirNivel(h.getIdHabitacion()));
+//        }
+//        	
+//        for(Habitacion h: listaDeEscalerasYAscensores){
+//        	operators.addElement(new BajarNivel(h.getIdHabitacion()));
+//        }
+//        
+//        
+//        operators.addElement(new IrBiblioteca());
+//        operators.addElement(new IrLaboratorio());
         	
 
         // Create the Problem which the agent will resolve
@@ -95,7 +101,7 @@ public class Agente extends SearchBasedAgent {
 
         /* Generate an XML file with the search tree. It can also be generated
          * in other formats like PDF with PDF_TREE */
-        searchSolver.setVisibleTree(Search.XML_TREE);
+        searchSolver.setVisibleTree(Search.EFAIA_TREE);
 
         // Set the Search searchSolver.
         this.setSolver(searchSolver);

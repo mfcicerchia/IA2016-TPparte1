@@ -105,24 +105,24 @@ public class Edificio {
 	
 	public Habitacion getHabitacionPorID(String id){
 		
-		if(existeHabitacion(id)){
+		//if(existeHabitacion(id)){/
 			for(Habitacion h: this.getListaHabitaciones()){
 				if(h.getIdHabitacion().equals(id)){
 					return h;			
 				}
 			}
-		}
+		//}
 		return null;
 	}
 	
 	public Habitacion getHabitacionPorIDporNivel(String id, int nivel){
-		if(existeHabitacion(id)){
+		//if(existeHabitacion(id)){
 			for(int i=0; i<this.getListaHabitaciones().size(); i++){
 				if(this.getListaHabitaciones().get(i).getIdHabitacion().equals(id) && this.getListaHabitaciones().get(i).getNivel() == nivel){
 					return this.getListaHabitaciones().get(i);
 				}
 			}
-		}
+		//}
 		return null;
 	}
 	
@@ -133,15 +133,21 @@ public class Edificio {
 		
 		for(Conexion c: this.listaConexiones){
 			if(c.getIdOrigen().equals(identificador)){
+				if(!(adyacentes.contains(this.getHabitacionPorID(c.getIdDestino())))){
 					adyacentes.add(this.getHabitacionPorID(c.getIdDestino()));
+				}
+					
 			}
 		}
 		
-		for(Conexion c: this.listaConexiones){
-			if(c.getIdDestino().equals(identificador)){
-				adyacentes.add(this.getHabitacionPorID(c.getIdOrigen()));
-			}
-		}
+//		for(Conexion c: this.listaConexiones){
+//			if(c.getIdDestino().equals(identificador)){
+//				if(!(adyacentes.contains(this.getHabitacionPorID(c.getIdDestino())))){
+//					adyacentes.add(this.getHabitacionPorID(c.getIdOrigen()));	
+//				}
+//				
+//			}
+//		}
 
 		return adyacentes;
 	}
@@ -191,5 +197,20 @@ public class Edificio {
 			}
 		}
 		return escaleras;
+	}
+	
+	public boolean isAdyacente(Habitacion posicionActual, Habitacion posicionRecibida) {
+		
+		ArrayList<Habitacion> adyacentes = new ArrayList<Habitacion>();
+		adyacentes = this.getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
+		
+		if(adyacentes!=null){
+			if(adyacentes.contains(posicionRecibida)){
+				return true;
+			}
+			return false;
+		}
+		
+		return false;
 	}
 }

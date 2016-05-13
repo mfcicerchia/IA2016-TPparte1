@@ -37,19 +37,17 @@ public class IrEscalera extends SearchAction {
 		// * Retorna el estado actualizado
 		
 	
-		Habitacion posicionActual = agState.getPosicion();
+        Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
-		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
 		
-
-		for (Habitacion h : adyacentes) {
-			if ((h.getClass().getSimpleName().equals("Escalera")) &&
-			   (h.getIdHabitacion().equals(this.idEscalera)) &&
-			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual,h) > 0)){
+		//obtengo la habitacion que cuyo id recibo como parametro
+		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idEscalera);
+		
+			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
+				!(agState.getHabitaciones_visitadas().contains(h)) &&
+				(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 			    Escalera escalera = (Escalera) h;
-				if (escalera.isBloqueada()) {
-					break;
-				} else {
+				if (!escalera.isBloqueada()) {
 					//decremento la energia 
 					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
 					// me muevo a la siguiente habitacion
@@ -60,8 +58,6 @@ public class IrEscalera extends SearchAction {
 					return agState;
 				}
 			}
-		}
-        
         return null;
     }
 
@@ -83,19 +79,21 @@ public class IrEscalera extends SearchAction {
 
         // TODO: LISTO - real world
         
-        Habitacion posicionActual = agState.getPosicion();
-		int energiaDisponible = agState.getEnergía_agente();
-		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
+        
 		boolean seMueve=false;
        
-		for (Habitacion h : adyacentes) {
-			if ((h.getClass().getSimpleName().equals("Escalera")) &&
-			   (h.getIdHabitacion().equals(this.idEscalera)) &&
-			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual,h) > 0)){
+		  Habitacion posicionActual = agState.getPosicion();
+			int energiaDisponible = agState.getEnergía_agente();
+			
+			//obtengo la habitacion que cuyo id recibo como parametro
+			Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idEscalera);
+			
+				if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
+					!(agState.getHabitaciones_visitadas().contains(h)) &&
+					(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 			    Escalera escalera = (Escalera) h;
-				if (escalera.isBloqueada()) {
-					break;
-				} else {
+				if (!escalera.isBloqueada()) {
+					
 					//decremento la energia 
 					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
 					// me muevo a la siguiente habitacion
@@ -106,7 +104,7 @@ public class IrEscalera extends SearchAction {
 					seMueve=true;
 				}
 			}
-		}
+		
 		
 		
 		// Si se puede mover informo el cambio de posicion en el ambiente.

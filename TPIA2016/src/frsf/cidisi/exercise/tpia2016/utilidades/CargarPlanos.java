@@ -26,8 +26,8 @@ public class CargarPlanos {
 					.println("#################################################################");
 
 			// Esperar que el usuario presione enter para continuar...
-			System.out.println("Pulsa \'intro\' para continuar");
-			System.in.read();
+//			System.out.println("Pulsa \'intro\' para continuar");
+//			System.in.read();
 
 			datosHabitaciones = new ConverterHabitaciones(archivoCSV);
 
@@ -59,8 +59,8 @@ public class CargarPlanos {
 			e.printStackTrace();
 		}
 
-		System.out.println("Pulsa \'intro\' para continuar");
-		System.in.read();
+//		System.out.println("Pulsa \'intro\' para continuar");
+//		System.in.read();
 
 		File conexionesCSV = new File("archivosCSV" + "\\" + "conexiones2.csv");
 		ConverterConexiones datosConexiones;
@@ -73,8 +73,8 @@ public class CargarPlanos {
 			datosConexiones = new ConverterConexiones(conexionesCSV);
 
 			// Esperar que el usuario presione enter para continuar...
-			System.out.println("Pulsa \'intro\' para continuar");
-			System.in.read();
+//			System.out.println("Pulsa \'intro\' para continuar");
+//			System.in.read();
 
 			for (int i = 0; i < datosConexiones.getListaConexiones().size(); i++) {
 				System.out.println("origen: "
@@ -112,9 +112,9 @@ public class CargarPlanos {
 		ArrayList<Habitacion> adyacentes = new ArrayList<Habitacion>();
 
 		// Esperar que el usuario presione enter para continuar...
-		System.out.println("Pulsa \'intro\' para continuar");
-		System.in.read();
-		System.in.read();
+//		System.out.println("Pulsa \'intro\' para continuar");
+//		System.in.read();
+//		System.in.read();
 
 		System.out.println("¿Existe la habitacion con el id: "
 				+ mapa.getHabitacionPorID("ingreso1").getIdHabitacion()

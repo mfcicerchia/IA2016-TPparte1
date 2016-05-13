@@ -32,7 +32,7 @@ public class AgenteMain {
     	
     	// Setear el estado del agente y del ambiente con los datos 
     	// ya cargados
-    	Agente agent = new Agente(edificio, 1000, edificio.getHabitacionPorID("ingreso1"),edificio.getHabitacionPorID("au8"));
+    	Agente agent = new Agente(edificio, 1000, edificio.getHabitacionPorID("ingreso1"),edificio.getHabitacionPorID("esc1"));
         Universidad environment = new Universidad(edificio);
 
         
@@ -41,7 +41,7 @@ public class AgenteMain {
         
         
        //posible punto donde inicializar la interfaz
-        System.out.println("Aprente \'intro\' para iniciar la simulacion");
+        //System.out.println("Aprente \'intro\' para iniciar la simulacion");
         //System.in.read();
         simulator.start();
     }
