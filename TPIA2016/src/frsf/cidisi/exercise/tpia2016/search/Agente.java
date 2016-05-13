@@ -1,21 +1,9 @@
 package frsf.cidisi.exercise.tpia2016.search;
 
-import frsf.cidisi.exercise.tpia2016.search.actions.IrAula;
-import frsf.cidisi.exercise.tpia2016.search.actions.IrAscensor;
-import frsf.cidisi.exercise.tpia2016.search.actions.IrBiblioteca;
-import frsf.cidisi.exercise.tpia2016.search.actions.IrEscalera;
-import frsf.cidisi.exercise.tpia2016.search.actions.IrDepartamento;
-import frsf.cidisi.exercise.tpia2016.search.actions.IrBaño;
-import frsf.cidisi.exercise.tpia2016.search.actions.IrLaboratorio;
-import frsf.cidisi.exercise.tpia2016.search.actions.IrPasillo;
-import frsf.cidisi.exercise.tpia2016.search.actions.SubirNivel;
+import frsf.cidisi.exercise.tpia2016.search.actions.*;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Edificio;
-import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
-import frsf.cidisi.exercise.tpia2016.modelo.nodos.Aula;
-import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
-import frsf.cidisi.exercise.tpia2016.modelo.nodos.Pasillo;
-import frsf.cidisi.exercise.tpia2016.search.actions.BajarNivel;
-
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.*;
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.agent.search.Problem;
 import frsf.cidisi.faia.agent.search.SearchAction;
@@ -24,7 +12,6 @@ import frsf.cidisi.faia.agent.Action;
 import frsf.cidisi.faia.solver.search.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.ArrayList;
 import java.util.Vector;
 
 public class Agente extends SearchBasedAgent {
@@ -52,34 +39,73 @@ public class Agente extends SearchBasedAgent {
         	IrAula irAula = new IrAula(a.getIdHabitacion());
             operators.addElement(irAula);
         }
+        
         for(Escalera e: mapa.getEscaleras()){
         	operators.addElement(new IrEscalera(e.getIdHabitacion()));
         }
-//        
-//       
-// 	
-//        operators.addElement(new IrAscensor());
-//        
-     
-//        operators.addElement(new IrDepartamento());	
-//        
-//        operators.addElement(new IrBaño());	
-//        	
-//        ArrayList<Habitacion> listaDeEscalerasYAscensores = new ArrayList<Habitacion>();
-//        listaDeEscalerasYAscensores.addAll(mapa.getEscaleras());
-//        listaDeEscalerasYAscensores.addAll(mapa.getEscaleras());
-//        
-//        for(Habitacion h: listaDeEscalerasYAscensores){
-//        	operators.addElement(new SubirNivel(h.getIdHabitacion()));
-//        }
+        
+        for(Ascensor asc: mapa.getAscensores()){
+        	operators.addElement(new IrAscensor(asc.getIdHabitacion()));
+        }
+        
+        for(Fotocopiadora fotocopiadora: mapa.getFotocopiadoras()){
+        	System.out.println(fotocopiadora.getClass().getSimpleName());
+        	System.out.println(fotocopiadora.getDescripcion());
+        	operators.addElement(new IrFotocopiadora(fotocopiadora.getIdHabitacion()));
+        }
+        
+        for(Baño baño: mapa.getBaños()){
+        	operators.addElement(new IrBaño(baño.getIdHabitacion()));	
+        }
+        
+        for(Biblioteca biblioteca: mapa.getBibliotecas()){
+        	 operators.addElement(new IrBiblioteca(biblioteca.getIdHabitacion()));
+        }
+        
+		for (Cantina cantina: mapa.getCantinas()) {
+			operators.addElement(new IrCantina(cantina.getIdHabitacion()));
+		}
+        
+		// Para cada nodo ascensor y cada nodo escalera se crea un nuevo operador
+		// el cual sera evaluado en las precondiciones del operador consultando
+		// si dicho nodo es adyacente a la posicion actual
+		for (Ascensor asc : mapa.getAscensores()) {
+			operators.addElement(new SubirNivel(asc.getIdHabitacion()));
+		}
+		
+		for (Escalera esc : mapa.getEscaleras()) {
+			operators.addElement(new SubirNivel(esc.getIdHabitacion()));
+		}
+		
+		for (Oficina oficina : mapa.getOficinas()) {
+			operators.addElement(new IrOficina(oficina.getIdHabitacion()));
+		}
+              
+		for (Departamento depto : mapa.getDepartamentos()) {
+			operators.addElement(new IrDepartamento(depto.getIdHabitacion()));	
+		}
+		
+		for (Laboratorio lab : mapa.getLaboratorios()) {
+			operators.addElement(new IrLaboratorio(lab.getIdHabitacion()));
+		}
+		
+		for (Taller taller : mapa.getTalleres()) {
+			operators.addElement(new IrLaboratorio(taller.getIdHabitacion()));
+		}
+		
+		for (Ingreso ingreso : mapa.getIngresos()) {
+			operators.addElement(new IrLaboratorio(ingreso.getIdHabitacion()));
+		}
+	
+
 //        	
 //        for(Habitacion h: listaDeEscalerasYAscensores){
 //        	operators.addElement(new BajarNivel(h.getIdHabitacion()));
 //        }
 //        
 //        
-//        operators.addElement(new IrBiblioteca());
-//        operators.addElement(new IrLaboratorio());
+		
+		
         	
 
         // Create the Problem which the agent will resolve
@@ -94,7 +120,11 @@ public class Agente extends SearchBasedAgent {
     public Action selectAction() {
 
         // Create the search strategy
-        BreathFirstSearch strategy = new BreathFirstSearch();          
+    	// BreathFirstSearch strategy = new BreathFirstSearch(); (esta estaba desde el idemia)
+    	
+    	
+    	// Estrategia de busqueda en profundidad
+    	DepthFirstSearch strategy = new DepthFirstSearch();
 
         // Create a Search object with the strategy
         Search searchSolver = new Search(strategy);

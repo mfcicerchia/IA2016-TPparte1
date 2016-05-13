@@ -140,15 +140,14 @@ public class Edificio {
 			}
 		}
 		
-//		for(Conexion c: this.listaConexiones){
-//			if(c.getIdDestino().equals(identificador)){
-//				if(!(adyacentes.contains(this.getHabitacionPorID(c.getIdDestino())))){
-//					adyacentes.add(this.getHabitacionPorID(c.getIdOrigen()));	
-//				}
-//				
-//			}
-//		}
-
+		for(Conexion c: this.listaConexiones){
+			if(c.getIdDestino().equals(identificador)){
+				if(!(adyacentes.contains(this.getHabitacionPorID(c.getIdDestino())))){
+					adyacentes.add(this.getHabitacionPorID(c.getIdOrigen()));	
+				}
+				
+			}
+		}
 		return adyacentes;
 	}
 
@@ -199,6 +198,141 @@ public class Edificio {
 		return escaleras;
 	}
 	
+	public ArrayList<Ascensor> getAscensores() {
+		ArrayList<Ascensor> ascensores = new ArrayList<Ascensor>();
+
+		for (Habitacion asc : this.getListaHabitaciones()) {
+			if (asc.getClass().getSimpleName().equals("Ascensor")) {
+				ascensores.add((Ascensor) asc);
+			}
+		}
+		return ascensores;
+	}
+	
+	public ArrayList<Fotocopiadora> getFotocopiadoras() {
+		ArrayList<Fotocopiadora> fotocopiadoras = new ArrayList<Fotocopiadora>();
+
+		for (Habitacion fotocopiadora : this.getListaHabitaciones()) {
+			if (fotocopiadora.getClass().getSimpleName().equals("Fotocopiadora")) {
+				fotocopiadoras.add((Fotocopiadora) fotocopiadora);
+			}
+		}
+		return fotocopiadoras;
+	}
+	
+	
+	public ArrayList<Baño> getBaños() {
+		ArrayList<Baño> baños = new ArrayList<Baño>();
+		
+		for (Habitacion h : this.getListaHabitaciones()) {
+			if (h.getClass().getSimpleName().equals("Baño")) {
+				baños.add((Baño) h);
+			}
+		}
+		return baños;
+	}
+	
+	
+	public ArrayList<Biblioteca> getBibliotecas() {
+		ArrayList<Biblioteca> bibliotecas = new ArrayList<Biblioteca>();
+		
+		for(Habitacion h: this.getListaHabitaciones()){
+			if (h.getClass().getSimpleName().equals("Biblioteca")) {
+				bibliotecas.add((Biblioteca) h);
+			}
+		}
+		return bibliotecas;
+	}
+
+	public ArrayList<Cantina> getCantinas() {
+		ArrayList<Cantina> cantinas = new ArrayList<Cantina>();
+
+		for (Habitacion h : this.getListaHabitaciones()) {
+			if (h.getClass().getSimpleName().equals("Cantina")) {
+				cantinas.add((Cantina) h);
+			}
+		}
+		return cantinas;
+	}
+	
+	public ArrayList<Oficina> getOficinas() {
+		ArrayList<Oficina> oficinas = new ArrayList<Oficina>();
+
+		for (Habitacion h : this.getListaHabitaciones()) {
+			if (h.getClass().getSimpleName().equals("Oficina")) {
+				oficinas.add((Oficina) h);
+			}
+		}
+		return oficinas;
+	}
+	
+	public ArrayList<Departamento> getDepartamentos() {
+		ArrayList<Departamento> deptos = new ArrayList<Departamento>();
+
+		for (Habitacion h : this.getListaHabitaciones()) {
+			if (h.getClass().getSimpleName().equals("Departamento")) {
+				deptos.add((Departamento) h);
+			}
+		}
+		return deptos;
+	}
+	
+	public ArrayList<Laboratorio> getLaboratorios() {
+		ArrayList<Laboratorio> labs = new ArrayList<Laboratorio>();
+
+		for (Habitacion h : this.getListaHabitaciones()) {
+			if (h.getClass().getSimpleName().equals("Laboratorio")) {
+				labs.add((Laboratorio) h);
+			}
+		}
+		return labs;
+	}
+	
+	public ArrayList<Taller> getTalleres() {
+		ArrayList<Taller> talleres = new ArrayList<Taller>();
+
+		for (Habitacion h : this.getListaHabitaciones()) {
+			if (h.getClass().getSimpleName().equals("Taller")) {
+				talleres.add((Taller) h);
+			}
+		}
+		return talleres;
+	}
+	
+	public ArrayList<Estadio> getEstadios() {
+		ArrayList<Estadio> estadios = new ArrayList<Estadio>();
+
+		for (Habitacion h : this.getListaHabitaciones()) {
+			if (h.getClass().getSimpleName().equals("Estadio")) {
+				estadios.add((Estadio) h);
+			}
+		}
+		return estadios;
+	}
+	
+	public ArrayList<Ingreso> getIngresos() {
+		ArrayList<Ingreso> ingresos = new ArrayList<Ingreso>();
+
+		for (Habitacion h : this.getListaHabitaciones()) {
+			if (h.getClass().getSimpleName().equals("Ingreso")) {
+				ingresos.add((Ingreso) h);
+			}
+		}
+		return ingresos;
+	}
+	
+	
+	
+	
+	
+	
+	
+	/**
+	 * @param posicionActual
+	 * @param posicionRecibida
+	 * @return true: si posicionActual es adyacente a posicionRecibida
+	 * 		   false: caso contrario
+	 */
 	public boolean isAdyacente(Habitacion posicionActual, Habitacion posicionRecibida) {
 		
 		ArrayList<Habitacion> adyacentes = new ArrayList<Habitacion>();
@@ -213,4 +347,17 @@ public class Edificio {
 		
 		return false;
 	}
+
+	
+
+
+
+	
+
+	
+
+
+	
+
+
 }

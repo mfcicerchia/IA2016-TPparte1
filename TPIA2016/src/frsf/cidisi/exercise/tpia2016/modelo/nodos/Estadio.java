@@ -2,27 +2,16 @@ package frsf.cidisi.exercise.tpia2016.modelo.nodos;
 
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
-public class Escalera extends Habitacion {
-	boolean bloqueada;
-	public Escalera() {
+public class Estadio extends Habitacion {
+	
+	public Estadio() {
 		super();
 	}
-	public Escalera(String id, int nivel,String desc,boolean blq) {
-		super(id, nivel,desc);
-		bloqueada=blq;
+
+	public Estadio(String id, int nivel, String desc) {
+		super(id, nivel, desc);
 	}
-	public boolean isBloqueada() {
-		return bloqueada;
-	}
-	public void setBloqueada(boolean bloqueada) {
-		this.bloqueada = bloqueada;
-	}
-	
-	@Override
-	public String toString() {
-		return super.toString() + "bloqueada=" + bloqueada+"]";
-	}
-	
+
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -30,7 +19,7 @@ public class Escalera extends Habitacion {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Escalera other = (Escalera) obj;
+		Estadio other = (Estadio) obj;
 		if (this.getDescripcion() == null) {
 			if (other.getDescripcion() != null)
 				return false;
@@ -43,12 +32,10 @@ public class Escalera extends Habitacion {
 			return false;
 		if (this.getNivel() != other.getNivel())
 			return false;
-		if (this.isBloqueada() != other.isBloqueada())
-			return false;
 		return true;
 	}
 	
-	public Escalera clone(){
-		return new Escalera(this.getIdHabitacion(),this.getNivel(), this.getDescripcion(), this.isBloqueada());
+	public Estadio clone(){
+		return new Estadio(this.getIdHabitacion(),this.getNivel(), this.getDescripcion());
 	}
 }

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import frsf.cidisi.exercise.tpia2016.modelo.*;
+
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Conexion;
 
 /**

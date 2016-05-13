@@ -1,6 +1,5 @@
 package frsf.cidisi.exercise.tpia2016.search.actions;
 
-
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 import frsf.cidisi.exercise.tpia2016.search.*;
 import frsf.cidisi.faia.agent.search.SearchAction;
@@ -8,11 +7,11 @@ import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
 import frsf.cidisi.faia.state.AgentState;
 import frsf.cidisi.faia.state.EnvironmentState;
 
-public class IrBiblioteca extends SearchAction  {
+public class IrCantina extends SearchAction  {
 	
-	String idBiblioteca;
-	public IrBiblioteca (String idBiblioteca){
-		this.idBiblioteca = idBiblioteca;
+	String idCantina;
+	public IrCantina (String idCantina){
+		this.idCantina = idCantina;
 	}
 	
 	    /**
@@ -24,22 +23,13 @@ public class IrBiblioteca extends SearchAction  {
 	        EstadoAgente agState = (EstadoAgente) s;
 	        
 	        // TODO: LISTO - pensando
-	      
-	    	// PREcondicion: 
-			// * Si el agente tiene alguna habitacion adyacente del tipo BIBLIOTECA		
-			// * Si el agente tiene energia suficiente para moverse
-			// * Si la habitacion BIBLIOTECA a la que se va a mover NO fue visitada
-			// POScondicion
-			// * El agente cambia de posicion, se mueve a la habitacion BIBLIOTECA
-			// * Decrementa su energia segun el costo de moverse a ese BIBLIOTECA
-			// * Retorna el estado actualizado
 			
 		
 	        Habitacion posicionActual = agState.getPosicion();
 			int energiaDisponible = agState.getEnergía_agente();
 			
 			//obtengo la habitacion que cuyo id recibo como parametro
-			Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idBiblioteca);
+			Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idCantina);
 			
 				if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
 					!(agState.getHabitaciones_visitadas().contains(h)) &&
@@ -73,7 +63,7 @@ public class IrBiblioteca extends SearchAction  {
 			int energiaDisponible = agState.getEnergía_agente();
 			
 			//obtengo la habitacion que cuyo id recibo como parametro
-			Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idBiblioteca);
+			Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idCantina);
 			boolean seMueve = false;
 			
 				if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
@@ -114,7 +104,7 @@ public class IrBiblioteca extends SearchAction  {
 	     */
 	    @Override
 	    public String toString() {
-	        return "IrBiblioteca";
+	        return "IrCantina";
 	    }
 	
 }

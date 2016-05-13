@@ -6,17 +6,17 @@ Pasillo,p3-0,0,pasillo 3 planta baja
 Pasillo,p3-0,0,pasillo 4 planta baja
 Pasillo,p5-0,0,pasillo 5 planta baja
 Pasillo,p6-0,0,pasillo 6 planta baja
-escalera,esc1,0,escalera 1
-escalera,esc2,0,escalera 2
-escalera,esc3,0,escalera 3
-escalera,esc4,0,escalera 4
-escalera,esc5,0,escalera 5
-escalera,esc6,0,escalera 6
-escalera,esc7,0,escalera 7
-Ascensor,asc1,0,ascensor planta baja
-Ascensor,asc1,1,ascensor primer piso
-Ascensor,asc1,2,ascensor segundo piso
-Ascensor,asc1,3,ascensor tercer piso
+escalera,esc1-0,0,escalera 1
+escalera,esc2-0,0,escalera 2
+escalera,esc3-0,0,escalera 3
+escalera,esc4-0,0,escalera 4
+escalera,esc5-0,0,escalera 5
+escalera,esc6-0,0,escalera 6
+escalera,esc7-0,0,escalera 7
+Ascensor,asc1-0,0,ascensor planta baja
+Ascensor,asc1-1,1,ascensor primer piso
+Ascensor,asc1-2,2,ascensor segundo piso
+Ascensor,asc1-3,3,ascensor tercer piso
 Aula,au1,0,aula1
 Aula,au2,0,aula2
 Aula,au3,0,aula3
@@ -36,8 +36,8 @@ Laboratorio,lab2,0,Laboratorio de Fluidica
 Departamento,mecanica,0,Departamento de Mecanica
 Departamento,electrica,0,Departamento de Electrica
 Fotocopiadora,fotocopiadora,0,Fotocopiadora FRSF
-Escalera,esc3,2,escalera 3
-Escalera,esc3,3,escalera 3
+Escalera,esc3-2,2,escalera 3
+Escalera,esc3-3,3,escalera 3
 Aula,au9,1,aula9
 Aula,au10,1,aula10
 Aula,au11,1,aula11
@@ -61,13 +61,13 @@ Pasillo,p6-1,1,pasillo 6 primer pisp
 Departamento,Civil,1,Departamento de Civil
 Departamento,Básicas,1,Departamento de Materias Básicas
 Departamento,Industrial,1,Departamento de Industrial
-Escalera,esc3,1,escalera 3
-Escalera,esc1,1,escalera 1
-Escalera,esc2,1,escalera 2
-Escalera,esc4,1,escalera 4 
-Escalera,esc5,1,escalera 5
-Escalera,esc6,1,escalera 6
-Escalera,esc7,1,escalera 7
+Escalera,esc3-1,1,escalera 3
+Escalera,esc1-1,1,escalera 1
+Escalera,esc2-1,1,escalera 2
+Escalera,esc4-1,1,escalera 4 
+Escalera,esc5-1,1,escalera 5
+Escalera,esc6-1,1,escalera 6
+Escalera,esc7-1,1,escalera 7
 Biblioteca,biblioteca2,1,Biblioteca IRAM
 Aula,if1,1,Informática 1
 Aula,if2,2,Informática 2
@@ -102,10 +102,10 @@ Laboratorio,lab2,3,Laboratorio Conectividad
 Oficina,ofc1-3,3,CIDISI
 Oficina,ofc3-3,3,Varios
 Oficina,ofc2-3,3,TICS
-Depatamento,Sistemas,3,Departemanto de Sitemas
+Depatamento,Sistemas,3,Departemanto de Sistemas
 Escalera,esc8,3,escalera 8
-Escalera,esc3,3,escalera 3
+Escalera,esc3-3,3,escalera 3
 Pasillo,p2-3,3,pasillo 2 tercer piso
-Pasillo,p1-3,3,pasillo 2 tercer piso
+Pasillo,p1-3,3,pasillo 1 tercer piso
 Aula,cs1,3,Aula Consultas 1
 Aula,cs2,3,Aula Consultas 2

@@ -1,7 +1,5 @@
 package frsf.cidisi.exercise.tpia2016.search.actions;
 
-import java.util.ArrayList;
-
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.Ascensor;
 import frsf.cidisi.exercise.tpia2016.search.*;
@@ -11,6 +9,11 @@ import frsf.cidisi.faia.state.AgentState;
 import frsf.cidisi.faia.state.EnvironmentState;
 
 public class IrAscensor extends SearchAction {
+	
+	String idAscensor;
+	public IrAscensor(String idAscensor){
+		this.idAscensor = idAscensor;
+	}
 
     /**
      * This method updates a tree node state when the search process is running.
@@ -32,14 +35,16 @@ public class IrAscensor extends SearchAction {
 		// * Retorna el estado actualizado
 		
 	
-		Habitacion posicionActual = agState.getPosicion();
+        Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
-		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
 		
-
-		for (Habitacion h : adyacentes) {
-			if ((h.getClass().getSimpleName().equals("Ascensor")) &&
-			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual,h) > 0)){
+		//obtengo la habitacion que cuyo id recibo como parametro
+		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idAscensor);
+		
+			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&&
+				!(posicionActual.getClass().getSimpleName().equals("Ascensor"))&&
+				!(agState.getHabitaciones_visitadas().contains(h)) &&
+				(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 				
 				Ascensor ascensor = (Ascensor) h;
 				if (ascensor.isPitido()) {
@@ -55,7 +60,7 @@ public class IrAscensor extends SearchAction {
 					return agState;
 				}
 			}
-		}
+		
         
         return null;
     }
@@ -70,14 +75,17 @@ public class IrAscensor extends SearchAction {
 
         // TODO: LISTO - real world
         
-    	Habitacion posicionActual = agState.getPosicion();
+        Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
-		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
-		boolean seMueve=false;
-
-		for (Habitacion h : adyacentes) {
-			if ((h.getClass().getSimpleName().equals("Ascensor")) &&
-			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual,h) > 0)){
+		
+		//obtengo la habitacion que cuyo id recibo como parametro
+		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idAscensor);
+		boolean seMueve = false;
+		
+			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&&
+				!(posicionActual.getClass().getSimpleName().equals("Ascensor"))&&
+				!(agState.getHabitaciones_visitadas().contains(h)) &&
+				(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 				
 				Ascensor ascensor = (Ascensor) h;
 				if (ascensor.isPitido()) {
@@ -91,7 +99,7 @@ public class IrAscensor extends SearchAction {
 					// agState.getHabitaciones_visitadas().add(h);
 					seMueve=true;
 				}
-			}
+			
 		}
         
         if (seMueve) {

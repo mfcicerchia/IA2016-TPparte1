@@ -7,13 +7,13 @@ import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
 import frsf.cidisi.faia.state.AgentState;
 import frsf.cidisi.faia.state.EnvironmentState;
 
-public class IrLaboratorio extends SearchAction {
+public class IrOficina extends SearchAction {
 	
 	
 	
-	String idLaboratorio;
-	public IrLaboratorio(String idLaboratorio){
-		this.idLaboratorio = idLaboratorio;
+	String idOficina;
+	public IrOficina(String idOficina){
+		this.idOficina = idOficina;
 	}
 
     /**
@@ -26,21 +26,11 @@ public class IrLaboratorio extends SearchAction {
         
         // TODO: LISTO - pensando
         
-    	// PREcondicion: 
-		// * Si el agente tiene alguna habitacion adyacente del tipo AULA
-		// * Si el agente tiene energia suficiente para moverse
-		// * Si la habitacion Laboratorio a la que se va a mover NO fue visitada
-		// POScondicion
-		// * El agente cambia de posicion, se mueve a la habitacion AULA
-		// * Decrementa su energia segun el costo de moverse a ese aula
-		// * Retorna el estado actualizado
-		
-	
         Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
 		
 		//obtengo la habitacion que cuyo id recibo como parametro
-		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idLaboratorio);
+		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idOficina);
 		
 			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
 				!(agState.getHabitaciones_visitadas().contains(h)) &&
@@ -73,7 +63,7 @@ public class IrLaboratorio extends SearchAction {
 
 	
 		//obtengo la habitacion que cuyo id recibo como parametro
-		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idLaboratorio);
+		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idOficina);
 		
 			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
 				!(agState.getHabitaciones_visitadas().contains(h)) &&
@@ -115,6 +105,6 @@ public class IrLaboratorio extends SearchAction {
      */
     @Override
     public String toString() {
-        return "IrLaboratorio";
+        return "IrOficina";
     }
 }

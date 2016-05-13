@@ -1,7 +1,5 @@
 package frsf.cidisi.exercise.tpia2016.search.actions;
 
-import java.util.ArrayList;
-
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.*;
 import frsf.cidisi.exercise.tpia2016.search.*;

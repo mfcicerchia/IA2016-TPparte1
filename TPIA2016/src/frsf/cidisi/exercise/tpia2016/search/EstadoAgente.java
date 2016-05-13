@@ -89,7 +89,7 @@ public class EstadoAgente extends SearchBasedAgentState {
         //TODO: LISTO - UpdateState
     	
     	AgentePerception perception=(AgentePerception)p;
-    	Habitacion posicionActual= this.getPosicion();
+    	
     	
     	int hay_bip=perception.getHay_bip_ascensor();
     	int hay_bloqueo_escalera=perception.getHay_bloqueo_escalera();
@@ -125,35 +125,35 @@ public class EstadoAgente extends SearchBasedAgentState {
     public String toString() {
         String str = "";
  
-        str += "Habitaciones: {";
-        for(Habitacion h : mapa_ambiente.getListaHabitaciones())
-        	str+= h.toString() + ", ";
-        str = str.substring(0,str.length()-2);
-        str += "}\n";
+//        str += "Habitaciones: {";
+//        for(Habitacion h : mapa_ambiente.getListaHabitaciones())
+//        	str+= h.toString() + ", ";
+//        str = str.substring(0,str.length()-2);
+//        str += "}\n";
         
-        str += "Conexiones: {";
-        for(Conexion h : mapa_ambiente.getListaConexiones())
-        	str+= h.toString() + ", ";
-        str = str.substring(0,str.length()-2);
-        str += "}\n";
+//        str += "Conexiones: {";
+//        for(Conexion h : mapa_ambiente.getListaConexiones())
+//        	str+= h.toString() + ", ";
+//        str = str.substring(0,str.length()-2);
+//        str += "}\n";
         
-        if(habitaciones_visitadas!=null){
-        	 str += "Visitadas: {";
-             for(Habitacion h : habitaciones_visitadas)
-             	str+= h.toString() + ", ";
-             str = str.substring(0,str.length()-2);
-             str += "}\n";
-        }
+//        if(habitaciones_visitadas!=null){
+//        	 str += "Visitadas: {";
+//             for(Habitacion h : habitaciones_visitadas)
+//             	str+= h.toString() + ", ";
+//             str = str.substring(0,str.length()-2);
+//             str += "}\n";
+//        }
        
         
-        str += "Posición del agente: ";
-        str += posicionActual.toString();
+        str += "\nPosición del agente: ";
+        str += posicionActual.toString()+"\n";
         
         str += "Destino: ";
-        str += posicionDestino.toString();
+        str += posicionDestino.toString()+"\n";
         
         str += "Energia: ";
-        str += energía_agente;
+        str += energía_agente+"\n";
         return str;
     }
 

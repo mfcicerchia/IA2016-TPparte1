@@ -1,6 +1,6 @@
 package frsf.cidisi.exercise.tpia2016.search.actions;
 
-import java.util.ArrayList;
+
 
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 import frsf.cidisi.exercise.tpia2016.search.*;
@@ -10,6 +10,11 @@ import frsf.cidisi.faia.state.AgentState;
 import frsf.cidisi.faia.state.EnvironmentState;
 
 public class IrBaño extends SearchAction {
+	
+	String idBaño;
+	public IrBaño(String idBaño){
+		this.idBaño = idBaño;
+	}
 
     /**
      * This method updates a tree node state when the search process is running.
@@ -29,16 +34,15 @@ public class IrBaño extends SearchAction {
 		// * Decrementa su energia segun el costo de moverse a esa habitacion
 		// * Retorna el estado actualizado
 		
-	
-		Habitacion posicionActual = agState.getPosicion();
+        Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
-		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
 		
-
-		for (Habitacion h : adyacentes) {
-			if ((h.getClass().getSimpleName().equals("Baño")) &&
-			   !(agState.getHabitaciones_visitadas().contains(h)) &&
-			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
+		//obtengo la habitacion que cuyo id recibo como parametro
+		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idBaño);
+		
+			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
+				!(agState.getHabitaciones_visitadas().contains(h)) &&
+				(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 					//decremento la energia 
 					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
 					// me muevo a la siguiente habitacion
@@ -48,7 +52,7 @@ public class IrBaño extends SearchAction {
 					// retorno el estado actualizado
 					return agState;
 			}
-		}
+		
         return null;
     }
 
@@ -63,13 +67,14 @@ public class IrBaño extends SearchAction {
         // TODO: LISTO - real world
         Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
-		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(posicionActual.getIdHabitacion());
 		boolean seMueve = false;
-
-		for (Habitacion h : adyacentes) {
-			if ((h.getClass().getSimpleName().equals("Baño")) &&
-			   !(agState.getHabitaciones_visitadas().contains(h)) &&
-			   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
+		
+		//obtengo la habitacion que cuyo id recibo como parametro
+		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idBaño);
+		
+			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
+				!(agState.getHabitaciones_visitadas().contains(h)) &&
+				(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 					//decremento la energia 
 					agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));
 					// me muevo a la siguiente habitacion
@@ -79,7 +84,7 @@ public class IrBaño extends SearchAction {
 					
 					seMueve = true;
 			}
-		}
+		
     
         
         if (seMueve) {

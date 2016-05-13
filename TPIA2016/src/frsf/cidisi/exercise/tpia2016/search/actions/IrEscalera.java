@@ -1,6 +1,5 @@
 package frsf.cidisi.exercise.tpia2016.search.actions;
 
-import java.util.ArrayList;
 
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
@@ -43,7 +42,8 @@ public class IrEscalera extends SearchAction {
 		//obtengo la habitacion que cuyo id recibo como parametro
 		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idEscalera);
 		
-			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
+			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&&
+				!(posicionActual.getClass().getSimpleName().equals("Escalera"))&&
 				!(agState.getHabitaciones_visitadas().contains(h)) &&
 				(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 			    Escalera escalera = (Escalera) h;
@@ -88,7 +88,8 @@ public class IrEscalera extends SearchAction {
 			//obtengo la habitacion que cuyo id recibo como parametro
 			Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idEscalera);
 			
-				if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
+				if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&&
+						!(posicionActual.getClass().getSimpleName().equals("Escalera"))&&
 					!(agState.getHabitaciones_visitadas().contains(h)) &&
 					(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 			    Escalera escalera = (Escalera) h;

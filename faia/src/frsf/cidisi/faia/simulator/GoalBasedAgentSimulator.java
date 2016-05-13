@@ -72,10 +72,10 @@ public abstract class GoalBasedAgentSimulator extends Simulator {
             System.out.println("Sending perception to agent...");
             perception = this.getPercept();
             agent.see(perception);
-            System.out.println("Perception: " + perception);
+            System.out.println("Perception: \n" + perception);
 
-            System.out.println("Agent State: " + agent.getAgentState());
-            System.out.println("Environment: " + environment);
+            System.out.println("\nAgent State: " + agent.getAgentState());
+            System.out.println("Environment: \n" + environment);
 
             System.out.println("Asking the agent for an action...");
             action = agent.selectAction();
@@ -84,7 +84,7 @@ public abstract class GoalBasedAgentSimulator extends Simulator {
                 break;
             }
 
-            System.out.println("Action returned: " + action);
+            System.out.println("Action returned: \n" + action);
             System.out.println();
 
             this.actionReturned(agent, action);

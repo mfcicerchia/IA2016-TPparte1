@@ -1,14 +1,13 @@
 
 package frsf.cidisi.exercise.tpia2016.search;
 
-//import java.util.ArrayList;
 
-//import frsf.cidisi.exercise.tpia2016.interfaz.Principal;
-import frsf.cidisi.exercise.tpia2016.interfaz.Principal;
+
+
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Edificio;
-//import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
+
 import frsf.cidisi.exercise.tpia2016.utilidades.CargarPlanos;
-//import frsf.cidisi.faia.exceptions.PrologConnectorException;
+
 import frsf.cidisi.faia.simulator.SearchBasedAgentSimulator;
 
 public class AgenteMain {
@@ -32,7 +31,7 @@ public class AgenteMain {
     	
     	// Setear el estado del agente y del ambiente con los datos 
     	// ya cargados
-    	Agente agent = new Agente(edificio, 1000, edificio.getHabitacionPorID("ingreso1"),edificio.getHabitacionPorID("esc1"));
+    	Agente agent = new Agente(edificio, 1000, edificio.getHabitacionPorID("ingreso1"),edificio.getHabitacionPorID("au1"));
         Universidad environment = new Universidad(edificio);
 
         

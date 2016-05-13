@@ -34,19 +34,19 @@ public class EstadoAmbiente extends EnvironmentState {
     public String toString() {
         String str = "";
  
-        str += "Habitaciones: {";
-        for(Habitacion h : mapa_ambiente.getListaHabitaciones())
-        	str+= h.toString() + ", ";
-        str = str.substring(0,str.length()-2);
-        str += "}\n";
+//        str += "Habitaciones: {";
+//        for(Habitacion h : mapa_ambiente.getListaHabitaciones())
+//        	str+= h.toString() + ", ";
+//        str = str.substring(0,str.length()-2);
+//        str += "}\n";
+//        
+//        str += "Conexiones: {";
+//        for(Conexion h : mapa_ambiente.getListaConexiones())
+//        	str+= h.toString() + ", ";
+//        str = str.substring(0,str.length()-2);
+//        str += "}\n";
         
-        str += "Conexiones: {";
-        for(Conexion h : mapa_ambiente.getListaConexiones())
-        	str+= h.toString() + ", ";
-        str = str.substring(0,str.length()-2);
-        str += "}\n";
-        
-        str += "Posición del agente: ";
+        str += "Posición del agente(en el ambiente): ";
         str += posicion_agente.toString();
         
         return str;
