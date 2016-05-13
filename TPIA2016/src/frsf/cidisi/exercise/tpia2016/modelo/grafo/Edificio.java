@@ -29,7 +29,7 @@ public class Edificio {
 	 * @param conexiones
 	 */
 	public  Edificio(ArrayList<Habitacion> habitaciones,ArrayList<Conexion> conexiones) {
-		this.setListaHabitaciones(listaHabitaciones);
+		this.setListaHabitaciones(habitaciones);
 		this.setListaConexiones(conexiones);
 	}
 
@@ -73,14 +73,8 @@ public class Edificio {
 				flag2 = true;
 			}
 		}
-		
-		
-		if(flag1 && flag2){
-			return true;	
-		}
-		else{
-			return false;
-		}
+			
+		return (flag1 && flag2);
 	}
 	
 	public int cantidadDeHabitacionesAsociadas(String id) {
@@ -95,17 +89,16 @@ public class Edificio {
 	}
 	
 	public ArrayList<Habitacion> getHabitacionesPorID(String id){
-		ArrayList resultado = new ArrayList<Habitacion>();
+		ArrayList<Habitacion> resultado = new ArrayList<Habitacion>();
 		
 		if(existeHabitacion(id)){
-			for(int i=0; i<getListaHabitaciones().size(); i++){
-				if(getListaHabitaciones().get(i).getIdHabitacion().equals(id)){
-					resultado.add(getListaHabitaciones().get(i));
+
+			for(int i=0; i<this.getListaHabitaciones().size(); i++){
+				if(this.getListaHabitaciones().get(i).getIdHabitacion().equals(id)){
+					resultado.add(this.getListaHabitaciones().get(i));
 				}
 			}
 		}
-		
-		
 		return resultado;
 		
 	}
@@ -113,9 +106,9 @@ public class Edificio {
 	public Habitacion getHabitacionPorID(String id){
 		
 		if(existeHabitacion(id)){
-			for(int i=0; i<getListaHabitaciones().size(); i++){
-				if(getListaHabitaciones().get(i).getIdHabitacion().equals(id)){
-					return getListaHabitaciones().get(i);
+			for(Habitacion h: this.getListaHabitaciones()){
+				if(h.getIdHabitacion().equals(id)){
+					return h;			
 				}
 			}
 		}
@@ -124,9 +117,9 @@ public class Edificio {
 	
 	public Habitacion getHabitacionPorIDporNivel(String id, int nivel){
 		if(existeHabitacion(id)){
-			for(int i=0; i<getListaHabitaciones().size(); i++){
-				if(getListaHabitaciones().get(i).getIdHabitacion().equals(id) && getListaHabitaciones().get(i).getNivel() == nivel){
-					return getListaHabitaciones().get(i);
+			for(int i=0; i<this.getListaHabitaciones().size(); i++){
+				if(this.getListaHabitaciones().get(i).getIdHabitacion().equals(id) && this.getListaHabitaciones().get(i).getNivel() == nivel){
+					return this.getListaHabitaciones().get(i);
 				}
 			}
 		}
@@ -177,7 +170,7 @@ public class Edificio {
 		return aulas;
 	}
 	
-	public ArrayList<Pasillo> getPaillos(){
+	public ArrayList<Pasillo> getPasillos(){
 		ArrayList<Pasillo> pasillos = new ArrayList<Pasillo>();
 		
 		for(Habitacion h: this.getListaHabitaciones()){

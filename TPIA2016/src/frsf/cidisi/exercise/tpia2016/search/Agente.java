@@ -42,7 +42,7 @@ public class Agente extends SearchBasedAgent {
         // Create the operators
         Vector<SearchAction> operators = new Vector<SearchAction>();
         
-        for(Pasillo p: mapa.getPaillos()){
+        for(Pasillo p: mapa.getPasillos()){
         	operators.addElement(new IrPasillo(p.getIdHabitacion()));
         }
         
@@ -58,9 +58,6 @@ public class Agente extends SearchBasedAgent {
         operators.addElement(new IrDepartamento());	
         
         operators.addElement(new IrBaño());	
-        
-        
-        
         	
         ArrayList<Habitacion> listaDeEscalerasYAscensores = new ArrayList<Habitacion>();
         listaDeEscalerasYAscensores.addAll(mapa.getEscaleras());

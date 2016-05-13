@@ -13,8 +13,8 @@ import frsf.cidisi.faia.state.EnvironmentState;
 public class IrPasillo extends SearchAction {
 
 	private String idPasillo;
-	public IrPasillo(String idPasillo) {
-		this.idPasillo = idPasillo;
+	public IrPasillo(String idP) {
+		this.idPasillo = idP;
 	}
 
 	/**
@@ -45,6 +45,7 @@ public class IrPasillo extends SearchAction {
 
 		if(adyacentes!=null){
 			for (Habitacion h : adyacentes) {
+				
 				if ((h.getClass().getSimpleName().equals("Pasillo")) &&
 						(h.getIdHabitacion().equals(idPasillo)) &&	
 						(energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), h) > 0)) {
@@ -64,10 +65,11 @@ public class IrPasillo extends SearchAction {
 					}
 				}
 			}
-		}else{
-		return null;	
 		}
-			return null;
+		else{
+			return null;	
+		}
+		return null;
 	}
 
 	/**
@@ -87,9 +89,11 @@ public class IrPasillo extends SearchAction {
 		
 		if(adyacentes!= null){
 			for (Habitacion h : adyacentes) {
+				
 				if ((h.getClass().getSimpleName().equals("Pasillo")) &&
 					(h.getIdHabitacion().equals(idPasillo)) &&	
 				   (energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
+					
 						// Update the agent state
 						//decremento la energia en el mundo real
 						agState.setEnergía_agente(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h));

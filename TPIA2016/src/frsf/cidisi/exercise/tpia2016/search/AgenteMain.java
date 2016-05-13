@@ -22,17 +22,17 @@ public class AgenteMain {
     	//Se cargan los planos del edificio en el atributo edificio
     	CargarPlanos mapaInformation = new CargarPlanos();
     	Edificio edificio = mapaInformation.getMapa();
-    	edificio.getHabitacionPorID("esc1");
+    	//edificio.getHabitacionPorID("esc1");
     	
     	// Se crea la ventana principal y desde aca se da el OK 
     	// para que inicie la simulacion
     	
-    	Principal ventana = new Principal(edificio);
+    	//Principal ventana = new Principal(edificio);
     	
     	
     	// Setear el estado del agente y del ambiente con los datos 
     	// ya cargados
-    	Agente agent = new Agente(edificio, 1000, edificio.getHabitacionPorID("ingreso1"),edificio.getHabitacionPorID("ingreso1"));
+    	Agente agent = new Agente(edificio, 1000, edificio.getHabitacionPorID("ingreso1"),edificio.getHabitacionPorID("au8"));
         Universidad environment = new Universidad(edificio);
 
         
