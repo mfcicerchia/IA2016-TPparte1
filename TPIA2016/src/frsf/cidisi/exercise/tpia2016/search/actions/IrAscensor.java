@@ -96,7 +96,7 @@ public class IrAscensor extends SearchAction {
 					// me muevo a la siguiente habitacion
 					agState.setPosicion(h);
 					// agrego la habitacion que visité
-					// agState.getHabitaciones_visitadas().add(h);
+					agState.getHabitaciones_visitadas().add(h);
 					seMueve=true;
 				}
 			

@@ -78,7 +78,7 @@ public class Universidad extends Environment {
         // TODO: Complete Method     
     	boolean falla=false;
     	EstadoAgente p =(EstadoAgente) state;
-        if(p.getEnergía_agente()>0){
+        if(p.getEnergía_agente()<0){
         	falla=true;
         }
         return falla;

@@ -29,85 +29,54 @@ public class Agente extends SearchBasedAgent {
         // Create the operators
         Vector<SearchAction> operators = new Vector<SearchAction>();
         
+        // Operador IrPasillo
+        for(Pasillo p: mapa.getPasillos()){operators.addElement(new IrPasillo(p.getIdHabitacion()));}
         
-        for(Pasillo p: mapa.getPasillos()){
-        	operators.addElement(new IrPasillo(p.getIdHabitacion()));
-        }
+        // Operador IrAula
+        for(Aula a: mapa.getAulas()){ operators.addElement(new IrAula(a.getIdHabitacion()));}
         
-        for(Aula a: mapa.getAulas()){
-        	System.out.println(a.getClass().getSimpleName() +" - "+ a.getIdHabitacion()+" ");
-        	IrAula irAula = new IrAula(a.getIdHabitacion());
-            operators.addElement(irAula);
-        }
+        // Operador IrEscalera
+        for(Escalera e: mapa.getEscaleras()){operators.addElement(new IrEscalera(e.getIdHabitacion()));}
         
-        for(Escalera e: mapa.getEscaleras()){
-        	operators.addElement(new IrEscalera(e.getIdHabitacion()));
-        }
+        // Operador IrAscensor
+        for(Ascensor asc: mapa.getAscensores()){operators.addElement(new IrAscensor(asc.getIdHabitacion()));}
         
-        for(Ascensor asc: mapa.getAscensores()){
-        	operators.addElement(new IrAscensor(asc.getIdHabitacion()));
-        }
+        // Operador IrFotocopiadora
+        for(Fotocopiadora fotocopiadora: mapa.getFotocopiadoras()){operators.addElement(new IrFotocopiadora(fotocopiadora.getIdHabitacion()));}
         
-        for(Fotocopiadora fotocopiadora: mapa.getFotocopiadoras()){
-        	System.out.println(fotocopiadora.getClass().getSimpleName());
-        	System.out.println(fotocopiadora.getDescripcion());
-        	operators.addElement(new IrFotocopiadora(fotocopiadora.getIdHabitacion()));
-        }
+        // Operador IrBaño
+        for(Baño baño: mapa.getBaños()){operators.addElement(new IrBaño(baño.getIdHabitacion()));}
         
-        for(Baño baño: mapa.getBaños()){
-        	operators.addElement(new IrBaño(baño.getIdHabitacion()));	
-        }
+        // Operador IrBiblioteca
+        for(Biblioteca biblioteca: mapa.getBibliotecas()){operators.addElement(new IrBiblioteca(biblioteca.getIdHabitacion()));}
         
-        for(Biblioteca biblioteca: mapa.getBibliotecas()){
-        	 operators.addElement(new IrBiblioteca(biblioteca.getIdHabitacion()));
-        }
+        // Operador IrCantina
+		for (Cantina cantina: mapa.getCantinas()) {operators.addElement(new IrCantina(cantina.getIdHabitacion()));}
         
-		for (Cantina cantina: mapa.getCantinas()) {
-			operators.addElement(new IrCantina(cantina.getIdHabitacion()));
-		}
-        
-		// Para cada nodo ascensor y cada nodo escalera se crea un nuevo operador
-		// el cual sera evaluado en las precondiciones del operador consultando
-		// si dicho nodo es adyacente a la posicion actual
-		for (Ascensor asc : mapa.getAscensores()) {
-			operators.addElement(new SubirNivel(asc.getIdHabitacion()));
-		}
+		// Operador Subir Nivel
+		for (Ascensor asc : mapa.getAscensores()) {operators.addElement(new SubirNivel(asc.getIdHabitacion()));}
+		for (Escalera esc : mapa.getEscaleras()) {operators.addElement(new SubirNivel(esc.getIdHabitacion()));}
 		
-		for (Escalera esc : mapa.getEscaleras()) {
-			operators.addElement(new SubirNivel(esc.getIdHabitacion()));
-		}
-		
-		for (Oficina oficina : mapa.getOficinas()) {
-			operators.addElement(new IrOficina(oficina.getIdHabitacion()));
-		}
-              
-		for (Departamento depto : mapa.getDepartamentos()) {
-		System.out.println(depto.getClass().getSimpleName());
-    	System.out.println(depto.getIdHabitacion());
-			operators.addElement(new IrDepartamento(depto.getIdHabitacion()));	
-		}
-		
-		
-		/** Ir laboratorio esta teniendo problemas, quiza por el id**/
-		for (Laboratorio lab : mapa.getLaboratorios()) {
-			operators.addElement(new IrLaboratorio(lab.getIdHabitacion()));
-		}
-		
-		for (Taller taller : mapa.getTalleres()) {
-			operators.addElement(new IrTaller(taller.getIdHabitacion()));
-		}
-		
-		for (Ingreso ingreso : mapa.getIngresos()) {
-			operators.addElement(new IrLaboratorio(ingreso.getIdHabitacion()));
-		}
-	
+		// Operador IrOficina
+		for (Oficina oficina : mapa.getOficinas()) {operators.addElement(new IrOficina(oficina.getIdHabitacion()));}
 
-//        	
-//        for(Habitacion h: listaDeEscalerasYAscensores){
-//        	operators.addElement(new BajarNivel(h.getIdHabitacion()));
-//        }
-//        
-//        
+		// Operador IrDepartamento
+		for (Departamento depto : mapa.getDepartamentos()) {operators.addElement(new IrDepartamento(depto.getIdHabitacion()));}
+		
+		// Operador IrLaboratorio
+		for (Laboratorio lab : mapa.getLaboratorios()) {operators.addElement(new IrLaboratorio(lab.getIdHabitacion()));}
+		
+		// Operador IrTaller
+		for (Taller taller : mapa.getTalleres()) {operators.addElement(new IrTaller(taller.getIdHabitacion()));}
+		
+		// Operador IrIngreso
+		for (Ingreso ingreso : mapa.getIngresos()) {operators.addElement(new IrLaboratorio(ingreso.getIdHabitacion()));}
+		
+		//Operador Bajar Nivel
+        for(Habitacion h: mapa.getEscaleras()){operators.addElement(new BajarNivel(h.getIdHabitacion()));}
+        for(Habitacion h: mapa.getAscensores()){operators.addElement(new BajarNivel(h.getIdHabitacion()));}
+        
+        
 		
 		
         	
@@ -123,12 +92,13 @@ public class Agente extends SearchBasedAgent {
     @Override
     public Action selectAction() {
 
+    	// ANCHURA
         // Create the search strategy
-    	// BreathFirstSearch strategy = new BreathFirstSearch(); //(esta estaba desde el idemia)
+    	 BreathFirstSearch strategy = new BreathFirstSearch(); //(esta estaba desde el idemia)
     	
-    	
-//    	// Estrategia de busqueda en profundidad
-    	DepthFirstSearch strategy = new DepthFirstSearch();
+    	// PROFUNDIDAD
+    	// Estrategia de busqueda en profundidad
+    	 // DepthFirstSearch strategy = new DepthFirstSearch();
 
         // Create a Search object with the strategy
         Search searchSolver = new Search(strategy);

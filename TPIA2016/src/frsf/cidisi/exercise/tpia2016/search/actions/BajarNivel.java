@@ -1,10 +1,8 @@
 package frsf.cidisi.exercise.tpia2016.search.actions;
 
-import java.util.ArrayList;
+
 
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
-import frsf.cidisi.exercise.tpia2016.modelo.nodos.Ascensor;
-import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
 import frsf.cidisi.exercise.tpia2016.search.*;
 import frsf.cidisi.faia.agent.search.SearchAction;
 import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
@@ -56,16 +54,44 @@ public class BajarNivel extends SearchAction {
         
         Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
-		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(agState.getPosicion().getIdHabitacion());
-		
+		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(this.idHabitacionSgte);
+        
 
-		
+						
 		if(posicionActual.getClass().getSimpleName().equals("Escalera")){
-			bajarPorEscalera(posicionActual, adyacentes, this.idHabitacionSgte, energiaDisponible, agState);
-		}
+			
+			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h) &&
+			   (posicionActual.getNivel()>h.getNivel())&&
+			   (energiaDisponible - agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)) {
+					// decremento la energia
+					agState.setEnergía_agente(energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), h));
+					// me muevo a la siguiente habitacion
+					agState.setPosicion(h);
+					// agrego la habitacion que visité
+					// agState.getHabitaciones_visitadas().add(h);
+					// retorno el estado actualizado
+					return agState;
+
+				}
+		    	return null;
+		 }
 		
-		if(posicionActual.getClass().getSimpleName().equals("Ascensor")){
-			bajarPorAscensor(posicionActual, adyacentes, this.idHabitacionSgte, energiaDisponible, agState);
+	if(posicionActual.getClass().getSimpleName().equals("Ascensor")){
+			
+			if (agState.getMapa_ambiente().isAdyacente(posicionActual, h) &&
+					   (posicionActual.getNivel()>h.getNivel())&&
+					   (energiaDisponible - agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)) {
+							// decremento la energia
+							agState.setEnergía_agente(energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), h));
+							// me muevo a la siguiente habitacion
+							agState.setPosicion(h);
+							// agrego la habitacion que visité
+							// agState.getHabitaciones_visitadas().add(h);
+							// retorno el estado actualizado
+							return agState;
+
+						}
+				    	return null;
 		}
 		
 		return null;
@@ -83,32 +109,47 @@ public class BajarNivel extends SearchAction {
         // TODO: LISTO - real world!
         Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
-		ArrayList<Habitacion> adyacentes = agState.getMapa_ambiente().getHabitacionesAdyacentes(agState.getPosicion().getIdHabitacion());
-		boolean seMueve = false;
-		
+		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(this.idHabitacionSgte);
+        boolean seMueve = false;
+
+						
 		if(posicionActual.getClass().getSimpleName().equals("Escalera")){
-			//update de agent state
-			if(bajarPorEscalera(posicionActual, adyacentes, this.idHabitacionSgte, energiaDisponible, agState) != null){
+			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h) &&
+			   (posicionActual.getNivel()>h.getNivel())&&
+			   (energiaDisponible - agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)) {
+				// decremento la energia
+				agState.setEnergía_agente(energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), h));
+				// me muevo a la siguiente habitacion
+				agState.setPosicion(h);
+				// agrego la habitacion que visité
+				 agState.getHabitaciones_visitadas().add(h);
+				// retorno el estado actualizado
 				seMueve = true;
 			}
 		}
 		
 		if(posicionActual.getClass().getSimpleName().equals("Ascensor")){
-			//update agent state
-			if(bajarPorAscensor(posicionActual, adyacentes, this.idHabitacionSgte, energiaDisponible, agState) != null){
-				seMueve = true;
-			}
+			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h) &&
+					   (posicionActual.getNivel()>h.getNivel())&&
+					   (energiaDisponible - agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)) {
+						// decremento la energia
+						agState.setEnergía_agente(energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), h));
+						// me muevo a la siguiente habitacion
+						agState.setPosicion(h);
+						// agrego la habitacion que visité
+						 agState.getHabitaciones_visitadas().add(h);
+						// retorno el estado actualizado
+						seMueve = true;
+					}
 		}
-		
-        // si se mueve actualizo la poscion del agente en el ambiente
+        
         if (seMueve) {
         	// Update the real world
         	// actualizo la posicion del agente en el Ambiente
         	environmentState.setPosicion_agente(agState.getPosicion());
             return environmentState;
-        }else{
-        	return null;	
         }
+        return null;
     }
 
     /**
@@ -126,64 +167,5 @@ public class BajarNivel extends SearchAction {
     @Override
     public String toString() {
         return "BajarNivel";
-    }
-    
-    /**
-     * @param posicionActual
-     * @param adyacentes
-     * @param energiaDisponible
-     * @param agState
-     * @return: agState si actualiza el estado
-     * 			null: si no se puede expandir
-     */
-    private EstadoAgente bajarPorAscensor(Habitacion posicionActual, ArrayList<Habitacion> adyacentes, String idHabitacionSiguiente, int energiaDisponible, EstadoAgente agState){
-    	for (Habitacion h : adyacentes) {
-			if ((h.getNivel()<agState.getPosicion().getNivel()) &&
-			 (h.getIdHabitacion().equals(idHabitacionSiguiente)) &&
-			   (energiaDisponible-agState.getMapa_ambiente().getCosto(agState.getPosicion(), h) > 0)){
-				Ascensor ascensor = (Ascensor) h;
-				if(!ascensor.isPitido()){
-					//decremento la energia 
-					agState.setEnergía_agente(energiaDisponible- agState.getMapa_ambiente().getCosto(agState.getPosicion(), h));
-					// me muevo a la siguiente habitacion
-					agState.setPosicion(h);
-					// agrego la habitacion que visité
-					//agState.getHabitaciones_visitadas().add(h);
-					// retorno el estado actualizado
-					return agState;
-				}
-			}
-		}
-    	return null;
-    }
-
-    /**
-     * @param posicionActual
-     * @param adyacentes
-     * @param energiaDisponible
-     * @param agState
-     * @return agState si actualiza el estado
-     * 			null: si no se puede expandir
-     */
-    private EstadoAgente bajarPorEscalera(Habitacion posicionActual, ArrayList<Habitacion> adyacentes, String idHabitacionSiguiente, int energiaDisponible, EstadoAgente agState){
-    	
-		for (Habitacion h : adyacentes) {
-			if ((agState.getPosicion().getNivel()>h.getNivel()) &&
-    		   (h.getIdHabitacion().equals(idHabitacionSiguiente)) &&
-			   (energiaDisponible-agState.getMapa_ambiente().getCosto(agState.getPosicion(), h) > 0)){
-				Escalera escalera = (Escalera) h;
-				if (!escalera.isBloqueada()) {
-					//decremento la energia 
-					agState.setEnergía_agente(energiaDisponible- agState.getMapa_ambiente().getCosto(agState.getPosicion(), h));
-					// me muevo a la siguiente habitacion
-					agState.setPosicion(h);
-					// agrego la habitacion que visité
-					//agState.getHabitaciones_visitadas().add(h);
-					// retorno el estado actualizado
-					return agState;
-				}
-			}
-		}
-		return null;
     }
 }

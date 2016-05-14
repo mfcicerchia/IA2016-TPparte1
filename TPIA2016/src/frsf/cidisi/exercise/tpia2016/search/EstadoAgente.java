@@ -144,7 +144,11 @@ public class EstadoAgente extends SearchBasedAgentState {
 //             str = str.substring(0,str.length()-2);
 //             str += "}\n";
 //        }
-       
+        
+        str += "\nHabitaciones Visitadas: \n";
+		for (Habitacion h : this.habitaciones_visitadas)
+			str += "		       -> "+h.getDescripcion().toString() + "\n";
+//		str = str.substring(0, str.length() - 2);
         
         str += "\nPosición del agente: ";
         str += posicionActual.toString()+"\n";

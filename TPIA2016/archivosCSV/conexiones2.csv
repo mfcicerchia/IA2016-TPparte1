@@ -33,7 +33,7 @@ p3-0,electrica,10
 p6-0,esc6-0,5
 p6-0,ba¤o2,5
 p6-0,p5-0,10
-p5-0,lab2,5
+p5-0,lab2-0,5
 p1-1,au9,10
 p1-1,au10,10
 p1-1,au11,10
@@ -69,7 +69,7 @@ p4-1,esc6-1,10
 p4-1,Baño2,10
 p4-1,mt1,10
 p4-1,ccv1,10
-p4-1,biblioteca1,10
+p4-1,biblioteca2,10
 p5-1,esc3-1,10
 p5-1,Industrial,10
 p5-1,p6-1,10
@@ -102,7 +102,7 @@ p1-3,p2-3,10
 p2-3,esc8-3,10
 Sistemas,p2-3,10
 p2-3,lab1-3,10
-p2-3,lab2,10
+p2-3,lab2-3,10
 p2-3,lab3,10
 p2-3,lab4,10
 p2-3,ofc1-3,10
@@ -118,3 +118,4 @@ asc1-1,asc1-3,0
 asc1-2,asc1-3,0
 p2-3,lab5,10
 p6-0,taller1-0,10
+esc2-0,esc2-1,10

@@ -42,7 +42,6 @@ public class IrBiblioteca extends SearchAction  {
 			Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idBiblioteca);
 			
 				if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
-					agState.getMapa_ambiente().getHabitacionesPorID(idBiblioteca).getClass().equals("Biblioteca")&&
 					!(agState.getHabitaciones_visitadas().contains(h)) &&
 					(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 						//decremento la energia 
@@ -78,7 +77,6 @@ public class IrBiblioteca extends SearchAction  {
 			boolean seMueve = false;
 			
 				if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
-					agState.getMapa_ambiente().getHabitacionesPorID(idBiblioteca).getClass().equals("Biblioteca")&&
 					!(agState.getHabitaciones_visitadas().contains(h)) &&
 					(energiaDisponible-agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)){
 						//decremento la energia 

@@ -1,14 +1,14 @@
-Ingreso,ingreso1,0,entrada principal a la facultad
+Ingreso,ingreso1,0,entrada principal a la facultad (Hall)
 Ingreso,ingreso2,0,entrada por torre
-Pasillo,p1-0,0,pasillo 1 planta baja
 Pasillo,p2-0,0,pasillo 2 planta baja
+Pasillo,p1-0,0,pasillo 1 planta baja
 Pasillo,p3-0,0,pasillo 3 planta baja
 Pasillo,p3-0,0,pasillo 4 planta baja
 Pasillo,p5-0,0,pasillo 5 planta baja
 Pasillo,p6-0,0,pasillo 6 planta baja
-escalera,esc1-0,0,escalera 1
-escalera,esc2-0,0,escalera 2
-escalera,esc3-0,0,escalera 3
+escalera,esc1-0,0,escalera 1 nivel 0
+escalera,esc2-0,0,escalera 2 nivel 0
+escalera,esc3-0,0,escalera 3 nivel 0
 escalera,esc4-0,0,escalera 4
 escalera,esc5-0,0,escalera 5
 escalera,esc6-0,0,escalera 6
@@ -32,12 +32,11 @@ Oficina,ofc2-0,0,SAE
 Baño,baño1-0,0,baño1
 Baño,baño2,0,baño2
 Laboratorio,lab1-0,0,Laboratorio de Mecanica
-Laboratorio,lab2,0,Laboratorio de Fluidica
+Laboratorio,lab2-0,0,Laboratorio de Fluidica
 Departamento,mecanica,0,Departamento de Mecanica
 Departamento,electrica,0,Departamento de Electrica
 Fotocopiadora,fotocopiadora,0,Fotocopiadora FRSF
-Escalera,esc3-2,2,escalera 3
-Escalera,esc3-3,3,escalera 3
+Escalera,esc3-2,2,escalera 3 nivel 2
 Aula,au9,1,aula9
 Aula,au10,1,aula10
 Aula,au11,1,aula11
@@ -57,13 +56,13 @@ Pasillo,p2-1,1,pasillo 2 primer piso
 Pasillo,p3-1,1,pasillo 3 primer piso
 Pasillo,p4-1,1,pasillo 4 primer piso
 Pasillo,p5-1,1,pasillo 5 primer piso
-Pasillo,p6-1,1,pasillo 6 primer pisp
+Pasillo,p6-1,1,pasillo 6 primer piso
 Departamento,Civil,1,Departamento de Civil
 Departamento,Básicas,1,Departamento de Materias Básicas
 Departamento,Industrial,1,Departamento de Industrial
-Escalera,esc3-1,1,escalera 3
-Escalera,esc1-1,1,escalera 1
-Escalera,esc2-1,1,escalera 2
+Escalera,esc3-1,1,escalera 3 nivel 1
+Escalera,esc1-1,1,escalera 1 nivel 1
+Escalera,esc2-1,1,escalera 2 nivel 1
 Escalera,esc4-1,1,escalera 4 
 Escalera,esc5-1,1,escalera 5
 Escalera,esc6-1,1,escalera 6
@@ -98,13 +97,13 @@ Laboratorio,gse1,2,GESE
 Laboratorio,lab1-3,3,Laboratorio Informatica 1
 Laboratorio,lab3,3,Laboratorio Informatica 3
 Laboratorio,lab4,3,Laboratorio Informatica 4
-Laboratorio,lab2,3,Laboratorio Conectividad
+Laboratorio,lab2-3,3,Laboratorio Conectividad
 Oficina,ofc1-3,3,CIDISI
 Oficina,ofc3-3,3,Varios
 Oficina,ofc2-3,3,TICS
 Departamento,Sistemas,3,Departemanto de Sistemas
 Escalera,esc8,3,escalera 8
-Escalera,esc3-3,3,escalera 3
+Escalera,esc3-3,3,escalera 3 nivel 3
 Pasillo,p2-3,3,pasillo 2 tercer piso
 Pasillo,p1-3,3,pasillo 1 tercer piso
 Aula,cs1,3,Aula Consultas 1
