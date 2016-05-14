@@ -508,4 +508,2724 @@ Visitadas: {Habitacion [idHabitacion=ingreso1, nivel=0, descripcion=entrada prin
 Posición del agente: Habitacion [idHabitacion=p3-0, nivel=0, descripcion=pasillo 3 planta baja]bloqueado=false]Destino: Habitacion [idHabitacion=au1, nivel=0, descripcion=aula1]Energia: 990<NodoIrPasillo>Id="14" Action="IrPasillo" Habitaciones: {Habitacion [idHabitacion=ingreso1, nivel=0, descripcion=entrada principal a la facultad], Habitacion [idHabitacion=ingreso2, nivel=0, descripcion=entrada por torre], Habitacion [idHabitacion=p1-0, nivel=0, descripcion=pasillo 1 planta baja]bloqueado=false], Habitacion [idHabitacion=p2-0, nivel=0, descripcion=pasillo 2 planta baja]bloqueado=false], Habitacion [idHabitacion=p3-0, nivel=0, descripcion=pasillo 3 planta baja]bloqueado=false], Habitacion [idHabitacion=p3-0, nivel=0, descripcion=pasillo 4 planta baja]bloqueado=false], Habitacion [idHabitacion=p5-0, nivel=0, descripcion=pasillo 5 planta baja]bloqueado=false], Habitacion [idHabitacion=p6-0, nivel=0, descripcion=pasillo 6 planta baja]bloqueado=false], Habitacion [idHabitacion=esc1, nivel=0, descripcion=escalera 1]bloqueada=false, Habitacion [idHabitacion=esc2, nivel=0, descripcion=escalera 2]bloqueada=false, Habitacion [idHabitacion=esc3, nivel=0, descripcion=escalera 3]bloqueada=false, Habitacion [idHabitacion=esc4, nivel=0, descripcion=escalera 4]bloqueada=false, Habitacion [idHabitacion=esc5, nivel=0, descripcion=escalera 5]bloqueada=false, Habitacion [idHabitacion=esc6, nivel=0, descripcion=escalera 6]bloqueada=false, Habitacion [idHabitacion=esc7, nivel=0, descripcion=escalera 7]bloqueada=false, Habitacion [idHabitacion=asc1, nivel=0, descripcion=ascensor planta baja]pitido=false, Habitacion [idHabitacion=asc1, nivel=1, descripcion=ascensor primer piso]pitido=false, Habitacion [idHabitacion=asc1, nivel=2, descripcion=ascensor segundo piso]pitido=false, Habitacion [idHabitacion=asc1, nivel=3, descripcion=ascensor tercer piso]pitido=false, Habitacion [idHabitacion=au1, nivel=0, descripcion=aula1], Habitacion [idHabitacion=au2, nivel=0, descripcion=aula2], Habitacion [idHabitacion=au3, nivel=0, descripcion=aula3], Habitacion [idHabitacion=au4, nivel=0, descripcion=aula4], Habitacion [idHabitacion=au5, nivel=0, descripcion=aula5], Habitacion [idHabitacion=au6, nivel=0, descripcion=aula6], Habitacion [idHabitacion=au7, nivel=0, descripcion=quimica], Habitacion [idHabitacion=au8, nivel=0, descripcion=Fisica], Habitacion [idHabitacion=cantina, nivel=0, descripcion=Sheldon Bar], Habitacion [idHabitacion=biblioteca1, nivel=0, descripcion=Biblioteca Moreno], Habitacion [idHabitacion=ofc1-0, nivel=0, descripcion=Alumnado], Habitacion [idHabitacion=ofc2-0, nivel=0, descripcion=SAE], Habitacion [idHabitacion=baño1, nivel=0, descripcion=baño1], Habitacion [idHabitacion=baño2, nivel=0, descripcion=baño2], Habitacion [idHabitacion=lab1, nivel=0, descripcion=Laboratorio de Mecanica], Habitacion [idHabitacion=lab2, nivel=0, descripcion=Laboratorio de Fluidica], Habitacion [idHabitacion=mecanica, nivel=0, descripcion=Departamento de Mecanica], Habitacion [idHabitacion=electrica, nivel=0, descripcion=Departamento de Electrica], Habitacion [idHabitacion=fotocopiadora, nivel=0, descripcion=Fotocopiadora FRSF], Habitacion [idHabitacion=esc3, nivel=2, descripcion=escalera 3]bloqueada=false, Habitacion [idHabitacion=esc3, nivel=3, descripcion=escalera 3]bloqueada=false, Habitacion [idHabitacion=au9, nivel=1, descripcion=aula9], Habitacion [idHabitacion=au10, nivel=1, descripcion=aula10], Habitacion [idHabitacion=au11, nivel=1, descripcion=aula11], Habitacion [idHabitacion=au12, nivel=1, descripcion=aula12], Habitacion [idHabitacion=au13, nivel=1, descripcion=aula13], Habitacion [idHabitacion=au14, nivel=1, descripcion=aula14], Habitacion [idHabitacion=au15, nivel=1, descripcion=aula15], Habitacion [idHabitacion=au16, nivel=1, descripcion=aula16], Habitacion [idHabitacion=au17, nivel=1, descripcion=aula17], Habitacion [idHabitacion=au18, nivel=1, descripcion=aula18], Habitacion [idHabitacion=au19, nivel=1, descripcion=aula19], Habitacion [idHabitacion=ccv1, nivel=1, descripcion=Laboratorio CECOVI], Habitacion [idHabitacion=esy1, nivel=1, descripcion=Laboratorio de Ensayos], Habitacion [idHabitacion=mt1, nivel=1, descripcion=Aula de Materiales], Habitacion [idHabitacion=p1-1, nivel=1, descripcion=pasillo 1 primer piso]bloqueado=false], Habitacion [idHabitacion=p2-1, nivel=1, descripcion=pasillo 2 primer piso]bloqueado=false], Habitacion [idHabitacion=p3-1, nivel=1, descripcion=pasillo 3 primer piso]bloqueado=false], Habitacion [idHabitacion=p4-1, nivel=1, descripcion=pasillo 4 primer piso]bloqueado=false], Habitacion [idHabitacion=p5-1, nivel=1, descripcion=pasillo 5 primer piso]bloqueado=false], Habitacion [idHabitacion=p6-1, nivel=1, descripcion=pasillo 6 primer pisp]bloqueado=false], Habitacion [idHabitacion=Civil, nivel=1, descripcion=Departamento de Civil], Habitacion [idHabitacion=Básicas, nivel=1, descripcion=Departamento de Materias Básicas], Habitacion [idHabitacion=Industrial, nivel=1, descripcion=Departamento de Industrial], Habitacion [idHabitacion=esc3, nivel=1, descripcion=escalera 3]bloqueada=false, Habitacion [idHabitacion=esc1, nivel=1, descripcion=escalera 1]bloqueada=false, Habitacion [idHabitacion=esc2, nivel=1, descripcion=escalera 2]bloqueada=false, Habitacion [idHabitacion=esc4, nivel=1, descripcion=escalera 4]bloqueada=false, Habitacion [idHabitacion=esc5, nivel=1, descripcion=escalera 5]bloqueada=false, Habitacion [idHabitacion=esc6, nivel=1, descripcion=escalera 6]bloqueada=false, Habitacion [idHabitacion=esc7, nivel=1, descripcion=escalera 7]bloqueada=false, Habitacion [idHabitacion=biblioteca2, nivel=1, descripcion=Biblioteca IRAM], Habitacion [idHabitacion=if1, nivel=1, descripcion=Informática 1], Habitacion [idHabitacion=if2, nivel=2, descripcion=Informática 2], Habitacion [idHabitacion=cn1, nivel=1, descripcion=Consulta 1], Habitacion [idHabitacion=cn2, nivel=1, descripcion=Consulta 2], Habitacion [idHabitacion=cn3, nivel=1, descripcion=Consulta 3], Habitacion [idHabitacion=cn4, nivel=1, descripcion=Consulta 4], Habitacion [idHabitacion=baño1, nivel=1, descripcion=baño1], Habitacion [idHabitacion=baño2, nivel=1, descripcion=baño2], Habitacion [idHabitacion=baño3, nivel=1, descripcion=baño3], Habitacion [idHabitacion=ae3, nivel=1, descripcion=Aula E03], Habitacion [idHabitacion=ae2, nivel=1, descripcion=Aula E02], Habitacion [idHabitacion=ae1, nivel=1, descripcion=Aula E01], Habitacion [idHabitacion=vd1, nivel=1, descripcion=Aula de video], Habitacion [idHabitacion=ofc1-1, nivel=1, descripcion=Materias Básicas], Habitacion [idHabitacion=ofc2-1, nivel=1, descripcion=Varios], Habitacion [idHabitacion=au22, nivel=2, descripcion=Aula 22], Habitacion [idHabitacion=au20, nivel=2, descripcion=Aula 20], Habitacion [idHabitacion=au21, nivel=2, descripcion=Aula 21], Habitacion [idHabitacion=cd1, nivel=2, descripcion=Aula CIDISI], Habitacion [idHabitacion=p2-2, nivel=2, descripcion=pasillo 2 segundo piso]bloqueado=false], Habitacion [idHabitacion=p1-2, nivel=2, descripcion=pasillo 1 segundo piso]bloqueado=false], Habitacion [idHabitacion=esc5, nivel=2, descripcion=escalera 5]bloqueada=false, Habitacion [idHabitacion=esc6, nivel=2, descripcion=escalera 6]bloqueada=false, Habitacion [idHabitacion=esc8, nivel=2, descripcion=escalera 7]bloqueada=false, Habitacion [idHabitacion=jvl1, nivel=2, descripcion=JAVALAB], Habitacion [idHabitacion=gse1, nivel=2, descripcion=GESE], Habitacion [idHabitacion=lab1, nivel=3, descripcion=Laboratorio Informatica 1], Habitacion [idHabitacion=lab3, nivel=3, descripcion=Laboratorio Informatica 3], Habitacion [idHabitacion=lab4, nivel=3, descripcion=Laboratorio Informatica 4], Habitacion [idHabitacion=lab2, nivel=3, descripcion=Laboratorio Conectividad], Habitacion [idHabitacion=ofc1-3, nivel=3, descripcion=CIDISI], Habitacion [idHabitacion=ofc3-3, nivel=3, descripcion=Varios], Habitacion [idHabitacion=ofc2-3, nivel=3, descripcion=TICS], Habitacion [idHabitacion=esc8, nivel=3, descripcion=escalera 8]bloqueada=false, Habitacion [idHabitacion=esc3, nivel=3, descripcion=escalera 3]bloqueada=false, Habitacion [idHabitacion=p2-3, nivel=3, descripcion=pasillo 2 tercer piso]bloqueado=false], Habitacion [idHabitacion=p1-3, nivel=3, descripcion=pasillo 2 tercer piso]bloqueado=false], Habitacion [idHabitacion=cs1, nivel=3, descripcion=Aula Consultas 1], Habitacion [idHabitacion=cs2, nivel=3, descripcion=Aula Consultas 2]}
 Conexiones: {ingreso1-p2-0-10, ingreso1-p1-0-10, ingreso1-p3-0-10, p1-0-cantina-15, p1-0-biblioteca1-15, p1-0-ofc1-0-20, p1-0-ofc2-0-25, p1-0-ingreso2-30, p1-0-esc7-10, ingreso2-esc2-10, p2-0-esc1-10, p2-0-fotocopiadora-10, p2-0-au1-10, p2-0-au2-15, p2-0-au3-15, p2-0-au4-15, p2-0-au5-15, p2-0-au6-15, p2-0-au7-15, p2-0-au8-15, p2-0-p4-0-5, p4-0-p5-0-5, p4-0-ba¤o1-5, p4-0-esc4-5, p3-0-p4-0-1, p3-0-mecanica-5, p3-0-lab1-10, p3-0-esc5-10, p3-0-p6-0-5, p3-0-asc1-10, p3-0-esc3-10, p3-0-electrica-10, p6-0-esc6-5, p6-0-ba¤o2-5, p6-0-p5-0-10, p5-0-lab2-5, p1-1-au9-10, p1-1-au10-10, p1-1-au11-10, p1-1-au12-10, p1-1-au13-10, p1-1-au14-10, p1-1-au15-10, p1-1-au16-10, p1-1-au17-10, p1-1-au18-10, p1-1-if1-10, p1-1-if2-10, p1-1-esc1-10, p1-1-p3-1-10, p1-1-p2-1-10, p3-1-baño1-10, p3-1-au19-10, p3-1-lab1-10, p3-1-esc4-10, p3-1-p4-1-10, p2-1-if2-10, p2-1-if2-10, p2-1-Básicas-10, p2-1-cn1-10, p2-1-cn2-10, p2-1-cn3-10, p2-1-cn1-10, p2-1-p5-1-10, p2-1-ofc1-1-10, p2-1-p4-1-10, p2-1-esc5-10, p4-1-esc6-10, p4-1-Baño2-10, p4-1-mt1-10, p4-1-ccv1-10, p4-1-biblioteca1-10, p5-1-esc3-10, p5-1-Industrial-10, p5-1-p6-1-10, p5-1-Baño3-10, p5-1-esc2-10, p5-1-asc1-10, p5-1-ofc2-1-10, p6-1-ae1-10, p6-1-ae2-10, p6-1-ae3-10, p6-1-vd1-10, p6-1-esc7-10, p6-1-ofc1-1-10, p2-2-au22-10, p2-2-cd1-10, p2-2-esc8-10, p2-2-p1-2-10, p1-2-esc6-10, p1-2-jvl1-10, p1-2-gse1-10, p1-2-au21-10, esc5-au20-10, p1-3-esc3-10, p1-3-asc1-10, p1-3-cs1-10, p1-3-cs2-10, p1-3-ofc2-3-10, p1-3-ofc3-3-10, p1-3-p2-3-10, p2-3-esc8-10, p2-3-Sistemas-10, p2-3-lab1-10, p2-3-lab2-10, p2-3-lab3-10, p2-3-lab4-10, p2-3-ofc1-3-10}
 Visitadas: {Habitacion [idHabitacion=p3-0, nivel=0, descripcion=pasillo 3 planta baja]bloqueado=false], Habitacion [idHabitacion=ingreso1, nivel=0, descripcion=entrada principal a la facultad], Habitacion [idHabitacion=ingreso1, nivel=0, descripcion=entrada principal a la facultad], Habitacion [idHabitacion=p3-0, nivel=0, descripcion=pasillo 3 planta baja]bloqueado=false], Habitacion [idHabitacion=p6-0, nivel=0, descripcion=pasillo 6 planta baja]bloqueado=false]}
-Posición del agente: Habitacion [idHabitacion=p6-0, nivel=0, descripcion=pasillo 6 planta baja]bloqueado=false]Destino: Habitacion [idHabitacion=au1, nivel=0, descripcion=aula1]Energia: 985</NodoIrPasillo></NodoIrPasillo></Nodonull>
+Posición del agente: Habitacion [idHabitacion=p6-0, nivel=0, descripcion=pasillo 6 planta baja]bloqueado=false]Destino: Habitacion [idHabitacion=au1, nivel=0, descripcion=aula1]Energia: 985</NodoIrPasillo></NodoIrPasillo></Nodonull><Nodonull>Id="0" Action="null" 
+Posición del agente: Pasillo: [ id= p2-0 | Descripcion= pasillo 2 planta baja | bloqueado=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 990
+<NodoIrPasillo>Id="1" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-0 | Descripcion= pasillo 1 planta baja | bloqueado=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 990
+<NodoIrEscalera>Id="5" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc7-0 | Descripcion= escalera 7 | bloqueada=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrEscalera><NodoIrBiblioteca>Id="6" Action="IrBiblioteca" 
+Posición del agente: Biblioteca: [ id= biblioteca1 | Descripcion= Biblioteca Moreno | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 975
+<NodoIrPasillo>Id="37" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 965
+</NodoIrPasillo></NodoIrBiblioteca><NodoIrCantina>Id="7" Action="IrCantina" 
+Posición del agente: Cantina: [ id= cantina | Descripcion= Sheldon Bar | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 975
+</NodoIrCantina><NodoIrOficina>Id="8" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-0 | Descripcion= Alumnado | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 970
+</NodoIrOficina><NodoIrOficina>Id="9" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-0 | Descripcion= SAE | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 965
+</NodoIrOficina><NodoIrLaboratorio>Id="10" Action="IrLaboratorio" 
+Posición del agente: Ingreso: [ id= ingreso2 | Descripcion= entrada por torre | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 960
+<NodoIrEscalera>Id="38" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc2-0 | Descripcion= escalera 2 | bloqueada=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 950
+</NodoIrEscalera></NodoIrLaboratorio></NodoIrPasillo><NodoIrPasillo>Id="2" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-0 | Descripcion= pasillo 2 planta baja | bloqueado=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 990
+<NodoIrAula>Id="11" Action="IrAula" 
+Posición del agente: Aula: [ id= au1 | Descripcion= aula1 | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrAula><NodoIrAula>Id="12" Action="IrAula" 
+Posición del agente: Aula: [ id= au2 | Descripcion= aula2 | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="13" Action="IrAula" 
+Posición del agente: Aula: [ id= au3 | Descripcion= aula3 | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="14" Action="IrAula" 
+Posición del agente: Aula: [ id= au4 | Descripcion= aula4 | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="15" Action="IrAula" 
+Posición del agente: Aula: [ id= au5 | Descripcion= aula5 | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="16" Action="IrAula" 
+Posición del agente: Aula: [ id= au6 | Descripcion= aula6 | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="17" Action="IrAula" 
+Posición del agente: Aula: [ id= au7 | Descripcion= quimica | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="18" Action="IrAula" 
+Posición del agente: Aula: [ id= au8 | Descripcion= Fisica | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 975
+</NodoIrAula><NodoIrEscalera>Id="19" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc1-0 | Descripcion= escalera 1 | bloqueada=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrEscalera><NodoIrFotocopiadora>Id="20" Action="IrFotocopiadora" 
+Posición del agente: Fotocopiadora: [ id= fotocopiadora | Descripcion= Fotocopiadora FRSF | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrFotocopiadora></NodoIrPasillo><NodoIrPasillo>Id="3" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-0 | Descripcion= pasillo 3 planta baja | bloqueado=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 990
+<NodoIrPasillo>Id="21" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-0 | Descripcion= pasillo 6 planta baja | bloqueado=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 985
+</NodoIrPasillo><NodoIrEscalera>Id="22" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-0 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrEscalera><NodoIrEscalera>Id="23" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-0 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrEscalera><NodoIrAscensor>Id="24" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-0 | Descripcion= ascensor planta baja | pitido=false
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrAscensor><NodoIrDepartamento>Id="25" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= mecanica | Descripcion= Departamento de Mecanica | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 985
+</NodoIrDepartamento><NodoIrDepartamento>Id="26" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= electrica | Descripcion= Departamento de Electrica | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrDepartamento><NodoIrLaboratorio>Id="27" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab1 | Descripcion= Laboratorio de Mecanica | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="28" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab1 | Descripcion= Laboratorio de Mecanica | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrLaboratorio></NodoIrPasillo><NodoIrPasillo>Id="4" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-0 | Descripcion= pasillo 3 planta baja | bloqueado=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 990
+<NodoIrPasillo>Id="29" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-0 | Descripcion= pasillo 6 planta baja | bloqueado=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 985
+</NodoIrPasillo><NodoIrEscalera>Id="30" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-0 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrEscalera><NodoIrEscalera>Id="31" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-0 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrEscalera><NodoIrAscensor>Id="32" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-0 | Descripcion= ascensor planta baja | pitido=false
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrAscensor><NodoIrDepartamento>Id="33" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= mecanica | Descripcion= Departamento de Mecanica | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 985
+</NodoIrDepartamento><NodoIrDepartamento>Id="34" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= electrica | Descripcion= Departamento de Electrica | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrDepartamento><NodoIrLaboratorio>Id="35" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab1 | Descripcion= Laboratorio de Mecanica | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="36" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab1 | Descripcion= Laboratorio de Mecanica | 
+Destino: Aula: [ id= au1 | Descripcion= aula1 | 
+Energia: 980
+</NodoIrLaboratorio></NodoIrPasillo></Nodonull><Nodonull>Id="0" Action="null" 
+Posición del agente: Pasillo: [ id= p3-0 | Descripcion= pasillo 3 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 990
+<NodoIrPasillo>Id="1" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-0 | Descripcion= pasillo 1 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 990
+<NodoIrEscalera>Id="5" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc7-0 | Descripcion= escalera 7 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrEscalera><NodoIrBiblioteca>Id="6" Action="IrBiblioteca" 
+Posición del agente: Biblioteca: [ id= biblioteca1 | Descripcion= Biblioteca Moreno | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="37" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="60" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrPasillo>Id="132" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrPasillo><NodoIrPasillo>Id="133" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrPasillo><NodoIrAula>Id="134" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="135" Action="IrAula" 
+Posición del agente: Aula: [ id= cn1 | Descripcion= Consulta 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="136" Action="IrAula" 
+Posición del agente: Aula: [ id= cn2 | Descripcion= Consulta 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="137" Action="IrAula" 
+Posición del agente: Aula: [ id= cn3 | Descripcion= Consulta 3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrEscalera>Id="138" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-1 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrEscalera><NodoIrOficina>Id="139" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrOficina><NodoIrDepartamento>Id="140" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Básicas | Descripcion= Departamento de Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrDepartamento></NodoIrPasillo><NodoIrPasillo>Id="61" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrPasillo>Id="141" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrPasillo><NodoIrAula>Id="142" Action="IrAula" 
+Posición del agente: Aula: [ id= au19 | Descripcion= aula19 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrEscalera>Id="143" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc4-1 | Descripcion= escalera 4 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrEscalera><NodoIrBaño>Id="144" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrBaño><NodoIrBaño>Id="145" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrBaño><NodoIrLaboratorio>Id="146" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab1 | Descripcion= Laboratorio de Mecanica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="147" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab1 | Descripcion= Laboratorio de Mecanica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrLaboratorio></NodoIrPasillo><NodoIrAula>Id="62" Action="IrAula" 
+Posición del agente: Aula: [ id= mt1 | Descripcion= Aula de Materiales | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrAula><NodoIrEscalera>Id="63" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc6-1 | Descripcion= escalera 6 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrLaboratorio>Id="64" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= ccv1 | Descripcion= Laboratorio CECOVI | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrLaboratorio></NodoIrPasillo></NodoIrBiblioteca><NodoIrCantina>Id="7" Action="IrCantina" 
+Posición del agente: Cantina: [ id= cantina | Descripcion= Sheldon Bar | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrCantina><NodoIrOficina>Id="8" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-0 | Descripcion= Alumnado | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+</NodoIrOficina><NodoIrOficina>Id="9" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-0 | Descripcion= SAE | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+</NodoIrOficina><NodoIrLaboratorio>Id="10" Action="IrLaboratorio" 
+Posición del agente: Ingreso: [ id= ingreso2 | Descripcion= entrada por torre | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+<NodoIrEscalera>Id="38" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc2-0 | Descripcion= escalera 2 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrEscalera></NodoIrLaboratorio></NodoIrPasillo><NodoIrPasillo>Id="2" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-0 | Descripcion= pasillo 2 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 990
+<NodoIrAula>Id="11" Action="IrAula" 
+Posición del agente: Aula: [ id= au1 | Descripcion= aula1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrAula><NodoIrAula>Id="12" Action="IrAula" 
+Posición del agente: Aula: [ id= au2 | Descripcion= aula2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="13" Action="IrAula" 
+Posición del agente: Aula: [ id= au3 | Descripcion= aula3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="14" Action="IrAula" 
+Posición del agente: Aula: [ id= au4 | Descripcion= aula4 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="15" Action="IrAula" 
+Posición del agente: Aula: [ id= au5 | Descripcion= aula5 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="16" Action="IrAula" 
+Posición del agente: Aula: [ id= au6 | Descripcion= aula6 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="17" Action="IrAula" 
+Posición del agente: Aula: [ id= au7 | Descripcion= quimica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="18" Action="IrAula" 
+Posición del agente: Aula: [ id= au8 | Descripcion= Fisica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrEscalera>Id="19" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc1-0 | Descripcion= escalera 1 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="39" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc1-1 | Descripcion= escalera 1 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="65" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+<NodoIrPasillo>Id="148" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrPasillo><NodoIrPasillo>Id="149" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrPasillo><NodoIrAula>Id="150" Action="IrAula" 
+Posición del agente: Aula: [ id= au9 | Descripcion= aula9 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="151" Action="IrAula" 
+Posición del agente: Aula: [ id= au10 | Descripcion= aula10 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="152" Action="IrAula" 
+Posición del agente: Aula: [ id= au11 | Descripcion= aula11 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="153" Action="IrAula" 
+Posición del agente: Aula: [ id= au12 | Descripcion= aula12 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="154" Action="IrAula" 
+Posición del agente: Aula: [ id= au13 | Descripcion= aula13 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="155" Action="IrAula" 
+Posición del agente: Aula: [ id= au14 | Descripcion= aula14 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="156" Action="IrAula" 
+Posición del agente: Aula: [ id= au15 | Descripcion= aula15 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="157" Action="IrAula" 
+Posición del agente: Aula: [ id= au16 | Descripcion= aula16 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="158" Action="IrAula" 
+Posición del agente: Aula: [ id= au17 | Descripcion= aula17 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="159" Action="IrAula" 
+Posición del agente: Aula: [ id= au18 | Descripcion= aula18 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="160" Action="IrAula" 
+Posición del agente: Aula: [ id= if1 | Descripcion= Informática 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="161" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula></NodoIrPasillo></NodoSubirNivel></NodoIrEscalera><NodoIrFotocopiadora>Id="20" Action="IrFotocopiadora" 
+Posición del agente: Fotocopiadora: [ id= fotocopiadora | Descripcion= Fotocopiadora FRSF | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrFotocopiadora></NodoIrPasillo><NodoIrPasillo>Id="3" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-0 | Descripcion= pasillo 3 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 990
+<NodoIrPasillo>Id="21" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-0 | Descripcion= pasillo 6 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 985
+<NodoIrPasillo>Id="40" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-0 | Descripcion= pasillo 5 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrLaboratorio>Id="66" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab2 | Descripcion= Laboratorio de Fluidica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="162" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrPasillo></NodoIrLaboratorio><NodoIrLaboratorio>Id="67" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab2 | Descripcion= Laboratorio de Fluidica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="163" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrPasillo></NodoIrLaboratorio></NodoIrPasillo><NodoIrEscalera>Id="41" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc6-0 | Descripcion= escalera 6 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrEscalera></NodoIrPasillo><NodoIrEscalera>Id="22" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-0 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="42" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-1 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="68" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="164" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrPasillo><NodoIrPasillo>Id="165" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-1 | Descripcion= pasillo 6 primer pisp | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrPasillo><NodoIrEscalera>Id="166" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc2-1 | Descripcion= escalera 2 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrAscensor>Id="167" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-1 | Descripcion= ascensor primer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrAscensor><NodoIrOficina>Id="168" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-1 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrOficina><NodoIrDepartamento>Id="169" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Industrial | Descripcion= Departamento de Industrial | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrDepartamento></NodoIrPasillo><NodoSubirNivel>Id="69" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-2 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoSubirNivel>Id="170" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+</NodoSubirNivel><NodoSubirNivel>Id="171" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+</NodoSubirNivel></NodoSubirNivel></NodoSubirNivel></NodoIrEscalera><NodoIrEscalera>Id="23" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-0 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrEscalera><NodoIrAscensor>Id="24" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-0 | Descripcion= ascensor planta baja | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="43" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-1 | Descripcion= ascensor primer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="70" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="172" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrPasillo><NodoIrPasillo>Id="173" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-1 | Descripcion= pasillo 6 primer pisp | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrPasillo><NodoIrEscalera>Id="174" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-1 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrEscalera>Id="175" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc2-1 | Descripcion= escalera 2 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrOficina>Id="176" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-1 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrOficina><NodoIrDepartamento>Id="177" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Industrial | Descripcion= Departamento de Industrial | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrDepartamento></NodoIrPasillo><NodoSubirNivel>Id="71" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-2 | Descripcion= ascensor segundo piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoSubirNivel>Id="178" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoSubirNivel></NodoSubirNivel><NodoSubirNivel>Id="72" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="179" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+</NodoIrPasillo></NodoSubirNivel></NodoSubirNivel><NodoSubirNivel>Id="44" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-2 | Descripcion= ascensor segundo piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="73" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoIrPasillo>Id="180" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+</NodoIrPasillo></NodoSubirNivel></NodoSubirNivel><NodoSubirNivel>Id="45" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoIrPasillo>Id="74" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="181" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrPasillo><NodoIrAula>Id="182" Action="IrAula" 
+Posición del agente: Aula: [ id= cs1 | Descripcion= Aula Consultas 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrAula>Id="183" Action="IrAula" 
+Posición del agente: Aula: [ id= cs2 | Descripcion= Aula Consultas 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrEscalera>Id="184" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrEscalera>Id="185" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrOficina>Id="186" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc3-3 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina><NodoIrOficina>Id="187" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-3 | Descripcion= TICS | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina></NodoIrPasillo></NodoSubirNivel></NodoIrAscensor><NodoIrDepartamento>Id="25" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= mecanica | Descripcion= Departamento de Mecanica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 985
+</NodoIrDepartamento><NodoIrDepartamento>Id="26" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= electrica | Descripcion= Departamento de Electrica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrDepartamento><NodoIrLaboratorio>Id="27" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab1 | Descripcion= Laboratorio de Mecanica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoIrPasillo>Id="46" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="75" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+<NodoIrPasillo>Id="188" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrPasillo><NodoIrAula>Id="189" Action="IrAula" 
+Posición del agente: Aula: [ id= au9 | Descripcion= aula9 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="190" Action="IrAula" 
+Posición del agente: Aula: [ id= au10 | Descripcion= aula10 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="191" Action="IrAula" 
+Posición del agente: Aula: [ id= au11 | Descripcion= aula11 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="192" Action="IrAula" 
+Posición del agente: Aula: [ id= au12 | Descripcion= aula12 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="193" Action="IrAula" 
+Posición del agente: Aula: [ id= au13 | Descripcion= aula13 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="194" Action="IrAula" 
+Posición del agente: Aula: [ id= au14 | Descripcion= aula14 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="195" Action="IrAula" 
+Posición del agente: Aula: [ id= au15 | Descripcion= aula15 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="196" Action="IrAula" 
+Posición del agente: Aula: [ id= au16 | Descripcion= aula16 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="197" Action="IrAula" 
+Posición del agente: Aula: [ id= au17 | Descripcion= aula17 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="198" Action="IrAula" 
+Posición del agente: Aula: [ id= au18 | Descripcion= aula18 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="199" Action="IrAula" 
+Posición del agente: Aula: [ id= if1 | Descripcion= Informática 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="200" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrEscalera>Id="201" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc1-1 | Descripcion= escalera 1 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrEscalera></NodoIrPasillo><NodoIrPasillo>Id="76" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+<NodoIrPasillo>Id="202" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrPasillo><NodoIrAula>Id="203" Action="IrAula" 
+Posición del agente: Aula: [ id= mt1 | Descripcion= Aula de Materiales | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrEscalera>Id="204" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc6-1 | Descripcion= escalera 6 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrEscalera><NodoIrBiblioteca>Id="205" Action="IrBiblioteca" 
+Posición del agente: Biblioteca: [ id= biblioteca1 | Descripcion= Biblioteca Moreno | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrBiblioteca><NodoIrLaboratorio>Id="206" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= ccv1 | Descripcion= Laboratorio CECOVI | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrLaboratorio></NodoIrPasillo><NodoIrAula>Id="77" Action="IrAula" 
+Posición del agente: Aula: [ id= au19 | Descripcion= aula19 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrEscalera>Id="78" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc4-1 | Descripcion= escalera 4 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrBaño>Id="79" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrBaño><NodoIrBaño>Id="80" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrBaño></NodoIrPasillo><NodoIrPasillo>Id="47" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="81" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+<NodoIrAula>Id="207" Action="IrAula" 
+Posición del agente: Aula: [ id= cs1 | Descripcion= Aula Consultas 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="208" Action="IrAula" 
+Posición del agente: Aula: [ id= cs2 | Descripcion= Aula Consultas 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrEscalera>Id="209" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrEscalera><NodoIrEscalera>Id="210" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrEscalera><NodoIrAscensor>Id="211" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAscensor><NodoIrOficina>Id="212" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc3-3 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrOficina><NodoIrOficina>Id="213" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-3 | Descripcion= TICS | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrOficina></NodoIrPasillo><NodoIrOficina>Id="82" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina><NodoIrLaboratorio>Id="83" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab2 | Descripcion= Laboratorio de Fluidica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="84" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab3 | Descripcion= Laboratorio Informatica 3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="85" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab4 | Descripcion= Laboratorio Informatica 4 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="86" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab2 | Descripcion= Laboratorio de Fluidica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio></NodoIrPasillo></NodoIrLaboratorio><NodoIrLaboratorio>Id="28" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab1 | Descripcion= Laboratorio de Mecanica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoIrPasillo>Id="48" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="87" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrPasillo><NodoIrPasillo>Id="88" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrPasillo><NodoIrAula>Id="89" Action="IrAula" 
+Posición del agente: Aula: [ id= au19 | Descripcion= aula19 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrEscalera>Id="90" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc4-1 | Descripcion= escalera 4 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrBaño>Id="91" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrBaño><NodoIrBaño>Id="92" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrBaño></NodoIrPasillo><NodoIrPasillo>Id="49" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="93" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrPasillo><NodoIrOficina>Id="94" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina><NodoIrLaboratorio>Id="95" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab2 | Descripcion= Laboratorio de Fluidica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="96" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab3 | Descripcion= Laboratorio Informatica 3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="97" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab4 | Descripcion= Laboratorio Informatica 4 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="98" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab2 | Descripcion= Laboratorio de Fluidica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio></NodoIrPasillo></NodoIrLaboratorio></NodoIrPasillo><NodoIrPasillo>Id="4" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-0 | Descripcion= pasillo 3 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 990
+<NodoIrPasillo>Id="29" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-0 | Descripcion= pasillo 6 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 985
+<NodoIrPasillo>Id="50" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-0 | Descripcion= pasillo 5 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrLaboratorio>Id="99" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab2 | Descripcion= Laboratorio de Fluidica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="100" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab2 | Descripcion= Laboratorio de Fluidica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+</NodoIrLaboratorio></NodoIrPasillo><NodoIrEscalera>Id="51" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc6-0 | Descripcion= escalera 6 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrEscalera></NodoIrPasillo><NodoIrEscalera>Id="30" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-0 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="52" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-1 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="101" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+</NodoIrPasillo><NodoSubirNivel>Id="102" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-2 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+</NodoSubirNivel></NodoSubirNivel></NodoIrEscalera><NodoIrEscalera>Id="31" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-0 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrEscalera><NodoIrAscensor>Id="32" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-0 | Descripcion= ascensor planta baja | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="53" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-1 | Descripcion= ascensor primer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="103" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+</NodoIrPasillo><NodoSubirNivel>Id="104" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-2 | Descripcion= ascensor segundo piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoSubirNivel><NodoSubirNivel>Id="105" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoSubirNivel></NodoSubirNivel><NodoSubirNivel>Id="54" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-2 | Descripcion= ascensor segundo piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="106" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoSubirNivel></NodoSubirNivel><NodoSubirNivel>Id="55" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoIrPasillo>Id="107" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+</NodoIrPasillo></NodoSubirNivel></NodoIrAscensor><NodoIrDepartamento>Id="33" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= mecanica | Descripcion= Departamento de Mecanica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 985
+</NodoIrDepartamento><NodoIrDepartamento>Id="34" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= electrica | Descripcion= Departamento de Electrica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrDepartamento><NodoIrLaboratorio>Id="35" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab1 | Descripcion= Laboratorio de Mecanica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoIrPasillo>Id="56" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="108" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrPasillo><NodoIrPasillo>Id="109" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrPasillo><NodoIrAula>Id="110" Action="IrAula" 
+Posición del agente: Aula: [ id= au19 | Descripcion= aula19 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrEscalera>Id="111" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc4-1 | Descripcion= escalera 4 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrBaño>Id="112" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrBaño><NodoIrBaño>Id="113" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrBaño></NodoIrPasillo><NodoIrPasillo>Id="57" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="114" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrPasillo><NodoIrOficina>Id="115" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina><NodoIrLaboratorio>Id="116" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab2 | Descripcion= Laboratorio de Fluidica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="117" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab3 | Descripcion= Laboratorio Informatica 3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="118" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab4 | Descripcion= Laboratorio Informatica 4 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="119" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab2 | Descripcion= Laboratorio de Fluidica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio></NodoIrPasillo></NodoIrLaboratorio><NodoIrLaboratorio>Id="36" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab1 | Descripcion= Laboratorio de Mecanica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoIrPasillo>Id="58" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="120" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrPasillo><NodoIrPasillo>Id="121" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrPasillo><NodoIrAula>Id="122" Action="IrAula" 
+Posición del agente: Aula: [ id= au19 | Descripcion= aula19 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrEscalera>Id="123" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc4-1 | Descripcion= escalera 4 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrBaño>Id="124" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrBaño><NodoIrBaño>Id="125" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrBaño></NodoIrPasillo><NodoIrPasillo>Id="59" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="126" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrPasillo><NodoIrOficina>Id="127" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina><NodoIrLaboratorio>Id="128" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab2 | Descripcion= Laboratorio de Fluidica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="129" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab3 | Descripcion= Laboratorio Informatica 3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="130" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab4 | Descripcion= Laboratorio Informatica 4 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio><NodoIrLaboratorio>Id="131" Action="IrLaboratorio" 
+Posición del agente: Laboratorio: [ id= lab2 | Descripcion= Laboratorio de Fluidica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrLaboratorio></NodoIrPasillo></NodoIrLaboratorio></NodoIrPasillo></Nodonull><Nodonull>Id="0" Action="null" 
+Posición del agente: Pasillo: [ id= p3-0 | Descripcion= pasillo 3 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 990
+<NodoIrPasillo>Id="1" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-0 | Descripcion= pasillo 1 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 990
+<NodoIrEscalera>Id="5" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc7-0 | Descripcion= escalera 7 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrEscalera><NodoIrBiblioteca>Id="6" Action="IrBiblioteca" 
+Posición del agente: Biblioteca: [ id= biblioteca1 | Descripcion= Biblioteca Moreno | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="33" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="48" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrPasillo>Id="67" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="143" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+<NodoIrAula>Id="296" Action="IrAula" 
+Posición del agente: Aula: [ id= au19 | Descripcion= aula19 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrEscalera>Id="297" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc4-1 | Descripcion= escalera 4 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrEscalera><NodoIrBaño>Id="298" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrBaño><NodoIrBaño>Id="299" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrBaño></NodoIrPasillo><NodoIrAula>Id="144" Action="IrAula" 
+Posición del agente: Aula: [ id= au9 | Descripcion= aula9 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="145" Action="IrAula" 
+Posición del agente: Aula: [ id= au10 | Descripcion= aula10 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="146" Action="IrAula" 
+Posición del agente: Aula: [ id= au11 | Descripcion= aula11 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="147" Action="IrAula" 
+Posición del agente: Aula: [ id= au12 | Descripcion= aula12 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="148" Action="IrAula" 
+Posición del agente: Aula: [ id= au13 | Descripcion= aula13 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="149" Action="IrAula" 
+Posición del agente: Aula: [ id= au14 | Descripcion= aula14 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="150" Action="IrAula" 
+Posición del agente: Aula: [ id= au15 | Descripcion= aula15 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="151" Action="IrAula" 
+Posición del agente: Aula: [ id= au16 | Descripcion= aula16 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="152" Action="IrAula" 
+Posición del agente: Aula: [ id= au17 | Descripcion= aula17 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="153" Action="IrAula" 
+Posición del agente: Aula: [ id= au18 | Descripcion= aula18 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="154" Action="IrAula" 
+Posición del agente: Aula: [ id= if1 | Descripcion= Informática 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="155" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrEscalera>Id="156" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc1-1 | Descripcion= escalera 1 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrEscalera></NodoIrPasillo><NodoIrPasillo>Id="68" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="157" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-1 | Descripcion= pasillo 6 primer pisp | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+<NodoIrAula>Id="300" Action="IrAula" 
+Posición del agente: Aula: [ id= ae3 | Descripcion= Aula E03 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="301" Action="IrAula" 
+Posición del agente: Aula: [ id= ae2 | Descripcion= Aula E02 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="302" Action="IrAula" 
+Posición del agente: Aula: [ id= ae1 | Descripcion= Aula E01 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="303" Action="IrAula" 
+Posición del agente: Aula: [ id= vd1 | Descripcion= Aula de video | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrEscalera>Id="304" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc7-1 | Descripcion= escalera 7 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrEscalera><NodoIrOficina>Id="305" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrOficina></NodoIrPasillo><NodoIrEscalera>Id="158" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-1 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+<NodoSubirNivel>Id="306" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-2 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoSubirNivel></NodoIrEscalera><NodoIrEscalera>Id="159" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc2-1 | Descripcion= escalera 2 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrEscalera><NodoIrAscensor>Id="160" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-1 | Descripcion= ascensor primer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+<NodoSubirNivel>Id="307" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-2 | Descripcion= ascensor segundo piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoSubirNivel><NodoSubirNivel>Id="308" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoSubirNivel></NodoIrAscensor><NodoIrOficina>Id="161" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-1 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrOficina><NodoIrDepartamento>Id="162" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Industrial | Descripcion= Departamento de Industrial | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrDepartamento></NodoIrPasillo><NodoIrAula>Id="69" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="163" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+<NodoIrPasillo>Id="309" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrPasillo><NodoIrAula>Id="310" Action="IrAula" 
+Posición del agente: Aula: [ id= au9 | Descripcion= aula9 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="311" Action="IrAula" 
+Posición del agente: Aula: [ id= au10 | Descripcion= aula10 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="312" Action="IrAula" 
+Posición del agente: Aula: [ id= au11 | Descripcion= aula11 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="313" Action="IrAula" 
+Posición del agente: Aula: [ id= au12 | Descripcion= aula12 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="314" Action="IrAula" 
+Posición del agente: Aula: [ id= au13 | Descripcion= aula13 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="315" Action="IrAula" 
+Posición del agente: Aula: [ id= au14 | Descripcion= aula14 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="316" Action="IrAula" 
+Posición del agente: Aula: [ id= au15 | Descripcion= aula15 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="317" Action="IrAula" 
+Posición del agente: Aula: [ id= au16 | Descripcion= aula16 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="318" Action="IrAula" 
+Posición del agente: Aula: [ id= au17 | Descripcion= aula17 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="319" Action="IrAula" 
+Posición del agente: Aula: [ id= au18 | Descripcion= aula18 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="320" Action="IrAula" 
+Posición del agente: Aula: [ id= if1 | Descripcion= Informática 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrEscalera>Id="321" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc1-1 | Descripcion= escalera 1 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrEscalera></NodoIrPasillo></NodoIrAula><NodoIrAula>Id="70" Action="IrAula" 
+Posición del agente: Aula: [ id= cn1 | Descripcion= Consulta 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="71" Action="IrAula" 
+Posición del agente: Aula: [ id= cn2 | Descripcion= Consulta 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="72" Action="IrAula" 
+Posición del agente: Aula: [ id= cn3 | Descripcion= Consulta 3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrEscalera>Id="73" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-1 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrEscalera><NodoIrOficina>Id="74" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="164" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-1 | Descripcion= pasillo 6 primer pisp | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+<NodoIrPasillo>Id="322" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrPasillo><NodoIrAula>Id="323" Action="IrAula" 
+Posición del agente: Aula: [ id= ae3 | Descripcion= Aula E03 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="324" Action="IrAula" 
+Posición del agente: Aula: [ id= ae2 | Descripcion= Aula E02 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="325" Action="IrAula" 
+Posición del agente: Aula: [ id= ae1 | Descripcion= Aula E01 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="326" Action="IrAula" 
+Posición del agente: Aula: [ id= vd1 | Descripcion= Aula de video | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrEscalera>Id="327" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc7-1 | Descripcion= escalera 7 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrEscalera></NodoIrPasillo></NodoIrOficina><NodoIrDepartamento>Id="75" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Básicas | Descripcion= Departamento de Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrDepartamento></NodoIrPasillo><NodoIrPasillo>Id="49" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrPasillo>Id="76" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="165" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+<NodoIrPasillo>Id="328" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrPasillo><NodoIrAula>Id="329" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="330" Action="IrAula" 
+Posición del agente: Aula: [ id= cn1 | Descripcion= Consulta 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="331" Action="IrAula" 
+Posición del agente: Aula: [ id= cn2 | Descripcion= Consulta 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrAula>Id="332" Action="IrAula" 
+Posición del agente: Aula: [ id= cn3 | Descripcion= Consulta 3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrAula><NodoIrEscalera>Id="333" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-1 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrEscalera><NodoIrOficina>Id="334" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrOficina><NodoIrDepartamento>Id="335" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Básicas | Descripcion= Departamento de Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrDepartamento></NodoIrPasillo><NodoIrAula>Id="166" Action="IrAula" 
+Posición del agente: Aula: [ id= au9 | Descripcion= aula9 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="167" Action="IrAula" 
+Posición del agente: Aula: [ id= au10 | Descripcion= aula10 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="168" Action="IrAula" 
+Posición del agente: Aula: [ id= au11 | Descripcion= aula11 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="169" Action="IrAula" 
+Posición del agente: Aula: [ id= au12 | Descripcion= aula12 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="170" Action="IrAula" 
+Posición del agente: Aula: [ id= au13 | Descripcion= aula13 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="171" Action="IrAula" 
+Posición del agente: Aula: [ id= au14 | Descripcion= aula14 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="172" Action="IrAula" 
+Posición del agente: Aula: [ id= au15 | Descripcion= aula15 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="173" Action="IrAula" 
+Posición del agente: Aula: [ id= au16 | Descripcion= aula16 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="174" Action="IrAula" 
+Posición del agente: Aula: [ id= au17 | Descripcion= aula17 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="175" Action="IrAula" 
+Posición del agente: Aula: [ id= au18 | Descripcion= aula18 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="176" Action="IrAula" 
+Posición del agente: Aula: [ id= if1 | Descripcion= Informática 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="177" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+<NodoIrPasillo>Id="336" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 925
+</NodoIrPasillo></NodoIrAula><NodoIrEscalera>Id="178" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc1-1 | Descripcion= escalera 1 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrEscalera></NodoIrPasillo><NodoIrAula>Id="77" Action="IrAula" 
+Posición del agente: Aula: [ id= au19 | Descripcion= aula19 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrEscalera>Id="78" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc4-1 | Descripcion= escalera 4 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrEscalera><NodoIrBaño>Id="79" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrBaño><NodoIrBaño>Id="80" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrBaño></NodoIrPasillo><NodoIrAula>Id="50" Action="IrAula" 
+Posición del agente: Aula: [ id= mt1 | Descripcion= Aula de Materiales | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrAula><NodoIrEscalera>Id="51" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc6-1 | Descripcion= escalera 6 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera></NodoIrPasillo></NodoIrBiblioteca><NodoIrCantina>Id="7" Action="IrCantina" 
+Posición del agente: Cantina: [ id= cantina | Descripcion= Sheldon Bar | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrCantina><NodoIrOficina>Id="8" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-0 | Descripcion= Alumnado | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+</NodoIrOficina><NodoIrOficina>Id="9" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-0 | Descripcion= SAE | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+</NodoIrOficina><NodoIrLaboratorio>Id="10" Action="IrLaboratorio" 
+Posición del agente: Ingreso: [ id= ingreso2 | Descripcion= entrada por torre | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+<NodoIrEscalera>Id="34" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc2-0 | Descripcion= escalera 2 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrEscalera></NodoIrLaboratorio></NodoIrPasillo><NodoIrPasillo>Id="2" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-0 | Descripcion= pasillo 2 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 990
+<NodoIrAula>Id="11" Action="IrAula" 
+Posición del agente: Aula: [ id= au1 | Descripcion= aula1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrAula><NodoIrAula>Id="12" Action="IrAula" 
+Posición del agente: Aula: [ id= au2 | Descripcion= aula2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="13" Action="IrAula" 
+Posición del agente: Aula: [ id= au3 | Descripcion= aula3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="14" Action="IrAula" 
+Posición del agente: Aula: [ id= au4 | Descripcion= aula4 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="15" Action="IrAula" 
+Posición del agente: Aula: [ id= au5 | Descripcion= aula5 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="16" Action="IrAula" 
+Posición del agente: Aula: [ id= au6 | Descripcion= aula6 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="17" Action="IrAula" 
+Posición del agente: Aula: [ id= au7 | Descripcion= quimica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrAula>Id="18" Action="IrAula" 
+Posición del agente: Aula: [ id= au8 | Descripcion= Fisica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrAula><NodoIrEscalera>Id="19" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc1-0 | Descripcion= escalera 1 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="35" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc1-1 | Descripcion= escalera 1 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="52" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+<NodoIrPasillo>Id="81" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+<NodoIrPasillo>Id="179" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+<NodoIrPasillo>Id="337" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrPasillo><NodoIrAula>Id="338" Action="IrAula" 
+Posición del agente: Aula: [ id= mt1 | Descripcion= Aula de Materiales | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrAula><NodoIrEscalera>Id="339" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc6-1 | Descripcion= escalera 6 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrEscalera><NodoIrBiblioteca>Id="340" Action="IrBiblioteca" 
+Posición del agente: Biblioteca: [ id= biblioteca1 | Descripcion= Biblioteca Moreno | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrBiblioteca></NodoIrPasillo><NodoIrPasillo>Id="180" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+<NodoIrPasillo>Id="341" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-1 | Descripcion= pasillo 6 primer pisp | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrPasillo><NodoIrEscalera>Id="342" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-1 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrEscalera><NodoIrEscalera>Id="343" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc2-1 | Descripcion= escalera 2 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrEscalera><NodoIrAscensor>Id="344" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-1 | Descripcion= ascensor primer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrAscensor><NodoIrOficina>Id="345" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-1 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrOficina><NodoIrDepartamento>Id="346" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Industrial | Descripcion= Departamento de Industrial | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrDepartamento></NodoIrPasillo><NodoIrAula>Id="181" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+</NodoIrAula><NodoIrAula>Id="182" Action="IrAula" 
+Posición del agente: Aula: [ id= cn1 | Descripcion= Consulta 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+</NodoIrAula><NodoIrAula>Id="183" Action="IrAula" 
+Posición del agente: Aula: [ id= cn2 | Descripcion= Consulta 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+</NodoIrAula><NodoIrAula>Id="184" Action="IrAula" 
+Posición del agente: Aula: [ id= cn3 | Descripcion= Consulta 3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+</NodoIrAula><NodoIrEscalera>Id="185" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-1 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+</NodoIrEscalera><NodoIrOficina>Id="186" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+<NodoIrPasillo>Id="347" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-1 | Descripcion= pasillo 6 primer pisp | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrPasillo></NodoIrOficina><NodoIrDepartamento>Id="187" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Básicas | Descripcion= Departamento de Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+</NodoIrDepartamento></NodoIrPasillo><NodoIrPasillo>Id="82" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+<NodoIrPasillo>Id="188" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+<NodoIrPasillo>Id="348" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrPasillo><NodoIrAula>Id="349" Action="IrAula" 
+Posición del agente: Aula: [ id= mt1 | Descripcion= Aula de Materiales | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrAula><NodoIrEscalera>Id="350" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc6-1 | Descripcion= escalera 6 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrEscalera><NodoIrBiblioteca>Id="351" Action="IrBiblioteca" 
+Posición del agente: Biblioteca: [ id= biblioteca1 | Descripcion= Biblioteca Moreno | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrBiblioteca></NodoIrPasillo><NodoIrAula>Id="189" Action="IrAula" 
+Posición del agente: Aula: [ id= au19 | Descripcion= aula19 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+</NodoIrAula><NodoIrEscalera>Id="190" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc4-1 | Descripcion= escalera 4 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+</NodoIrEscalera><NodoIrBaño>Id="191" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+</NodoIrBaño><NodoIrBaño>Id="192" Action="IrBaño" 
+Posición del agente: Baño: [ id= baño1 | Descripcion= baño1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+</NodoIrBaño></NodoIrPasillo><NodoIrAula>Id="83" Action="IrAula" 
+Posición del agente: Aula: [ id= au9 | Descripcion= aula9 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="84" Action="IrAula" 
+Posición del agente: Aula: [ id= au10 | Descripcion= aula10 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="85" Action="IrAula" 
+Posición del agente: Aula: [ id= au11 | Descripcion= aula11 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="86" Action="IrAula" 
+Posición del agente: Aula: [ id= au12 | Descripcion= aula12 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="87" Action="IrAula" 
+Posición del agente: Aula: [ id= au13 | Descripcion= aula13 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="88" Action="IrAula" 
+Posición del agente: Aula: [ id= au14 | Descripcion= aula14 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="89" Action="IrAula" 
+Posición del agente: Aula: [ id= au15 | Descripcion= aula15 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="90" Action="IrAula" 
+Posición del agente: Aula: [ id= au16 | Descripcion= aula16 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="91" Action="IrAula" 
+Posición del agente: Aula: [ id= au17 | Descripcion= aula17 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="92" Action="IrAula" 
+Posición del agente: Aula: [ id= au18 | Descripcion= aula18 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="93" Action="IrAula" 
+Posición del agente: Aula: [ id= if1 | Descripcion= Informática 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrAula><NodoIrAula>Id="94" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+<NodoIrPasillo>Id="193" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 940
+<NodoIrPasillo>Id="352" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrPasillo><NodoIrPasillo>Id="353" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrPasillo><NodoIrAula>Id="354" Action="IrAula" 
+Posición del agente: Aula: [ id= cn1 | Descripcion= Consulta 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrAula><NodoIrAula>Id="355" Action="IrAula" 
+Posición del agente: Aula: [ id= cn2 | Descripcion= Consulta 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrAula><NodoIrAula>Id="356" Action="IrAula" 
+Posición del agente: Aula: [ id= cn3 | Descripcion= Consulta 3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrAula><NodoIrEscalera>Id="357" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-1 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrEscalera><NodoIrOficina>Id="358" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrOficina><NodoIrDepartamento>Id="359" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Básicas | Descripcion= Departamento de Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 930
+</NodoIrDepartamento></NodoIrPasillo></NodoIrAula></NodoIrPasillo></NodoSubirNivel></NodoIrEscalera><NodoIrFotocopiadora>Id="20" Action="IrFotocopiadora" 
+Posición del agente: Fotocopiadora: [ id= fotocopiadora | Descripcion= Fotocopiadora FRSF | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrFotocopiadora></NodoIrPasillo><NodoIrPasillo>Id="3" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-0 | Descripcion= pasillo 3 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 990
+<NodoIrPasillo>Id="21" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-0 | Descripcion= pasillo 6 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 985
+<NodoIrPasillo>Id="36" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-0 | Descripcion= pasillo 5 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrPasillo><NodoIrEscalera>Id="37" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc6-0 | Descripcion= escalera 6 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrEscalera></NodoIrPasillo><NodoIrEscalera>Id="22" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-0 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="38" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-1 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="53" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="95" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrPasillo>Id="194" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="360" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrPasillo><NodoIrAula>Id="361" Action="IrAula" 
+Posición del agente: Aula: [ id= au9 | Descripcion= aula9 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="362" Action="IrAula" 
+Posición del agente: Aula: [ id= au10 | Descripcion= aula10 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="363" Action="IrAula" 
+Posición del agente: Aula: [ id= au11 | Descripcion= aula11 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="364" Action="IrAula" 
+Posición del agente: Aula: [ id= au12 | Descripcion= aula12 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="365" Action="IrAula" 
+Posición del agente: Aula: [ id= au13 | Descripcion= aula13 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="366" Action="IrAula" 
+Posición del agente: Aula: [ id= au14 | Descripcion= aula14 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="367" Action="IrAula" 
+Posición del agente: Aula: [ id= au15 | Descripcion= aula15 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="368" Action="IrAula" 
+Posición del agente: Aula: [ id= au16 | Descripcion= aula16 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="369" Action="IrAula" 
+Posición del agente: Aula: [ id= au17 | Descripcion= aula17 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="370" Action="IrAula" 
+Posición del agente: Aula: [ id= au18 | Descripcion= aula18 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="371" Action="IrAula" 
+Posición del agente: Aula: [ id= if1 | Descripcion= Informática 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="372" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrEscalera>Id="373" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc1-1 | Descripcion= escalera 1 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrEscalera></NodoIrPasillo><NodoIrPasillo>Id="195" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="374" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrPasillo><NodoIrAula>Id="375" Action="IrAula" 
+Posición del agente: Aula: [ id= mt1 | Descripcion= Aula de Materiales | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrEscalera>Id="376" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc6-1 | Descripcion= escalera 6 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrEscalera><NodoIrBiblioteca>Id="377" Action="IrBiblioteca" 
+Posición del agente: Biblioteca: [ id= biblioteca1 | Descripcion= Biblioteca Moreno | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrBiblioteca></NodoIrPasillo><NodoIrAula>Id="196" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="378" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrPasillo></NodoIrAula><NodoIrAula>Id="197" Action="IrAula" 
+Posición del agente: Aula: [ id= cn1 | Descripcion= Consulta 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="198" Action="IrAula" 
+Posición del agente: Aula: [ id= cn2 | Descripcion= Consulta 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="199" Action="IrAula" 
+Posición del agente: Aula: [ id= cn3 | Descripcion= Consulta 3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrEscalera>Id="200" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-1 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrEscalera><NodoIrOficina>Id="201" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="379" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-1 | Descripcion= pasillo 6 primer pisp | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrPasillo></NodoIrOficina><NodoIrDepartamento>Id="202" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Básicas | Descripcion= Departamento de Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrDepartamento></NodoIrPasillo><NodoIrPasillo>Id="96" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-1 | Descripcion= pasillo 6 primer pisp | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrAula>Id="203" Action="IrAula" 
+Posición del agente: Aula: [ id= ae3 | Descripcion= Aula E03 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="204" Action="IrAula" 
+Posición del agente: Aula: [ id= ae2 | Descripcion= Aula E02 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="205" Action="IrAula" 
+Posición del agente: Aula: [ id= ae1 | Descripcion= Aula E01 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="206" Action="IrAula" 
+Posición del agente: Aula: [ id= vd1 | Descripcion= Aula de video | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrEscalera>Id="207" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc7-1 | Descripcion= escalera 7 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrEscalera><NodoIrOficina>Id="208" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="380" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrPasillo></NodoIrOficina></NodoIrPasillo><NodoIrEscalera>Id="97" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc2-1 | Descripcion= escalera 2 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrAscensor>Id="98" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-1 | Descripcion= ascensor primer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoSubirNivel>Id="209" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-2 | Descripcion= ascensor segundo piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoSubirNivel>Id="381" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoSubirNivel></NodoSubirNivel><NodoSubirNivel>Id="210" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrPasillo>Id="382" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrPasillo></NodoSubirNivel></NodoIrAscensor><NodoIrOficina>Id="99" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-1 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrOficina><NodoIrDepartamento>Id="100" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Industrial | Descripcion= Departamento de Industrial | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrDepartamento></NodoIrPasillo><NodoSubirNivel>Id="54" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-2 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoSubirNivel>Id="101" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="211" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrPasillo>Id="383" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrPasillo><NodoIrAula>Id="384" Action="IrAula" 
+Posición del agente: Aula: [ id= cs1 | Descripcion= Aula Consultas 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="385" Action="IrAula" 
+Posición del agente: Aula: [ id= cs2 | Descripcion= Aula Consultas 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAscensor>Id="386" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAscensor><NodoIrOficina>Id="387" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc3-3 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrOficina><NodoIrOficina>Id="388" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-3 | Descripcion= TICS | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrOficina></NodoIrPasillo></NodoSubirNivel><NodoSubirNivel>Id="102" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="212" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrPasillo>Id="389" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrPasillo><NodoIrAula>Id="390" Action="IrAula" 
+Posición del agente: Aula: [ id= cs1 | Descripcion= Aula Consultas 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="391" Action="IrAula" 
+Posición del agente: Aula: [ id= cs2 | Descripcion= Aula Consultas 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAscensor>Id="392" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAscensor><NodoIrOficina>Id="393" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc3-3 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrOficina><NodoIrOficina>Id="394" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-3 | Descripcion= TICS | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrOficina></NodoIrPasillo></NodoSubirNivel></NodoSubirNivel></NodoSubirNivel></NodoIrEscalera><NodoIrEscalera>Id="23" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-0 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrEscalera><NodoIrAscensor>Id="24" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-0 | Descripcion= ascensor planta baja | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="39" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-1 | Descripcion= ascensor primer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="55" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="103" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrPasillo>Id="213" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="395" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrPasillo><NodoIrAula>Id="396" Action="IrAula" 
+Posición del agente: Aula: [ id= au9 | Descripcion= aula9 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="397" Action="IrAula" 
+Posición del agente: Aula: [ id= au10 | Descripcion= aula10 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="398" Action="IrAula" 
+Posición del agente: Aula: [ id= au11 | Descripcion= aula11 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="399" Action="IrAula" 
+Posición del agente: Aula: [ id= au12 | Descripcion= aula12 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="400" Action="IrAula" 
+Posición del agente: Aula: [ id= au13 | Descripcion= aula13 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="401" Action="IrAula" 
+Posición del agente: Aula: [ id= au14 | Descripcion= aula14 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="402" Action="IrAula" 
+Posición del agente: Aula: [ id= au15 | Descripcion= aula15 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="403" Action="IrAula" 
+Posición del agente: Aula: [ id= au16 | Descripcion= aula16 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="404" Action="IrAula" 
+Posición del agente: Aula: [ id= au17 | Descripcion= aula17 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="405" Action="IrAula" 
+Posición del agente: Aula: [ id= au18 | Descripcion= aula18 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="406" Action="IrAula" 
+Posición del agente: Aula: [ id= if1 | Descripcion= Informática 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrAula>Id="407" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrEscalera>Id="408" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc1-1 | Descripcion= escalera 1 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrEscalera></NodoIrPasillo><NodoIrPasillo>Id="214" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="409" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrPasillo><NodoIrAula>Id="410" Action="IrAula" 
+Posición del agente: Aula: [ id= mt1 | Descripcion= Aula de Materiales | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrAula><NodoIrEscalera>Id="411" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc6-1 | Descripcion= escalera 6 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrEscalera><NodoIrBiblioteca>Id="412" Action="IrBiblioteca" 
+Posición del agente: Biblioteca: [ id= biblioteca1 | Descripcion= Biblioteca Moreno | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrBiblioteca></NodoIrPasillo><NodoIrAula>Id="215" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="413" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrPasillo></NodoIrAula><NodoIrAula>Id="216" Action="IrAula" 
+Posición del agente: Aula: [ id= cn1 | Descripcion= Consulta 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="217" Action="IrAula" 
+Posición del agente: Aula: [ id= cn2 | Descripcion= Consulta 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="218" Action="IrAula" 
+Posición del agente: Aula: [ id= cn3 | Descripcion= Consulta 3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrEscalera>Id="219" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-1 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrEscalera><NodoIrOficina>Id="220" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="414" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-1 | Descripcion= pasillo 6 primer pisp | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrPasillo></NodoIrOficina><NodoIrDepartamento>Id="221" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Básicas | Descripcion= Departamento de Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrDepartamento></NodoIrPasillo><NodoIrPasillo>Id="104" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-1 | Descripcion= pasillo 6 primer pisp | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrAula>Id="222" Action="IrAula" 
+Posición del agente: Aula: [ id= ae3 | Descripcion= Aula E03 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="223" Action="IrAula" 
+Posición del agente: Aula: [ id= ae2 | Descripcion= Aula E02 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="224" Action="IrAula" 
+Posición del agente: Aula: [ id= ae1 | Descripcion= Aula E01 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="225" Action="IrAula" 
+Posición del agente: Aula: [ id= vd1 | Descripcion= Aula de video | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrEscalera>Id="226" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc7-1 | Descripcion= escalera 7 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrEscalera><NodoIrOficina>Id="227" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+<NodoIrPasillo>Id="415" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 935
+</NodoIrPasillo></NodoIrOficina></NodoIrPasillo><NodoIrEscalera>Id="105" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-1 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoSubirNivel>Id="228" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-2 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+<NodoSubirNivel>Id="416" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoSubirNivel><NodoSubirNivel>Id="417" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoSubirNivel></NodoSubirNivel></NodoIrEscalera><NodoIrEscalera>Id="106" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc2-1 | Descripcion= escalera 2 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrOficina>Id="107" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-1 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrOficina><NodoIrDepartamento>Id="108" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Industrial | Descripcion= Departamento de Industrial | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrDepartamento></NodoIrPasillo><NodoSubirNivel>Id="56" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-2 | Descripcion= ascensor segundo piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoSubirNivel>Id="109" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="229" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="418" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrPasillo><NodoIrAula>Id="419" Action="IrAula" 
+Posición del agente: Aula: [ id= cs1 | Descripcion= Aula Consultas 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrAula><NodoIrAula>Id="420" Action="IrAula" 
+Posición del agente: Aula: [ id= cs2 | Descripcion= Aula Consultas 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrAula><NodoIrEscalera>Id="421" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrEscalera>Id="422" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrOficina>Id="423" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc3-3 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrOficina><NodoIrOficina>Id="424" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-3 | Descripcion= TICS | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrOficina></NodoIrPasillo></NodoSubirNivel></NodoSubirNivel><NodoSubirNivel>Id="57" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="110" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="230" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrOficina>Id="425" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrOficina></NodoIrPasillo><NodoIrAula>Id="231" Action="IrAula" 
+Posición del agente: Aula: [ id= cs1 | Descripcion= Aula Consultas 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrAula><NodoIrAula>Id="232" Action="IrAula" 
+Posición del agente: Aula: [ id= cs2 | Descripcion= Aula Consultas 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrAula><NodoIrEscalera>Id="233" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrEscalera>Id="234" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrOficina>Id="235" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc3-3 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrOficina><NodoIrOficina>Id="236" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-3 | Descripcion= TICS | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrOficina></NodoIrPasillo></NodoSubirNivel></NodoSubirNivel><NodoSubirNivel>Id="40" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-2 | Descripcion= ascensor segundo piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="58" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoIrPasillo>Id="111" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="237" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+<NodoIrOficina>Id="426" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrOficina></NodoIrPasillo><NodoIrAula>Id="238" Action="IrAula" 
+Posición del agente: Aula: [ id= cs1 | Descripcion= Aula Consultas 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrAula>Id="239" Action="IrAula" 
+Posición del agente: Aula: [ id= cs2 | Descripcion= Aula Consultas 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrEscalera>Id="240" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrEscalera>Id="241" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrOficina>Id="242" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc3-3 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina><NodoIrOficina>Id="243" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-3 | Descripcion= TICS | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina></NodoIrPasillo></NodoSubirNivel></NodoSubirNivel><NodoSubirNivel>Id="41" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoIrPasillo>Id="59" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="112" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+<NodoIrOficina>Id="244" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrOficina></NodoIrPasillo><NodoIrAula>Id="113" Action="IrAula" 
+Posición del agente: Aula: [ id= cs1 | Descripcion= Aula Consultas 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrAula>Id="114" Action="IrAula" 
+Posición del agente: Aula: [ id= cs2 | Descripcion= Aula Consultas 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrEscalera>Id="115" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrEscalera>Id="116" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrOficina>Id="117" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc3-3 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina><NodoIrOficina>Id="118" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-3 | Descripcion= TICS | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina></NodoIrPasillo></NodoSubirNivel></NodoIrAscensor><NodoIrDepartamento>Id="25" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= mecanica | Descripcion= Departamento de Mecanica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 985
+</NodoIrDepartamento><NodoIrDepartamento>Id="26" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= electrica | Descripcion= Departamento de Electrica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrDepartamento></NodoIrPasillo><NodoIrPasillo>Id="4" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p3-0 | Descripcion= pasillo 3 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 990
+<NodoIrPasillo>Id="27" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-0 | Descripcion= pasillo 6 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 985
+<NodoIrPasillo>Id="42" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-0 | Descripcion= pasillo 5 planta baja | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+</NodoIrPasillo><NodoIrEscalera>Id="43" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc6-0 | Descripcion= escalera 6 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrEscalera></NodoIrPasillo><NodoIrEscalera>Id="28" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-0 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="44" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-1 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="60" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="119" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrPasillo>Id="245" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrPasillo><NodoIrPasillo>Id="246" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrPasillo><NodoIrAula>Id="247" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="248" Action="IrAula" 
+Posición del agente: Aula: [ id= cn1 | Descripcion= Consulta 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="249" Action="IrAula" 
+Posición del agente: Aula: [ id= cn2 | Descripcion= Consulta 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="250" Action="IrAula" 
+Posición del agente: Aula: [ id= cn3 | Descripcion= Consulta 3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrEscalera>Id="251" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-1 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrEscalera><NodoIrOficina>Id="252" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrOficina><NodoIrDepartamento>Id="253" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Básicas | Descripcion= Departamento de Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrDepartamento></NodoIrPasillo><NodoIrPasillo>Id="120" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-1 | Descripcion= pasillo 6 primer pisp | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrAula>Id="254" Action="IrAula" 
+Posición del agente: Aula: [ id= ae3 | Descripcion= Aula E03 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="255" Action="IrAula" 
+Posición del agente: Aula: [ id= ae2 | Descripcion= Aula E02 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="256" Action="IrAula" 
+Posición del agente: Aula: [ id= ae1 | Descripcion= Aula E01 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="257" Action="IrAula" 
+Posición del agente: Aula: [ id= vd1 | Descripcion= Aula de video | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrEscalera>Id="258" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc7-1 | Descripcion= escalera 7 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrEscalera><NodoIrOficina>Id="259" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrOficina></NodoIrPasillo><NodoIrEscalera>Id="121" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc2-1 | Descripcion= escalera 2 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrAscensor>Id="122" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-1 | Descripcion= ascensor primer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoSubirNivel>Id="260" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-2 | Descripcion= ascensor segundo piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoSubirNivel><NodoSubirNivel>Id="261" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoSubirNivel></NodoIrAscensor><NodoIrOficina>Id="123" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-1 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrOficina><NodoIrDepartamento>Id="124" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Industrial | Descripcion= Departamento de Industrial | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrDepartamento></NodoIrPasillo><NodoSubirNivel>Id="61" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-2 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoSubirNivel>Id="125" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="262" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrPasillo></NodoSubirNivel><NodoSubirNivel>Id="126" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="263" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrPasillo></NodoSubirNivel></NodoSubirNivel></NodoSubirNivel></NodoIrEscalera><NodoIrEscalera>Id="29" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-0 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrEscalera><NodoIrAscensor>Id="30" Action="IrAscensor" 
+Posición del agente: Ascensor: [ id= asc1-0 | Descripcion= ascensor planta baja | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="45" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-1 | Descripcion= ascensor primer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="62" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="127" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrPasillo>Id="264" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrPasillo><NodoIrPasillo>Id="265" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrPasillo><NodoIrAula>Id="266" Action="IrAula" 
+Posición del agente: Aula: [ id= if2 | Descripcion= Informática 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="267" Action="IrAula" 
+Posición del agente: Aula: [ id= cn1 | Descripcion= Consulta 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="268" Action="IrAula" 
+Posición del agente: Aula: [ id= cn2 | Descripcion= Consulta 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="269" Action="IrAula" 
+Posición del agente: Aula: [ id= cn3 | Descripcion= Consulta 3 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrEscalera>Id="270" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc5-1 | Descripcion= escalera 5 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrEscalera><NodoIrOficina>Id="271" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrOficina><NodoIrDepartamento>Id="272" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Básicas | Descripcion= Departamento de Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrDepartamento></NodoIrPasillo><NodoIrPasillo>Id="128" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p6-1 | Descripcion= pasillo 6 primer pisp | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoIrAula>Id="273" Action="IrAula" 
+Posición del agente: Aula: [ id= ae3 | Descripcion= Aula E03 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="274" Action="IrAula" 
+Posición del agente: Aula: [ id= ae2 | Descripcion= Aula E02 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="275" Action="IrAula" 
+Posición del agente: Aula: [ id= ae1 | Descripcion= Aula E01 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrAula>Id="276" Action="IrAula" 
+Posición del agente: Aula: [ id= vd1 | Descripcion= Aula de video | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrAula><NodoIrEscalera>Id="277" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc7-1 | Descripcion= escalera 7 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrEscalera><NodoIrOficina>Id="278" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias Básicas | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 945
+</NodoIrOficina></NodoIrPasillo><NodoIrEscalera>Id="129" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-1 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+<NodoSubirNivel>Id="279" Action="SubirNivel" 
+Posición del agente: Escalera: [ id= esc3-2 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoSubirNivel></NodoIrEscalera><NodoIrEscalera>Id="130" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc2-1 | Descripcion= escalera 2 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrOficina>Id="131" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-1 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrOficina><NodoIrDepartamento>Id="132" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= Industrial | Descripcion= Departamento de Industrial | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrDepartamento></NodoIrPasillo><NodoSubirNivel>Id="63" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-2 | Descripcion= ascensor segundo piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoSubirNivel>Id="133" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="280" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+</NodoIrPasillo></NodoSubirNivel></NodoSubirNivel><NodoSubirNivel>Id="64" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 975
+<NodoIrPasillo>Id="134" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+<NodoIrPasillo>Id="281" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrPasillo><NodoIrAula>Id="282" Action="IrAula" 
+Posición del agente: Aula: [ id= cs1 | Descripcion= Aula Consultas 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrAula><NodoIrAula>Id="283" Action="IrAula" 
+Posición del agente: Aula: [ id= cs2 | Descripcion= Aula Consultas 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrAula><NodoIrEscalera>Id="284" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrEscalera>Id="285" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrEscalera><NodoIrOficina>Id="286" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc3-3 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrOficina><NodoIrOficina>Id="287" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-3 | Descripcion= TICS | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 955
+</NodoIrOficina></NodoIrPasillo></NodoSubirNivel></NodoSubirNivel><NodoSubirNivel>Id="46" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-2 | Descripcion= ascensor segundo piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoSubirNivel>Id="65" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoIrPasillo>Id="135" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="288" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrPasillo><NodoIrAula>Id="289" Action="IrAula" 
+Posición del agente: Aula: [ id= cs1 | Descripcion= Aula Consultas 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrAula>Id="290" Action="IrAula" 
+Posición del agente: Aula: [ id= cs2 | Descripcion= Aula Consultas 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrEscalera>Id="291" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrEscalera>Id="292" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrOficina>Id="293" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc3-3 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina><NodoIrOficina>Id="294" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-3 | Descripcion= TICS | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina></NodoIrPasillo></NodoSubirNivel></NodoSubirNivel><NodoSubirNivel>Id="47" Action="SubirNivel" 
+Posición del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+<NodoIrPasillo>Id="66" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 970
+<NodoIrPasillo>Id="136" Action="IrPasillo" 
+Posición del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+<NodoIrOficina>Id="295" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrOficina></NodoIrPasillo><NodoIrAula>Id="137" Action="IrAula" 
+Posición del agente: Aula: [ id= cs1 | Descripcion= Aula Consultas 1 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrAula>Id="138" Action="IrAula" 
+Posición del agente: Aula: [ id= cs2 | Descripcion= Aula Consultas 2 | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrAula><NodoIrEscalera>Id="139" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrEscalera>Id="140" Action="IrEscalera" 
+Posición del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrEscalera><NodoIrOficina>Id="141" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc3-3 | Descripcion= Varios | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina><NodoIrOficina>Id="142" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc2-3 | Descripcion= TICS | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 960
+</NodoIrOficina></NodoIrPasillo></NodoSubirNivel></NodoIrAscensor><NodoIrDepartamento>Id="31" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= mecanica | Descripcion= Departamento de Mecanica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 985
+</NodoIrDepartamento><NodoIrDepartamento>Id="32" Action="IrDepartamento" 
+Posición del agente: Departamento: [ id= electrica | Descripcion= Departamento de Electrica | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 980
+</NodoIrDepartamento></NodoIrPasillo></Nodonull>

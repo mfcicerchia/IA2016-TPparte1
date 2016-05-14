@@ -1,0 +1,9 @@
+<Nodonull>Id="0" Action="null" 
+Posición del agente: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+<NodoIrOficina>Id="1" Action="IrOficina" 
+Posición del agente: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 950
+</NodoIrOficina></Nodonull>

@@ -1,397 +1,337 @@
-<tree id="0" edgedefault="directed">
+<tree id="2" edgedefault="directed">
 <node Id="0" Action="null" Cost="0.0" Estado_Agente="
-Posici&#243;n del agente: Pasillo: [ id= p1-0 | Descripcion= pasillo 1 planta baja | bloqueado=false]
-Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
-Energia: 990
-"/>
-<node Id="1" Action="IrPasillo" Cost="-1.0" Estado_Agente="
-Posici&#243;n del agente: Pasillo: [ id= p1-0 | Descripcion= pasillo 1 planta baja | bloqueado=false]
-Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
-Energia: 990
-"/>
-<node Id="2" Action="IrPasillo" Cost="-1.0" Estado_Agente="
-Posici&#243;n del agente: Pasillo: [ id= p2-0 | Descripcion= pasillo 2 planta baja | bloqueado=false]
-Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
-Energia: 990
-"/>
-<node Id="3" Action="IrPasillo" Cost="-1.0" Estado_Agente="
-Posici&#243;n del agente: Pasillo: [ id= p3-0 | Descripcion= pasillo 3 planta baja | bloqueado=false]
-Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
-Energia: 990
-"/>
-<node Id="4" Action="IrPasillo" Cost="-1.0" Estado_Agente="
-Posici&#243;n del agente: Pasillo: [ id= p3-0 | Descripcion= pasillo 3 planta baja | bloqueado=false]
-Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
-Energia: 990
-"/>
-<node Id="5" Action="IrEscalera" Cost="-2.0" Estado_Agente="
-Posici&#243;n del agente: Escalera: [ id= esc7-0 | Descripcion= escalera 7 | bloqueada=false]
-Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
-Energia: 980
-"/>
-<node Id="6" Action="IrBiblioteca" Cost="-2.0" Estado_Agente="
-Posici&#243;n del agente: Biblioteca: [ id= biblioteca1 | Descripcion= Biblioteca Moreno | 
-Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
-Energia: 975
-"/>
-<node Id="7" Action="IrCantina" Cost="-2.0" Estado_Agente="
-Posici&#243;n del agente: Cantina: [ id= cantina | Descripcion= Sheldon Bar | 
-Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
-Energia: 975
-"/>
-<node Id="8" Action="IrOficina" Cost="-2.0" Estado_Agente="
-Posici&#243;n del agente: Oficina: [ id= ofc1-0 | Descripcion= Alumnado | 
-Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
-Energia: 970
-"/>
-<node Id="9" Action="IrOficina" Cost="-2.0" Estado_Agente="
-Posici&#243;n del agente: Oficina: [ id= ofc2-0 | Descripcion= SAE | 
-Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
-Energia: 965
-"/>
-<node Id="10" Action="IrLaboratorio" Cost="-2.0" Estado_Agente="
-Posici&#243;n del agente: Ingreso: [ id= ingreso2 | Descripcion= entrada por torre | 
-Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
-Energia: 960
-"/>
-<node Id="11" Action="IrPasillo" Cost="-3.0" Estado_Agente="
 Posici&#243;n del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 965
 "/>
-<node Id="12" Action="IrPasillo" Cost="-4.0" Estado_Agente="
+<node Id="1" Action="IrPasillo" Cost="-1.0" Estado_Agente="
+Posici&#243;n del agente: Pasillo: [ id= p4-1 | Descripcion= pasillo 4 primer piso | bloqueado=false]
+Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
+Energia: 965
+"/>
+<node Id="2" Action="IrPasillo" Cost="-2.0" Estado_Agente="
 Posici&#243;n del agente: Pasillo: [ id= p2-1 | Descripcion= pasillo 2 primer piso | bloqueado=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 955
 "/>
-<node Id="13" Action="IrPasillo" Cost="-4.0" Estado_Agente="
+<node Id="3" Action="IrPasillo" Cost="-2.0" Estado_Agente="
 Posici&#243;n del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 955
 "/>
-<node Id="14" Action="IrAula" Cost="-4.0" Estado_Agente="
+<node Id="4" Action="IrAula" Cost="-2.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= mt1 | Descripcion= Aula de Materiales | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 955
 "/>
-<node Id="15" Action="IrEscalera" Cost="-4.0" Estado_Agente="
+<node Id="5" Action="IrEscalera" Cost="-2.0" Estado_Agente="
 Posici&#243;n del agente: Escalera: [ id= esc6-1 | Descripcion= escalera 6 | bloqueada=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 955
 "/>
-<node Id="16" Action="IrPasillo" Cost="-5.0" Estado_Agente="
+<node Id="6" Action="IrPasillo" Cost="-3.0" Estado_Agente="
 Posici&#243;n del agente: Pasillo: [ id= p1-1 | Descripcion= pasillo 1 primer piso | bloqueado=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 945
 "/>
-<node Id="17" Action="IrPasillo" Cost="-5.0" Estado_Agente="
+<node Id="7" Action="IrPasillo" Cost="-3.0" Estado_Agente="
 Posici&#243;n del agente: Pasillo: [ id= p5-1 | Descripcion= pasillo 5 primer piso | bloqueado=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 945
 "/>
-<node Id="18" Action="IrAula" Cost="-5.0" Estado_Agente="
+<node Id="8" Action="IrAula" Cost="-3.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= if2 | Descripcion= Inform&#225;tica 2 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 945
 "/>
-<node Id="19" Action="IrAula" Cost="-5.0" Estado_Agente="
+<node Id="9" Action="IrAula" Cost="-3.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= cn1 | Descripcion= Consulta 1 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 945
 "/>
-<node Id="20" Action="IrAula" Cost="-5.0" Estado_Agente="
+<node Id="10" Action="IrAula" Cost="-3.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= cn2 | Descripcion= Consulta 2 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 945
 "/>
-<node Id="21" Action="IrAula" Cost="-5.0" Estado_Agente="
+<node Id="11" Action="IrAula" Cost="-3.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= cn3 | Descripcion= Consulta 3 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 945
 "/>
-<node Id="22" Action="IrEscalera" Cost="-5.0" Estado_Agente="
+<node Id="12" Action="IrEscalera" Cost="-3.0" Estado_Agente="
 Posici&#243;n del agente: Escalera: [ id= esc5-1 | Descripcion= escalera 5 | bloqueada=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 945
 "/>
-<node Id="23" Action="IrOficina" Cost="-5.0" Estado_Agente="
+<node Id="13" Action="IrOficina" Cost="-3.0" Estado_Agente="
 Posici&#243;n del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias B&#225;sicas | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 945
 "/>
-<node Id="24" Action="IrDepartamento" Cost="-5.0" Estado_Agente="
+<node Id="14" Action="IrDepartamento" Cost="-3.0" Estado_Agente="
 Posici&#243;n del agente: Departamento: [ id= B&#225;sicas | Descripcion= Departamento de Materias B&#225;sicas | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 945
 "/>
-<node Id="25" Action="IrPasillo" Cost="-6.0" Estado_Agente="
+<node Id="15" Action="IrPasillo" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Pasillo: [ id= p3-1 | Descripcion= pasillo 3 primer piso | bloqueado=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="26" Action="IrAula" Cost="-6.0" Estado_Agente="
+<node Id="16" Action="IrAula" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= au9 | Descripcion= aula9 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="27" Action="IrAula" Cost="-6.0" Estado_Agente="
+<node Id="17" Action="IrAula" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= au10 | Descripcion= aula10 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="28" Action="IrAula" Cost="-6.0" Estado_Agente="
+<node Id="18" Action="IrAula" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= au11 | Descripcion= aula11 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="29" Action="IrAula" Cost="-6.0" Estado_Agente="
+<node Id="19" Action="IrAula" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= au12 | Descripcion= aula12 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="30" Action="IrAula" Cost="-6.0" Estado_Agente="
+<node Id="20" Action="IrAula" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= au13 | Descripcion= aula13 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="31" Action="IrAula" Cost="-6.0" Estado_Agente="
+<node Id="21" Action="IrAula" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= au14 | Descripcion= aula14 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="32" Action="IrAula" Cost="-6.0" Estado_Agente="
+<node Id="22" Action="IrAula" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= au15 | Descripcion= aula15 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="33" Action="IrAula" Cost="-6.0" Estado_Agente="
+<node Id="23" Action="IrAula" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= au16 | Descripcion= aula16 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="34" Action="IrAula" Cost="-6.0" Estado_Agente="
+<node Id="24" Action="IrAula" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= au17 | Descripcion= aula17 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="35" Action="IrAula" Cost="-6.0" Estado_Agente="
+<node Id="25" Action="IrAula" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= au18 | Descripcion= aula18 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="36" Action="IrAula" Cost="-6.0" Estado_Agente="
+<node Id="26" Action="IrAula" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= if1 | Descripcion= Inform&#225;tica 1 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="37" Action="IrAula" Cost="-6.0" Estado_Agente="
+<node Id="27" Action="IrAula" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= if2 | Descripcion= Inform&#225;tica 2 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="38" Action="IrEscalera" Cost="-6.0" Estado_Agente="
+<node Id="28" Action="IrEscalera" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Escalera: [ id= esc1-1 | Descripcion= escalera 1 | bloqueada=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="39" Action="IrAula" Cost="-7.0" Estado_Agente="
+<node Id="29" Action="IrAula" Cost="-5.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= au19 | Descripcion= aula19 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 925
 "/>
-<node Id="40" Action="IrEscalera" Cost="-7.0" Estado_Agente="
+<node Id="30" Action="IrEscalera" Cost="-5.0" Estado_Agente="
 Posici&#243;n del agente: Escalera: [ id= esc4-1 | Descripcion= escalera 4 | bloqueada=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 925
 "/>
-<node Id="41" Action="IrBa&#241;o" Cost="-7.0" Estado_Agente="
+<node Id="31" Action="IrBa&#241;o" Cost="-5.0" Estado_Agente="
 Posici&#243;n del agente: Ba&#241;o: [ id= ba&#241;o1 | Descripcion= ba&#241;o1 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 925
 "/>
-<node Id="42" Action="IrBa&#241;o" Cost="-7.0" Estado_Agente="
+<node Id="32" Action="IrBa&#241;o" Cost="-5.0" Estado_Agente="
 Posici&#243;n del agente: Ba&#241;o: [ id= ba&#241;o1 | Descripcion= ba&#241;o1 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 925
 "/>
-<node Id="43" Action="IrPasillo" Cost="-6.0" Estado_Agente="
+<node Id="33" Action="IrPasillo" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Pasillo: [ id= p6-1 | Descripcion= pasillo 6 primer pisp | bloqueado=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="44" Action="IrEscalera" Cost="-6.0" Estado_Agente="
+<node Id="34" Action="IrEscalera" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Escalera: [ id= esc3-1 | Descripcion= escalera 3 | bloqueada=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="45" Action="IrEscalera" Cost="-6.0" Estado_Agente="
+<node Id="35" Action="IrEscalera" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Escalera: [ id= esc2-1 | Descripcion= escalera 2 | bloqueada=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="46" Action="IrAscensor" Cost="-6.0" Estado_Agente="
+<node Id="36" Action="IrAscensor" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Ascensor: [ id= asc1-1 | Descripcion= ascensor primer piso | pitido=false
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="47" Action="IrOficina" Cost="-6.0" Estado_Agente="
+<node Id="37" Action="IrOficina" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Oficina: [ id= ofc2-1 | Descripcion= Varios | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="48" Action="IrDepartamento" Cost="-6.0" Estado_Agente="
+<node Id="38" Action="IrDepartamento" Cost="-4.0" Estado_Agente="
 Posici&#243;n del agente: Departamento: [ id= Industrial | Descripcion= Departamento de Industrial | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 935
 "/>
-<node Id="49" Action="IrAula" Cost="-7.0" Estado_Agente="
+<node Id="39" Action="IrAula" Cost="-5.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= ae3 | Descripcion= Aula E03 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 925
 "/>
-<node Id="50" Action="IrAula" Cost="-7.0" Estado_Agente="
+<node Id="40" Action="IrAula" Cost="-5.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= ae2 | Descripcion= Aula E02 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 925
 "/>
-<node Id="51" Action="IrAula" Cost="-7.0" Estado_Agente="
+<node Id="41" Action="IrAula" Cost="-5.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= ae1 | Descripcion= Aula E01 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 925
 "/>
-<node Id="52" Action="IrAula" Cost="-7.0" Estado_Agente="
+<node Id="42" Action="IrAula" Cost="-5.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= vd1 | Descripcion= Aula de video | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 925
 "/>
-<node Id="53" Action="IrEscalera" Cost="-7.0" Estado_Agente="
+<node Id="43" Action="IrEscalera" Cost="-5.0" Estado_Agente="
 Posici&#243;n del agente: Escalera: [ id= esc7-1 | Descripcion= escalera 7 | bloqueada=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 925
 "/>
-<node Id="54" Action="IrOficina" Cost="-7.0" Estado_Agente="
+<node Id="44" Action="IrOficina" Cost="-5.0" Estado_Agente="
 Posici&#243;n del agente: Oficina: [ id= ofc1-1 | Descripcion= Materias B&#225;sicas | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 925
 "/>
-<node Id="55" Action="SubirNivel" Cost="-7.0" Estado_Agente="
+<node Id="45" Action="SubirNivel" Cost="-5.0" Estado_Agente="
 Posici&#243;n del agente: Escalera: [ id= esc3-2 | Descripcion= escalera 3 | bloqueada=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 930
 "/>
-<node Id="56" Action="SubirNivel" Cost="-8.0" Estado_Agente="
+<node Id="46" Action="SubirNivel" Cost="-6.0" Estado_Agente="
 Posici&#243;n del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 925
 "/>
-<node Id="57" Action="SubirNivel" Cost="-8.0" Estado_Agente="
+<node Id="47" Action="SubirNivel" Cost="-6.0" Estado_Agente="
 Posici&#243;n del agente: Escalera: [ id= esc3-3 | Descripcion= escalera 3 | bloqueada=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 925
 "/>
-<node Id="58" Action="IrPasillo" Cost="-9.0" Estado_Agente="
+<node Id="48" Action="IrPasillo" Cost="-7.0" Estado_Agente="
 Posici&#243;n del agente: Pasillo: [ id= p1-3 | Descripcion= pasillo 1 tercer piso | bloqueado=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 915
 "/>
-<node Id="59" Action="IrPasillo" Cost="-10.0" Estado_Agente="
+<node Id="49" Action="IrPasillo" Cost="-8.0" Estado_Agente="
 Posici&#243;n del agente: Pasillo: [ id= p2-3 | Descripcion= pasillo 2 tercer piso | bloqueado=false]
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 905
 "/>
-<node Id="60" Action="IrAula" Cost="-10.0" Estado_Agente="
+<node Id="50" Action="IrAula" Cost="-8.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= cs1 | Descripcion= Aula Consultas 1 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 905
 "/>
-<node Id="61" Action="IrAula" Cost="-10.0" Estado_Agente="
+<node Id="51" Action="IrAula" Cost="-8.0" Estado_Agente="
 Posici&#243;n del agente: Aula: [ id= cs2 | Descripcion= Aula Consultas 2 | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 905
 "/>
-<node Id="62" Action="IrAscensor" Cost="-10.0" Estado_Agente="
+<node Id="52" Action="IrAscensor" Cost="-8.0" Estado_Agente="
 Posici&#243;n del agente: Ascensor: [ id= asc1-3 | Descripcion= ascensor tercer piso | pitido=false
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 905
 "/>
-<node Id="63" Action="IrOficina" Cost="-10.0" Estado_Agente="
+<node Id="53" Action="IrOficina" Cost="-8.0" Estado_Agente="
 Posici&#243;n del agente: Oficina: [ id= ofc3-3 | Descripcion= Varios | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 905
 "/>
-<node Id="64" Action="IrOficina" Cost="-10.0" Estado_Agente="
+<node Id="54" Action="IrOficina" Cost="-8.0" Estado_Agente="
 Posici&#243;n del agente: Oficina: [ id= ofc2-3 | Descripcion= TICS | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 905
 "/>
-<node Id="65" Action="IrOficina" Cost="-11.0" Estado_Agente="
+<node Id="55" Action="IrOficina" Cost="-9.0" Estado_Agente="
 Posici&#243;n del agente: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Destino: Oficina: [ id= ofc1-3 | Descripcion= CIDISI | 
 Energia: 895
 "/>
 <edge source="0" target="1"/>
-<edge source="0" target="2"/>
-<edge source="0" target="3"/>
-<edge source="0" target="4"/>
+<edge source="1" target="2"/>
+<edge source="1" target="3"/>
+<edge source="1" target="4"/>
 <edge source="1" target="5"/>
-<edge source="1" target="6"/>
-<edge source="1" target="7"/>
-<edge source="1" target="8"/>
-<edge source="1" target="9"/>
-<edge source="1" target="10"/>
-<edge source="6" target="11"/>
-<edge source="11" target="12"/>
-<edge source="11" target="13"/>
-<edge source="11" target="14"/>
-<edge source="11" target="15"/>
-<edge source="12" target="16"/>
-<edge source="12" target="17"/>
-<edge source="12" target="18"/>
-<edge source="12" target="19"/>
-<edge source="12" target="20"/>
-<edge source="12" target="21"/>
-<edge source="12" target="22"/>
-<edge source="12" target="23"/>
-<edge source="12" target="24"/>
-<edge source="16" target="25"/>
-<edge source="16" target="26"/>
-<edge source="16" target="27"/>
-<edge source="16" target="28"/>
-<edge source="16" target="29"/>
-<edge source="16" target="30"/>
-<edge source="16" target="31"/>
-<edge source="16" target="32"/>
-<edge source="16" target="33"/>
-<edge source="16" target="34"/>
-<edge source="16" target="35"/>
-<edge source="16" target="36"/>
-<edge source="16" target="37"/>
-<edge source="16" target="38"/>
-<edge source="17" target="43"/>
-<edge source="17" target="44"/>
-<edge source="17" target="45"/>
-<edge source="17" target="46"/>
-<edge source="17" target="47"/>
-<edge source="17" target="48"/>
-<edge source="25" target="39"/>
-<edge source="25" target="40"/>
-<edge source="25" target="41"/>
-<edge source="25" target="42"/>
-<edge source="43" target="49"/>
-<edge source="43" target="50"/>
-<edge source="43" target="51"/>
-<edge source="43" target="52"/>
-<edge source="43" target="53"/>
-<edge source="43" target="54"/>
-<edge source="44" target="55"/>
-<edge source="55" target="56"/>
-<edge source="55" target="57"/>
-<edge source="56" target="58"/>
-<edge source="58" target="59"/>
-<edge source="58" target="60"/>
-<edge source="58" target="61"/>
-<edge source="58" target="62"/>
-<edge source="58" target="63"/>
-<edge source="58" target="64"/>
-<edge source="59" target="65"/>
+<edge source="2" target="6"/>
+<edge source="2" target="7"/>
+<edge source="2" target="8"/>
+<edge source="2" target="9"/>
+<edge source="2" target="10"/>
+<edge source="2" target="11"/>
+<edge source="2" target="12"/>
+<edge source="2" target="13"/>
+<edge source="2" target="14"/>
+<edge source="6" target="15"/>
+<edge source="6" target="16"/>
+<edge source="6" target="17"/>
+<edge source="6" target="18"/>
+<edge source="6" target="19"/>
+<edge source="6" target="20"/>
+<edge source="6" target="21"/>
+<edge source="6" target="22"/>
+<edge source="6" target="23"/>
+<edge source="6" target="24"/>
+<edge source="6" target="25"/>
+<edge source="6" target="26"/>
+<edge source="6" target="27"/>
+<edge source="6" target="28"/>
+<edge source="7" target="33"/>
+<edge source="7" target="34"/>
+<edge source="7" target="35"/>
+<edge source="7" target="36"/>
+<edge source="7" target="37"/>
+<edge source="7" target="38"/>
+<edge source="15" target="29"/>
+<edge source="15" target="30"/>
+<edge source="15" target="31"/>
+<edge source="15" target="32"/>
+<edge source="33" target="39"/>
+<edge source="33" target="40"/>
+<edge source="33" target="41"/>
+<edge source="33" target="42"/>
+<edge source="33" target="43"/>
+<edge source="33" target="44"/>
+<edge source="34" target="45"/>
+<edge source="45" target="46"/>
+<edge source="45" target="47"/>
+<edge source="46" target="48"/>
+<edge source="48" target="49"/>
+<edge source="48" target="50"/>
+<edge source="48" target="51"/>
+<edge source="48" target="52"/>
+<edge source="48" target="53"/>
+<edge source="48" target="54"/>
+<edge source="49" target="55"/>
 </tree>

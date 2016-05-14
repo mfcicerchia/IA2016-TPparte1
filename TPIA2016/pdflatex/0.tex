@@ -1,0 +1,23 @@
+\documentclass[a0,landscale]{a0poster}
+\usepackage{mathptmx}
+\usepackage{qtree}
+\usepackage{nodo}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\title{Ã�rbol de ejecuciÃ³n - EjecuciÃ³n Nro: 0 - Estrategia: Breath First (Primero en amplitud)}
+\author{}
+\begin{document}
+\maketitle
+\begin{figure}[!h]
+\Tree [.\nodo{0}{0.0}{-} \nodo{1}{1.0}{IrPasillo} \nodo{2}{1.0}{IrPasillo} \nodo{3}{1.0}{IrPasillo} \nodo{4}{1.0}{IrPasillo} ]
+\Tree [.\nodo{1}{1.0}{IrPasillo} \nodo{5}{2.0}{IrEscalera} \nodo{6}{2.0}{IrBiblioteca} \nodo{7}{2.0}{IrCantina} \nodo{8}{2.0}{IrOficina} \nodo{9}{2.0}{IrOficina} \nodo{10}{2.0}{IrLaboratorio} ]
+\Tree [.\nodo{2}{1.0}{IrPasillo} \nodo{11}{2.0}{IrAula} \nodo{12}{2.0}{IrAula} \nodo{13}{2.0}{IrAula} \nodo{14}{2.0}{IrAula} \nodo{15}{2.0}{IrAula} \nodo{16}{2.0}{IrAula} \nodo{17}{2.0}{IrAula} \nodo{18}{2.0}{IrAula} \nodo{19}{2.0}{IrEscalera} \nodo{20}{2.0}{IrFotocopiadora} ]
+\Tree [.\nodo{3}{1.0}{IrPasillo} \nodo{21}{2.0}{IrPasillo} \nodo{22}{2.0}{IrEscalera} \nodo{23}{2.0}{IrEscalera} \nodo{24}{2.0}{IrAscensor} \nodo{25}{2.0}{IrDepartamento} \nodo{26}{2.0}{IrDepartamento} \nodo{27}{2.0}{IrLaboratorio} \nodo{28}{2.0}{IrLaboratorio} ]
+\end{figure}
+\begin{figure}[!h]
+\Tree [.\nodo{4}{1.0}{IrPasillo} \nodo{29}{2.0}{IrPasillo} \nodo{30}{2.0}{IrEscalera} \nodo{31}{2.0}{IrEscalera} \nodo{32}{2.0}{IrAscensor} \nodo{33}{2.0}{IrDepartamento} \nodo{34}{2.0}{IrDepartamento} \nodo{35}{2.0}{IrLaboratorio} \nodo{36}{2.0}{IrLaboratorio} ]
+\Tree [.\nodo{6}{2.0}{IrBiblioteca} \nodo{37}{3.0}{IrPasillo} ]
+\Tree [.\nodo{10}{2.0}{IrLaboratorio} \nodo{38}{3.0}{IrEscalera} ]
+\end{figure}
+
+\end{document}

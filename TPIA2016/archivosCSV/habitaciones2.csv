@@ -31,7 +31,7 @@ Oficina,ofc1-0,0,Alumnado
 Oficina,ofc2-0,0,SAE
 Baño,baño1,0,baño1
 Baño,baño2,0,baño2
-Laboratorio,lab1,0,Laboratorio de Mecanica
+Laboratorio,lab1-0,0,Laboratorio de Mecanica
 Laboratorio,lab2,0,Laboratorio de Fluidica
 Departamento,mecanica,0,Departamento de Mecanica
 Departamento,electrica,0,Departamento de Electrica
@@ -95,14 +95,14 @@ Escalera,esc6,2,escalera 6
 Escalera,esc8,2,escalera 7
 Laboratorio,jvl1,2,JAVALAB
 Laboratorio,gse1,2,GESE
-Laboratorio,lab1,3,Laboratorio Informatica 1
+Laboratorio,lab1-3,3,Laboratorio Informatica 1
 Laboratorio,lab3,3,Laboratorio Informatica 3
 Laboratorio,lab4,3,Laboratorio Informatica 4
 Laboratorio,lab2,3,Laboratorio Conectividad
 Oficina,ofc1-3,3,CIDISI
 Oficina,ofc3-3,3,Varios
 Oficina,ofc2-3,3,TICS
-Depatamento,Sistemas,3,Departemanto de Sistemas
+Departamento,sistemas,3,Departemanto de Sistemas
 Escalera,esc8,3,escalera 8
 Escalera,esc3-3,3,escalera 3
 Pasillo,p2-3,3,pasillo 2 tercer piso

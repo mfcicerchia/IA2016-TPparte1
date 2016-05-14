@@ -82,12 +82,16 @@ public class Agente extends SearchBasedAgent {
 		}
               
 		for (Departamento depto : mapa.getDepartamentos()) {
+		System.out.println(depto.getClass().getSimpleName());
+    	System.out.println(depto.getIdHabitacion());
 			operators.addElement(new IrDepartamento(depto.getIdHabitacion()));	
 		}
 		
-		for (Laboratorio lab : mapa.getLaboratorios()) {
-			operators.addElement(new IrLaboratorio(lab.getIdHabitacion()));
-		}
+		
+		/** Ir laboratorio esta teniendo problemas, quiza por el id**/
+//		for (Laboratorio lab : mapa.getLaboratorios()) {
+//			operators.addElement(new IrLaboratorio(lab.getIdHabitacion()));
+//		}
 		
 		for (Taller taller : mapa.getTalleres()) {
 			operators.addElement(new IrLaboratorio(taller.getIdHabitacion()));
@@ -120,10 +124,10 @@ public class Agente extends SearchBasedAgent {
     public Action selectAction() {
 
         // Create the search strategy
-    	// BreathFirstSearch strategy = new BreathFirstSearch(); (esta estaba desde el idemia)
+    	// BreathFirstSearch strategy = new BreathFirstSearch(); //(esta estaba desde el idemia)
     	
     	
-    	// Estrategia de busqueda en profundidad
+//    	// Estrategia de busqueda en profundidad
     	DepthFirstSearch strategy = new DepthFirstSearch();
 
         // Create a Search object with the strategy

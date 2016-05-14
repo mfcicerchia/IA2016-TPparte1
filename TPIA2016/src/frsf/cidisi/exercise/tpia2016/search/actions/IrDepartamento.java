@@ -26,16 +26,7 @@ public class IrDepartamento extends SearchAction {
         
         // TODO: LISTO - pensando
         
-    	// PREcondicion: 
-		// * Si el agente tiene alguna habitacion adyacente del tipo AULA
-		// * Si el agente tiene energia suficiente para moverse
-		// * Si la habitacion Departamento a la que se va a mover NO fue visitada
-		// POScondicion
-		// * El agente cambia de posicion, se mueve a la habitacion AULA
-		// * Decrementa su energia segun el costo de moverse a ese aula
-		// * Retorna el estado actualizado
-		
-	
+    	
         Habitacion posicionActual = agState.getPosicion();
 		int energiaDisponible = agState.getEnergía_agente();
 		
