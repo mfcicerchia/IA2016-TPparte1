@@ -89,12 +89,12 @@ public class Agente extends SearchBasedAgent {
 		
 		
 		/** Ir laboratorio esta teniendo problemas, quiza por el id**/
-//		for (Laboratorio lab : mapa.getLaboratorios()) {
-//			operators.addElement(new IrLaboratorio(lab.getIdHabitacion()));
-//		}
+		for (Laboratorio lab : mapa.getLaboratorios()) {
+			operators.addElement(new IrLaboratorio(lab.getIdHabitacion()));
+		}
 		
 		for (Taller taller : mapa.getTalleres()) {
-			operators.addElement(new IrLaboratorio(taller.getIdHabitacion()));
+			operators.addElement(new IrTaller(taller.getIdHabitacion()));
 		}
 		
 		for (Ingreso ingreso : mapa.getIngresos()) {

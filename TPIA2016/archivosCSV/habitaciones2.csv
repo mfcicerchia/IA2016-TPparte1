@@ -29,7 +29,7 @@ cantina,cantina,0,Sheldon Bar
 biblioteca,biblioteca1,0,Biblioteca Moreno
 Oficina,ofc1-0,0,Alumnado
 Oficina,ofc2-0,0,SAE
-Baño,baño1,0,baño1
+Baño,baño1-0,0,baño1
 Baño,baño2,0,baño2
 Laboratorio,lab1-0,0,Laboratorio de Mecanica
 Laboratorio,lab2,0,Laboratorio de Fluidica
@@ -75,7 +75,7 @@ Aula,cn1,1,Consulta 1
 Aula,cn2,1,Consulta 2
 Aula,cn3,1,Consulta 3
 Aula,cn4,1,Consulta 4
-Baño,baño1,1,baño1
+Baño,baño1-1,1,baño1
 Baño,baño2,1,baño2
 Baño,baño3,1,baño3
 Aula,ae3,1,Aula E03
@@ -102,10 +102,12 @@ Laboratorio,lab2,3,Laboratorio Conectividad
 Oficina,ofc1-3,3,CIDISI
 Oficina,ofc3-3,3,Varios
 Oficina,ofc2-3,3,TICS
-Departamento,sistemas,3,Departemanto de Sistemas
+Departamento,Sistemas,3,Departemanto de Sistemas
 Escalera,esc8,3,escalera 8
 Escalera,esc3-3,3,escalera 3
 Pasillo,p2-3,3,pasillo 2 tercer piso
 Pasillo,p1-3,3,pasillo 1 tercer piso
 Aula,cs1,3,Aula Consultas 1
 Aula,cs2,3,Aula Consultas 2
+Laboratorio,lab5,3,Laboratorio Informatica 5
+Taller,taller1-0,0,Taller de Mecanica
