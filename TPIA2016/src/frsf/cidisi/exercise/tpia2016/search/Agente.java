@@ -15,6 +15,11 @@ import java.util.logging.Logger;
 import java.util.Vector;
 
 public class Agente extends SearchBasedAgent {
+	
+	public static final int BUSQUEDA_ANCHURA 			= 0;
+	public static final int BUSQUEDA_PROFUNDIDAD 		= 1;
+	public static final int BUSQUEDA_COSTO_UNIFORME 	= 2;
+	public static final int BUSQUEDA_AVARA				= 3;
 
     public Agente(Edificio mapa, int energía, Habitacion post,Habitacion dest) {
 
@@ -100,19 +105,7 @@ public class Agente extends SearchBasedAgent {
 		for (Ingreso ingreso : mapa.getIngresos()) {
 			operators.addElement(new IrLaboratorio(ingreso.getIdHabitacion()));
 		}
-	
 
-//        	
-//        for(Habitacion h: listaDeEscalerasYAscensores){
-//        	operators.addElement(new BajarNivel(h.getIdHabitacion()));
-//        }
-//        
-//        
-		
-		
-        	
-
-        // Create the Problem which the agent will resolve
         Problem problem = new Problem(agGoal, agState, operators);
         this.setProblem(problem);
     }
@@ -121,17 +114,37 @@ public class Agente extends SearchBasedAgent {
      * This method is executed by the simulator to ask the agent for an action.
      */
     @Override
-    public Action selectAction() {
-
-        // Create the search strategy
-    	// BreathFirstSearch strategy = new BreathFirstSearch(); //(esta estaba desde el idemia)
+    public Action selectAction(int estrategia) {
+    	Strategy strategy = null;
+        Search searchSolver =null;
     	
-    	
-//    	// Estrategia de busqueda en profundidad
-    	DepthFirstSearch strategy = new DepthFirstSearch();
+		switch(estrategia){
 
-        // Create a Search object with the strategy
-        Search searchSolver = new Search(strategy);
+		case BUSQUEDA_ANCHURA:
+			BreathFirstSearch st1 = (BreathFirstSearch) strategy;
+			st1 = new BreathFirstSearch();
+			searchSolver = new Search(st1);
+			break;
+
+		case BUSQUEDA_PROFUNDIDAD :
+			DepthFirstSearch st2 = (DepthFirstSearch) strategy;
+			st2= new DepthFirstSearch();
+			searchSolver = new Search(st2);
+			break;
+
+		case BUSQUEDA_COSTO_UNIFORME:
+			/*AStarSearch st3 = (AStarSearch)strategy;
+			st3= new AStarSearch(IStepCostFunction g, IEstimatedCostFunction h) ;
+			searchSolver = new Search(st3)*/
+			break;
+
+		case BUSQUEDA_AVARA:
+		/*	UniformCostSearch st4 = (UniformCostSearch) strategy;
+			st4= new UniformCostSearch(IStepCostFunction stepCostFunction);
+			searchSolver = new Search(st4)*/
+			break;
+		}
+
 
         /* Generate an XML file with the search tree. It can also be generated
          * in other formats like PDF with PDF_TREE */

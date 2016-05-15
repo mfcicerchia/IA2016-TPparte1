@@ -90,9 +90,9 @@ Aula,au21,2,Aula 21
 Aula,cd1,2,Aula CIDISI
 Pasillo,p2-2,2,pasillo 2 segundo piso
 Pasillo,p1-2,2,pasillo 1 segundo piso
-Escalera,esc5,2,escalera 5
-Escalera,esc6,2,escalera 6
-Escalera,esc8,2,escalera 7
+Escalera,esc5-2,2,escalera 5
+Escalera,esc6-2,2,escalera 6
+Escalera,esc8-2,2,escalera 7
 Laboratorio,jvl1,2,JAVALAB
 Laboratorio,gse1,2,GESE
 Laboratorio,lab1-3,3,Laboratorio Informatica 1
@@ -103,7 +103,7 @@ Oficina,ofc1-3,3,CIDISI
 Oficina,ofc3-3,3,Varios
 Oficina,ofc2-3,3,TICS
 Departamento,Sistemas,3,Departemanto de Sistemas
-Escalera,esc8,3,escalera 8
+Escalera,esc8-3,3,escalera 8
 Escalera,esc3-3,3,escalera 3
 Pasillo,p2-3,3,pasillo 2 tercer piso
 Pasillo,p1-3,3,pasillo 1 tercer piso
