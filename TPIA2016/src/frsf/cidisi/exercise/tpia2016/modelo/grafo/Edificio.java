@@ -322,11 +322,6 @@ public class Edificio {
 	}
 	
 	
-	
-	
-	
-	
-	
 	/**
 	 * @param posicionActual
 	 * @param posicionRecibida
@@ -347,17 +342,4 @@ public class Edificio {
 		
 		return false;
 	}
-
-	
-
-
-
-	
-
-	
-
-
-	
-
-
 }

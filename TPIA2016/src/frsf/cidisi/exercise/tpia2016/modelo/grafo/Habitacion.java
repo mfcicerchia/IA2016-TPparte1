@@ -2,9 +2,6 @@ package frsf.cidisi.exercise.tpia2016.modelo.grafo;
 
 import java.util.ArrayList;
 
-import frsf.cidisi.exercise.tpia2016.search.EstadoAgente;
-import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
-
 /**
  * @author martin Clase: Habitacion Descripcion: Representa un nodo del grafo
  *         mapaEdificio. Es una super-clase de los subtipos de habitaciones.
@@ -146,8 +143,4 @@ public abstract class Habitacion {
 	@Override
 	public abstract boolean equals(Object obj);
     public abstract Habitacion clone();
-
-
-    
-    
 }

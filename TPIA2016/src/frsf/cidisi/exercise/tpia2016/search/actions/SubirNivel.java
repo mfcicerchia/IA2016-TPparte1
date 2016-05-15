@@ -3,6 +3,7 @@ package frsf.cidisi.exercise.tpia2016.search.actions;
 
 
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
 
 import frsf.cidisi.exercise.tpia2016.search.*;
 import frsf.cidisi.faia.agent.search.SearchAction;
@@ -61,13 +62,17 @@ public class SubirNivel extends SearchAction {
 		int energiaDisponible = agState.getEnergía_agente();
 		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(this.idHabitacionSgte);
         
+        
 
 						
 		if(posicionActual.getClass().getSimpleName().equals("Escalera")){
 			
 			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h) &&
+			   //!(esc.isBloqueada())&&
 			   (posicionActual.getNivel()<h.getNivel())&&
 			   (energiaDisponible - agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)) {
+				Escalera esc = (Escalera) h;
+				if(!esc.isBloqueada()){
 					// decremento la energia
 					agState.setEnergía_agente(energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), h));
 					// me muevo a la siguiente habitacion
@@ -76,16 +81,15 @@ public class SubirNivel extends SearchAction {
 					// agState.getHabitaciones_visitadas().add(h);
 					// retorno el estado actualizado
 					return agState;
-
 				}
-		    	return null;
-		 }
+			}
+			return null;
+		}
 			
 		
 		
 		if(posicionActual.getClass().getSimpleName().equals("Ascensor")){
-			
-			if (agState.getMapa_ambiente().isAdyacente(posicionActual, h) &&
+						if (agState.getMapa_ambiente().isAdyacente(posicionActual, h) &&
 					   (posicionActual.getNivel()<h.getNivel())&&
 					   (energiaDisponible - agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)) {
 							// decremento la energia
@@ -120,20 +124,25 @@ public class SubirNivel extends SearchAction {
         boolean seMueve = false;
 
 						
-		if(posicionActual.getClass().getSimpleName().equals("Escalera")){
-			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h) &&
-			   (posicionActual.getNivel()<h.getNivel())&&
-			   (energiaDisponible - agState.getMapa_ambiente().getCosto(posicionActual, h) > 0)) {
-				// decremento la energia
-				agState.setEnergía_agente(energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), h));
-				// me muevo a la siguiente habitacion
-				agState.setPosicion(h);
-				// agrego la habitacion que visité
-				 agState.getHabitaciones_visitadas().add(h);
-				// retorno el estado actualizado
-				seMueve = true;
+			if(posicionActual.getClass().getSimpleName().equals("Escalera")){
+				
+				if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h) &&
+					//!(esc.isBloqueada())&&
+				   (posicionActual.getNivel()<h.getNivel())&&
+				   (energiaDisponible - agState.getMapa_ambiente().getCosto(posicionActual,h) > 0)) {
+					Escalera esc = (Escalera) h;
+						if(!esc.isBloqueada()){
+							// decremento la energia
+							agState.setEnergía_agente(energiaDisponible - agState.getMapa_ambiente().getCosto(agState.getPosicion(), esc));
+							// me muevo a la siguiente habitacion
+							agState.setPosicion(esc);
+							// agrego la habitacion que visité
+							 agState.getHabitaciones_visitadas().add(esc);
+							// retorno el estado actualizado
+							seMueve = true;
+						}
+					}
 			}
-		}
 		
 		if(posicionActual.getClass().getSimpleName().equals("Ascensor")){
 			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h) &&

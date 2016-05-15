@@ -32,7 +32,7 @@ public class AgenteMain {
     	// Setear el estado del agente y del ambiente con los datos 
     	// ya cargados
     	
-    	Agente agent = new Agente(edificio, 1000, edificio.getHabitacionPorID("ingreso1") ,edificio.getHabitacionPorID("lab4"));
+    	Agente agent = new Agente(edificio, 1000, edificio.getHabitacionPorID("au9") ,edificio.getHabitacionPorID("mecanica"));
         Universidad environment = new Universidad(edificio);
 
         
