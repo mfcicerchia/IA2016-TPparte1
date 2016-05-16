@@ -73,5 +73,11 @@ public class SearchBasedAgentSimulator extends GoalBasedAgentSimulator {
         this.updateState(action);
         this.showSolution();
     }
+
+	@Override
+	public void start() {
+		// TODO Auto-generated method stub
+		
+	}
 }
 

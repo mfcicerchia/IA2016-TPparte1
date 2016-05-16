@@ -163,7 +163,7 @@ public class BajarNivel extends SearchAction {
      */
     @Override
     public Double getCost() {
-        return new Double(0);
+        return new Double(50);
     }
 
     /**

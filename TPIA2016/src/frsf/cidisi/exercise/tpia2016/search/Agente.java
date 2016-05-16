@@ -63,20 +63,18 @@ public class Agente extends SearchBasedAgent {
 		// Operador IrDepartamento
 		for (Departamento depto : mapa.getDepartamentos()) {operators.addElement(new IrDepartamento(depto.getIdHabitacion()));}
 		
-		// Operador IrLaboratorio
-		for (Laboratorio lab : mapa.getLaboratorios()) {operators.addElement(new IrLaboratorio(lab.getIdHabitacion()));}
-		
 		// Operador IrTaller
 		for (Taller taller : mapa.getTalleres()) {operators.addElement(new IrTaller(taller.getIdHabitacion()));}
 		
 		// Operador IrIngreso
-		for (Ingreso ingreso : mapa.getIngresos()) {operators.addElement(new IrLaboratorio(ingreso.getIdHabitacion()));}
+		for (Ingreso ingreso : mapa.getIngresos()) {operators.addElement(new IrIngreso(ingreso.getIdHabitacion()));}
 		
 		//Operador Bajar Nivel
         for(Habitacion h: mapa.getEscaleras()){operators.addElement(new BajarNivel(h.getIdHabitacion()));}
         for(Habitacion h: mapa.getAscensores()){operators.addElement(new BajarNivel(h.getIdHabitacion()));}
         
-        
+     // Operador IrLaboratorio
+		for (Laboratorio lab : mapa.getLaboratorios()) {operators.addElement(new IrLaboratorio(lab.getIdHabitacion()));}
 		
 		
         	
@@ -99,6 +97,9 @@ public class Agente extends SearchBasedAgent {
     	// PROFUNDIDAD
     	// Estrategia de busqueda en profundidad
     	 // DepthFirstSearch strategy = new DepthFirstSearch();
+    	
+    	//COSTO UNIFORME
+    	//UniformCostSearch strategy = new UniformCostSearch(new CostFunction());
 
         // Create a Search object with the strategy
         Search searchSolver = new Search(strategy);

@@ -3,7 +3,7 @@ package frsf.cidisi.exercise.tpia2016.modelo.nodos;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
 public class Ascensor extends Habitacion{
-	boolean pitido;
+	public boolean pitido;
 	
 	public Ascensor() {
 		super();

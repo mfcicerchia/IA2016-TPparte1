@@ -46,7 +46,7 @@ public abstract class GoalBasedAgentSimulator extends Simulator {
     }
 
     @Override
-    public void start() {
+    public void start(int busqueda) {
 
         System.out.println("----------------------------------------------------");
         System.out.println("--- " + this.getSimulatorName() + " ---");
@@ -133,4 +133,14 @@ public abstract class GoalBasedAgentSimulator extends Simulator {
      * @return The name of the simulator, e.g. 'SearchBasedAgentSimulator'
      */
     public abstract String getSimulatorName();
+
+	public int avanzar() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void terminar() {
+		// TODO Auto-generated method stub
+		
+	}
 }

@@ -117,7 +117,7 @@ public class IrAscensor extends SearchAction {
      */
     @Override
     public Double getCost() {
-        return new Double(0);
+        return new Double(10);
     }
 
     /**

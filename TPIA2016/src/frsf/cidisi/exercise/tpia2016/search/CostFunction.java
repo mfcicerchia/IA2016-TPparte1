@@ -16,7 +16,7 @@ public class CostFunction implements IStepCostFunction {
     public double calculateCost(NTree node) {
         
         //TODO: Complete Method
-        
-        return 0;
+        System.out.println("costo DE ejectura la Accion: " + node.getAction().getCost());
+        return node.getAction().getCost();
     }
 }

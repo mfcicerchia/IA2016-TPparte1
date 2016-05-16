@@ -28,4 +28,11 @@ public abstract class Agent {
      * @return The action chosen by the agent.
      */
     public abstract Action selectAction();
+
+	public Action selectAction(int estrategia) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
 }

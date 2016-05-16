@@ -61,4 +61,9 @@ public abstract class Simulator {
     }
 
     public abstract void start();
+
+	public void start(int busqueda) {
+		// TODO Auto-generated method stub
+		
+	}
 }

@@ -30,4 +30,6 @@ public abstract class SearchBasedAgent extends GoalBasedAgent {
     public void setProblem(Problem problem) {
         this.problem = problem;
     }
+
+	
 }
