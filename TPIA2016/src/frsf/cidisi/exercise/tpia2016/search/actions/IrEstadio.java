@@ -105,6 +105,6 @@ public class IrEstadio extends SearchAction {
      */
     @Override
     public String toString() {
-        return "IrEstadio";
+        return "IrEstadio "+ idEstadio;
     }
 }

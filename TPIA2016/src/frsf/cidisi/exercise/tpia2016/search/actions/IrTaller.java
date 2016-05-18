@@ -105,6 +105,6 @@ public class IrTaller extends SearchAction {
      */
     @Override
     public String toString() {
-        return "IrTaller";
+        return "IrTaller " + idTaller;
     }
 }

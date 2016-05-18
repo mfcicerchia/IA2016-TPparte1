@@ -105,6 +105,6 @@ public class IrIngreso extends SearchAction {
      */
     @Override
     public String toString() {
-        return "IrIngreso";
+        return "IrIngreso " + idIngreso;
     }
 }

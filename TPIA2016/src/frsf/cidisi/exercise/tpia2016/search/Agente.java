@@ -1,7 +1,6 @@
 package frsf.cidisi.exercise.tpia2016.search;
 
 import frsf.cidisi.exercise.tpia2016.search.actions.*;
-import frsf.cidisi.exercise.tpia2016.modelo.grafo.Edificio;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.*;
 import frsf.cidisi.faia.agent.Perception;
@@ -15,6 +14,11 @@ import java.util.logging.Logger;
 import java.util.Vector;
 
 public class Agente extends SearchBasedAgent {
+	
+	public static final int BUSQUEDA_ANCHURA 			= 0;
+	public static final int BUSQUEDA_PROFUNDIDAD 		= 1;
+	public static final int BUSQUEDA_COSTO_UNIFORME 	= 2;
+	public static final int BUSQUEDA_AVARA				= 3;
 
     public Agente(Edificio mapa, int energía, Habitacion post,Habitacion dest) {
 
@@ -29,7 +33,8 @@ public class Agente extends SearchBasedAgent {
         // Create the operators
         Vector<SearchAction> operators = new Vector<SearchAction>();
         
-        // Operador IrPasillo
+        
+     // Operador IrPasillo
         for(Pasillo p: mapa.getPasillos()){operators.addElement(new IrPasillo(p.getIdHabitacion()));}
         
         // Operador IrAula
@@ -76,10 +81,6 @@ public class Agente extends SearchBasedAgent {
      // Operador IrLaboratorio
 		for (Laboratorio lab : mapa.getLaboratorios()) {operators.addElement(new IrLaboratorio(lab.getIdHabitacion()));}
 		
-		
-        	
-
-        // Create the Problem which the agent will resolve
         Problem problem = new Problem(agGoal, agState, operators);
         this.setProblem(problem);
     }
@@ -88,21 +89,40 @@ public class Agente extends SearchBasedAgent {
      * This method is executed by the simulator to ask the agent for an action.
      */
     @Override
-    public Action selectAction() {
-
-    	// ANCHURA
-        // Create the search strategy
-    	 BreathFirstSearch strategy = new BreathFirstSearch(); //(esta estaba desde el idemia)
+    public Action selectAction(int estrategia) {
+    	Strategy strategy = null;
+        Search searchSolver =null;
     	
-    	// PROFUNDIDAD
-    	// Estrategia de busqueda en profundidad
-    	 // DepthFirstSearch strategy = new DepthFirstSearch();
-    	
-    	//COSTO UNIFORME
-    	//UniformCostSearch strategy = new UniformCostSearch(new CostFunction());
+		switch(estrategia){
 
-        // Create a Search object with the strategy
-        Search searchSolver = new Search(strategy);
+		case BUSQUEDA_ANCHURA:
+			//System.out.println("--------------------------anchura--------------------------");
+			BreathFirstSearch st1 = (BreathFirstSearch) strategy;
+			st1 = new BreathFirstSearch();
+			searchSolver = new Search(st1);
+			break;
+
+		case BUSQUEDA_PROFUNDIDAD :
+			//System.out.println("----------------------------profundid------------------------");
+			DepthFirstSearch st2 = (DepthFirstSearch) strategy;
+			st2= new DepthFirstSearch();
+			searchSolver = new Search(st2);
+			break;
+
+		case BUSQUEDA_COSTO_UNIFORME:
+			//System.out.println("----------------------------costo------------------------");
+			UniformCostSearch st4 = (UniformCostSearch) strategy;
+			st4= new UniformCostSearch(new CostFunction());
+			searchSolver = new Search(st4);
+			/*AStarSearch st3 = (AStarSearch)strategy;
+			st3= new AStarSearch(IStepCostFunction g, IEstimatedCostFunction h) ;
+			searchSolver = new Search(st3)*/
+			break;
+
+		case BUSQUEDA_AVARA:
+			break;
+		}
+
 
         /* Generate an XML file with the search tree. It can also be generated
          * in other formats like PDF with PDF_TREE */
@@ -122,7 +142,6 @@ public class Agente extends SearchBasedAgent {
 
         // Return the selected action
         return selectedAction;
-
     }
 
     /**
@@ -134,4 +153,6 @@ public class Agente extends SearchBasedAgent {
     public void see(Perception p) {
         this.getAgentState().updateState(p);
     }
+
+
 }

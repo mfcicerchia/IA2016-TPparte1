@@ -31,23 +31,23 @@ public class CargarPlanos {
 
 			datosHabitaciones = new ConverterHabitaciones(archivoCSV);
 
-			for (int i = 0; i < datosHabitaciones.getListaHabitaciones().size(); i++) {
-				System.out.println("Id: "
-						+ datosHabitaciones.getListaHabitaciones().get(i)
-								.getIdHabitacion()
-						+ "  "
-						+ "Piso: "
-						+ datosHabitaciones.getListaHabitaciones().get(i)
-								.getNivel()
-						+ "  "
-						+ "Clase: "
-						+ datosHabitaciones.getListaHabitaciones().get(i)
-								.getClass().getSimpleName()
-						+ "  "
-						+ "	Descripcion: "
-						+ datosHabitaciones.getListaHabitaciones().get(i)
-								.getDescripcion());
-			}
+//			for (int i = 0; i < datosHabitaciones.getListaHabitaciones().size(); i++) {
+//				System.out.println("Id: "
+//						+ datosHabitaciones.getListaHabitaciones().get(i)
+//								.getIdHabitacion()
+//						+ "  "
+//						+ "Piso: "
+//						+ datosHabitaciones.getListaHabitaciones().get(i)
+//								.getNivel()
+//						+ "  "
+//						+ "Clase: "
+//						+ datosHabitaciones.getListaHabitaciones().get(i)
+//								.getClass().getSimpleName()
+//						+ "  "
+//						+ "	Descripcion: "
+//						+ datosHabitaciones.getListaHabitaciones().get(i)
+//								.getDescripcion());
+//			}
 			/**
 			 * ########### se le Asigna al mapa su lista de habitaciones
 			 * ###########
@@ -76,19 +76,19 @@ public class CargarPlanos {
 //			System.out.println("Pulsa \'intro\' para continuar");
 //			System.in.read();
 
-			for (int i = 0; i < datosConexiones.getListaConexiones().size(); i++) {
-				System.out.println("origen: "
-						+ datosConexiones.getListaConexiones().get(i)
-								.getIdOrigen()
-						+ "  "
-						+ "destino: "
-						+ datosConexiones.getListaConexiones().get(i)
-								.getIdDestino()
-						+ "  "
-						+ "costo: "
-						+ datosConexiones.getListaConexiones().get(i)
-								.getDistancia());
-			}
+//			for (int i = 0; i < datosConexiones.getListaConexiones().size(); i++) {
+//				System.out.println("origen: "
+//						+ datosConexiones.getListaConexiones().get(i)
+//								.getIdOrigen()
+//						+ "  "
+//						+ "destino: "
+//						+ datosConexiones.getListaConexiones().get(i)
+//								.getIdDestino()
+//						+ "  "
+//						+ "costo: "
+//						+ datosConexiones.getListaConexiones().get(i)
+//								.getDistancia());
+//			}
 
 			/**
 			 * ########### se le Asigna al mapa su lista de habitaciones

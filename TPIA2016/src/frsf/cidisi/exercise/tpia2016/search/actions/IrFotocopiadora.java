@@ -105,6 +105,6 @@ public class IrFotocopiadora extends SearchAction {
      */
     @Override
     public String toString() {
-        return "IrFotocopiadora";
+        return "IrFotocopiadora " + idFotocopiadora;
     }
 }
