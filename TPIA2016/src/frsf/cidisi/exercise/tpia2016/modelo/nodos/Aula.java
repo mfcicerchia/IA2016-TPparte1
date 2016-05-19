@@ -1,7 +1,5 @@
 package frsf.cidisi.exercise.tpia2016.modelo.nodos;
 
-import java.awt.Point;
-
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
 public class Aula extends Habitacion {

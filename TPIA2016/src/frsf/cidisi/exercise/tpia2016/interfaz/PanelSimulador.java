@@ -1,5 +1,4 @@
 package frsf.cidisi.exercise.tpia2016.interfaz;
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -18,7 +17,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 import javax.swing.JScrollPane;
-import javax.swing.JLayeredPane;
+
 import javax.swing.border.LineBorder;
 
 import java.awt.Color;
@@ -31,8 +30,6 @@ import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import javax.swing.JTextArea;
 
-import ejercicio.auxiliar.Tesoro;
-
 import javax.swing.JSeparator;
 import javax.swing.JToggleButton;
 import javax.swing.ImageIcon;
@@ -41,8 +38,8 @@ import javax.swing.ImageIcon;
 public class PanelSimulador {
 
 	private JFrame frame;
-	public JMapPane mapa;
-	public JLogPane logPanel;
+//	public JMapPane mapa;
+//	public JLogPane logPanel;
 	private JTable table;
 	private JToggleButton tglbtnPlay;
 	private JTextField txtDist;
@@ -241,16 +238,16 @@ public class PanelSimulador {
 		frame.getContentPane().add(panel_1, BorderLayout.WEST);
 		panel_1.setLayout(new BorderLayout(0, 0));
 		
-		mapa = new JMapPane();
-		panel_1.add(mapa, BorderLayout.NORTH);
+//		mapa = new JMapPane();
+//		panel_1.add(mapa, BorderLayout.NORTH);
 		
 		JPanel panel_5 = new JPanel();
 		panel_5.setBorder(new TitledBorder(null, "Acciones realizadas", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		panel_1.add(panel_5, BorderLayout.CENTER);
 		panel_5.setLayout(new BorderLayout(0, 0));
 		
-		logPanel = new JLogPane();
-		panel_5.add(logPanel, BorderLayout.CENTER);
+//		logPanel = new JLogPane();
+//		panel_5.add(logPanel, BorderLayout.CENTER);
 	}
 	
 	public void actualizarDatos(int dist, int botin, double cont) {
@@ -261,11 +258,11 @@ public class PanelSimulador {
 	}
 	
 	public void actualizarInventario(int[] botin) {
-		txtCoins.setText(""+botin[Tesoro.MONEDA]);
-		txtRubies.setText(""+botin[Tesoro.RUBI]);
-		txtRings.setText(""+botin[Tesoro.ANILLO]);
-		txtDiams.setText(""+botin[Tesoro.DIAMANTE]);
-		txtNecks.setText(""+botin[Tesoro.COLGANTE]);
+//		txtCoins.setText(""+botin[Tesoro.MONEDA]);
+//		txtRubies.setText(""+botin[Tesoro.RUBI]);
+//		txtRings.setText(""+botin[Tesoro.ANILLO]);
+//		txtDiams.setText(""+botin[Tesoro.DIAMANTE]);
+//		txtNecks.setText(""+botin[Tesoro.COLGANTE]);
 	}
 	
 	public void actualizarIsla(int[][] tesoros) {

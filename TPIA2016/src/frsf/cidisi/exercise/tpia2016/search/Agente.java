@@ -154,6 +154,12 @@ public  class Agente extends SearchBasedAgent {
         this.getAgentState().updateState(p);
     }
 
+	@Override
+	public Action selectAction() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 
 

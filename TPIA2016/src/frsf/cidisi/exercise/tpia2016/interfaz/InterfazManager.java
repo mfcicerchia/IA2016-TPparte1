@@ -98,16 +98,16 @@ public class InterfazManager {
 		}
 	}
 	
-	public static void mostrarAgentes(int posArq, int posPir) {
-		if (posArq>=11)
-			posArq = 5;
-		window.mapa.moverAgentes(posArq, posPir);
-	}
-	
-	public static void registrarEvento(String texto) {
-		window.logPanel.addEvent(texto);
-	}
-	
+//	public static void mostrarAgentes(int posArq, int posPir) {
+//		if (posArq>=11)
+//			posArq = 5;
+//		window.mapa.moverAgentes(posArq, posPir);
+//	}
+//	
+//	public static void registrarEvento(String texto) {
+//		window.logPanel.addEvent(texto);
+//	}
+//	
 	public static void actualizarDatos(int dist, int botin, double cont) {
 		window.actualizarDatos(dist, botin, cont);
 	}
