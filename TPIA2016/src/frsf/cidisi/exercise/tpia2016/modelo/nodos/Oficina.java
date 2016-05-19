@@ -8,8 +8,8 @@ public class Oficina extends Habitacion  {
 			super();
 		}
 
-		public Oficina(String id, int nivel, String desc) {
-			super(id, nivel, desc);
+		public Oficina(String id, int nivel, String desc,int posX, int posY) {
+			super(id, nivel, desc, posX, posY);
 
 		}
 
@@ -38,6 +38,6 @@ public class Oficina extends Habitacion  {
 		}
 		
 		public Oficina clone(){
-			return new Oficina (this.getIdHabitacion(),this.getNivel(), this.getDescripcion());
+			return new Oficina (this.getIdHabitacion(),this.getNivel(), this.getDescripcion(), this.getPosicion().x, this.getPosicion().y);
 		}
 }

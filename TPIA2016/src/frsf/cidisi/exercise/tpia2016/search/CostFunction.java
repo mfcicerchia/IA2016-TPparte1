@@ -3,7 +3,7 @@ package frsf.cidisi.exercise.tpia2016.search;
 
 import frsf.cidisi.faia.solver.search.IStepCostFunction;
 import frsf.cidisi.faia.solver.search.NTree;
-import frsf.cidisi.faia.state.AgentState;
+
 
 /**
  * This class can be used in any search strategy like
@@ -40,6 +40,7 @@ public class CostFunction implements IStepCostFunction {
 			   estadoActual.getPosicion().getNivel() > estadoPadre.getPosicion().getNivel()){
 				costoDelEnlace = estadoActual.getMapa_ambiente().getCosto(estadoActual.getPosicion(), estadoPadre.getPosicion());				
 				costoAcumulado+= costoDelEnlace;
+				
 			}
 			
 			// SI BAJO: el costo es cinco veces el costo del enlace
@@ -48,8 +49,20 @@ public class CostFunction implements IStepCostFunction {
 			   estadoActual.getPosicion().getNivel() < estadoPadre.getPosicion().getNivel()){
 				costoDelEnlace = estadoActual.getMapa_ambiente().getCosto(estadoActual.getPosicion(), estadoPadre.getPosicion());				
 				costoAcumulado+= costoDelEnlace*5;
+				
 			}
+			
+			// Si es cualquier otro movimiento acumulo el costo/distancia
+			// de la conexion
+			costoDelEnlace = estadoActual.getMapa_ambiente().getCosto(estadoActual.getPosicion(), estadoPadre.getPosicion());
+			costoAcumulado+=costoDelEnlace;
+			
 		}
 		return costoAcumulado;
+	}
+
+	
+	public String toString() {
+		return super.toString();
 	}
 }

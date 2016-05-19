@@ -8,8 +8,8 @@ public class Estadio extends Habitacion {
 		super();
 	}
 
-	public Estadio(String id, int nivel, String desc) {
-		super(id, nivel, desc);
+	public Estadio(String id, int nivel, String desc,int posX, int posY) {
+		super(id, nivel, desc, posX, posY);
 	}
 
 	public boolean equals(Object obj) {
@@ -36,6 +36,6 @@ public class Estadio extends Habitacion {
 	}
 	
 	public Estadio clone(){
-		return new Estadio(this.getIdHabitacion(),this.getNivel(), this.getDescripcion());
+		return new Estadio(this.getIdHabitacion(),this.getNivel(), this.getDescripcion(), this.getPosicion().x, this.getPosicion().y);
 	}
 }

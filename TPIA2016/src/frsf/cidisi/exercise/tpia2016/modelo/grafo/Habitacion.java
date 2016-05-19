@@ -1,5 +1,6 @@
 package frsf.cidisi.exercise.tpia2016.modelo.grafo;
 
+import java.awt.Point;
 import java.util.ArrayList;
 
 /**
@@ -20,6 +21,7 @@ public abstract class Habitacion {
 		
 	}
 
+	private Point posicion;
 	private String idHabitacion;
 	private int nivel;
 	private String descripcion;
@@ -37,10 +39,24 @@ public abstract class Habitacion {
 	// this.id = new Identificador(id, nivel, desc);
 	// }
 
-	public Habitacion(String id, int nivel, String desc) {
+	public Habitacion(String id, int nivel, String desc, int posX, int posY) {
 		this.setIdHabitacion(id);
 		this.setNivel(nivel);
 		this.setDescripcion(desc);
+		this.setPosicion(posX,posY);
+		
+	}
+
+	private void setPosicion(int posX, int posY) {
+		posicion = new Point(posX,posY);
+	}
+	
+	public Point getPosicion() {
+		return posicion;
+	}
+
+	public void setPosicion(Point posicion) {
+		this.posicion = posicion;
 	}
 
 	public String getIdHabitacion() {
@@ -143,4 +159,6 @@ public abstract class Habitacion {
 	@Override
 	public abstract boolean equals(Object obj);
     public abstract Habitacion clone();
+
+
 }

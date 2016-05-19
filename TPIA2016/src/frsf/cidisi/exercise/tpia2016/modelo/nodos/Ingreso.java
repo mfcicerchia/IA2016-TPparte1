@@ -8,8 +8,8 @@ public class Ingreso extends Habitacion {
 		super();
 	}
 
-	public Ingreso(String id, int nivel, String tipoIngreso) {
-		super(id, nivel,tipoIngreso);
+	public Ingreso(String id, int nivel, String tipoIngreso,int posX, int posY) {
+		super(id, nivel,tipoIngreso, posX, posY);
 	}
 	
 	public boolean equals(Object obj) {
@@ -36,7 +36,7 @@ public class Ingreso extends Habitacion {
 	}
 	
 	public Ingreso clone(){
-		return new Ingreso(this.getIdHabitacion(),this.getNivel(), this.getDescripcion());
+		return new Ingreso(this.getIdHabitacion(),this.getNivel(), this.getDescripcion(), this.getPosicion().x, this.getPosicion().y);
 	}
 
 }

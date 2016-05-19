@@ -78,7 +78,7 @@ public abstract class GoalBasedAgentSimulator extends Simulator {
             System.out.println("Environment: \n" + environment);
 
             System.out.println("Asking the agent for an action...");
-            action = agent.selectAction();
+            action = agent.selectAction(busqueda);
 
             if (action == null) {
                 break;

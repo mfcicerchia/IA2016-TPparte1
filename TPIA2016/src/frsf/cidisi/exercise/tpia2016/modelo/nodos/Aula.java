@@ -1,15 +1,19 @@
 package frsf.cidisi.exercise.tpia2016.modelo.nodos;
 
+import java.awt.Point;
+
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
 public class Aula extends Habitacion {
 	
+	
+
 	public Aula() {
 		super();
 	}
 
-	public Aula(String id, int nivel, String desc) {
-		super(id, nivel, desc);
+	public Aula(String id, int nivel, String desc, int posX, int posY) {
+		super(id, nivel, desc, posX, posY);
 	}
 
 	public boolean equals(Object obj) {
@@ -36,6 +40,6 @@ public class Aula extends Habitacion {
 	}
 	
 	public Aula clone(){
-		return new Aula(this.getIdHabitacion(),this.getNivel(), this.getDescripcion());
+		return new Aula(this.getIdHabitacion(),this.getNivel(), this.getDescripcion(),this.getPosicion().x, this.getPosicion().y);
 	}
 }

@@ -13,7 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.Vector;
 
-public class Agente extends SearchBasedAgent {
+public  class Agente extends SearchBasedAgent {
 	
 	public static final int BUSQUEDA_ANCHURA 			= 0;
 	public static final int BUSQUEDA_PROFUNDIDAD 		= 1;
@@ -153,6 +153,8 @@ public class Agente extends SearchBasedAgent {
     public void see(Perception p) {
         this.getAgentState().updateState(p);
     }
+
+	
 
 
 }

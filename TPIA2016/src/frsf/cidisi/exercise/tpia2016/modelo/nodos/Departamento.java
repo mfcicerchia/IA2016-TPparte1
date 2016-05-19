@@ -4,8 +4,8 @@ import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
 public class Departamento extends Habitacion {
 
-	public Departamento(String id, int nivel, String dpto) {
-		super(id,nivel,dpto);
+	public Departamento(String id, int nivel, String dpto,int posX, int posY) {
+		super(id,nivel,dpto, posX, posY);
 	}
 	
 	public boolean equals(Object obj) {
@@ -32,7 +32,7 @@ public class Departamento extends Habitacion {
 	}
 	
 	public Departamento clone(){
-		return new Departamento(this.getIdHabitacion(),this.getNivel(), this.getDescripcion());
+		return new Departamento(this.getIdHabitacion(),this.getNivel(), this.getDescripcion(), this.getPosicion().x, this.getPosicion().y);
 	}
 
 }

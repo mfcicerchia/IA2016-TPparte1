@@ -47,48 +47,86 @@ public class AgentePerception extends Perception {
         // De todos mis adyacentes obtengo las clase
         // y pregunto si esta bloqueado en caso de ser escalera o pasillo
         // y pregunto si el beep esta prendido en el ascensor
+        
         for(Habitacion adyacente: adyacentes){
+        	System.out.println(adyacente.getIdHabitacion());
         	if(adyacente.getClass().getSimpleName().equals("Pasillo")){
     			Pasillo p=(Pasillo)adyacente;
     			if(p.isBloqueado()){
-    				hay_bloqueo_pasillo=1;
+    				this.hay_bloqueo_pasillo=1;
     			}
     			else{
-    				hay_bloqueo_pasillo=0;
+    				this.hay_bloqueo_pasillo=0;
     			}
     		}
     		else{
     			if(adyacente.getClass().getSimpleName().equals("Ascensor")){
     				Ascensor asc=(Ascensor)adyacente;
     				if(asc.isPitido()){
-    					hay_bip_ascensor=1;
+    					this.hay_bip_ascensor=1;
     				} 
     				else{
-    					hay_bip_ascensor=0;
+    					this.hay_bip_ascensor=0;
     				}					
     			}
     			else{
     				if(adyacente.getClass().getSimpleName().equals("Escalera")){
     					Escalera esc=(Escalera)adyacente;
     					if(esc.isBloqueada()){
-    						hay_bloqueo_escalera=1;
+    						this.hay_bloqueo_escalera=1;
     					}
     					else{
-    						hay_bloqueo_escalera=0;
+    						this.hay_bloqueo_escalera=0;
 						}
 					}
 				}
 			}
 
 		}
+       
+//        Habitacion h = environmentState.getPosicion_agente();
+//        	if(h.getClass().getSimpleName().equals("Pasillo")){
+//    			Pasillo p=(Pasillo)h;
+//    			if(p.isBloqueado()){
+//    				hay_bloqueo_pasillo=1;
+//    			}
+//    			else{
+//    				hay_bloqueo_pasillo=0;
+//    			}
+//    		}
+//    		else{
+//    			if(h.getClass().getSimpleName().equals("Ascensor")){
+//    				Ascensor asc=(Ascensor)h;
+//    				if(asc.isPitido()){
+//    					hay_bip_ascensor=1;
+//    				} 
+//    				else{
+//    					hay_bip_ascensor=0;
+//    				}					
+//    			}
+//    			else{
+//    				if(h.getClass().getSimpleName().equals("Escalera")){
+//    					Escalera esc=(Escalera)h;
+//    					if(esc.isBloqueada()){
+//    						hay_bloqueo_escalera=1;
+//    					}
+//    					else{
+//    						hay_bloqueo_escalera=0;
+//						}
+//					}
+//				}
+//			}
+
+		
+
 
     }
     
     @Override
 	public String toString() {
 		return "AgentePerception [hay_bip_ascensor="
-				+ hay_bip_ascensor + ", hay_bloqueo_escalera=" + hay_bloqueo_escalera + ", hay_bloqueo_pasillo="
-				+ hay_bloqueo_pasillo + "]";
+				+ this.hay_bip_ascensor + ", hay_bloqueo_escalera=" + this.hay_bloqueo_escalera + ", hay_bloqueo_pasillo="
+				+ this.hay_bloqueo_pasillo + "]";
 	}
 
 	public int getHay_bip_ascensor() {

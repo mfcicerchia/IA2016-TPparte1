@@ -4,8 +4,8 @@ import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
 public class Cantina extends Habitacion{
 
-	public Cantina(String id, int nivel, String desc) {
-		super(id,nivel,desc);
+	public Cantina(String id, int nivel, String desc,int posX, int posY) {
+		super(id,nivel,desc, posX, posY);
 	}
 	
 	public boolean equals(Object obj) {
@@ -32,7 +32,7 @@ public class Cantina extends Habitacion{
 	}
 	
 	public Cantina clone(){
-		return new Cantina(this.getIdHabitacion(),this.getNivel(), this.getDescripcion());
+		return new Cantina(this.getIdHabitacion(),this.getNivel(), this.getDescripcion(), this.getPosicion().x, this.getPosicion().y);
 	}
 
 }

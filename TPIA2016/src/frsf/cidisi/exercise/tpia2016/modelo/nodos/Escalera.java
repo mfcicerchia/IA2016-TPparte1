@@ -7,8 +7,8 @@ public class Escalera extends Habitacion {
 	public Escalera() {
 		super();
 	}
-	public Escalera(String id, int nivel,String desc,boolean blq) {
-		super(id, nivel,desc);
+	public Escalera(String id, int nivel,String desc,boolean blq,int posX, int posY) {
+		super(id, nivel,desc, posX, posY);
 		bloqueada=blq;
 	}
 	public boolean isBloqueada() {
@@ -49,6 +49,6 @@ public class Escalera extends Habitacion {
 	}
 	
 	public Escalera clone(){
-		return new Escalera(this.getIdHabitacion(),this.getNivel(), this.getDescripcion(), this.isBloqueada());
+		return new Escalera(this.getIdHabitacion(),this.getNivel(), this.getDescripcion(), this.isBloqueada(), this.getPosicion().x, this.getPosicion().y);
 	}
 }

@@ -3,8 +3,8 @@ package frsf.cidisi.exercise.tpia2016.modelo.nodos;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 
 public class Laboratorio extends Habitacion {
-	public Laboratorio(String id, int nivel, String desc) {
-		super (id,nivel,desc);
+	public Laboratorio(String id, int nivel, String desc,int posX, int posY) {
+		super (id,nivel,desc, posX, posY);
 	}
 	
 	public boolean equals(Object obj) {
@@ -31,6 +31,6 @@ public class Laboratorio extends Habitacion {
 	}
 	
 	public Laboratorio clone(){
-		return new Laboratorio(this.getIdHabitacion(),this.getNivel(), this.getDescripcion());
+		return new Laboratorio(this.getIdHabitacion(),this.getNivel(), this.getDescripcion(), this.getPosicion().x, this.getPosicion().y);
 	}
 }

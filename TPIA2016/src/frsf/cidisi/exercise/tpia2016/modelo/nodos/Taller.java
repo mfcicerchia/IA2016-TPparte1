@@ -8,8 +8,8 @@ public class Taller extends Habitacion {
 		super();
 	}
 
-	public Taller(String id, int nivel, String desc) {
-		super(id, nivel, desc);
+	public Taller(String id, int nivel, String desc,int posX, int posY) {
+		super(id, nivel, desc, posX, posY);
 		this.setDescripcion(desc);
 	}
 
@@ -38,6 +38,6 @@ public class Taller extends Habitacion {
 	}
 	
 	public Taller clone(){
-		return new Taller (this.getIdHabitacion(),this.getNivel(), this.getDescripcion());
+		return new Taller (this.getIdHabitacion(),this.getNivel(), this.getDescripcion(), this.getPosicion().x, this.getPosicion().y);
 	}
 }
