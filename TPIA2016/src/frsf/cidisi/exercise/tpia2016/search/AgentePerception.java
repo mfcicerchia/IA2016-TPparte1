@@ -2,6 +2,7 @@ package frsf.cidisi.exercise.tpia2016.search;
 
 import java.util.ArrayList;
 
+
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.*;
 import frsf.cidisi.faia.agent.Agent;
@@ -9,22 +10,22 @@ import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.environment.Environment;
 
 public class AgentePerception extends Perception {
-
-    public static int UNKNOWN_PERCEPTION = -1;   
-	private int hay_bip_ascensor;
-	private int hay_bloqueo_escalera;
-	private int hay_bloqueo_pasillo;
+	
+	ArrayList<Habitacion> ascensoresBLoqueados;
+	ArrayList<Habitacion> escalerasBloqueadas;
+	ArrayList<Habitacion> pasillosBloqueados;
 	
  
 
     public  AgentePerception() {
-    	hay_bip_ascensor=UNKNOWN_PERCEPTION;
-    	hay_bloqueo_escalera=UNKNOWN_PERCEPTION;
-    	hay_bloqueo_pasillo=UNKNOWN_PERCEPTION;	
+    	ascensoresBLoqueados=new ArrayList<Habitacion>();
+    	escalerasBloqueadas=new ArrayList<Habitacion>();
+    	pasillosBloqueados=new ArrayList<Habitacion>();
     }
 
     public AgentePerception(Agent agent, Environment environment) {
         super(agent, environment);
+        initPerception(agent, environment);
     }
 
     /**
@@ -48,108 +49,87 @@ public class AgentePerception extends Perception {
         // y pregunto si esta bloqueado en caso de ser escalera o pasillo
         // y pregunto si el beep esta prendido en el ascensor
         
-        for(Habitacion adyacente: adyacentes){
-        	System.out.println(adyacente.getIdHabitacion());
-        	if(adyacente.getClass().getSimpleName().equals("Pasillo")){
-    			Pasillo p=(Pasillo)adyacente;
+        for(Habitacion h: adyacentes){
+        	if(h.getClass().getSimpleName().equals("Pasillo")){
+    			Pasillo p=(Pasillo)h;
     			if(p.isBloqueado()){
-    				this.hay_bloqueo_pasillo=1;
-    			}
-    			else{
-    				this.hay_bloqueo_pasillo=0;
+    				p.setBloqueado(true);
+    				pasillosBloqueados.add(p);
     			}
     		}
     		else{
-    			if(adyacente.getClass().getSimpleName().equals("Ascensor")){
-    				Ascensor asc=(Ascensor)adyacente;
+    			if(h.getClass().getSimpleName().equals("Ascensor")){
+    				Ascensor asc=(Ascensor)h;
     				if(asc.isPitido()){
-    					this.hay_bip_ascensor=1;
-    				} 
-    				else{
-    					this.hay_bip_ascensor=0;
-    				}					
+    					asc.setPitido(true);
+    					ascensoresBLoqueados.add(asc);
+    				} 					
     			}
     			else{
-    				if(adyacente.getClass().getSimpleName().equals("Escalera")){
-    					Escalera esc=(Escalera)adyacente;
+    				if(h.getClass().getSimpleName().equals("Escalera")){
+    					Escalera esc=(Escalera)h;
     					if(esc.isBloqueada()){
-    						this.hay_bloqueo_escalera=1;
+    						esc.setBloqueada(true);
+        					escalerasBloqueadas.add(esc);
     					}
-    					else{
-    						this.hay_bloqueo_escalera=0;
-						}
 					}
 				}
 			}
-
 		}
-       
-//        Habitacion h = environmentState.getPosicion_agente();
-//        	if(h.getClass().getSimpleName().equals("Pasillo")){
-//    			Pasillo p=(Pasillo)h;
-//    			if(p.isBloqueado()){
-//    				hay_bloqueo_pasillo=1;
-//    			}
-//    			else{
-//    				hay_bloqueo_pasillo=0;
-//    			}
-//    		}
-//    		else{
-//    			if(h.getClass().getSimpleName().equals("Ascensor")){
-//    				Ascensor asc=(Ascensor)h;
-//    				if(asc.isPitido()){
-//    					hay_bip_ascensor=1;
-//    				} 
-//    				else{
-//    					hay_bip_ascensor=0;
-//    				}					
-//    			}
-//    			else{
-//    				if(h.getClass().getSimpleName().equals("Escalera")){
-//    					Escalera esc=(Escalera)h;
-//    					if(esc.isBloqueada()){
-//    						hay_bloqueo_escalera=1;
-//    					}
-//    					else{
-//    						hay_bloqueo_escalera=0;
-//						}
-//					}
-//				}
-//			}
-
-		
-
-
     }
-    
-    @Override
-	public String toString() {
-		return "AgentePerception [hay_bip_ascensor="
-				+ this.hay_bip_ascensor + ", hay_bloqueo_escalera=" + this.hay_bloqueo_escalera + ", hay_bloqueo_pasillo="
-				+ this.hay_bloqueo_pasillo + "]";
+
+
+	public ArrayList<Habitacion> getAscensoresBLoqueados() {
+		return ascensoresBLoqueados;
 	}
 
-	public int getHay_bip_ascensor() {
-		return hay_bip_ascensor;
+	public void setAscensoresBLoqueados(ArrayList<Habitacion> ascensoresBLoqueados) {
+		this.ascensoresBLoqueados = ascensoresBLoqueados;
 	}
 
-	public void setHay_bip_ascensor(int hay_bip_ascensor) {
-		this.hay_bip_ascensor = hay_bip_ascensor;
+	public ArrayList<Habitacion> getEscalerasBloqueadas() {
+		return escalerasBloqueadas;
 	}
 
-	public int getHay_bloqueo_escalera() {
-		return hay_bloqueo_escalera;
+	public void setEscalerasBloqueadas(ArrayList<Habitacion> escalerasBloqueadas) {
+		this.escalerasBloqueadas = escalerasBloqueadas;
 	}
 
-	public void setHay_bloqueo_escalera(int hay_bloqueo_escalera) {
-		this.hay_bloqueo_escalera = hay_bloqueo_escalera;
+	public ArrayList<Habitacion> getPasillosBloqueados() {
+		return pasillosBloqueados;
 	}
 
-	public int getHay_bloqueo_pasillo() {
-		return hay_bloqueo_pasillo;
+	public void setPasillosBloqueados(ArrayList<Habitacion> pasillosBloqueados) {
+		this.pasillosBloqueados = pasillosBloqueados;
+	}
+	
+	public Habitacion getPasilloBloqueado(Habitacion pasillo) {
+		for(Habitacion p: this.pasillosBloqueados){
+			if(p.getIdHabitacion().equals(pasillo.getDescripcion())){
+				return p;
+			}
+		}
+		return null;
 	}
 
-	public void setHay_bloqueo_pasillo(int hay_bloqueo_pasillo) {
-		this.hay_bloqueo_pasillo = hay_bloqueo_pasillo;
+	public Habitacion getEscaleraBloqueada(Habitacion escalera) {
+		for(Habitacion p: this.escalerasBloqueadas){
+			if(p.getIdHabitacion().equals(escalera.getDescripcion())){
+				return p;
+			}
+		}
+		return null;
 	}
+	
+	public Habitacion getAscensorBloqueado(Habitacion ascensor) {
+		for(Habitacion p: this.ascensoresBLoqueados){
+			if(p.getIdHabitacion().equals(ascensor.getDescripcion())){
+				return p;
+			}
+		}
+		return null;
+	}
+
+
+
 }

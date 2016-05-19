@@ -1,8 +1,5 @@
 package frsf.cidisi.exercise.tpia2016.search.actions;
 
-
-
-import sun.org.mozilla.javascript.internal.IdScriptableObject;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
 

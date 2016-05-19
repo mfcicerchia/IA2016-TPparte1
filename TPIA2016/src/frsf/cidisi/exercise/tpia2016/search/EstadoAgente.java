@@ -90,29 +90,17 @@ public class EstadoAgente extends SearchBasedAgentState {
     	
     	AgentePerception perception=(AgentePerception)p;
     	
-    	
-    	int hay_bip=perception.getHay_bip_ascensor();
-    	int hay_bloqueo_escalera=perception.getHay_bloqueo_escalera();
-    	int hay_bloqueo_pasillo=perception.getHay_bloqueo_pasillo();
-    	
-    	if(hay_bip==1){
-    		
-    		for(Habitacion i: this.mapa_ambiente.getHabitacionesPorID(this.getPosicion().getIdHabitacion())){
-    			Ascensor j = (Ascensor)i;
-    			j.setPitido(true);
-    		}
+    	for(Habitacion i: perception.getAscensoresBLoqueados()){
+    		Ascensor as = (Ascensor) i;
+    		((Ascensor)this.mapa_ambiente.getHabitacionPorID(as.getIdHabitacion())).setPitido(true);
     	}
-    	if(hay_bloqueo_escalera==1){
-    		for(Habitacion i: this.mapa_ambiente.getHabitacionesPorID(this.getPosicion().getIdHabitacion())){
-    			Escalera j = (Escalera)i;
-    			j.setBloqueada(true);;
-    		}
+    	for(Habitacion i: perception.getPasillosBloqueados()){
+    		Pasillo as = (Pasillo) i;
+    		((Pasillo)this.mapa_ambiente.getHabitacionPorID(as.getIdHabitacion())).setBloqueado(true);
     	}
-    	if(hay_bloqueo_pasillo==1){	
-    		for(Habitacion i: this.mapa_ambiente.getHabitacionesPorID(this.getPosicion().getIdHabitacion())){
-    			Pasillo j = (Pasillo)i;
-    			j.setBloqueado(true);;
-    		}
+    	for(Habitacion i: perception.getEscalerasBloqueadas()){
+    		Escalera as = (Escalera) i;
+    		((Escalera)this.mapa_ambiente.getHabitacionPorID(as.getIdHabitacion())).setBloqueada(true);
     	}
     }
 

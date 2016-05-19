@@ -3,6 +3,9 @@ package frsf.cidisi.exercise.tpia2016.search;
 
 import frsf.cidisi.faia.environment.Environment;
 import frsf.cidisi.faia.state.AgentState;
+
+import java.util.ArrayList;
+
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.Ascensor;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
@@ -32,38 +35,39 @@ public class Universidad extends Environment {
 		
          Habitacion h = this.getEnvironmentState().getPosicion_agente();
          
- 		if(h.getClass()==Pasillo.class){
- 			Pasillo p=(Pasillo)h;
- 			if(p.isBloqueado()){
- 				perception.setHay_bip_ascensor(1);
- 			}
- 			else{
- 				perception.setHay_bip_ascensor(0);
- 			}
- 		}
- 		else{
- 			if(h.getClass()==Ascensor.class){
- 				Ascensor p=(Ascensor)h;
- 				if(p.isPitido()){
- 					perception.setHay_bip_ascensor(1);
- 				} 
- 				else{
- 					perception.setHay_bip_ascensor(0);
- 				}					
- 			}
- 			else{
- 				if(h.getClass()==Escalera.class){
- 					Escalera p=(Escalera)h;
- 					if(p.isBloqueada()){
- 						perception.setHay_bloqueo_escalera(1);
- 					}
- 					else{
- 						perception.setHay_bloqueo_escalera(0);
+         ArrayList<Habitacion> adyacentes = new ArrayList<Habitacion>();
+         
+         //Obtengo los adyacentes a la posicion
+         adyacentes = this.getEnvironmentState().getMapa_ambiente().getHabitacionesAdyacentes(h.getIdHabitacion());
+     
+         // De todos mis adyacentes obtengo las clase
+         // y pregunto si esta bloqueado en caso de ser escalera o pasillo
+         // y pregunto si el beep esta prendido en el ascensor
+         
+         for(Habitacion ha: adyacentes){
+         	if(ha.getClass().getSimpleName().equals("Pasillo")){
+     			Pasillo p=(Pasillo)ha;
+     			if(p.isBloqueado()){
+     				((Pasillo)perception.getPasilloBloqueado(p)).setBloqueado(true);
+     			}
+     		}
+     		else{
+     			if(ha.getClass().getSimpleName().equals("Ascensor")){
+     				Ascensor asc=(Ascensor)ha;
+     				if(asc.isPitido()){
+     					((Ascensor)perception.getAscensorBloqueado(asc)).setPitido(true);
+     				} 					
+     			}
+     			else{
+     				if(ha.getClass().getSimpleName().equals("Escalera")){
+     					Escalera esc=(Escalera)ha;
+     					if(esc.isBloqueada()){
+     						((Escalera)perception.getEscaleraBloqueada(esc)).setBloqueada(true);
+     					}
  					}
  				}
  			}
  		}
-        
         // Return the perception
         return perception;
     }

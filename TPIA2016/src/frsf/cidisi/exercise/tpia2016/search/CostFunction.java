@@ -25,11 +25,8 @@ public class CostFunction implements IStepCostFunction {
 		int costoAcumulado = 0;
 		int costoDelEnlace=0;
 		EstadoAgente estadoPadre;
-		EstadoAgente estadoActual = (EstadoAgente)node.getAgentState();;
-		 
+		EstadoAgente estadoActual = (EstadoAgente)node.getAgentState();
 		
-		
-
 		if (padre == null) {
 			return 0;
 		}else{
