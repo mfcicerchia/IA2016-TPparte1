@@ -1,112 +1,111 @@
-Ingreso,ingreso1,0,entrada principal a la facultad (Hall)
-Ingreso,ingreso2,0,entrada por torre
-Pasillo,p2-0,0,pasillo 2 planta baja
-Pasillo,p1-0,0,pasillo 1 planta baja
-Pasillo,p3-0,0,pasillo 3 planta baja
-Pasillo,p4-0,0,pasillo 4 planta baja
-Pasillo,p5-0,0,pasillo 5 planta baja
-Pasillo,p6-0,0,pasillo 6 planta baja
-escalera,esc1-0,0,escalera 1 nivel 0
-escalera,esc2-0,0,escalera 2 nivel 0
-escalera,esc3-0,0,escalera 3 nivel 0
-escalera,esc4-0,0,escalera 4
-escalera,esc5-0,0,escalera 5
-escalera,esc6-0,0,escalera 6
-escalera,esc7-0,0,escalera 7
-Ascensor,asc1-0,0,ascensor planta baja
-Ascensor,asc1-1,1,ascensor primer piso
-Ascensor,asc1-2,2,ascensor segundo piso
-Ascensor,asc1-3,3,ascensor tercer piso
-Aula,au1,0,aula1
-Aula,au2,0,aula2
-Aula,au3,0,aula3
-Aula,au4,0,aula4
-Aula,au5,0,aula5
-Aula,au6,0,aula6
-Aula,au7,0,quimica
-Aula,au8,0,Fisica
-cantina,cantina,0,Sheldon Bar
-biblioteca,biblioteca1,0,Biblioteca Moreno
-Oficina,ofc1-0,0,Alumnado
-Oficina,ofc2-0,0,SAE
-Baño,baño1-0,0,baño1
-Baño,baño2,0,baño2
-Laboratorio,lab1-0,0,Laboratorio de Mecanica
-Laboratorio,lab2-0,0,Laboratorio de Fluidica
-Departamento,mecanica,0,Departamento de Mecanica
-Departamento,electrica,0,Departamento de Electrica
-Fotocopiadora,fotocopiadora,0,Fotocopiadora FRSF
-Escalera,esc3-2,2,escalera 3 nivel 2
-Aula,au9,1,aula9
-Aula,au10,1,aula10
-Aula,au11,1,aula11
-Aula,au12,1,aula12
-Aula,au13,1,aula13
-Aula,au14,1,aula14
-Aula,au15,1,aula15
-Aula,au16,1,aula16
-Aula,au17,1,aula17
-Aula,au18,1,aula18
-Aula,au19,1,aula19
-Laboratorio,ccv1,1,Laboratorio CECOVI
-Laboratorio,esy1,1,Laboratorio de Ensayos
-Aula,mt1,1,Aula de Materiales
-Pasillo,p1-1,1,pasillo 1 primer piso
-Pasillo,p2-1,1,pasillo 2 primer piso
-Pasillo,p3-1,1,pasillo 3 primer piso
-Pasillo,p4-1,1,pasillo 4 primer piso
-Pasillo,p5-1,1,pasillo 5 primer piso
-Pasillo,p6-1,1,pasillo 6 primer piso
-Departamento,Civil,1,Departamento de Civil
-Departamento,Básicas,1,Departamento de Materias Básicas
-Departamento,Industrial,1,Departamento de Industrial
-Escalera,esc3-1,1,escalera 3 nivel 1
-Escalera,esc1-1,1,escalera 1 nivel 1
-Escalera,esc2-1,1,escalera 2 nivel 1
-Escalera,esc4-1,1,escalera 4 
-Escalera,esc5-1,1,escalera 5
-Escalera,esc6-1,1,escalera 6
-Escalera,esc7-1,1,escalera 7
-Biblioteca,biblioteca2,1,Biblioteca IRAM
-Aula,if1,1,Informática 1
-Aula,if2,2,Informática 2
-Aula,cn1,1,Consulta 1
-Aula,cn2,1,Consulta 2
-Aula,cn3,1,Consulta 3
-Aula,cn4,1,Consulta 4
-Baño,baño1-1,1,baño1
-Baño,baño2,1,baño2
-Baño,baño3,1,baño3
-Aula,ae3,1,Aula E03
-Aula,ae2,1,Aula E02
-Aula,ae1,1,Aula E01
-Aula,vd1,1,Aula de video
-Oficina,ofc1-1,1,Materias Básicas
-Oficina,ofc2-1,1,Varios
-Aula,au22,2,Aula 22
-Aula,au20,2,Aula 20
-Aula,au21,2,Aula 21
-Aula,cd1,2,Aula CIDISI
-Pasillo,p2-2,2,pasillo 2 segundo piso
-Pasillo,p1-2,2,pasillo 1 segundo piso
-Escalera,esc5,2,escalera 5
-Escalera,esc6,2,escalera 6
-Escalera,esc8,2,escalera 7
-Laboratorio,jvl1,2,JAVALAB
-Laboratorio,gse1,2,GESE
-Laboratorio,lab1-3,3,Laboratorio Informatica 1
-Laboratorio,lab3,3,Laboratorio Informatica 3
-Laboratorio,lab4,3,Laboratorio Informatica 4
-Laboratorio,lab2-3,3,Laboratorio Conectividad
-Oficina,ofc1-3,3,CIDISI
-Oficina,ofc3-3,3,Varios
-Oficina,ofc2-3,3,TICS
-Departamento,Sistemas,3,Departemanto de Sistemas
-Escalera,esc8,3,escalera 8
-Escalera,esc3-3,3,escalera 3 nivel 3
-Pasillo,p2-3,3,pasillo 2 tercer piso
-Pasillo,p1-3,3,pasillo 1 tercer piso
-Aula,cs1,3,Aula Consultas 1
-Aula,cs2,3,Aula Consultas 2
-Laboratorio,lab5,3,Laboratorio Informatica 5
-Taller,taller1-0,0,Taller de Mecanica
+Ingreso,ingreso1,0,entrada principal a la facultad (Hall),418,395
+Ingreso,ingreso2,0,entrada por torre,28,606
+Pasillo,p2-0,0,pasillo 2 planta baja,473,364
+Pasillo,p1-0,0,pasillo 1 planta baja,413,540
+Pasillo,p3-0,0,pasillo 3 planta baja,239,371
+Pasillo,p4-0,0,pasillo 4 planta baja,282,267
+Pasillo,p5-0,0,pasillo 5 planta baja,300,205
+Pasillo,p6-0,0,pasillo 6 planta baja,239,226
+escalera,esc1-0,0,escalera 1 nivel 0,480,447
+escalera,esc2-0,0,escalera 2 nivel 0,33,668
+escalera,esc3-0,0,escalera 3 nivel 0,46,347
+escalera,esc4-0,0,escalera 4,363,320
+escalera,esc5-0,0,escalera 5,267,346
+escalera,esc6-0,0,escalera 6,245,285
+escalera,esc7-0,0,escalera 7,141,511
+Ascensor,asc1-0,0,ascensor planta baja,119,350
+Ascensor,asc1-1,1,ascensor primer piso,119,353
+Ascensor,asc1-2,2,ascensor segundo piso,19,293
+Ascensor,asc1-3,3,ascensor tercer piso,189,132
+Aula,au1,0,aula1,517,369
+Aula,au2,0,aula2,503,249
+Aula,au3,0,aula3,500,207
+Aula,au4,0,aula4,498,137
+Aula,au5,0,aula5,500,128
+Aula,au6,0,aula6,500,90
+Aula,au7,0,quimica,485,29
+Aula,au8,0,Fisica,402,46
+cantina,cantina,0,Sheldon Bar,485,613
+biblioteca,biblioteca1,0,Biblioteca Moreno,328,592
+Oficina,ofc1-0,0,Alumnado,219,592
+Oficina,ofc2-0,0,SAE,123,592
+Baño,baño1-0,0,baño1,268,241
+Baño,baño2,0,baño2,433,264
+Laboratorio,lab1-0,0,Laboratorio de Mecanica,283,407
+Laboratorio,lab2-0,0,Laboratorio de Fluidica,314,239
+Departamento,mecanica,0,Departamento de Mecanica,344,407
+Departamento,electrica,0,Departamento de Electrica,187,279
+Fotocopiadora,fotocopiadora,0,Fotocopiadora FRSF,420,228
+Escalera,esc3-2,2,escalera 3 nivel 2,48,349
+Aula,au9,1,aula9,517,405
+Aula,au10,1,aula10,517,349
+Aula,au11,1,aula11,505,286
+Aula,au12,1,aula12,505,248
+Aula,au13,1,aula13,501,210
+Aula,au14,1,aula14,502,172
+Aula,au15,1,aula15,505,132
+Aula,au16,1,aula16,505,85
+Aula,au17,1,aula17,492,21
+Aula,au18,1,aula18,401,20
+Aula,au19,1,aula19,414,214
+Laboratorio,ccv1,1,Laboratorio CECOVI,187,228
+Laboratorio,esy1,1,Laboratorio de Ensayos,404,130
+Aula,mt1,1,Aula de Materiales,205,165
+Pasillo,p1-1,1,pasillo 1 primer piso,471,336
+Pasillo,p2-1,1,pasillo 2 primer piso,369,411
+Pasillo,p3-1,1,pasillo 3 primer piso,375,280
+Pasillo,p4-1,1,pasillo 4 primer piso,235,236
+Pasillo,p5-1,1,pasillo 5 primer piso,83,475
+Pasillo,p6-1,1,pasillo 6 primer piso,243,549
+Departamento,Civil,1,Departamento de Civil,311,240
+Departamento,Básicas,1,Departamento de Materias Básicas,310,366
+Departamento,Industrial,1,Departamento de Industrial,116,141
+Escalera,esc3-1,1,escalera 3 nivel 1,45,344
+Escalera,esc1-1,1,escalera 1 nivel 1,475,440
+Escalera,esc2-1,1,escalera 2 nivel 1,49,666
+Escalera,esc4-1,1,escalera 4,369,318
+Escalera,esc5-1,1,escalera 5,265,344
+Escalera,esc6-1,1,escalera 6,246,282
+Escalera,esc7-1,1,escalera 7,145,509
+Biblioteca,biblioteca2,1,Biblioteca IRAM,182,293
+Aula,if1,1,Informática 1,413,321
+Aula,if2,2,Informática 2,413,364
+Aula,cn1,1,Consulta 1,421,415
+Aula,cn2,1,Consulta 2,421,415
+Aula,cn3,1,Consulta 3,421,415
+Aula,cn4,1,Consulta 4,421,415
+Baño,baño1-1,1,baño1,433,261
+Baño,baño2,1,baño2,270,243
+Baño,baño3,1,baño3,130,657
+Aula,ae3,1,Aula E03,190,594
+Aula,ae2,1,Aula E02,246,594
+Aula,ae1,1,Aula E01,302,594
+Aula,vd1,1,Aula de video,369,594
+Oficina,ofc1-1,1,Materias Básicas,370,481
+Oficina,ofc2-1,1,Varios,129,593
+Aula,au22,2,Aula 22,164,36
+Aula,au20,2,Aula 20,296,255
+Aula,au21,2,Aula 21,61,205
+Aula,cd1,2,Aula CIDISI,134,105
+Pasillo,p2-2,2,pasillo 2 segundo piso,173,103
+Pasillo,p1-2,2,pasillo 1 segundo piso,169,161
+Escalera,esc5,2,escalera 5,242,299
+Escalera,esc6,2,escalera 6,214,216
+Escalera,esc8,2,escalera 7,198,125
+Laboratorio,jvl1,2,JAVALAB,317,164
+Laboratorio,gse1,2,GESE,138,226
+Laboratorio,lab1-3,3,Laboratorio Informatica 1,341,213
+Laboratorio,lab4,3,Laboratorio Informatica 4,348,33
+Laboratorio,lab2-3,3,Laboratorio Conectividad,335,134
+Oficina,ofc1-3,3,CIDISI,335,310
+Oficina,ofc3-3,3,Varios,187,382
+Oficina,ofc2-3,3,TICS,228,343
+Departamento,Sistemas,3,Departemanto de Sistemas,330,407
+Escalera,esc8,3,escalera 8,244,248
+Escalera,esc3-3,3,escalera 3 nivel 3,15,419
+Pasillo,p2-3,3,pasillo 2 tercer piso,286,281
+Pasillo,p1-3,3,pasillo 1 tercer piso,68,386
+Aula,cs1,3,Aula Consultas 1,119,309
+Aula,cs2,3,Aula Consultas 2,231,389
+Laboratorio,lab5,3,Laboratorio Informatica 5,293,29
+Taller,taller1-0,0,Taller de Mantenimiento,210,107

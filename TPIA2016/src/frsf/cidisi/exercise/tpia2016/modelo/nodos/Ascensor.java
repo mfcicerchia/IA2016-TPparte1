@@ -12,7 +12,7 @@ public class Ascensor extends Habitacion{
 	/**
 	 * @param pitido
 	 */
-	public Ascensor(String id, int nivel, String desc, boolean pitido,int posX, int posY) {
+	public Ascensor(String id, int nivel, String desc, int posX, int posY,boolean pitido) {
 		super(id, nivel, desc, posX, posY);
 		this.setPitido(pitido);
 	}
@@ -58,7 +58,7 @@ public class Ascensor extends Habitacion{
 	}
 	
 	public Ascensor clone(){
-		return new Ascensor(this.getIdHabitacion(),this.getNivel(), this.getDescripcion(), this.isPitido(),this.getPosicion().x, this.getPosicion().y);
+		return new Ascensor(this.getIdHabitacion(),this.getNivel(), this.getDescripcion(),this.getPosicion().x, this.getPosicion().y, this.isPitido());
 	}
 	
 }

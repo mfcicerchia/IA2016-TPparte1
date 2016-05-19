@@ -17,7 +17,7 @@ public class Pasillo extends Habitacion {
 	 * @param bloqueado: representa si un pasillo esta o no bloqueado
 	 * @param post: 
 	 */
-	public Pasillo(String id, int nivel, String desc, boolean bloqueado,int posX, int posY) {
+	public Pasillo(String id, int nivel, String desc,int posX, int posY, boolean bloqueado) {
 		super(id, nivel, desc, posX, posY);
 		this.bloqueado = bloqueado;
 	}
@@ -63,7 +63,7 @@ public class Pasillo extends Habitacion {
 	}
 	
 	public Pasillo clone(){
-		return new Pasillo (this.getIdHabitacion(),this.getNivel(), this.getDescripcion(),this.isBloqueado(), this.getPosicion().x, this.getPosicion().y);
+		return new Pasillo (this.getIdHabitacion(),this.getNivel(), this.getDescripcion(), this.getPosicion().x, this.getPosicion().y,this.isBloqueado());
 	}
 
 }
