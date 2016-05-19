@@ -22,6 +22,7 @@ import java.util.Vector;
 import frsf.cidisi.faia.agent.Agent;
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.environment.Environment;
+import frsf.cidisi.faia.state.AgentState;
 
 /**
  * @created 07-Mar-2007 19:34:42
@@ -65,5 +66,10 @@ public abstract class Simulator {
 	public void start(int busqueda) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	public boolean agentFailed(AgentState state) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

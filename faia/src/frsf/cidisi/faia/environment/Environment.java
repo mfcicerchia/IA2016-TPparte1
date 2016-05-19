@@ -56,7 +56,7 @@ public abstract class Environment {
      * @param actionReturned
      * @return
      */
-    public boolean agentFailed(Action actionReturned) {
+    public boolean agentFailed(AgentState actionReturned) {
         return false;
     }
 
@@ -66,5 +66,7 @@ public abstract class Environment {
      */
     public void close() {
     }
+
+
 }
 

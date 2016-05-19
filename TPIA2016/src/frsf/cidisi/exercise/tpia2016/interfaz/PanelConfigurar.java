@@ -12,8 +12,6 @@ import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Vector;
 
 import javax.swing.DefaultComboBoxModel;
@@ -35,7 +33,9 @@ import javax.swing.SwingConstants;
 
 public class PanelConfigurar {
 
+	PanelSimulador window;
 	private Edificio edificio;
+	private Edificio edificio_2;
 	private JFrame frame;
 	private JComboBox comboBox_1;
 	private JComboBox comboBox_2;
@@ -109,6 +109,7 @@ public class PanelConfigurar {
 		
 		CargarPlanos mapaInformation = new CargarPlanos();
 		edificio = mapaInformation.getMapa();
+		edificio_2= mapaInformation.getMapa();
 		Vector<String> habitaciones = new Vector<String>();
 
 		
@@ -142,22 +143,20 @@ public class PanelConfigurar {
 		lblEnergiaInicialtext.setText("1000");
 		panel_1.add(lblEnergiaInicialtext, "cell 0 4");
 		
-		JLabel lblEstratgia = new JLabel("ESTRATÉGIA");
+		JLabel lblEstratgia = new JLabel("ESTRAT\u00C9GIA");
 		panel_1.add(lblEstratgia, "cell 0 5");
 		
 		comboBox_1 = new JComboBox();
-		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"RECORRIDO EN AMPLITUD", "RECORRIDO EN PROFUNDIDAD", "RECORRIDO COSTO UNIFORME", "BUSQUEDA A*"}));
+		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"RECORRIDO EN ANCHURA", "RECORRIDO EN PROFUNDIDAD", "RECORRIDO COSTO UNIFORME", "BUSQUEDA AVARA*"}));
 		panel_1.add(comboBox_1, "cell 0 6");
 		
-		JLabel lblObjetivoInicial = new JLabel("DESTINO");
+		JLabel lblObjetivoInicial = new JLabel("OBJETIVO INICIAL");
 		panel_1.add(lblObjetivoInicial, "cell 0 7");
 		
 		comboBox_2 = new JComboBox();
 		for(Habitacion h: edificio.getListaHabitaciones()){
 			habitaciones.add(h.getDescripcion());
 		}
-		
-		
 		comboBox_2.setModel(new DefaultComboBoxModel(habitaciones));
 		panel_1.add(comboBox_2 , "cell 0 8");
 		
@@ -327,34 +326,26 @@ public class PanelConfigurar {
 		btnAceptar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				int estrategia = comboBox_1.getSelectedIndex();
-				
 				int i=0;
-	
 				for(JCheckBox j: cheks){
 					if(j.isSelected()){
 						if(0<=i && i<=6){
 							Pasillo h = (Pasillo) edificio.getHabitacionPorID("p"+(i+1)+"-0");
 							h.setBloqueado(true);
-							h=(Pasillo) edificio.getHabitacionPorID("p"+(i+1)+"-0");
-							System.out.println(edificio.getListaHabitaciones().size());
 						}
 						else{
 							if(7<=i && i<=12){
 								Pasillo h = (Pasillo) edificio.getHabitacionPorID("p"+(i+1)+"-1");
 								h.setBloqueado(true);
-								h=(Pasillo) edificio.getHabitacionPorID("p"+(i+1)+"-0");
 							}
 							else{
 								if(13<=i && i<=14){
 									Pasillo h = (Pasillo) edificio.getHabitacionPorID("p"+(i+1)+"-2");
-									System.out.println(edificio.getHabitacionPorID("p"+(i+1)+"-2"));
 									h.setBloqueado(true);
-									h=(Pasillo) edificio.getHabitacionPorID("p"+(i+1)+"-0");
 								}
 								else{
 									Pasillo h = (Pasillo) edificio.getHabitacionPorID("p"+(i+1)+"-3");
 									h.setBloqueado(true);
-									h=(Pasillo) edificio.getHabitacionPorID("p"+(i+1)+"-0");
 								}
 							}
 						}
@@ -423,7 +414,7 @@ public class PanelConfigurar {
 						h = (Ascensor) edificio.getHabitacionPorID("asc1-3");
 						h.setPitido(true);
 					}
-					InterfazManager.comenzarSimulador(edificio,Integer.parseInt(lblEnergiaInicialtext.getText()) , edificio.getListaHabitaciones().get(comboBox.getSelectedIndex()),edificio.getListaHabitaciones().get(comboBox_2.getSelectedIndex()),estrategia);
+				InterfazManager.comenzarSimulador(edificio,edificio_2,Integer.parseInt(lblEnergiaInicialtext.getText()) , edificio.getListaHabitaciones().get(comboBox.getSelectedIndex()),edificio.getListaHabitaciones().get(comboBox_2.getSelectedIndex()),estrategia);
 				frame.setVisible(false);
 				frame.dispose();
 			}

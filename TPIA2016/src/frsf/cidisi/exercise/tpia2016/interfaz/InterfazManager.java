@@ -2,18 +2,16 @@ package frsf.cidisi.exercise.tpia2016.interfaz;
 
 import java.awt.EventQueue;
 import frsf.cidisi.exercise.tpia2016.search.AgenteEjecutar;
-
+import frsf.cidisi.exercise.tpia2016.search.EstadoAgente;
+import frsf.cidisi.exercise.tpia2016.search.EstadoAmbiente;
+import frsf.cidisi.faia.simulator.GoalBasedAgentSimulator;
+import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 
 import javax.swing.Timer;
-
-import frsf.cidisi.exercise.tpia2016.modelo.grafo.Edificio;
-import frsf.cidisi.exercise.tpia2016.modelo.grafo.Habitacion;
-import frsf.cidisi.faia.exceptions.PrologConnectorException;
-import frsf.cidisi.faia.simulator.GoalBasedAgentSimulator;
 
 public class InterfazManager {
 	
@@ -23,26 +21,31 @@ public class InterfazManager {
 	public static final int BUSQUEDA_COSTO_UNIFORME 	= 2;
 	public static final int BUSQUEDA_AVARA				= 3;
 	
-	private static GoalBasedAgentSimulator simulador;
+	private static InterfazSimulator simulador;
 	private static PanelSimulador window;
 	private static Timer autoStep;
-	private static int escenarioAct;
 	private static int busquedaAct;
+	Edificio edificio;
+	Habitacion origen;
+	Habitacion destino;
+	EstadoAgente estag;
+	EstadoAmbiente estamb;
+	int estrategia;
+	int energia;
 	
-	public static void comenzarSimulador(Edificio mapa, int energía, Habitacion post,Habitacion dest, int estrategia) {
+	public static void comenzarSimulador(Edificio mapaAmbiente,Edificio mapaAgente , int energía, Habitacion post,Habitacion dest, int estrategia) {
 		busquedaAct = estrategia;
 		switch(busquedaAct){
-
 		case BUSQUEDA_ANCHURA:
-			AgenteEjecutar.ejecutar(mapa,energía, post, dest, estrategia);
+			AgenteEjecutar.ejecutar(mapaAmbiente, mapaAgente,energía, post, dest, estrategia);
 			break;
 
 		case BUSQUEDA_PROFUNDIDAD :
-			AgenteEjecutar.ejecutar(mapa,energía, post, dest, estrategia);
+			AgenteEjecutar.ejecutar(mapaAmbiente, mapaAgente,energía, post, dest, estrategia);
 			break;
 
 		case BUSQUEDA_COSTO_UNIFORME:
-			AgenteEjecutar.ejecutar(mapa,energía, post, dest, estrategia);
+			//ArqueologoFuncionCosto.ejecutar(escenario);
 			break;
 
 		case BUSQUEDA_AVARA:
@@ -51,16 +54,8 @@ public class InterfazManager {
 		}
 	}
 	
-	public static void mostrarConfigurador() {
-		window.cerrar();
-		try {
-			PanelConfigurar ventana = new PanelConfigurar();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 	
-	public static void setSimulator(GoalBasedAgentSimulator sim) {
+	public static void setSimulator(InterfazSimulator sim) {
 		simulador = sim;
 		try {
 			String busqueda = "BÃºsqueda";
@@ -75,10 +70,12 @@ public class InterfazManager {
 				busqueda += " Costo Uniforme.";
 				break;
 			case (BUSQUEDA_AVARA):
-				busqueda += " A* busqueda.";
+				busqueda += " A*.";
 				break;
 			}
-			window = new PanelSimulador(escenarioAct, busqueda);
+			
+		window = new PanelSimulador();
+		window.frame.setVisible(true);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -98,38 +95,55 @@ public class InterfazManager {
 		}
 	}
 	
-//	public static void mostrarAgentes(int posArq, int posPir) {
-//		if (posArq>=11)
-//			posArq = 5;
-//		window.mapa.moverAgentes(posArq, posPir);
-//	}
-//	
-//	public static void registrarEvento(String texto) {
-//		window.logPanel.addEvent(texto);
-//	}
-//	
-	public static void actualizarDatos(int dist, int botin, double cont) {
-		window.actualizarDatos(dist, botin, cont);
-	}
-	
-	public static void actualizarInventario(int[] botin) {
-		window.actualizarInventario(botin);
-	}
-	
-	public static void actualizarIsla(int[][] tesoros) {
-		window.actualizarIsla(tesoros);
-	}
-	
-	public static void setAutoStep(boolean activar) {
-		if (activar)
-			autoStep.start();
-		else
-			autoStep.stop();
-	}
-	
 	public static void autoStep() {
 		if (autoStep.isRunning())
 			avanzar();
 	}
+	
+	public static void registrarPosicion(String texto) {
+		window.textField.setText(texto);
 
+	}
+	
+	public static void registrarAccion(String texto) {
+		window.textField_3.setText(texto);
+
+	}
+	
+
+	
+	public static void registrarEnergia(String texto) {
+		window.textField_1.setText(texto);
+	}
+	
+	public static void registrarPosicionObjetivo(String texto) {
+		window.textField_2.setText(texto);
+	}
+	
+	public static void registrarPersepcion(String texto) {
+		window.textPane_1.setText(texto);
+	}
+	
+	public static void registrarHabitacionesVisitadas(String texto) {
+		window.textPane.setText(null);
+		window.textPane.removeAll();
+		window.textPane.repaint();
+		window.textPane.setText(texto);
+	}
+	
+	public static void registrarPosicionActual(String texto) {
+		window.txtPosicionAgente.setText(texto);
+	}
+	
+	public static void registrarPercepcion(String texto) {
+		String str="";
+		str+=window.textPane_1.getText();
+		str+="\n";
+		str+=texto;
+		window.textPane_1.setText(str);
+	}
+	
+	public static void registrarExito(String texto) {
+		window.textField_4.setText(texto);
+	}
 }

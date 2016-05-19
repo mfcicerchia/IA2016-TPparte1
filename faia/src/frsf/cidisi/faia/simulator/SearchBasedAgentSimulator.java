@@ -53,8 +53,8 @@ public class SearchBasedAgentSimulator extends GoalBasedAgentSimulator {
     }
 
     @Override
-    public boolean agentFailed(Action actionReturned) {
-        return this.environment.agentFailed(actionReturned);
+    public boolean agentFailed(AgentState state) {
+        return this.environment.agentFailed(state);
     }
 
     @Override

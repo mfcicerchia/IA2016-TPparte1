@@ -1,286 +1,274 @@
 package frsf.cidisi.exercise.tpia2016.interfaz;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-
 import java.awt.BorderLayout;
-
-import javax.swing.JToolBar;
-
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.JFrame;
 import net.miginfocom.swing.MigLayout;
-
-import javax.swing.JTable;
-import javax.swing.table.DefaultTableModel;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
-
+import javax.swing.SwingConstants;
+import javax.swing.JTextPane;
+import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 
-import javax.swing.border.LineBorder;
+public class PanelSimulador{
 
-import java.awt.Color;
-import java.text.DecimalFormat;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
-import javax.swing.border.TitledBorder;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JTextField;
-import javax.swing.JTextPane;
-import javax.swing.JTextArea;
-
-import javax.swing.JSeparator;
-import javax.swing.JToggleButton;
-import javax.swing.ImageIcon;
-
-
-public class PanelSimulador {
-
-	private JFrame frame;
-//	public JMapPane mapa;
-//	public JLogPane logPanel;
-	private JTable table;
-	private JToggleButton tglbtnPlay;
-	private JTextField txtDist;
-	private JTextField txtBotin;
-	private JTextField txtCoins;
-	private JTextField txtRubies;
-	private JTextField txtRings;
-	private JTextField txtDiams;
-	private JTextField txtNecks;
-	private JTextField txtContainer;
-	private JLabel lblEscenario;
-	private JButton btnNext;
+	JFrame frame;
+	JTextField textField;
+	JTextField textField_1;
+	JTextField textField_2;
+	private JPanel panel_2;
+	private JPanel panel_3;
+	private JPanel panel_4;
+	private JPanel panel_5;
+	private JPanel panel_6;
+	private JPanel panel_7;
+	private JPanel panel_8;
+	private JPanel panel_9;
+	JTextField txtPosicionAgente;
+	JTextField textField_3;
+	JTextPane textPane;
+	JTextPane textPane_1;
+	JButton btnStart;
+	JTextField textField_4;
 	
 	/**
 	 * Create the application.
 	 */
-	public PanelSimulador(int escenario, String estrategia) {
+	public PanelSimulador() {
 		initialize();
-		frame.setVisible(true);
-		lblEscenario.setText("Escenario "+escenario+". "+estrategia);
 	}
 
 	/**
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+
+
 		frame = new JFrame();
-		frame.setBounds(100, 100, 960, 540);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(new BorderLayout(0, 0));
-		frame.setTitle("TP IA - Simulaci贸n de B煤squeda");
+		frame.setBounds(100, 100, 900, 750);
+		frame.getContentPane().setLayout(new MigLayout("", "[grow,fill][grow,fill]", "[grow]"));
+		panel_2 = new JPanel();
+		panel_2.setLayout(new MigLayout("", "[grow,fill]", "[grow][grow][grow]"));
+		frame.getContentPane().add(panel_2, "cell 0 0,grow");
+
 		
-		JPanel panel = new JPanel();
-		frame.getContentPane().add(panel, BorderLayout.CENTER);
-		panel.setLayout(new BorderLayout(0, 0));
+		panel_4 = new JPanel();
+		panel_4.setLayout(new MigLayout("", "[grow,fill]", "[][][][][][][][][][][grow][][]"));
+		panel_2.add(panel_4, "cell 0 0,grow");
 		
-		JPanel panel_2 = new JPanel();
-		panel_2.setBorder(new TitledBorder(new LineBorder(new Color(184, 207, 229)), "Datos del arquelogo", TitledBorder.LEADING, TitledBorder.TOP, null, null));
-		panel.add(panel_2, BorderLayout.SOUTH);
-		panel_2.setLayout(new MigLayout("", "[][grow][][grow]", "[][][][]"));
+		JLabel lblEstadoDelAgente = new JLabel("ESTADO DEL AGENTE");
+		lblEstadoDelAgente.setHorizontalAlignment(SwingConstants.CENTER);
+		panel_4.add(lblEstadoDelAgente, "cell 0 0");
 		
-		JLabel lblDistanciaRecorrida = new JLabel("Distancia recorrida:");
-		panel_2.add(lblDistanciaRecorrida, "cell 0 0,alignx trailing");
+		JLabel lblPosici髇Actual = new JLabel("POSICI\u00D3N ACTUAL");
+		panel_4.add(lblPosici髇Actual, "cell 0 1");
 		
-		txtDist = new JTextField();
-		txtDist.setEditable(false);
-		txtDist.setText("0");
-		panel_2.add(txtDist, "flowx,cell 1 0,growx");
-		txtDist.setColumns(10);
+		textField = new JTextField();
+		panel_4.add(textField, "cell 0 2,growx");
+		textField.setColumns(10);
 		
-		JLabel lblBotin = new JLabel("Botin:");
-		panel_2.add(lblBotin, "cell 2 0,alignx trailing");
+		JLabel lblEnergaActual = new JLabel("ENERG\u00CDA ACTUAL");
+		panel_4.add(lblEnergaActual, "cell 0 3");
 		
-		txtBotin = new JTextField();
-		txtBotin.setEditable(false);
-		txtBotin.setText("0");
-		panel_2.add(txtBotin, "cell 3 0,growx");
-		txtBotin.setColumns(10);
+		textField_1 = new JTextField();
+		panel_4.add(textField_1, "cell 0 4,growx");
+		textField_1.setColumns(10);
 		
-		JLabel lblMonedasTomadas = new JLabel("Monedas tomadas:");
-		panel_2.add(lblMonedasTomadas, "cell 0 1,alignx trailing");
+		JLabel lblPosicinObjetico = new JLabel("POSICI\u00D3N OBJETICO");
+		panel_4.add(lblPosicinObjetico, "cell 0 5");
 		
-		txtCoins = new JTextField();
-		txtCoins.setEditable(false);
-		txtCoins.setText("0");
-		panel_2.add(txtCoins, "cell 1 1,growx");
-		txtCoins.setColumns(10);
+		textField_2 = new JTextField();
+		panel_4.add(textField_2, "cell 0 6,growx");
+		textField_2.setColumns(10);
 		
-		JLabel lblRubesTomados = new JLabel("Rub铆es tomados:");
-		panel_2.add(lblRubesTomados, "cell 2 1,alignx trailing");
+		JLabel lblSiguienteAccin = new JLabel("SIGUIENTE ACCI\u00D3N");
+		panel_4.add(lblSiguienteAccin, "cell 0 7");
 		
-		txtRubies = new JTextField();
-		txtRubies.setEditable(false);
-		txtRubies.setText("0");
-		panel_2.add(txtRubies, "cell 3 1,growx");
-		txtRubies.setColumns(10);
+		textField_3 = new JTextField();
+		panel_4.add(textField_3, "cell 0 8,growx");
+		textField_3.setColumns(10);
 		
-		JLabel lblAnillosTomados = new JLabel("Anillos tomados:");
-		panel_2.add(lblAnillosTomados, "cell 0 2,alignx trailing");
+		JLabel lblHabitacionesVisitadas = new JLabel("HABITACIONES VISITADAS");
+		panel_4.add(lblHabitacionesVisitadas, "cell 0 9");
 		
-		txtRings = new JTextField();
-		txtRings.setEditable(false);
-		txtRings.setText("0");
-		panel_2.add(txtRings, "cell 1 2,growx");
-		txtRings.setColumns(10);
+		textPane = new JTextPane();
+		JScrollPane sp = new JScrollPane(textPane);
+		panel_4.add(sp, "flowy,cell 0 10,grow");
 		
-		JLabel lblDiamantesTomados = new JLabel("Diamantes tomados:");
-		panel_2.add(lblDiamantesTomados, "cell 2 2,alignx trailing");
+		JLabel lblGoal = new JLabel("EXITO");
+		panel_4.add(lblGoal, "cell 0 11");
 		
-		txtDiams = new JTextField();
-		txtDiams.setEditable(false);
-		txtDiams.setText("0");
-		panel_2.add(txtDiams, "cell 3 2,growx");
-		txtDiams.setColumns(10);
+		textField_4 = new JTextField();
+		panel_4.add(textField_4, "cell 0 12,growx");
+		textField_4.setColumns(10);
 		
-		JLabel lblColgantesTomados = new JLabel("Colgantes tomados:");
-		panel_2.add(lblColgantesTomados, "cell 0 3,alignx trailing");
+		JPanel panel_3 = new JPanel();
+		panel_3.setLayout(new MigLayout("", "[grow,fill]", "[][][][][grow]"));
+		panel_2.add(panel_3, "cell 0 1,grow");
 		
-		txtNecks = new JTextField();
-		txtNecks.setEditable(false);
-		txtNecks.setText("0");
-		panel_2.add(txtNecks, "cell 1 3,growx");
-		txtNecks.setColumns(10);
+		JLabel lblEstadoDelAmbiente = new JLabel("ESTADO DEL AMBIENTE");
+		lblEstadoDelAmbiente.setHorizontalAlignment(SwingConstants.CENTER);
+		panel_3.add(lblEstadoDelAmbiente, "cell 0 0");
 		
-		JLabel lblCapacidadRestante = new JLabel("Capacidad restante:");
-		panel_2.add(lblCapacidadRestante, "cell 2 3,alignx trailing");
+		JLabel lblPosicinDelAgente = new JLabel("POSICI\u00D3N DEL AGENTE:");
+		panel_3.add(lblPosicinDelAgente, "cell 0 1");
 		
-		txtContainer = new JTextField();
-		txtContainer.setEditable(false);
-		txtContainer.setText("0 de 450");
-		panel_2.add(txtContainer, "cell 3 3,growx");
-		txtContainer.setColumns(10);
+		txtPosicionAgente = new JTextField();
+		panel_3.add(txtPosicionAgente, "cell 0 2,growx");
+		txtPosicionAgente.setColumns(10);
 		
-		JPanel panel_4 = new JPanel();
-		panel_4.setBorder(new TitledBorder(null, "Datos del ambiente", TitledBorder.LEADING, TitledBorder.TOP, null, null));
-		panel.add(panel_4, BorderLayout.CENTER);
-		panel_4.setLayout(new BorderLayout(0, 0));
+		JLabel lblNewLabel = new JLabel("PERCEPCIONES");
+		panel_3.add(lblNewLabel, "cell 0 3");
 		
-		JScrollPane scrollPane = new JScrollPane();
-		panel_4.add(scrollPane, BorderLayout.CENTER);
+		textPane_1 = new JTextPane();
+		JScrollPane sp2 = new JScrollPane(textPane_1);
+		panel_3.add(sp2, "flowx,cell 0 4,grow");
 		
-		table = new JTable();
-		table.setModel(new DefaultTableModel(
-			new Object[][] {
-				{"ARAGAEY", null, null, null, null, null},
-				{"ASE", null, null, null, null, null},
-				{"BRESOL", null, null, null, null, null},
-				{"BULOVOE", null, null, null, null, null},
-				{"CABE", null, null, null, null, null},
-				{"CENEDE", null, null, null, null, null},
-				{"ERGINTONE", null, null, null, null, null},
-				{"ICAEDUR", null, null, null, null, null},
-				{"MIXOCU", null, null, null, null, null},
-				{"PEREGAEY", null, null, null, null, null},
-				{"VINIZAILE", null, null, null, null, null},
-			},
-			new String[] {
-				"Ciudad", "Monedas", "Rubies", "Anillos", "Diamantes", "Colgantes"
-			}
-		));
-		scrollPane.setViewportView(table);
 		
-		JToolBar toolBar = new JToolBar();
-		toolBar.setFloatable(false);
-		panel.add(toolBar, BorderLayout.NORTH);
-		
-		btnNext = new JButton("");
-		btnNext.setIcon(new ImageIcon("res/ui/next.png"));
-		btnNext.setToolTipText("Realizar pr贸xima acci贸n.");
-		btnNext.addActionListener(new ActionListener() {
+		JPanel panel_5 = new JPanel();
+		panel_5.setLayout(new MigLayout("", "[grow,fill]", "[grow,fill][grow,fill]"));
+		panel_2.add(panel_5, "cell 0 2,grow");
+	
+		btnStart = new JButton("NEXT STEP");
+		btnStart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				InterfazManager.avanzar();
 			}
 		});
+		panel_5.add(btnStart, "flowx,cell 0 0");
 		
-		tglbtnPlay = new JToggleButton("");
-		tglbtnPlay.setIcon(new ImageIcon("res/ui/play.png"));
-		tglbtnPlay.setToolTipText("Iniciar/Pausar ejecuci贸n.");
-		tglbtnPlay.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				InterfazManager.setAutoStep(tglbtnPlay.isSelected());
-				if (tglbtnPlay.isSelected()) {
-					btnNext.setEnabled(false);
-					tglbtnPlay.setIcon(new ImageIcon("res/ui/pause.png"));
-				} else {
-					btnNext.setEnabled(true);
-					tglbtnPlay.setIcon(new ImageIcon("res/ui/play.png"));
+		JPanel panel_1 = new PanelCanvas();
+		frame.getContentPane().add(panel_1, "cell 1 0,grow");
+		
+		panel_6 = new PanelCanvas();
+		JLabel lblLabel_1 = new JLabel("");
+		ImageIcon im = new ImageIcon("images\\pbaja.png");
+		Image imsc = im.getImage().getScaledInstance(550, 695, Image.SCALE_DEFAULT);
+		lblLabel_1.setIcon( new ImageIcon(imsc));
+		panel_6.add(lblLabel_1);
+		panel_6.addMouseListener(new MouseAdapter() {
+		    public void mousePressed( MouseEvent evt ) {
+		        ((PanelCanvas)evt.getComponent()).posicionX = evt.getX();
+		        ((PanelCanvas)evt.getComponent()).posicionY = evt.getY();
+		        }
+		});
+		panel_6.setVisible(true);
+		panel_1.add(panel_6);
+
+		
+		panel_7 = new PanelCanvas();
+		JLabel lblLabel_2 = new JLabel("");
+		im = new ImageIcon("images\\p1.png");
+		imsc = im.getImage().getScaledInstance(550, 695, Image.SCALE_DEFAULT);
+		lblLabel_2.setIcon( new ImageIcon(imsc));
+		panel_7.add(lblLabel_2);
+		panel_7.addMouseListener(new MouseAdapter() {
+		    public void mousePressed( MouseEvent evt ) {
+		        ((PanelCanvas)evt.getComponent()).posicionX = evt.getX();
+		        ((PanelCanvas)evt.getComponent()).posicionY = evt.getY();
+		        }
+		});
+		panel_7.setVisible(false);
+		panel_1.add(panel_7);
+		
+		panel_8 = new PanelCanvas();
+		JLabel lblLabel_3 = new JLabel("");
+		im = new ImageIcon("images\\p2.png");
+		imsc = im.getImage().getScaledInstance(550, 500, Image.SCALE_DEFAULT);
+		lblLabel_3.setIcon( new ImageIcon(im.getImage()));
+		panel_8.add(lblLabel_3);
+		panel_8.addMouseListener(new MouseAdapter() {
+		    public void mousePressed( MouseEvent evt ) {
+		        ((PanelCanvas)evt.getComponent()).posicionX = evt.getX();
+		        ((PanelCanvas)evt.getComponent()).posicionY = evt.getY();
+		        }
+		});
+		panel_8.setVisible(false);
+		panel_1.add(panel_8);
+		
+		panel_9 = new PanelCanvas();
+		JLabel lblLabel_4 = new JLabel("");
+		im = new ImageIcon("images\\p3.png");
+		imsc = im.getImage().getScaledInstance(550, 500, Image.SCALE_DEFAULT);
+		lblLabel_4.setIcon( new ImageIcon(im.getImage()));
+		panel_9.add(lblLabel_4);
+		panel_9.addMouseListener(new MouseAdapter() {
+		    public void mousePressed( MouseEvent evt ) {
+		        ((PanelCanvas)evt.getComponent()).posicionX = evt.getX();
+		        ((PanelCanvas)evt.getComponent()).posicionY = evt.getY();
+		        }
+		});
+		panel_9.setVisible(false);
+		panel_1.add(panel_9);
+	
+		
+		JButton buttonAnterior = new JButton("ANTERIOR");
+		buttonAnterior.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(panel_6.isVisible()){
+					panel_6.setVisible(false);
+					panel_7.setVisible(true);
+				}
+				else if(panel_7.isVisible()){
+					panel_7.setVisible(false);
+					panel_8.setVisible(true);
+				}
+				else if(panel_8.isVisible()){
+					panel_8.setVisible(false);
+					panel_9.setVisible(true);
+				}
+				else{
+					panel_6.setVisible(true);
+					panel_9.setVisible(false);
 				}
 			}
 		});
-		toolBar.add(tglbtnPlay);
-		toolBar.add(btnNext);
+		panel_5.add(buttonAnterior, "flowx,cell 0 1");
 		
-		JSeparator separator = new JSeparator();
-		toolBar.add(separator);
-		
-		JButton btnNew = new JButton("");
-		btnNew.setIcon(new ImageIcon("res/ui/new.png"));
-		btnNew.setToolTipText("Comenzar nuevo escenario.");
-		btnNew.addActionListener(new ActionListener() {
+		JButton btnSiguiente = new JButton("SIGUIENTE");
+		btnSiguiente.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int dialogButton = JOptionPane.YES_NO_OPTION;
-				int dialogResult = JOptionPane.showConfirmDialog(frame,
-						"驴Est谩 seguro de iniciar una nueva simulaci贸n? Se perder谩 el escenario actual.",
-						"Advertencia", dialogButton);
-				if(dialogResult==JOptionPane.YES_OPTION)
-					InterfazManager.mostrarConfigurador();
+				if(panel_6.isVisible()){
+					panel_6.setVisible(false);
+					panel_7.setVisible(true);
+				}
+				else if(panel_7.isVisible()){
+					panel_7.setVisible(false);
+					panel_8.setVisible(true);
+				}
+				else if(panel_8.isVisible()){
+					panel_8.setVisible(false);
+					panel_9.setVisible(true);
+				}
+				else{
+					panel_6.setVisible(true);
+					panel_9.setVisible(false);
+				}
 			}
 		});
-		toolBar.add(btnNew);
-		
-		lblEscenario = new JLabel("");
-		toolBar.add(lblEscenario);
-		
-		JPanel panel_1 = new JPanel();
-		frame.getContentPane().add(panel_1, BorderLayout.WEST);
-		panel_1.setLayout(new BorderLayout(0, 0));
-		
-//		mapa = new JMapPane();
-//		panel_1.add(mapa, BorderLayout.NORTH);
-		
-		JPanel panel_5 = new JPanel();
-		panel_5.setBorder(new TitledBorder(null, "Acciones realizadas", TitledBorder.LEADING, TitledBorder.TOP, null, null));
-		panel_1.add(panel_5, BorderLayout.CENTER);
-		panel_5.setLayout(new BorderLayout(0, 0));
-		
-//		logPanel = new JLogPane();
-//		panel_5.add(logPanel, BorderLayout.CENTER);
+		panel_5.add(btnSiguiente, "cell 0 1");		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-	
-	public void actualizarDatos(int dist, int botin, double cont) {
-		txtDist.setText(""+dist);
-		txtBotin.setText(""+botin);
-		DecimalFormat df = new DecimalFormat("#.00");
-		txtContainer.setText(""+df.format(cont)+" de 450");
-	}
-	
-	public void actualizarInventario(int[] botin) {
-//		txtCoins.setText(""+botin[Tesoro.MONEDA]);
-//		txtRubies.setText(""+botin[Tesoro.RUBI]);
-//		txtRings.setText(""+botin[Tesoro.ANILLO]);
-//		txtDiams.setText(""+botin[Tesoro.DIAMANTE]);
-//		txtNecks.setText(""+botin[Tesoro.COLGANTE]);
-	}
-	
-	public void actualizarIsla(int[][] tesoros) {
-		for (int i=0; i<11; i++)
-			for (int j=0; j<tesoros[i].length; j++)
-				table.getModel().setValueAt(tesoros[i][j], i, j+1);
-	}
-	
 	public void terminar() {
-		btnNext.setEnabled(false);
-		tglbtnPlay.setEnabled(false);
-		tglbtnPlay.setSelected(false);
-		tglbtnPlay.setIcon(new ImageIcon("res/ui/play.png"));
-	}
-	
-	public void cerrar() {
-		frame.setVisible(false);
-		frame.dispose();
+		btnStart.setEnabled(false);
+		btnStart.setSelected(false);
 	}
 
 }

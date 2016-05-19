@@ -26,6 +26,7 @@ import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.environment.Environment;
 import frsf.cidisi.faia.simulator.events.EventType;
 import frsf.cidisi.faia.simulator.events.SimulatorEventNotifier;
+import frsf.cidisi.faia.state.AgentState;
 
 public abstract class GoalBasedAgentSimulator extends Simulator {
 
@@ -142,5 +143,10 @@ public abstract class GoalBasedAgentSimulator extends Simulator {
 	public void terminar() {
 		// TODO Auto-generated method stub
 		
+	}
+
+	public boolean agentFailed(AgentState satate) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }
