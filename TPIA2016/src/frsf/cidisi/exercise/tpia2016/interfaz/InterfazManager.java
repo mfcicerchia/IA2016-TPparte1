@@ -1,6 +1,7 @@
 package frsf.cidisi.exercise.tpia2016.interfaz;
 
 import java.awt.EventQueue;
+
 import java.awt.Point;
 
 import frsf.cidisi.exercise.tpia2016.search.AgenteEjecutar;
@@ -34,9 +35,11 @@ public class InterfazManager {
 	EstadoAmbiente estamb;
 	int estrategia;
 	int energia;
+	static String idIngreso;
 	
-	public static void comenzarSimulador(Edificio mapaAmbiente,Edificio mapaAgente , int energía, Habitacion post,Habitacion dest, int estrategia) {
+	public static void comenzarSimulador(Edificio mapaAmbiente,Edificio mapaAgente , int energía, Habitacion post,Habitacion dest, int estrategia, String idg) {
 		busquedaAct = estrategia;
+		idIngreso=idg;
 		switch(busquedaAct){
 		case BUSQUEDA_ANCHURA:
 			AgenteEjecutar.ejecutar(mapaAmbiente, mapaAgente,energía, post, dest, estrategia);
@@ -78,6 +81,14 @@ public class InterfazManager {
 			
 		window = new PanelSimulador();
 		window.frame.setVisible(true);
+	
+		if(idIngreso=="ingreso1"){
+			dibujarAgente(new Point(418,395), 0);
+		}
+		else{
+			dibujarAgente(new Point(28,606), 0);
+		}
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

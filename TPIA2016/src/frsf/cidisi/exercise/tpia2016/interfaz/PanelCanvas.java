@@ -29,7 +29,7 @@ public class PanelCanvas extends JPanel {
 
 	private void inicializarImagenFondo() {
 		fondo = new ImageIcon("images\\fondo.png").getImage();
-		agente = new ImageIcon("images\\icono-android.png").getImage();
+		agente = new ImageIcon("images\\ok.png").getImage();
 	}
 
 	public void paintComponent(Graphics g) {

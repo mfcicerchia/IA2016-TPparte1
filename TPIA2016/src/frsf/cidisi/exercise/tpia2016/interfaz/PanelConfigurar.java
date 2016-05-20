@@ -12,6 +12,8 @@ import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.Vector;
 
@@ -35,6 +37,7 @@ import javax.swing.SwingConstants;
 public class PanelConfigurar {
 
 	PanelSimulador window;
+	String idIngreso;
 	private Edificio edificio;
 	private Edificio edificio_2;
 	private JFrame frame;
@@ -135,6 +138,7 @@ public class PanelConfigurar {
 		
 		comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"INGRESO HALL", "INGRESO TORRE"}));
+
 		panel_1.add(comboBox, "cell 0 2,growx");
 		
 		JLabel label_3 = new JLabel("ENERGÍA INICIAL:");
@@ -373,7 +377,6 @@ public class PanelConfigurar {
 			public void actionPerformed(ActionEvent arg0) {
 				int estrategia = comboBox_1.getSelectedIndex();
 				for(JCheckBox j: cheks){
-					System.out.println("ffffffffffffffffffff"+j.getName()+"ffffffffffffffffffffff");
 					if(j.isSelected()){
 						String str=j.getName();
 						Pasillo h;
@@ -547,7 +550,13 @@ public class PanelConfigurar {
 						h = (Ascensor) edificio.getHabitacionPorID("asc1-3");
 						h.setPitido(true);
 					}
-				InterfazManager.comenzarSimulador(edificio,edificio_2,Integer.parseInt(lblEnergiaInicialtext.getText()) , edificio.getListaHabitaciones().get(comboBox.getSelectedIndex()),edificio.getListaHabitaciones().get(comboBox_2.getSelectedIndex()),estrategia);
+					if(comboBox.getSelectedItem()=="INGRESO HALL"){
+						idIngreso="ingreso1";
+					}
+					else{
+						idIngreso="ingreso2";
+					}
+				InterfazManager.comenzarSimulador(edificio,edificio_2,Integer.parseInt(lblEnergiaInicialtext.getText()) , edificio.getListaHabitaciones().get(comboBox.getSelectedIndex()),edificio.getListaHabitaciones().get(comboBox_2.getSelectedIndex()),estrategia,idIngreso);
 				frame.setVisible(false);
 				frame.dispose();
 			}

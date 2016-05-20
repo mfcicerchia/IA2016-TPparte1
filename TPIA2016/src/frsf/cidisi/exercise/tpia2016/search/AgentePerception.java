@@ -25,7 +25,7 @@ public class AgentePerception extends Perception {
 
     public AgentePerception(Agent agent, Environment environment) {
         super(agent, environment);
-//        initPerception(agent, environment);
+        initPerception(agent, environment);
     }
 
     /**

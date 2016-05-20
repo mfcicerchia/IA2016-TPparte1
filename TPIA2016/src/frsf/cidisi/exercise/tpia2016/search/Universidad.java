@@ -46,25 +46,28 @@ public class Universidad extends Environment {
          // y pregunto si esta bloqueado en caso de ser escalera o pasillo
          // y pregunto si el beep esta prendido en el ascensor
          
-         for(Habitacion ha: adyacentes){
-         	if(ha.getClass().getSimpleName().equals("Pasillo")){
-     			Pasillo p=(Pasillo)ha;
+         for(Habitacion ady: adyacentes){
+         	if(ady.getClass().getSimpleName().equals("Pasillo")){
+     			Pasillo p=(Pasillo)ady;
      			if(p.isBloqueado()){
-     				((Pasillo)perception.getPasilloBloqueado(p)).setBloqueado(true);
+     				p.setBloqueado(true);
+     				perception.pasillosBloqueados.add(p);
      			}
      		}
      		else{
-     			if(ha.getClass().getSimpleName().equals("Ascensor")){
-     				Ascensor asc=(Ascensor)ha;
+     			if(ady.getClass().getSimpleName().equals("Ascensor")){
+     				Ascensor asc=(Ascensor)ady;
      				if(asc.isPitido()){
-     					((Ascensor)perception.getAscensorBloqueado(asc)).setPitido(true);
+     					asc.setPitido(true);
+     					perception.ascensoresBLoqueados.add(asc);
      				} 					
      			}
      			else{
-     				if(ha.getClass().getSimpleName().equals("Escalera")){
-     					Escalera esc=(Escalera)ha;
+     				if(ady.getClass().getSimpleName().equals("Escalera")){
+     					Escalera esc=(Escalera)ady;
      					if(esc.isBloqueada()){
-     						((Escalera)perception.getEscaleraBloqueada(esc)).setBloqueada(true);
+     						esc.setBloqueada(true);
+     						perception.escalerasBloqueadas.add(esc);
      					}
  					}
  				}

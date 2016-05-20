@@ -90,7 +90,13 @@ public class InterfazSimulator extends SearchBasedAgentSimulator {
 
         InterfazManager.registrarExito("El agente está en camino.");
         InterfazManager.registrarPosicionActual(ambiente.getPosicion_agente().getDescripcion());
-        InterfazManager.registrarPercepcion(perception.toString());
+        if(perception!=null){
+        	InterfazManager.registrarPercepcion(perception.toString());System.out.println("--sssssssssssssssssssssssssss");
+        }
+        else{
+        	InterfazManager.registrarPercepcion("No hay percepciones");System.out.println("---d-----");
+        }
+        
         InterfazManager.dibujarAgente(agente.getPosicion().getPosicion(),agente.getPosicion().getNivel());
         if (this.agentSucceeded(action) || this.agentFailed(agent.getAgentState()) ) {
         	this.terminado = true;
