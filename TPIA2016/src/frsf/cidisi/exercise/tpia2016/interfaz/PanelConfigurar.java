@@ -34,6 +34,7 @@ import javax.swing.SwingConstants;
 
 public class PanelConfigurar {
 
+	
 	PanelSimulador window;
 	private Edificio edificio;
 	private Edificio edificio_2;
@@ -331,14 +332,14 @@ public class PanelConfigurar {
 		panel_3.add(chckbxEscalera_8_3, "flowx,cell 0 13");
 		chekss.add(chckbxEscalera_8_3);
 
-
+		
 		JButton btnAceptar = new JButton("ACEPTAR");
 		btnAceptar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				int estrategia = comboBox_1.getSelectedIndex();
 				for(JCheckBox j: cheks){
 					if(j.isSelected()){
-						String str=j.getName();
+						String str = j.getName();
 						Pasillo h;
 						switch(str){
 						case "chckbxPasillo_1_0":
