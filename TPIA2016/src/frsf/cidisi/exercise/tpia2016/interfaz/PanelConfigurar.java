@@ -34,7 +34,6 @@ import javax.swing.SwingConstants;
 
 public class PanelConfigurar {
 
-	
 	PanelSimulador window;
 	private Edificio edificio;
 	private Edificio edificio_2;
@@ -332,173 +331,171 @@ public class PanelConfigurar {
 		panel_3.add(chckbxEscalera_8_3, "flowx,cell 0 13");
 		chekss.add(chckbxEscalera_8_3);
 
-		
+
 		JButton btnAceptar = new JButton("ACEPTAR");
 		btnAceptar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				int estrategia = comboBox_1.getSelectedIndex();
 				for(JCheckBox j: cheks){
 					if(j.isSelected()){
-						String str = j.getName();
+						String str=j.getName();
 						Pasillo h;
-						switch(str){
-						case "chckbxPasillo_1_0":
+						
+						if(str=="chckbxPasillo_1_0"){
 							h = (Pasillo) edificio.getHabitacionPorID("p1-0");
 							h.setBloqueado(true);
-						break;
-
-						case "chckbxPasillo_2_0":
+						}
+						else if(str=="chckbxPasillo_2_0"){
 							h = (Pasillo) edificio.getHabitacionPorID("p2-0");
 							h.setBloqueado(true);
-						break;
-
-						case "chckbxPasillo_3_0":
+						}
+						else if(str=="chckbxPasillo_3_0"){
 							h = (Pasillo) edificio.getHabitacionPorID("p3-0");
 							h.setBloqueado(true);
-						break;
-
-						case "chckbxPasillo_4_0":
+						}
+						else if(str=="chckbxPasillo_4_0"){
 							h = (Pasillo) edificio.getHabitacionPorID("p4-0");
 							h.setBloqueado(true);
-						break;
-						case "chckbxPasillo_5_0":
+						}
+						else if(str=="chckbxPasillo_5_0"){
 							h = (Pasillo) edificio.getHabitacionPorID("p5-0");
 							h.setBloqueado(true);
-						break;
-						case "chckbxPasillo_6_0":
+						}
+						else if(str=="chckbxPasillo_6_0"){
 							h = (Pasillo) edificio.getHabitacionPorID("p6-0");
 							h.setBloqueado(true);
-						break;
-						case "chckbxPasillo_1_1":
+						}
+						else if(str=="chckbxPasillo_1_1"){
 							h = (Pasillo) edificio.getHabitacionPorID("p1-1");
 							h.setBloqueado(true);
-						break;
-						case "chckbxPasillo_2_1":
+						}	
+						else if(str=="chckbxPasillo_2_1"){
 							h = (Pasillo) edificio.getHabitacionPorID("p2-1");
 							h.setBloqueado(true);
-						break;
-						case "chckbxPasillo_3_1":
+						}	
+						else if(str=="chckbxPasillo_3_1"){
 							h = (Pasillo) edificio.getHabitacionPorID("p3-1");
 							h.setBloqueado(true);
-						break;
-						case "chckbxPasillo_4_1":
+						}	
+						else if(str=="chckbxPasillo_4_1"){
 							h = (Pasillo) edificio.getHabitacionPorID("p4-1");
 							h.setBloqueado(true);
-						break;
-						case "chckbxPasillo_5_1":
+						}	
+						else if(str=="chckbxPasillo_5_1"){
 							h = (Pasillo) edificio.getHabitacionPorID("p5-1");
 							h.setBloqueado(true);
-						break;
-						case "chckbxPasillo_6_1":
+						}	
+						else if(str=="chckbxPasillo_6_1"){
 							h = (Pasillo) edificio.getHabitacionPorID("p6-1");
 							h.setBloqueado(true);
-						break;
-						case "chckbxPasillo_1_2":
+						}	
+						else if(str=="chckbxPasillo_1_2"){
 							h = (Pasillo) edificio.getHabitacionPorID("p1-2");
 							h.setBloqueado(true);
-						break;
-						case "chckbxPasillo_2_2":
+						}	
+						else if(str=="chckbxPasillo_2_2"){
 							h = (Pasillo) edificio.getHabitacionPorID("p2-2");
 							h.setBloqueado(true);
-						break;
-						case "chckbxPasillo_1_3":
+						}	
+						else if(str=="chckbxPasillo_1_3"){
 							h = (Pasillo) edificio.getHabitacionPorID("p1-3");
 							h.setBloqueado(true);
-						break;
-						case "chckbxPasillo_2_3":
+						}	
+						else if(str=="chckbxPasillo_2_3"){
 							h = (Pasillo) edificio.getHabitacionPorID("p2-3");
 							h.setBloqueado(true);
-						break;
-						}
-						
+						}	
 					}
 				}
 					for(JCheckBox j1: chekss){
 						if(j1.isSelected()){
 							Escalera es;						
 							String str=j1.getName();
-							switch(str){
-							case "chckbxEscalera_1_0":
+							
+							if(str=="chckbxEscalera_1_0"){
 								es = (Escalera) edificio.getHabitacionPorID("esc1-0");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_2_0":
+							}
+							else if(str=="chckbxEscalera_2_0"){
 								es = (Escalera) edificio.getHabitacionPorID("esc2-0");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_3_0":
+							}
+							else if(str=="chckbxEscalera_3_0"){
 								es = (Escalera) edificio.getHabitacionPorID("esc3-0");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_4_0":
+							}
+							else if(str=="chckbxEscalera_4_0"){
 								es = (Escalera) edificio.getHabitacionPorID("esc4-0");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_5_0":
+							}
+							else if(str=="chckbxEscalera_5_0"){
 								es = (Escalera) edificio.getHabitacionPorID("esc5-0");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_6_0":
+							}
+							else if(str=="chckbxEscalera_6_0"){
 								es = (Escalera) edificio.getHabitacionPorID("esc6-0");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_7_0":
+							}
+							else if(str=="chckbxEscalera_7_0"){
 								es = (Escalera) edificio.getHabitacionPorID("esc7-0");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_1_1":
+							}
+							else if(str=="chckbxEscalera_1_1"){
 								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_2_1":
-								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
+							}
+							else if(str=="chckbxEscalera_2_1"){
+								es = (Escalera) edificio.getHabitacionPorID("esc2-1");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_3_1":
-								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
+							}
+							else if(str=="chckbxEscalera_3_1"){
+								es = (Escalera) edificio.getHabitacionPorID("esc3-1");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_4_1":
-								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
+							}
+							else if(str=="chckbxEscalera_4_1"){
+								es = (Escalera) edificio.getHabitacionPorID("esc4-1");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_5_1":
-								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
+							}
+							else if(str=="chckbxEscalera_5_1"){
+								es = (Escalera) edificio.getHabitacionPorID("esc5-1");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_6_1":
-								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
+							}
+							else if(str=="chckbxEscalera_6_1"){
+								es = (Escalera) edificio.getHabitacionPorID("esc6-1");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_7_1":
-								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
+							}
+							else if(str=="chckbxEscalera_7_1"){
+								es = (Escalera) edificio.getHabitacionPorID("esc7-1");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_3_2":
+							}
+							
+							else if(str=="chckbxEscalera_3_2"){
 								es = (Escalera) edificio.getHabitacionPorID("esc3-2");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_5_2":
+							}
+							else if(str=="chckbxEscalera_5_2"){
 								es = (Escalera) edificio.getHabitacionPorID("esc5-2");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_6_2":
+							}
+							else if(str=="chckbxEscalera_5_2"){
+								es = (Escalera) edificio.getHabitacionPorID("esc5-2");
+								es.setBloqueada(true);
+							}
+							else if(str=="chckbxEscalera_6_2"){
 								es = (Escalera) edificio.getHabitacionPorID("esc6-2");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_8_2":
+							}
+							else if(str=="chckbxEscalera_8_2"){
 								es = (Escalera) edificio.getHabitacionPorID("esc8-2");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_3_3":
+							}
+							else if(str=="chckbxEscalera_3_3"){
 								es = (Escalera) edificio.getHabitacionPorID("esc3-3");
 								es.setBloqueada(true);
-							break;
-							case "chckbxEscalera_8_3":
+							}
+							else if(str=="chckbxEscalera_8_3"){
 								es = (Escalera) edificio.getHabitacionPorID("esc8-3");
 								es.setBloqueada(true);
-							break;
-
 							}
 						}
 					}

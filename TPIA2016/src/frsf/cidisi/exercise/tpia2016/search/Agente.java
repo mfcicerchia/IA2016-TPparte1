@@ -120,15 +120,6 @@ public  class Agente extends SearchBasedAgent {
 			break;
 
 		case BUSQUEDA_AVARA:
-			//System.out.println("----------------------------A estrella------------------------");
-	    	/*A estrella*/
-			AStarSearch st3 = (AStarSearch)strategy;
-			
-	    	CostFunction g =new CostFunction(); 
-	    	Heuristic h =new Heuristic();
-	    	
-	        st3= new AStarSearch(g,h);
-	        searchSolver = new Search(st3);
 			break;
 		}
 
@@ -162,10 +153,4 @@ public  class Agente extends SearchBasedAgent {
     public void see(Perception p) {
         this.getAgentState().updateState(p);
     }
-
-	@Override
-	public Action selectAction() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }
