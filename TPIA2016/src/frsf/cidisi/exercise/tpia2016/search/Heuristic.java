@@ -41,7 +41,7 @@ public class Heuristic implements IEstimatedCostFunction {
 	    		/// La distancia se mide sobre la linea recta entre mi posicion y el objetivo
 	    		double cuadX = Math.pow(Math.abs(objetivo.getPosicion().getX() - miPosicion.getPosicion().getX()),2);
 	    		double cuadY = Math.pow(Math.abs(objetivo.getPosicion().getY() - miPosicion.getPosicion().getY()), 2);
-	    		double cuadZ = Math.abs(Math.pow(objetivo.getNivel() - miPosicion.getNivel(), 2));
+	    		double cuadZ = Math.pow(objetivo.getNivel() - miPosicion.getNivel(), 2);
 	    		double sum = cuadX + cuadY + cuadZ;
 	    		distanciaEuclidea = Math.sqrt(sum);
 	    	}
@@ -51,7 +51,7 @@ public class Heuristic implements IEstimatedCostFunction {
 	    		
 	    		double cuadX = Math.pow(Math.abs(objetivo.getPosicion().getX() - miPosicion.getPosicion().getX()),2);
 	    		double cuadY = Math.pow(Math.abs(objetivo.getPosicion().getY() - miPosicion.getPosicion().getY()), 2);
-	    		double cuadZ = Math.abs(Math.pow(objetivo.getNivel() - miPosicion.getNivel(), 2));
+	    		double cuadZ = Math.pow(objetivo.getNivel() - miPosicion.getNivel(), 2);
 	    		double sum = cuadX + cuadY + cuadZ;
 	    		distanciaEuclidea = Math.sqrt(sum);
 	    	}
