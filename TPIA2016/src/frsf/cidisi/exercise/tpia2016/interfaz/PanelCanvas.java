@@ -23,6 +23,8 @@ public class PanelCanvas extends JPanel {
 
 	public PanelCanvas() {
 		inicializarImagenFondo();
+		posicionX=0;
+		posicionY=0;
 	}
 
 	private void inicializarImagenFondo() {
@@ -35,18 +37,33 @@ public class PanelCanvas extends JPanel {
 		repaint();
 		g.setColor(Color.black);
 		g.drawImage(fondo, 0, 0, getWidth(), getHeight(), this);
-		g.drawImage(agente, posicionX , posicionY, 20, 20, this);
+		if(posicionX>0 && posicionY>0){
+			g.drawImage(agente, posicionX , posicionY, 20, 20, this);
+		}
 		g.drawString( "" + posicionX + ", " + posicionY, posicionX,posicionY );
 		repaint();
+	}
+
+	public int getPosicionX() {
+		return posicionX;
+	}
+
+	public void setPosicionX(int posicionX) {
+		this.posicionX = posicionX;
+	}
+
+	public int getPosicionY() {
+		return posicionY;
+	}
+
+	public void setPosicionY(int posicionY) {
+		this.posicionY = posicionY;
 	}
 
 	public Image getFondo() {
 		return fondo;
 	}
 
-	public void dibujarAgente(Graphics g) {
-		g.drawImage(agente, posicionX , posicionY, 20, 20, this);
-	}
 	public void setFondo(Image fondo) {
 		this.fondo = fondo;
 	}

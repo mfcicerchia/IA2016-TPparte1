@@ -1,6 +1,8 @@
 package frsf.cidisi.exercise.tpia2016.interfaz;
 
 import java.awt.EventQueue;
+import java.awt.Point;
+
 import frsf.cidisi.exercise.tpia2016.search.AgenteEjecutar;
 import frsf.cidisi.exercise.tpia2016.search.EstadoAgente;
 import frsf.cidisi.exercise.tpia2016.search.EstadoAmbiente;
@@ -145,5 +147,9 @@ public class InterfazManager {
 	
 	public static void registrarExito(String texto) {
 		window.textField_4.setText(texto);
+	}
+	
+	public static void dibujarAgente(Point posicion, int nivel) {
+		window.dibujarAgente(posicion, nivel);
 	}
 }

@@ -6,6 +6,8 @@ import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.Point;
+
 import javax.swing.JFrame;
 import net.miginfocom.swing.MigLayout;
 import javax.swing.JPanel;
@@ -13,6 +15,9 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
+
+import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
+
 import javax.swing.JTextPane;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
@@ -269,6 +274,44 @@ public class PanelSimulador{
 	public void terminar() {
 		btnStart.setEnabled(false);
 		btnStart.setSelected(false);
+	}
+	
+	public void dibujarAgente(Point posicion, int nivel){
+
+		switch(nivel){
+		case 0:
+			panel_6.setVisible(true);
+			panel_7.setVisible(false);
+			panel_8.setVisible(false);
+			panel_9.setVisible(false);
+			((PanelCanvas) panel_6).setPosicionX(posicion.x);
+			((PanelCanvas) panel_6).setPosicionY(posicion.y);
+		break;
+		case 1:
+			panel_6.setVisible(false);
+			panel_7.setVisible(true);
+			panel_8.setVisible(false);
+			panel_9.setVisible(false);
+			((PanelCanvas) panel_7).setPosicionX(posicion.x);
+			((PanelCanvas) panel_7).setPosicionY(posicion.y);
+		break;
+		case 2:
+			panel_6.setVisible(false);
+			panel_7.setVisible(false);
+			panel_8.setVisible(true);
+			panel_9.setVisible(false);
+			((PanelCanvas) panel_8).setPosicionX(posicion.x);
+			((PanelCanvas) panel_8).setPosicionY(posicion.y);
+		break;
+		case 3:
+			panel_6.setVisible(false);
+			panel_7.setVisible(false);
+			panel_8.setVisible(false);
+			panel_9.setVisible(true);
+			((PanelCanvas) panel_9).setPosicionX(posicion.x);
+			((PanelCanvas) panel_9).setPosicionY(posicion.y);
+		break;
+		}
 	}
 
 }
