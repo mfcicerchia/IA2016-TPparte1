@@ -3,6 +3,7 @@ package frsf.cidisi.exercise.tpia2016.interfaz;
 
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.*;
+import frsf.cidisi.exercise.tpia2016.search.AgenteEjecutar;
 import frsf.cidisi.exercise.tpia2016.utilidades.*;
 import frsf.cidisi.exercise.tpia2016.interfaz.InterfazManager;
 
@@ -41,22 +42,22 @@ public class PanelConfigurar {
 	private JComboBox comboBox_2;
 	private JTextPane lblEnergiaInicialtext;
 	private JCheckBox chckbxBeepAscensor;
-	private JCheckBox chckbxPasillo_1;
-	private JCheckBox chckbxPasillo_2;
-	private JCheckBox chckbxPasillo_3;
-	private JCheckBox chckbxPasillo_4;
-	private JCheckBox chckbxPasillo_5;
-	private JCheckBox chckbxPasillo_6;
-	private JCheckBox chckbxPasillo_7;
-	private JCheckBox chckbxPasillo_8;
-	private JCheckBox chckbxPasillo_9;
-	private JCheckBox chckbxPasillo_10;
-	private JCheckBox chckbxPasillo_11;
-	private JCheckBox chckbxPasillo_12;
-	private JCheckBox chckbxPasillo_13;
-	private JCheckBox chckbxPasillo_14;
-	private JCheckBox chckbxPasillo_15;
-	private JCheckBox chckbxPasillo_16;
+	private JCheckBox chckbxPasillo_1_0;
+	private JCheckBox chckbxPasillo_2_0;
+	private JCheckBox chckbxPasillo_3_0;
+	private JCheckBox chckbxPasillo_4_0;
+	private JCheckBox chckbxPasillo_5_0;
+	private JCheckBox chckbxPasillo_6_0;
+	private JCheckBox chckbxPasillo_1_1;
+	private JCheckBox chckbxPasillo_2_1;
+	private JCheckBox chckbxPasillo_3_1;
+	private JCheckBox chckbxPasillo_4_1;
+	private JCheckBox chckbxPasillo_5_1;
+	private JCheckBox chckbxPasillo_6_1;
+	private JCheckBox chckbxPasillo_1_2;
+	private JCheckBox chckbxPasillo_2_2;
+	private JCheckBox chckbxPasillo_1_3;
+	private JCheckBox chckbxPasillo_2_3;
 	private JComboBox comboBox;
 	private JLabel lblBloqueosEscaleras;
 	private JLabel lblPlantaBaja_1;
@@ -177,64 +178,73 @@ public class PanelConfigurar {
 		JLabel lblPlantaBaja = new JLabel("PLANTA BAJA:");
 		panel_2.add(lblPlantaBaja, "cell 0 1");
 		
-		chckbxPasillo_1 = new JCheckBox("PASILLO 1");
-		panel_2.add(chckbxPasillo_1, "flowx,cell 0 2");
-		cheks.add(chckbxPasillo_1);
-		chckbxPasillo_2 = new JCheckBox("PASILLO 2");
-		panel_2.add(chckbxPasillo_2, "cell 0 2");
-		cheks.add(chckbxPasillo_2);
-		chckbxPasillo_3 = new JCheckBox("PASILLO 3");
-		panel_2.add(chckbxPasillo_3, "cell 0 2");
-		cheks.add(chckbxPasillo_3);
-		chckbxPasillo_4 = new JCheckBox("PASILLO 4");
-		panel_2.add(chckbxPasillo_4, "flowx,cell 0 3");
-		cheks.add(chckbxPasillo_4);
-		chckbxPasillo_5 = new JCheckBox("PASILLO 5");
-		panel_2.add(chckbxPasillo_5, "cell 0 3");
-		cheks.add(chckbxPasillo_5);
-		chckbxPasillo_6 = new JCheckBox("PASILLO 6");
-		panel_2.add(chckbxPasillo_6, "cell 0 3");
-		cheks.add(chckbxPasillo_6);
+		chckbxPasillo_1_0 = new JCheckBox("PASILLO 1");
+		panel_2.add(chckbxPasillo_1_0, "flowx,cell 0 2");
+		cheks.add(chckbxPasillo_1_0);
+		chckbxPasillo_2_0 = new JCheckBox("PASILLO 2");
+		panel_2.add(chckbxPasillo_2_0, "cell 0 2");
+		cheks.add(chckbxPasillo_2_0);
+		chckbxPasillo_3_0 = new JCheckBox("PASILLO 3");
+		panel_2.add(chckbxPasillo_3_0, "cell 0 2");
+		cheks.add(chckbxPasillo_3_0);
+		chckbxPasillo_4_0 = new JCheckBox("PASILLO 4");
+		panel_2.add(chckbxPasillo_4_0, "flowx,cell 0 3");
+		cheks.add(chckbxPasillo_4_0);
+		chckbxPasillo_5_0 = new JCheckBox("PASILLO 5");
+		panel_2.add(chckbxPasillo_5_0, "cell 0 3");
+		cheks.add(chckbxPasillo_5_0);
+		chckbxPasillo_6_0 = new JCheckBox("PASILLO 6");
+		panel_2.add(chckbxPasillo_6_0, "cell 0 3");
+		cheks.add(chckbxPasillo_6_0);
 		
 		JLabel lblPrimerPiso = new JLabel("PRIMER PISO:");
 		panel_2.add(lblPrimerPiso, "cell 0 4");
 		
-		chckbxPasillo_7 = new JCheckBox("PASILLO 1");
-		panel_2.add(chckbxPasillo_7, "flowx,cell 0 5");
-		cheks.add(chckbxPasillo_7);
-		chckbxPasillo_8 = new JCheckBox("PASILLO 2");
-		panel_2.add(chckbxPasillo_8, "cell 0 5");
-		cheks.add(chckbxPasillo_8);
-		chckbxPasillo_9 = new JCheckBox("PASILLO 3");
-		panel_2.add(chckbxPasillo_9, "cell 0 5");
-		chckbxPasillo_10 = new JCheckBox("PASILLO 4");
-		cheks.add(chckbxPasillo_9);
-		panel_2.add(chckbxPasillo_10, "flowx,cell 0 6");
-		cheks.add(chckbxPasillo_10);
-		chckbxPasillo_11 = new JCheckBox("PASILLO 5");
-		panel_2.add(chckbxPasillo_11, "cell 0 6");
-		cheks.add(chckbxPasillo_11);
-		chckbxPasillo_12 = new JCheckBox("PASILLO 6");
-		panel_2.add(chckbxPasillo_12, "cell 0 6");
-		cheks.add(chckbxPasillo_12);
+		chckbxPasillo_1_1 = new JCheckBox("PASILLO 1");
+		panel_2.add(chckbxPasillo_1_1, "flowx,cell 0 5");
+		cheks.add(chckbxPasillo_1_1);
+		
+		chckbxPasillo_2_1 = new JCheckBox("PASILLO 2");
+		panel_2.add(chckbxPasillo_2_1, "cell 0 5");
+		cheks.add(chckbxPasillo_2_1);
+		
+		chckbxPasillo_3_1 = new JCheckBox("PASILLO 3");
+		panel_2.add(chckbxPasillo_3_1, "cell 0 5");
+		cheks.add(chckbxPasillo_3_1);
+		
+		chckbxPasillo_4_1 = new JCheckBox("PASILLO 4");
+		cheks.add(chckbxPasillo_4_1);
+		panel_2.add(chckbxPasillo_4_1, "flowx,cell 0 6");
+		cheks.add(chckbxPasillo_4_1);
+		
+		chckbxPasillo_5_1 = new JCheckBox("PASILLO 5");
+		panel_2.add(chckbxPasillo_5_1, "cell 0 6");
+		cheks.add(chckbxPasillo_5_1);
+		
+		chckbxPasillo_6_1 = new JCheckBox("PASILLO 6");
+		panel_2.add(chckbxPasillo_6_1, "cell 0 6");
+		cheks.add(chckbxPasillo_6_1);
 		
 		JLabel lblSegundoPiso = new JLabel("SEGUNDO PISO:");
 		panel_2.add(lblSegundoPiso, "cell 0 7");
 		
-		chckbxPasillo_13 = new JCheckBox("PASILLO 1");
-		panel_2.add(chckbxPasillo_13, "flowx,cell 0 8");
-		cheks.add(chckbxPasillo_13);
-		chckbxPasillo_14 = new JCheckBox("PASILLO 2");
-		panel_2.add(chckbxPasillo_14, "cell 0 8");
-		cheks.add(chckbxPasillo_14);
+		chckbxPasillo_1_2 = new JCheckBox("PASILLO 1");
+		panel_2.add(chckbxPasillo_1_2, "flowx,cell 0 8");
+		cheks.add(chckbxPasillo_1_2);
+		
+		chckbxPasillo_2_2 = new JCheckBox("PASILLO 2");
+		panel_2.add(chckbxPasillo_2_2, "cell 0 8");
+		cheks.add(chckbxPasillo_2_2);
+		
 		JLabel lblTercerPiso = new JLabel("TERCER PISO");
 		panel_2.add(lblTercerPiso, "cell 0 9");
-		chckbxPasillo_15 = new JCheckBox("PASILLO 1");
-		panel_2.add(chckbxPasillo_15, "flowx,cell 0 10");
-		cheks.add(chckbxPasillo_15);
-		chckbxPasillo_16 = new JCheckBox("PASILLO 2");
-		panel_2.add(chckbxPasillo_16, "cell 0 10");
-		cheks.add(chckbxPasillo_16);
+		chckbxPasillo_1_3 = new JCheckBox("PASILLO 1");
+		panel_2.add(chckbxPasillo_1_3, "flowx,cell 0 10");
+		cheks.add(chckbxPasillo_1_3);
+		
+		chckbxPasillo_2_3 = new JCheckBox("PASILLO 2");
+		panel_2.add(chckbxPasillo_2_3, "cell 0 10");
+		cheks.add(chckbxPasillo_2_3);
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(new MigLayout("", "[grow,fill]", "[][][][][][][][][][][][][][][][][]"));
@@ -326,82 +336,170 @@ public class PanelConfigurar {
 		btnAceptar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				int estrategia = comboBox_1.getSelectedIndex();
-				int i=0;
 				for(JCheckBox j: cheks){
 					if(j.isSelected()){
-						if(0<=i && i<=6){
-							Pasillo h = (Pasillo) edificio.getHabitacionPorID("p"+(i+1)+"-0");
+						String str=j.getName();
+						Pasillo h;
+						switch(str){
+						case "chckbxPasillo_1_0":
+							h = (Pasillo) edificio.getHabitacionPorID("p1-0");
 							h.setBloqueado(true);
+						break;
+
+						case "chckbxPasillo_2_0":
+							h = (Pasillo) edificio.getHabitacionPorID("p2-0");
+							h.setBloqueado(true);
+						break;
+
+						case "chckbxPasillo_3_0":
+							h = (Pasillo) edificio.getHabitacionPorID("p3-0");
+							h.setBloqueado(true);
+						break;
+
+						case "chckbxPasillo_4_0":
+							h = (Pasillo) edificio.getHabitacionPorID("p4-0");
+							h.setBloqueado(true);
+						break;
+						case "chckbxPasillo_5_0":
+							h = (Pasillo) edificio.getHabitacionPorID("p5-0");
+							h.setBloqueado(true);
+						break;
+						case "chckbxPasillo_6_0":
+							h = (Pasillo) edificio.getHabitacionPorID("p6-0");
+							h.setBloqueado(true);
+						break;
+						case "chckbxPasillo_1_1":
+							h = (Pasillo) edificio.getHabitacionPorID("p1-1");
+							h.setBloqueado(true);
+						break;
+						case "chckbxPasillo_2_1":
+							h = (Pasillo) edificio.getHabitacionPorID("p2-1");
+							h.setBloqueado(true);
+						break;
+						case "chckbxPasillo_3_1":
+							h = (Pasillo) edificio.getHabitacionPorID("p3-1");
+							h.setBloqueado(true);
+						break;
+						case "chckbxPasillo_4_1":
+							h = (Pasillo) edificio.getHabitacionPorID("p4-1");
+							h.setBloqueado(true);
+						break;
+						case "chckbxPasillo_5_1":
+							h = (Pasillo) edificio.getHabitacionPorID("p5-1");
+							h.setBloqueado(true);
+						break;
+						case "chckbxPasillo_6_1":
+							h = (Pasillo) edificio.getHabitacionPorID("p6-1");
+							h.setBloqueado(true);
+						break;
+						case "chckbxPasillo_1_2":
+							h = (Pasillo) edificio.getHabitacionPorID("p1-2");
+							h.setBloqueado(true);
+						break;
+						case "chckbxPasillo_2_2":
+							h = (Pasillo) edificio.getHabitacionPorID("p2-2");
+							h.setBloqueado(true);
+						break;
+						case "chckbxPasillo_1_3":
+							h = (Pasillo) edificio.getHabitacionPorID("p1-3");
+							h.setBloqueado(true);
+						break;
+						case "chckbxPasillo_2_3":
+							h = (Pasillo) edificio.getHabitacionPorID("p2-3");
+							h.setBloqueado(true);
+						break;
 						}
-						else{
-							if(7<=i && i<=12){
-								Pasillo h = (Pasillo) edificio.getHabitacionPorID("p"+(i+1)+"-1");
-								h.setBloqueado(true);
-							}
-							else{
-								if(13<=i && i<=14){
-									Pasillo h = (Pasillo) edificio.getHabitacionPorID("p"+(i+1)+"-2");
-									h.setBloqueado(true);
-								}
-								else{
-									Pasillo h = (Pasillo) edificio.getHabitacionPorID("p"+(i+1)+"-3");
-									h.setBloqueado(true);
-								}
-							}
-						}
+						
 					}
-					i++;
 				}
-				
-				 	i=0;
-					for(JCheckBox j: chekss){
-						if(j.isSelected()){
-							if(0<=i && i<=6){
-								Escalera h = (Escalera) edificio.getHabitacionPorID("esc"+(i+1)+"-0");
-								h.setBloqueada(true);
-							}
-							else{
-								if(7<=i && i<=14){
-									Escalera h = (Escalera) edificio.getHabitacionPorID("esc"+(i-7+1)+"-1");
-									h.setBloqueada(true);
-								}
-								else{
-									if(15==i){
-										Escalera h = (Escalera) edificio.getHabitacionPorID("esc3-2");
-										h.setBloqueada(true);
-									}
-									else{
-										if(16==i){
-											Escalera h = (Escalera) edificio.getHabitacionPorID("esc5-2");
-											h.setBloqueada(true);
-										}
-										else{
-											if(17==i){
-												Escalera h = (Escalera) edificio.getHabitacionPorID("esc6-2");
-												h.setBloqueada(true);
-											}
-											else{
-												if(18==i){
-													Escalera h = (Escalera) edificio.getHabitacionPorID("esc8-2");
-													h.setBloqueada(true);
-												}
-												else{
-													if(19==i){
-														Escalera h = (Escalera) edificio.getHabitacionPorID("esc3-3");
-														h.setBloqueada(true);
-													}
-													else{
-														Escalera h = (Escalera) edificio.getHabitacionPorID("esc8-3");
-														h.setBloqueada(true);
-													}
-												}
-											}
-										}
-									}
-								}
+					for(JCheckBox j1: chekss){
+						if(j1.isSelected()){
+							Escalera es;						
+							String str=j1.getName();
+							switch(str){
+							case "chckbxEscalera_1_0":
+								es = (Escalera) edificio.getHabitacionPorID("esc1-0");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_2_0":
+								es = (Escalera) edificio.getHabitacionPorID("esc2-0");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_3_0":
+								es = (Escalera) edificio.getHabitacionPorID("esc3-0");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_4_0":
+								es = (Escalera) edificio.getHabitacionPorID("esc4-0");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_5_0":
+								es = (Escalera) edificio.getHabitacionPorID("esc5-0");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_6_0":
+								es = (Escalera) edificio.getHabitacionPorID("esc6-0");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_7_0":
+								es = (Escalera) edificio.getHabitacionPorID("esc7-0");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_1_1":
+								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_2_1":
+								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_3_1":
+								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_4_1":
+								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_5_1":
+								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_6_1":
+								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_7_1":
+								es = (Escalera) edificio.getHabitacionPorID("esc1-1");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_3_2":
+								es = (Escalera) edificio.getHabitacionPorID("esc3-2");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_5_2":
+								es = (Escalera) edificio.getHabitacionPorID("esc5-2");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_6_2":
+								es = (Escalera) edificio.getHabitacionPorID("esc6-2");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_8_2":
+								es = (Escalera) edificio.getHabitacionPorID("esc8-2");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_3_3":
+								es = (Escalera) edificio.getHabitacionPorID("esc3-3");
+								es.setBloqueada(true);
+							break;
+							case "chckbxEscalera_8_3":
+								es = (Escalera) edificio.getHabitacionPorID("esc8-3");
+								es.setBloqueada(true);
+							break;
+
 							}
 						}
-						i++;
 					}
 					
 					if(chckbxBeepAscensor.isSelected()){
@@ -420,8 +518,6 @@ public class PanelConfigurar {
 			}
 		});
 		panel_1.add(btnAceptar, "flowx,cell 0 10");
-		
 
 	}
-
-}
+	}
