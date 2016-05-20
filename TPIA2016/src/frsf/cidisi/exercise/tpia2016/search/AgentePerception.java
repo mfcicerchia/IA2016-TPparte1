@@ -79,6 +79,24 @@ public class AgentePerception extends Perception {
     }
 
 
+	@Override
+	public String toString() {
+		String str = "AgentePerception [pasillos bloqueados= ";
+		for(Habitacion h: this.getPasillosBloqueados()){
+		 str+=h.getIdHabitacion()+" "+h.getDescripcion()+ " " + h.getNivel();
+		}
+		str+=", escaleras bloqueadas=";
+		for(Habitacion h: this.getEscalerasBloqueadas()){
+			 str+=h.getIdHabitacion()+" "+h.getDescripcion()+ " " + h.getNivel();
+		}
+		str+=", Ascensores Bloqueados=";
+		for(Habitacion h: this.getAscensoresBLoqueados()){
+			 str+=h.getIdHabitacion()+" "+h.getDescripcion()+ " " + h.getNivel();
+		}
+		str+=" ]";
+		return str;
+	}
+
 	public ArrayList<Habitacion> getAscensoresBLoqueados() {
 		return ascensoresBLoqueados;
 	}

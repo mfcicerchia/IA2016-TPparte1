@@ -519,5 +519,5 @@ public class PanelConfigurar {
 		});
 		panel_1.add(btnAceptar, "flowx,cell 0 10");
 
-	}
+		}
 	}
