@@ -47,11 +47,11 @@ public class InterfazManager {
 			break;
 
 		case BUSQUEDA_COSTO_UNIFORME:
-			//ArqueologoFuncionCosto.ejecutar(escenario);
+			AgenteEjecutar.ejecutar(mapaAmbiente, mapaAgente,energía, post, dest, estrategia);
 			break;
 
 		case BUSQUEDA_AVARA:
-			//ArqueologoEstrategia.ejecutar(escenario);
+			AgenteEjecutar.ejecutar(mapaAmbiente, mapaAgente,energía, post, dest, estrategia);
 			break;
 		}
 	}
