@@ -72,32 +72,33 @@ public class InterfazSimulator extends SearchBasedAgentSimulator {
         System.out.println("Action returned: " + action);
         System.out.println();
         
-        InterfazManager.registrarAccion("" + action);
+        if (action != null) {
+            InterfazManager.registrarAccion("" + action);
+            this.actionReturned(agent, action);
+            EstadoAgente agente = (EstadoAgente) agent.getAgentState();
+            EstadoAmbiente ambiente = (EstadoAmbiente) environment.getEnvironmentState();
+            InterfazManager.registrarPosicion(agente.getPosicion().getDescripcion());
+            InterfazManager.registrarEnergia(agente.getEnergía_agente()+"");
+            InterfazManager.registrarPosicionObjetivo(agente.getDestino().getDescripcion());
+            
+            for(Habitacion h: agente.getHabitaciones_visitadas()){
+                str+=h.getDescripcion()+"\n";
+            }
+            InterfazManager.registrarHabitacionesVisitadas(str);
 
+            InterfazManager.registrarExito("El agente está en camino.");
+            InterfazManager.registrarPosicionActual(ambiente.getPosicion_agente().getDescripcion());
+            
+            if(perception!=null){
+            	InterfazManager.registrarPercepcion(perception.toString());System.out.println("--sssssssssssssssssssssssssss");
+            }
+            else{
+            	InterfazManager.registrarPercepcion("No hay percepciones");System.out.println("---d-----");
+            }
+            
+            InterfazManager.dibujarAgente(agente.getPosicion().getPosicion(),agente.getPosicion().getNivel());
+        }
 
-        this.actionReturned(agent, action);
-        
-        EstadoAgente agente = (EstadoAgente) agent.getAgentState();
-        EstadoAmbiente ambiente = (EstadoAmbiente) environment.getEnvironmentState();
-        InterfazManager.registrarPosicion(agente.getPosicion().getDescripcion());
-        InterfazManager.registrarEnergia(agente.getEnergía_agente()+"");
-        InterfazManager.registrarPosicionObjetivo(agente.getDestino().getDescripcion());
-        
-        for(Habitacion h: agente.getHabitaciones_visitadas()){
-            str+=h.getDescripcion()+"\n";
-        }
-        InterfazManager.registrarHabitacionesVisitadas(str);
-
-        InterfazManager.registrarExito("El agente está en camino.");
-        InterfazManager.registrarPosicionActual(ambiente.getPosicion_agente().getDescripcion());
-        if(perception!=null){
-        	InterfazManager.registrarPercepcion(perception.toString());System.out.println("--sssssssssssssssssssssssssss");
-        }
-        else{
-        	InterfazManager.registrarPercepcion("No hay percepciones");System.out.println("---d-----");
-        }
-        
-        InterfazManager.dibujarAgente(agente.getPosicion().getPosicion(),agente.getPosicion().getNivel());
         if (this.agentSucceeded(action) || this.agentFailed(agent.getAgentState()) ) {
         	this.terminado = true;
         }
