@@ -179,21 +179,27 @@ public class PanelConfigurar {
 		panel_2.add(lblPlantaBaja, "cell 0 1");
 		
 		chckbxPasillo_1_0 = new JCheckBox("PASILLO 1");
+		chckbxPasillo_1_0.setName("chckbxPasillo_1_0");
 		panel_2.add(chckbxPasillo_1_0, "flowx,cell 0 2");
 		cheks.add(chckbxPasillo_1_0);
 		chckbxPasillo_2_0 = new JCheckBox("PASILLO 2");
+		chckbxPasillo_2_0.setName("chckbxPasillo_2_0");
 		panel_2.add(chckbxPasillo_2_0, "cell 0 2");
 		cheks.add(chckbxPasillo_2_0);
 		chckbxPasillo_3_0 = new JCheckBox("PASILLO 3");
+		chckbxPasillo_3_0.setName("chckbxPasillo_3_0");
 		panel_2.add(chckbxPasillo_3_0, "cell 0 2");
 		cheks.add(chckbxPasillo_3_0);
 		chckbxPasillo_4_0 = new JCheckBox("PASILLO 4");
+		chckbxPasillo_4_0.setName("chckbxPasillo_4_0");
 		panel_2.add(chckbxPasillo_4_0, "flowx,cell 0 3");
 		cheks.add(chckbxPasillo_4_0);
 		chckbxPasillo_5_0 = new JCheckBox("PASILLO 5");
+		chckbxPasillo_5_0.setName("chckbxPasillo_5_0");
 		panel_2.add(chckbxPasillo_5_0, "cell 0 3");
 		cheks.add(chckbxPasillo_5_0);
 		chckbxPasillo_6_0 = new JCheckBox("PASILLO 6");
+		chckbxPasillo_6_0.setName("chckbxPasillo_6_0");
 		panel_2.add(chckbxPasillo_6_0, "cell 0 3");
 		cheks.add(chckbxPasillo_6_0);
 		
@@ -201,27 +207,33 @@ public class PanelConfigurar {
 		panel_2.add(lblPrimerPiso, "cell 0 4");
 		
 		chckbxPasillo_1_1 = new JCheckBox("PASILLO 1");
+		chckbxPasillo_1_1.setName("chckbxPasillo_1_1");
 		panel_2.add(chckbxPasillo_1_1, "flowx,cell 0 5");
 		cheks.add(chckbxPasillo_1_1);
 		
 		chckbxPasillo_2_1 = new JCheckBox("PASILLO 2");
+		chckbxPasillo_2_1.setName("chckbxPasillo_2_1");
 		panel_2.add(chckbxPasillo_2_1, "cell 0 5");
 		cheks.add(chckbxPasillo_2_1);
 		
 		chckbxPasillo_3_1 = new JCheckBox("PASILLO 3");
+		chckbxPasillo_3_1.setName("chckbxPasillo_3_1");
 		panel_2.add(chckbxPasillo_3_1, "cell 0 5");
 		cheks.add(chckbxPasillo_3_1);
 		
 		chckbxPasillo_4_1 = new JCheckBox("PASILLO 4");
+		chckbxPasillo_4_1.setName("chckbxPasillo_4_1");
 		cheks.add(chckbxPasillo_4_1);
 		panel_2.add(chckbxPasillo_4_1, "flowx,cell 0 6");
 		cheks.add(chckbxPasillo_4_1);
 		
 		chckbxPasillo_5_1 = new JCheckBox("PASILLO 5");
+		chckbxPasillo_5_1.setName("chckbxPasillo_5_1");
 		panel_2.add(chckbxPasillo_5_1, "cell 0 6");
 		cheks.add(chckbxPasillo_5_1);
 		
 		chckbxPasillo_6_1 = new JCheckBox("PASILLO 6");
+		chckbxPasillo_6_1.setName("chckbxPasillo_6_1");
 		panel_2.add(chckbxPasillo_6_1, "cell 0 6");
 		cheks.add(chckbxPasillo_6_1);
 		
@@ -229,20 +241,24 @@ public class PanelConfigurar {
 		panel_2.add(lblSegundoPiso, "cell 0 7");
 		
 		chckbxPasillo_1_2 = new JCheckBox("PASILLO 1");
+		chckbxPasillo_1_2.setName("chckbxPasillo_1_2");
 		panel_2.add(chckbxPasillo_1_2, "flowx,cell 0 8");
 		cheks.add(chckbxPasillo_1_2);
 		
 		chckbxPasillo_2_2 = new JCheckBox("PASILLO 2");
+		chckbxPasillo_2_2.setName("chckbxPasillo_2_2");
 		panel_2.add(chckbxPasillo_2_2, "cell 0 8");
 		cheks.add(chckbxPasillo_2_2);
 		
 		JLabel lblTercerPiso = new JLabel("TERCER PISO");
 		panel_2.add(lblTercerPiso, "cell 0 9");
 		chckbxPasillo_1_3 = new JCheckBox("PASILLO 1");
+		chckbxPasillo_1_3.setName("chckbxPasillo_1_3");
 		panel_2.add(chckbxPasillo_1_3, "flowx,cell 0 10");
 		cheks.add(chckbxPasillo_1_3);
 		
 		chckbxPasillo_2_3 = new JCheckBox("PASILLO 2");
+		chckbxPasillo_2_3.setName("chckbxPasillo_2_3");
 		panel_2.add(chckbxPasillo_2_3, "cell 0 10");
 		cheks.add(chckbxPasillo_2_3);
 		
@@ -258,24 +274,31 @@ public class PanelConfigurar {
 		panel_3.add(lblPlantaBaja_1, "cell 0 1");
 		
 		chckbxEscalera_1_0 = new JCheckBox("ESCALERA 1");
+		chckbxEscalera_1_0.setName("chckbxEscalera_1_0 ");
 		panel_3.add(chckbxEscalera_1_0, "flowx,cell 0 2");
 		chekss.add(chckbxEscalera_1_0);
 		chckbxEscalera_2_0 = new JCheckBox("ESCALERA 2");
+		chckbxEscalera_2_0.setName("chckbxEscalera_2_0 ");
 		panel_3.add(chckbxEscalera_2_0, "cell 0 2");
 		chekss.add(chckbxEscalera_2_0);
 		chckbxEscalera_3_0 = new JCheckBox("ESCALERA 3");
+		chckbxEscalera_3_0.setName("chckbxEscalera_3_0 ");
 		panel_3.add(chckbxEscalera_3_0, "cell 0 2");
 		chekss.add(chckbxEscalera_3_0);
 		chckbxEscalera_4_0 = new JCheckBox("ESCALERA 4");
+		chckbxEscalera_4_0.setName("chckbxEscalera_4_0 ");
 		panel_3.add(chckbxEscalera_4_0, "flowx,cell 0 3");
 		chekss.add(chckbxEscalera_4_0);
 		chckbxEscalera_5_0 = new JCheckBox("ESCALERA 5");
+		chckbxEscalera_5_0.setName("chckbxEscalera_5_0 ");
 		panel_3.add(chckbxEscalera_5_0, "cell 0 3");
 		chekss.add(chckbxEscalera_5_0);
 		chckbxEscalera_6_0 = new JCheckBox("ESCALERA 6");
+		chckbxEscalera_6_0.setName("chckbxEscalera_6_0 ");
 		panel_3.add(chckbxEscalera_6_0, "cell 0 3");
 		chekss.add(chckbxEscalera_6_0);
 		chckbxEscalera_7_0 = new JCheckBox("ESCALERA 7");
+		chckbxEscalera_7_0.setName("chckbxEscalera_7_0 ");
 		panel_3.add(chckbxEscalera_7_0, "cell 0 4");
 		chekss.add(chckbxEscalera_7_0);
 		
@@ -283,24 +306,31 @@ public class PanelConfigurar {
 		panel_3.add(lblPrimerPiso_1, "cell 0 5");
 		
 		chckbxEscalera_1_1 = new JCheckBox("ESCALERA 1");
+		chckbxEscalera_1_1.setName("chckbxEscalera_1_1");
 		panel_3.add(chckbxEscalera_1_1, "flowx,cell 0 6");
 		chekss.add(chckbxEscalera_1_1);
 		chckbxEscalera_2_1 = new JCheckBox("ESCALERA 2");
+		chckbxEscalera_2_1.setName("chckbxEscalera_2_1");
 		panel_3.add(chckbxEscalera_2_1, "cell 0 6");
 		chekss.add(chckbxEscalera_2_1);
 		chckbxEscalera_3_1 = new JCheckBox("ESCALERA 3");
+		chckbxEscalera_3_1.setName("chckbxEscalera_3_1");
 		panel_3.add(chckbxEscalera_3_1, "cell 0 6");
 		chekss.add(chckbxEscalera_3_1);
 		chckbxEscalera_4_1 = new JCheckBox("ESCALERA 4");
+		chckbxEscalera_4_1.setName("chckbxEscalera_4_1");
 		panel_3.add(chckbxEscalera_4_1, "flowx,cell 0 7");
 		chekss.add(chckbxEscalera_4_1);
 		chckbxEscalera_5_1 = new JCheckBox("ESCALERA 5");
+		chckbxEscalera_5_1.setName("chckbxEscalera_5_1");
 		panel_3.add(chckbxEscalera_5_1, "cell 0 7");
 		chekss.add(chckbxEscalera_5_1);
 		chckbxEscalera_6_1 = new JCheckBox("ESCLAERA 6");
+		chckbxEscalera_6_1.setName("chckbxEscalera_6_1");
 		panel_3.add(chckbxEscalera_6_1, "cell 0 7");
 		chekss.add(chckbxEscalera_6_1);
 		chckbxEscalera_7_1 = new JCheckBox("ESCALERA 7");
+		chckbxEscalera_7_1.setName("chckbxEscalera_7_1");
 		panel_3.add(chckbxEscalera_7_1, "cell 0 8");
 		chekss.add(chckbxEscalera_7_1);
 		
@@ -308,15 +338,19 @@ public class PanelConfigurar {
 		panel_3.add(lblSegundoPiso_1, "cell 0 9");
 		
 		chckbxEscalera_3_2 = new JCheckBox("ESCALERA 3");
+		chckbxEscalera_3_2.setName("chckbxEscalera_3_2");
 		panel_3.add(chckbxEscalera_3_2, "cell 0 11");
 		chekss.add(chckbxEscalera_3_2);
 		chckbxEscalera_5_2 = new JCheckBox("ESCALERA 5");
+		chckbxEscalera_5_2.setName("chckbxEscalera_5_2");
 		panel_3.add(chckbxEscalera_5_2, "flowx,cell 0 10");
 		chekss.add(chckbxEscalera_5_2);
 		chckbxEscalera_6_2 = new JCheckBox("ESCALERA 6");
+		chckbxEscalera_6_2.setName("chckbxEscalera_6_2");
 		panel_3.add(chckbxEscalera_6_2, "cell 0 10");
 		chekss.add(chckbxEscalera_6_2);
 		chckbxEscalera_8_2 = new JCheckBox("ESCALERA 8");
+		chckbxEscalera_8_2.setName("chckbxEscalera_8_2");
 		panel_3.add(chckbxEscalera_8_2, "cell 0 10");
 		chekss.add(chckbxEscalera_8_2);
 
@@ -325,9 +359,11 @@ public class PanelConfigurar {
 		panel_3.add(lblTercerPiso_1, "cell 0 12");
 		
 		chckbxEscalera_3_3 = new JCheckBox("ESCALERA 3");
+		chckbxEscalera_3_3.setName("chckbxEscalera_3_3");
 		panel_3.add(chckbxEscalera_3_3, "cell 0 13");
 		chekss.add(chckbxEscalera_3_3);
 		chckbxEscalera_8_3 = new JCheckBox("ESCALERA 8");
+		chckbxEscalera_8_3.setName("chckbxEscalera_8_3");
 		panel_3.add(chckbxEscalera_8_3, "flowx,cell 0 13");
 		chekss.add(chckbxEscalera_8_3);
 
@@ -337,10 +373,11 @@ public class PanelConfigurar {
 			public void actionPerformed(ActionEvent arg0) {
 				int estrategia = comboBox_1.getSelectedIndex();
 				for(JCheckBox j: cheks){
+					System.out.println("ffffffffffffffffffff"+j.getName()+"ffffffffffffffffffffff");
 					if(j.isSelected()){
 						String str=j.getName();
 						Pasillo h;
-						
+
 						if(str=="chckbxPasillo_1_0"){
 							h = (Pasillo) edificio.getHabitacionPorID("p1-0");
 							h.setBloqueado(true);
