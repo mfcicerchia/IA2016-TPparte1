@@ -36,7 +36,7 @@ public class CostFunction implements IStepCostFunction {
 			if(estadoActual.getClass().equals("Escalera")&& estadoPadre.getClass().equals("Escalera")&&  
 			   estadoActual.getPosicion().getNivel() > estadoPadre.getPosicion().getNivel()){
 				costoDelEnlace = estadoActual.getMapa_ambiente().getCosto(estadoActual.getPosicion(), estadoPadre.getPosicion());				
-				costoAcumulado+= costoDelEnlace;
+				costoAcumulado= costoDelEnlace;
 				
 			}
 			
@@ -45,14 +45,14 @@ public class CostFunction implements IStepCostFunction {
 			if(estadoActual.getClass().equals("Escalera")&& estadoPadre.getClass().equals("Escalera")&&  
 			   estadoActual.getPosicion().getNivel() < estadoPadre.getPosicion().getNivel()){
 				costoDelEnlace = estadoActual.getMapa_ambiente().getCosto(estadoActual.getPosicion(), estadoPadre.getPosicion());				
-				costoAcumulado+= costoDelEnlace*5;
+				costoAcumulado= costoDelEnlace*5;
 				
 			}
 			
 			// Si es cualquier otro movimiento acumulo el costo/distancia
 			// de la conexion
 			costoDelEnlace = estadoActual.getMapa_ambiente().getCosto(estadoActual.getPosicion(), estadoPadre.getPosicion());
-			costoAcumulado+=costoDelEnlace;
+			costoAcumulado=costoDelEnlace;
 			
 		}
 		return costoAcumulado;

@@ -111,15 +111,22 @@ public  class Agente extends SearchBasedAgent {
 
 		case BUSQUEDA_COSTO_UNIFORME:
 			//System.out.println("----------------------------costo------------------------");
-			UniformCostSearch st4 = (UniformCostSearch) strategy;
-			st4= new UniformCostSearch(new CostFunction());
-			searchSolver = new Search(st4);
+			UniformCostSearch st3 = (UniformCostSearch) strategy;
+			st3= new UniformCostSearch(new CostFunction());
+			searchSolver = new Search(st3);
 			/*AStarSearch st3 = (AStarSearch)strategy;
 			st3= new AStarSearch(IStepCostFunction g, IEstimatedCostFunction h) ;
 			searchSolver = new Search(st3)*/
 			break;
 
 		case BUSQUEDA_AVARA:
+			AStarSearch st4 = (AStarSearch) strategy;
+
+			CostFunction g = new CostFunction();
+			Heuristic h = new Heuristic();
+
+			st4 = new AStarSearch(g, h);
+			searchSolver = new Search(st4);
 			break;
 		}
 
