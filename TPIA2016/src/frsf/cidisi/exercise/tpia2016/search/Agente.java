@@ -34,7 +34,7 @@ public  class Agente extends SearchBasedAgent {
         Vector<SearchAction> operators = new Vector<SearchAction>();
         
         
-     // Operador IrPasillo
+        // Operador IrPasillo
         for(Pasillo p: mapa.getPasillos()){operators.addElement(new IrPasillo(p.getIdHabitacion()));}
         
         // Operador IrAula
@@ -153,4 +153,10 @@ public  class Agente extends SearchBasedAgent {
     public void see(Perception p) {
         this.getAgentState().updateState(p);
     }
+
+	@Override
+	public Action selectAction() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

@@ -85,6 +85,7 @@ public class InterfazSimulator extends SearchBasedAgentSimulator {
                 str+=h.getDescripcion()+"\n";
             }
             InterfazManager.registrarHabitacionesVisitadas(str);
+            str="";
 
             InterfazManager.registrarExito("El agente está en camino.");
             InterfazManager.registrarPosicionActual(ambiente.getPosicion_agente().getDescripcion());

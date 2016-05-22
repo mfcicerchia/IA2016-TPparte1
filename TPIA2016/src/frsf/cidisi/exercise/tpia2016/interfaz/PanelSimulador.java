@@ -114,6 +114,7 @@ public class PanelSimulador{
 		panel_4.add(lblHabitacionesVisitadas, "cell 0 9");
 		
 		textPane = new JTextPane();
+		textPane.setText("");
 		JScrollPane sp = new JScrollPane(textPane);
 		panel_4.add(sp, "flowy,cell 0 10,grow");
 		
@@ -270,6 +271,7 @@ public class PanelSimulador{
 		});
 		panel_5.add(btnSiguiente, "cell 0 1");		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setLocationRelativeTo(null);
 	}
 	public void terminar() {
 		btnStart.setEnabled(false);

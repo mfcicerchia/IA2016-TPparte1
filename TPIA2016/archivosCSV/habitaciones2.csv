@@ -9,10 +9,10 @@ Pasillo,p6-0,0,pasillo 6 planta baja,239,226
 escalera,esc1-0,0,escalera 1 nivel 0,480,447
 escalera,esc2-0,0,escalera 2 nivel 0,33,668
 escalera,esc3-0,0,escalera 3 nivel 0,46,347
-escalera,esc4-0,0,escalera 4,363,320
-escalera,esc5-0,0,escalera 5,267,346
-escalera,esc6-0,0,escalera 6,245,285
-escalera,esc7-0,0,escalera 7,141,511
+escalera,esc4-0,0,escalera 4 nivel 0,363,320
+escalera,esc5-0,0,escalera 5 nivel 0,267,346
+escalera,esc6-0,0,escalera 6 nivel 0,245,285
+escalera,esc7-0,0,escalera 7 nivel 0,141,511
 Ascensor,asc1-0,0,ascensor planta baja,119,350
 Ascensor,asc1-1,1,ascensor primer piso,119,353
 Ascensor,asc1-2,2,ascensor segundo piso,19,293
@@ -91,7 +91,7 @@ Pasillo,p2-2,2,pasillo 2 segundo piso,173,103
 Pasillo,p1-2,2,pasillo 1 segundo piso,169,161
 Escalera,esc5,2,escalera 5,242,299
 Escalera,esc6,2,escalera 6,214,216
-Escalera,esc8,2,escalera 7,198,125
+Escalera,esc8-2,2,escalera 8 nivel 2 (entre piso),198,125
 Laboratorio,jvl1,2,JAVALAB,317,164
 Laboratorio,gse1,2,GESE,138,226
 Laboratorio,lab1-3,3,Laboratorio Informatica 1,341,213
@@ -101,7 +101,7 @@ Oficina,ofc1-3,3,CIDISI,335,310
 Oficina,ofc3-3,3,Varios,187,382
 Oficina,ofc2-3,3,TICS,228,343
 Departamento,Sistemas,3,Departemanto de Sistemas,330,407
-Escalera,esc8,3,escalera 8,244,248
+Escalera,esc8-3,3,escalera 8 nivel 3,244,248
 Escalera,esc3-3,3,escalera 3 nivel 3,15,419
 Pasillo,p2-3,3,pasillo 2 tercer piso,286,281
 Pasillo,p1-3,3,pasillo 1 tercer piso,68,386
@@ -111,5 +111,5 @@ Laboratorio,lab5,3,Laboratorio Informatica 5,293,29
 Taller,taller1-0,0,Taller de Mantenimiento,210,107
 Escalera,es5-1,1,escalera 5 nivel 1,266,344
 Escalera,esc6-1,1,escalera 6 nivel 1,247,282
-Escalera,esc6-2,2,escalera 6 nivel 2,2,12,212
+Escalera,esc6-2,2,escalera 6 nivel 2,212,212
 Escalera,esc5-2,2,escalera 5 nivel 2,242,299

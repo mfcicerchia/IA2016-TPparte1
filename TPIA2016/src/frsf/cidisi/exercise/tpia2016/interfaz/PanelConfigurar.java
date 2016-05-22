@@ -557,6 +557,7 @@ public class PanelConfigurar {
 						idIngreso="ingreso2";
 					}
 				InterfazManager.comenzarSimulador(edificio,edificio_2,Integer.parseInt(lblEnergiaInicialtext.getText()) , edificio.getListaHabitaciones().get(comboBox.getSelectedIndex()),edificio.getListaHabitaciones().get(comboBox_2.getSelectedIndex()),estrategia,idIngreso);
+				
 				frame.setVisible(false);
 				frame.dispose();
 			}

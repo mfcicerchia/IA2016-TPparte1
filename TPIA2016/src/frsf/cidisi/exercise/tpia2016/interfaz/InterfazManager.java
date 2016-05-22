@@ -119,6 +119,8 @@ public class InterfazManager {
 	}
 	
 	public static void registrarAccion(String texto) {
+		window.textField_3.removeAll();
+		window.textField_3.repaint();
 		window.textField_3.setText(texto);
 
 	}
@@ -138,9 +140,7 @@ public class InterfazManager {
 	}
 	
 	public static void registrarHabitacionesVisitadas(String texto) {
-		window.textPane.setText(null);
-		window.textPane.removeAll();
-		window.textPane.repaint();
+//		window.textPane.setText("");
 		window.textPane.setText(texto);
 	}
 	
