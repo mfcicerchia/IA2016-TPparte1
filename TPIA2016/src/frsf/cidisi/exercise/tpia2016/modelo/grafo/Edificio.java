@@ -142,7 +142,7 @@ public class Edificio {
 		
 		for(Conexion c: this.listaConexiones){
 			if(c.getIdDestino().equals(identificador)){
-				if(!(adyacentes.contains(this.getHabitacionPorID(c.getIdDestino())))){
+				if(!(adyacentes.contains(this.getHabitacionPorID(c.getIdOrigen())))){
 					adyacentes.add(this.getHabitacionPorID(c.getIdOrigen()));	
 				}
 				
