@@ -53,10 +53,10 @@ public class InterfazSimulator extends SearchBasedAgentSimulator {
 
     	System.out.println("------------------------------------");
         System.out.println("Sending perception to agent...");
-        if(perception!=null){
+       // if(perception!=null){
             perception = this.getPercept();
             agent.see(perception);	
-        }
+       // }
 
         System.out.println("Perception: " + perception);
         System.out.println("Agent State: " + agent.getAgentState());
@@ -91,10 +91,10 @@ public class InterfazSimulator extends SearchBasedAgentSimulator {
             InterfazManager.registrarPosicionActual(ambiente.getPosicion_agente().getDescripcion());
             
             if(perception!=null){
-            	InterfazManager.registrarPercepcion(perception.toString());System.out.println("--sssssssssssssssssssssssssss");
+            	InterfazManager.registrarPercepcion(perception.toString());
             }
             else{
-            	InterfazManager.registrarPercepcion("No hay percepciones");System.out.println("---d-----");
+            	InterfazManager.registrarPercepcion("No hay percepciones");
             }
             
             InterfazManager.dibujarAgente(agente.getPosicion().getPosicion(),agente.getPosicion().getNivel());
