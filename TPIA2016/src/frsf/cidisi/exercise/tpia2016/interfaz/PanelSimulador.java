@@ -187,7 +187,7 @@ public class PanelSimulador{
 		
 		panel_6 = new PanelCanvas();
 		JLabel lblLabel_1 = new JLabel("");
-		ImageIcon im = new ImageIcon("images\\pbaja.png");
+		ImageIcon im = new ImageIcon("images\\p0-F.png");
 		Image imsc = im.getImage().getScaledInstance(550, 695, Image.SCALE_DEFAULT);
 		lblLabel_1.setIcon( new ImageIcon(imsc));
 		panel_6.add(lblLabel_1);
@@ -203,7 +203,7 @@ public class PanelSimulador{
 		
 		panel_7 = new PanelCanvas();
 		JLabel lblLabel_2 = new JLabel("");
-		im = new ImageIcon("images\\p1.png");
+		im = new ImageIcon("images\\p1-F.png");
 		imsc = im.getImage().getScaledInstance(550, 695, Image.SCALE_DEFAULT);
 		lblLabel_2.setIcon( new ImageIcon(imsc));
 		panel_7.add(lblLabel_2);
@@ -218,7 +218,7 @@ public class PanelSimulador{
 		
 		panel_8 = new PanelCanvas();
 		JLabel lblLabel_3 = new JLabel("");
-		im = new ImageIcon("images\\p2.png");
+		im = new ImageIcon("images\\p2-F.png");
 		imsc = im.getImage().getScaledInstance(550, 500, Image.SCALE_DEFAULT);
 		lblLabel_3.setIcon( new ImageIcon(im.getImage()));
 		panel_8.add(lblLabel_3);

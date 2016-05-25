@@ -3,7 +3,7 @@ Ingreso,ingreso2,0,entrada por torre,28,606
 Pasillo,p2-0,0,pasillo 2 planta baja,473,364
 Pasillo,p1-0,0,pasillo 1 planta baja,413,540
 Pasillo,p3-0,0,pasillo 3 planta baja,239,371
-Pasillo,p4-0,0,pasillo 4 planta baja,282,267
+Pasillo,p4-0,0,pasillo 4 planta baja,370,206
 Pasillo,p5-0,0,pasillo 5 planta baja,300,205
 Pasillo,p6-0,0,pasillo 6 planta baja,239,226
 escalera,esc1-0,0,escalera 1 nivel 0,480,447
@@ -36,7 +36,7 @@ Laboratorio,lab2-0,0,Laboratorio de Fluidica,314,239
 Departamento,mecanica,0,Departamento de Mecanica,344,407
 Departamento,electrica,0,Departamento de Electrica,187,279
 Fotocopiadora,fotocopiadora,0,Fotocopiadora FRSF,420,228
-Escalera,esc3-2,2,escalera 3 nivel 2,48,349
+Escalera,esc3-2,2,escalera 3 nivel 2,10,280
 Aula,au9,1,aula9,517,405
 Aula,au10,1,aula10,517,349
 Aula,au11,1,aula11,505,286

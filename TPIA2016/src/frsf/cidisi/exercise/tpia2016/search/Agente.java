@@ -162,5 +162,11 @@ public  class Agente extends SearchBasedAgent {
     
     public void see(Perception p) {
         this.getAgentState().updateState(p);
-    }	
+    }
+
+	@Override
+	public Action selectAction() {
+		// TODO Auto-generated method stub
+		return null;
+	}	
 }
