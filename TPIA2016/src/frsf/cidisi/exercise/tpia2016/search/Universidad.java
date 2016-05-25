@@ -34,46 +34,39 @@ public class Universidad extends Environment {
     	
         // Create a new perception to return
          AgentePerception perception = new AgentePerception();
-		
          Habitacion h = this.getEnvironmentState().getPosicion_agente();
-         
          ArrayList<Habitacion> adyacentes = new ArrayList<Habitacion>();
-         
          //Obtengo los adyacentes a la posicion
          adyacentes = this.getEnvironmentState().getMapa_ambiente().getHabitacionesAdyacentes(h.getIdHabitacion());
      
          // De todos mis adyacentes obtengo las clase
          // y pregunto si esta bloqueado en caso de ser escalera o pasillo
          // y pregunto si el beep esta prendido en el ascensor
-         
-         for(Habitacion ady: adyacentes){
-         	if(ady.getClass().getSimpleName().equals("Pasillo")){
-     			Pasillo p=(Pasillo)ady;
+
+         for(int i=0;i<adyacentes.size();i++){
+         	if(adyacentes.get(i) instanceof Pasillo){
+     			Pasillo p=(Pasillo)adyacentes.get(i);
      			if(p.isBloqueado()){
-     				p.setBloqueado(true);
      				perception.pasillosBloqueados.add(p);
      			}
      		}
      		else{
-     			if(ady.getClass().getSimpleName().equals("Ascensor")){
-     				Ascensor asc=(Ascensor)ady;
+     			if(adyacentes.get(i) instanceof Ascensor){
+     				Ascensor asc=(Ascensor)adyacentes.get(i);
      				if(asc.isPitido()){
-     					asc.setPitido(true);
-     					perception.ascensoresBLoqueados.add(asc);
+     					perception.ascensoresBloqueados.add(asc);
      				} 					
      			}
      			else{
-     				if(ady.getClass().getSimpleName().equals("Escalera")){
-     					Escalera esc=(Escalera)ady;
+     				if(adyacentes.get(i) instanceof Escalera){
+     					Escalera esc=(Escalera)adyacentes.get(i);
      					if(esc.isBloqueada()){
-     						esc.setBloqueada(true);
      						perception.escalerasBloqueadas.add(esc);
      					}
  					}
  				}
  			}
  		}
-        // Return the perception
         return perception;
     }
 
@@ -82,7 +75,6 @@ public class Universidad extends Environment {
         return environmentState.toString();
     }
 
-    
     public boolean agentFailed(AgentState state) {
         // TODO: Complete Method     
     	boolean falla=false;
