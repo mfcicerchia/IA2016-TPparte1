@@ -34,33 +34,11 @@ public  class Agente extends SearchBasedAgent {
         Vector<SearchAction> operators = new Vector<SearchAction>();
         
         
-        // Operador IrPasillo
-        for(Pasillo p: mapa.getPasillos()){operators.addElement(new IrPasillo(p.getIdHabitacion()));}
+
         
         // Operador IrAula
         for(Aula a: mapa.getAulas()){ operators.addElement(new IrAula(a.getIdHabitacion()));}
         
-        // Operador IrEscalera
-        for(Escalera e: mapa.getEscaleras()){operators.addElement(new IrEscalera(e.getIdHabitacion()));}
-        
-        // Operador IrAscensor
-        for(Ascensor asc: mapa.getAscensores()){operators.addElement(new IrAscensor(asc.getIdHabitacion()));}
-        
-        // Operador IrFotocopiadora
-        for(Fotocopiadora fotocopiadora: mapa.getFotocopiadoras()){operators.addElement(new IrFotocopiadora(fotocopiadora.getIdHabitacion()));}
-        
-        // Operador IrBaño
-        for(Baño baño: mapa.getBaños()){operators.addElement(new IrBaño(baño.getIdHabitacion()));}
-        
-        // Operador IrBiblioteca
-        for(Biblioteca biblioteca: mapa.getBibliotecas()){operators.addElement(new IrBiblioteca(biblioteca.getIdHabitacion()));}
-        
-        // Operador IrCantina
-		for (Cantina cantina: mapa.getCantinas()) {operators.addElement(new IrCantina(cantina.getIdHabitacion()));}
-        
-		// Operador Subir Nivel
-		for (Ascensor asc : mapa.getAscensores()) {operators.addElement(new SubirNivel(asc.getIdHabitacion()));}
-		for (Escalera esc : mapa.getEscaleras()) {operators.addElement(new SubirNivel(esc.getIdHabitacion()));}
 		
 		// Operador IrOficina
 		for (Oficina oficina : mapa.getOficinas()) {operators.addElement(new IrOficina(oficina.getIdHabitacion()));}
@@ -68,11 +46,36 @@ public  class Agente extends SearchBasedAgent {
 		// Operador IrDepartamento
 		for (Departamento depto : mapa.getDepartamentos()) {operators.addElement(new IrDepartamento(depto.getIdHabitacion()));}
 		
+        // Operador IrFotocopiadora
+        for(Fotocopiadora fotocopiadora: mapa.getFotocopiadoras()){operators.addElement(new IrFotocopiadora(fotocopiadora.getIdHabitacion()));}
+        
+        // Operador IrBiblioteca
+        for(Biblioteca biblioteca: mapa.getBibliotecas()){operators.addElement(new IrBiblioteca(biblioteca.getIdHabitacion()));}
+        
+        // Operador IrCantina
+		for (Cantina cantina: mapa.getCantinas()) {operators.addElement(new IrCantina(cantina.getIdHabitacion()));}
+
 		// Operador IrTaller
 		for (Taller taller : mapa.getTalleres()) {operators.addElement(new IrTaller(taller.getIdHabitacion()));}
 		
 		// Operador IrIngreso
 		for (Ingreso ingreso : mapa.getIngresos()) {operators.addElement(new IrIngreso(ingreso.getIdHabitacion()));}
+        
+        // Operador IrBaño
+        for(Baño baño: mapa.getBaños()){operators.addElement(new IrBaño(baño.getIdHabitacion()));}
+        
+        // Operador IrPasillo
+        for(Pasillo p: mapa.getPasillos()){operators.addElement(new IrPasillo(p.getIdHabitacion()));}
+        
+        // Operador IrEscalera
+        for(Escalera e: mapa.getEscaleras()){operators.addElement(new IrEscalera(e.getIdHabitacion()));}
+        
+        // Operador IrAscensor
+        for(Ascensor asc: mapa.getAscensores()){operators.addElement(new IrAscensor(asc.getIdHabitacion()));}
+        
+		// Operador Subir Nivel
+		for (Ascensor asc : mapa.getAscensores()) {operators.addElement(new SubirNivel(asc.getIdHabitacion()));}
+		for (Escalera esc : mapa.getEscaleras()) {operators.addElement(new SubirNivel(esc.getIdHabitacion()));}
 		
 		//Operador Bajar Nivel
         for(Habitacion h: mapa.getEscaleras()){operators.addElement(new BajarNivel(h.getIdHabitacion()));}
@@ -159,14 +162,5 @@ public  class Agente extends SearchBasedAgent {
     
     public void see(Perception p) {
         this.getAgentState().updateState(p);
-    }
-
-	@Override
-	public Action selectAction() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	
-	
+    }	
 }
