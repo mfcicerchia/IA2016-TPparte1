@@ -180,6 +180,6 @@ public class SubirNivel extends SearchAction {
      */
     @Override
     public String toString() {
-        return "SubirNivel " + idHabitacionSgte;
+        return "SubirNivel";
     }
 }

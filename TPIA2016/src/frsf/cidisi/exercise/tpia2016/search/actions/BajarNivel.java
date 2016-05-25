@@ -172,6 +172,6 @@ public class BajarNivel extends SearchAction {
      */
     @Override
     public String toString() {
-        return "BajarNivel: "+ idHabitacionSgte;
+        return "BajarNivel";
     }
 }

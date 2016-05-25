@@ -59,4 +59,10 @@ public class ReactiveBasedAgentSimulator extends GoalBasedAgentSimulator {
     public void actionReturned(Agent agent, Action action) {
         this.updateState(action);
     }
+
+	@Override
+	public void start() {
+		// TODO Auto-generated method stub
+		
+	}
 }

@@ -110,6 +110,6 @@ public class IrBaño extends SearchAction {
      */
     @Override
     public String toString() {
-        return "IrBaño " + idBaño;
+        return "IrBaño";
     }
 }

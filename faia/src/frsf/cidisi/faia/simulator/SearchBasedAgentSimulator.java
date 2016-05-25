@@ -79,5 +79,11 @@ public class SearchBasedAgentSimulator extends GoalBasedAgentSimulator {
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public boolean agentFailed(Action action) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
 

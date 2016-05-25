@@ -29,7 +29,7 @@ public class Ascensor extends Habitacion{
 	
 	@Override
 	public String toString() {
-		return super.toString() + "pitido=" + pitido;
+		return super.toString() + "pitido:" + pitido;
 	}
 	
 	public boolean equals(Object obj) {

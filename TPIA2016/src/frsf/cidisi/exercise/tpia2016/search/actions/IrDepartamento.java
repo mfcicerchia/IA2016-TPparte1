@@ -106,6 +106,6 @@ public class IrDepartamento extends SearchAction {
      */
     @Override
     public String toString() {
-        return "IrDepartamento " + idDepartamento;
+        return "IrDepartamento";
     }
 }

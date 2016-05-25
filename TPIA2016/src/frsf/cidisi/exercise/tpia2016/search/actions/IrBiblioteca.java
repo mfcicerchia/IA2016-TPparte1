@@ -114,7 +114,7 @@ public class IrBiblioteca extends SearchAction  {
 	     */
 	    @Override
 	    public String toString() {
-	        return "IrBiblioteca " + idBiblioteca;
+	        return "IrBiblioteca";
 	    }
 	
 }

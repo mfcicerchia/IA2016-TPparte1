@@ -33,7 +33,7 @@ public class Pasillo extends Habitacion {
 
 	@Override
 	public String toString() {
-		return super.toString() + "bloqueado=" + bloqueado + "]";
+		return super.toString() + "bloqueado:" + bloqueado ;
 	}
 	
 	public boolean equals(Object obj) {

@@ -126,6 +126,6 @@ public class IrAscensor extends SearchAction {
      */
     @Override
     public String toString() {
-        return "IrAscensor "+ idAscensor;
+        return "IrAscensor";
     }
 }

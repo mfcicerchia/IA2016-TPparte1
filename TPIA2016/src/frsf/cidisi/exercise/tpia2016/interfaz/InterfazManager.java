@@ -1,19 +1,12 @@
 package frsf.cidisi.exercise.tpia2016.interfaz;
 
-import java.awt.EventQueue;
-
 import java.awt.Point;
-
 import frsf.cidisi.exercise.tpia2016.search.AgenteEjecutar;
 import frsf.cidisi.exercise.tpia2016.search.EstadoAgente;
 import frsf.cidisi.exercise.tpia2016.search.EstadoAmbiente;
-import frsf.cidisi.faia.simulator.GoalBasedAgentSimulator;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
-
 import javax.swing.Timer;
 
 public class InterfazManager {

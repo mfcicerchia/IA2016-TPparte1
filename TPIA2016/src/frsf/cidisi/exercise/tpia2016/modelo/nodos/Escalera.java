@@ -20,7 +20,7 @@ public class Escalera extends Habitacion {
 	
 	@Override
 	public String toString() {
-		return super.toString() + "bloqueada=" + bloqueada+"]";
+		return super.toString() + "bloqueada=" + bloqueada;
 	}
 	
 	public boolean equals(Object obj) {

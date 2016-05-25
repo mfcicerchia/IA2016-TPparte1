@@ -21,7 +21,6 @@ public class DummyEstimatedCostFunction implements IEstimatedCostFunction {
 
     private static DummyEstimatedCostFunction h;
 
-    @Override
     public double getEstimatedCost(NTree agentState) {
         return 0;
     }

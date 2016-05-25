@@ -104,7 +104,7 @@ public class IrCantina extends SearchAction  {
 	     */
 	    @Override
 	    public String toString() {
-	        return "IrCantina "+ idCantina;
+	        return "IrCantina";
 	    }
 	
 }

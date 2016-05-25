@@ -17,7 +17,8 @@ public abstract class Habitacion {
 	@Override
 	public String toString() {
 		//return "Habitacion [idHabitacion=" + idHabitacion + ", nivel=" + nivel + ", descripcion=" + descripcion + "]";
-		return this.getClass().getSimpleName()+": [ id= " + idHabitacion +" | Descripcion= "+this.getDescripcion()+" | ";
+		//return this.getClass().getSimpleName()+": [ id= " + idHabitacion +" | Descripcion= "+this.getDescripcion()+" | ";
+		return this.getClass().getSimpleName()+" id: "+ idHabitacion;
 		
 	}
 

@@ -156,7 +156,7 @@ public  class Agente extends SearchBasedAgent {
      * Then it updates its state.
      * @param p
      */
-    @Override
+    
     public void see(Perception p) {
         this.getAgentState().updateState(p);
     }
@@ -166,4 +166,7 @@ public  class Agente extends SearchBasedAgent {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	
+	
 }

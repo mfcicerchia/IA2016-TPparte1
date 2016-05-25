@@ -44,27 +44,25 @@ public class Universidad extends Environment {
          // y pregunto si el beep esta prendido en el ascensor
 
          for(int i=0;i<adyacentes.size();i++){
-         	if(adyacentes.get(i) instanceof Pasillo){
-     			Pasillo p=(Pasillo)adyacentes.get(i);
-     			if(p.isBloqueado()){
-     				perception.pasillosBloqueados.add(p);
-     			}
-     		}
-     		else{
-     			if(adyacentes.get(i) instanceof Ascensor){
-     				Ascensor asc=(Ascensor)adyacentes.get(i);
-     				if(asc.isPitido()){
-     					perception.ascensoresBloqueados.add(asc);
-     				} 					
-     			}
-     			else{
-     				if(adyacentes.get(i) instanceof Escalera){
-     					Escalera esc=(Escalera)adyacentes.get(i);
-     					if(esc.isBloqueada()){
-     						perception.escalerasBloqueadas.add(esc);
-     					}
- 					}
- 				}
+			if (adyacentes.get(i) instanceof Pasillo) {
+				Pasillo p = (Pasillo) adyacentes.get(i);
+				if (p.isBloqueado()) {
+					perception.pasillosBloqueados.add(p);
+				}
+			}
+     	
+ 			if(adyacentes.get(i) instanceof Ascensor){
+ 				Ascensor asc=(Ascensor)adyacentes.get(i);
+ 				if(asc.isPitido()){
+ 					perception.ascensoresBLoqueados.add(asc);
+ 				} 					
+ 			}
+     		
+			if(adyacentes.get(i) instanceof Escalera){
+				Escalera esc=(Escalera)adyacentes.get(i);
+				if(esc.isBloqueada()){
+					perception.escalerasBloqueadas.add(esc);
+				}
  			}
  		}
         return perception;

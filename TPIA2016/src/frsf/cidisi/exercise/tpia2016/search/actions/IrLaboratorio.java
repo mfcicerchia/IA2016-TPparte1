@@ -115,6 +115,6 @@ public class IrLaboratorio extends SearchAction {
      */
     @Override
     public String toString() {
-        return "IrLaboratorio " + idLaboratorio;
+        return "IrLaboratorio";
     }
 }

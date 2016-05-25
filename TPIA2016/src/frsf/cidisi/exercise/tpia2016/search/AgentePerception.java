@@ -11,16 +11,16 @@ import frsf.cidisi.faia.environment.Environment;
 
 public class AgentePerception extends Perception {
 	
-	ArrayList<Habitacion> ascensoresBLoqueados;
-	ArrayList<Habitacion> escalerasBloqueadas;
-	ArrayList<Habitacion> pasillosBloqueados;
+	ArrayList<Ascensor> ascensoresBLoqueados;
+	ArrayList<Escalera> escalerasBloqueadas;
+	ArrayList<Pasillo> pasillosBloqueados;
 	
  
 
     public  AgentePerception() {
-    	ascensoresBLoqueados=new ArrayList<Habitacion>();
-    	escalerasBloqueadas=new ArrayList<Habitacion>();
-    	pasillosBloqueados=new ArrayList<Habitacion>();
+    	ascensoresBLoqueados=new ArrayList<Ascensor>();
+    	escalerasBloqueadas=new ArrayList<Escalera>();
+    	pasillosBloqueados=new ArrayList<Pasillo>();
     }
 
     public AgentePerception(Agent agent, Environment environment) {
@@ -57,7 +57,7 @@ public class AgentePerception extends Perception {
     				pasillosBloqueados.add(p);
     			}
     		}
-    		else{
+    		
     			if(h.getClass().getSimpleName().equals("Ascensor")){
     				Ascensor asc=(Ascensor)h;
     				if(asc.isPitido()){
@@ -65,7 +65,7 @@ public class AgentePerception extends Perception {
     					ascensoresBLoqueados.add(asc);
     				} 					
     			}
-    			else{
+    		
     				if(h.getClass().getSimpleName().equals("Escalera")){
     					Escalera esc=(Escalera)h;
     					if(esc.isBloqueada()){
@@ -73,8 +73,6 @@ public class AgentePerception extends Perception {
         					escalerasBloqueadas.add(esc);
     					}
 					}
-				}
-			}
 		}
     }
 
@@ -97,27 +95,27 @@ public class AgentePerception extends Perception {
 		return str;
 	}
 
-	public ArrayList<Habitacion> getAscensoresBLoqueados() {
+	public ArrayList<Ascensor> getAscensoresBLoqueados() {
 		return ascensoresBLoqueados;
 	}
 
-	public void setAscensoresBLoqueados(ArrayList<Habitacion> ascensoresBLoqueados) {
+	public void setAscensoresBLoqueados(ArrayList<Ascensor> ascensoresBLoqueados) {
 		this.ascensoresBLoqueados = ascensoresBLoqueados;
 	}
 
-	public ArrayList<Habitacion> getEscalerasBloqueadas() {
+	public ArrayList<Escalera> getEscalerasBloqueadas() {
 		return escalerasBloqueadas;
 	}
 
-	public void setEscalerasBloqueadas(ArrayList<Habitacion> escalerasBloqueadas) {
+	public void setEscalerasBloqueadas(ArrayList<Escalera> escalerasBloqueadas) {
 		this.escalerasBloqueadas = escalerasBloqueadas;
 	}
 
-	public ArrayList<Habitacion> getPasillosBloqueados() {
+	public ArrayList<Pasillo> getPasillosBloqueados() {
 		return pasillosBloqueados;
 	}
 
-	public void setPasillosBloqueados(ArrayList<Habitacion> pasillosBloqueados) {
+	public void setPasillosBloqueados(ArrayList<Pasillo> pasillosBloqueados) {
 		this.pasillosBloqueados = pasillosBloqueados;
 	}
 	
