@@ -19,7 +19,6 @@ import frsf.cidisi.faia.simulator.events.SimulatorEventNotifier;
 public class InterfazSimulator extends SearchBasedAgentSimulator {
 	
 	private boolean terminado;
-	private static Timer autoStep;
 	private Perception perception;
 	private Action action;
 	private GoalBasedAgent agent;

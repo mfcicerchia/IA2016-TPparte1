@@ -101,11 +101,26 @@ public class InterfazManager {
 		}
 	}
 	
+	public static void avanzar2() {
+		int res = simulador.avanzar();
+		if (res == 1) {
+			//autoStep.stop();
+			window.terminar();
+			simulador.terminar();
+		}
+	}
+	
 	public static void autoStep() {
 		if (autoStep.isRunning())
 			avanzar();
 	}
 	
+	public static void setAutoStep(boolean activar) {
+		if (activar)
+			autoStep.start();
+		else
+			autoStep.stop();
+	}
 	public static void registrarPosicion(String texto) {
 		window.textField.setText(texto);
 

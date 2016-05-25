@@ -7,7 +7,6 @@ import java.awt.EventQueue;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Point;
-
 import javax.swing.JFrame;
 import net.miginfocom.swing.MigLayout;
 import javax.swing.JPanel;
@@ -15,9 +14,7 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
-
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
-
 import javax.swing.JTextPane;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
@@ -52,6 +49,8 @@ public class PanelSimulador{
 	JTextPane textPane_1;
 	JButton btnStart;
 	JTextField textField_4;
+	JButton btnAutoStep;
+	JButton btnPause;
 	
 	/**
 	 * Create the application.
@@ -149,17 +148,40 @@ public class PanelSimulador{
 		
 		
 		JPanel panel_5 = new JPanel();
-		panel_5.setLayout(new MigLayout("", "[grow,fill]", "[grow,fill][grow,fill]"));
+		panel_5.setLayout(new MigLayout("", "[grow,fill][grow,fill][grow,fill]", "[grow,fill][grow,fill]"));
 		panel_2.add(panel_5, "cell 0 2,grow");
-	
-		btnStart = new JButton("NEXT STEP");
-		btnStart.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				InterfazManager.avanzar();
-			}
-		});
-		panel_5.add(btnStart, "flowx,cell 0 0");
 		
+			btnStart = new JButton("PLAY");
+			btnStart.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent arg0) {
+					InterfazManager.setAutoStep(btnStart.isEnabled());
+					if (btnStart.isEnabled()) {
+						btnStart.setEnabled(false);
+						btnPause.setEnabled(true);
+					} else {
+						btnStart.setEnabled(true);
+						btnPause.setEnabled(false);
+					}
+				}
+			});
+			panel_5.add(btnStart, "flowx,cell 0 0");
+			
+			btnPause = new JButton("PAUSE");
+			btnPause.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent arg0) {
+					InterfazManager.setAutoStep(!btnPause.isEnabled());
+					if (btnPause.isEnabled()) {
+						btnStart.setEnabled(true);
+						btnPause.setEnabled(false);
+					} else {
+						btnStart.setEnabled(false);
+						btnPause.setEnabled(true);
+					}
+				}
+			});
+			
+			panel_5.add(btnPause, "cell 1 0");
+			
 		JPanel panel_1 = new PanelCanvas();
 		frame.getContentPane().add(panel_1, "cell 1 0,grow");
 		
@@ -225,7 +247,7 @@ public class PanelSimulador{
 		panel_1.add(panel_9);
 	
 		
-		JButton buttonAnterior = new JButton("ANTERIOR");
+		JButton buttonAnterior = new JButton("PREVIOUS");
 		buttonAnterior.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(panel_6.isVisible()){
@@ -246,9 +268,19 @@ public class PanelSimulador{
 				}
 			}
 		});
+		
+		btnAutoStep = new JButton("AUTO STEP");
+		btnAutoStep.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				InterfazManager.avanzar2();
+			}
+		});
+		
+		
+		panel_5.add(btnAutoStep, "cell 2 0");
 		panel_5.add(buttonAnterior, "flowx,cell 0 1");
 		
-		JButton btnSiguiente = new JButton("SIGUIENTE");
+		JButton btnSiguiente = new JButton("NEXT");
 		btnSiguiente.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(panel_6.isVisible()){
@@ -269,7 +301,7 @@ public class PanelSimulador{
 				}
 			}
 		});
-		panel_5.add(btnSiguiente, "cell 0 1");		
+		panel_5.add(btnSiguiente, "cell 1 1");		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLocationRelativeTo(null);
 	}
