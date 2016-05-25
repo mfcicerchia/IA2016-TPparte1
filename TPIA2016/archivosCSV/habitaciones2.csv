@@ -89,8 +89,8 @@ Aula,au21,2,Aula 21,61,205
 Aula,cd1,2,Aula CIDISI,134,105
 Pasillo,p2-2,2,pasillo 2 segundo piso,173,103
 Pasillo,p1-2,2,pasillo 1 segundo piso,169,161
-Escalera,esc5,2,escalera 5,242,299
-Escalera,esc6,2,escalera 6,214,216
+Escalera,esc5-2,2,escalera 5,242,299
+Escalera,esc6-2,2,escalera 6,214,216
 Escalera,esc8-2,2,escalera 8 nivel 2 (entre piso),198,125
 Laboratorio,jvl1,2,JAVALAB,317,164
 Laboratorio,gse1,2,GESE,138,226
@@ -109,7 +109,3 @@ Aula,cs1,3,Aula Consultas 1,119,309
 Aula,cs2,3,Aula Consultas 2,231,389
 Laboratorio,lab5,3,Laboratorio Informatica 5,293,29
 Taller,taller1-0,0,Taller de Mantenimiento,210,107
-Escalera,es5-1,1,escalera 5 nivel 1,266,344
-Escalera,esc6-1,1,escalera 6 nivel 1,247,282
-Escalera,esc6-2,2,escalera 6 nivel 2,212,212
-Escalera,esc5-2,2,escalera 5 nivel 2,242,299
