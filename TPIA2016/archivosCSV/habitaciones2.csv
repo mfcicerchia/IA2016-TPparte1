@@ -30,7 +30,7 @@ biblioteca,biblioteca1,0,Biblioteca Moreno,328,592
 Oficina,ofc1-0,0,Alumnado,219,592
 Oficina,ofc2-0,0,SAE,123,592
 Baño,baño1-0,0,baño1,268,241
-Baño,baño2,0,baño2,433,264
+Baño,baño2-0,0,baño2,433,264
 Laboratorio,lab1-0,0,Laboratorio de Mecanica,283,407
 Laboratorio,lab2-0,0,Laboratorio de Fluidica,314,239
 Departamento,mecanica,0,Departamento de Mecanica,344,407
@@ -85,8 +85,8 @@ Oficina,ofc1-1,1,Materias Básicas,370,481
 Oficina,ofc2-1,1,Varios,129,593
 Aula,au22,2,Aula 22,164,36
 Aula,au20,2,Aula 20,296,255
-Aula,au21,2,Aula 21,61,205
-Aula,cd1,2,Aula CIDISI,134,105
+Aula,au21,2,Aula 21,98,226
+Aula,cd1,2,Aula CIDISI,186,107
 Pasillo,p2-2,2,pasillo 2 segundo piso,241,98
 Pasillo,p1-2,2,pasillo 1 segundo piso,216,159
 Escalera,esc5-2,2,escalera 5,242,299
