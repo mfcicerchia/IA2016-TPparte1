@@ -164,7 +164,7 @@ public class EstadoAgente extends SearchBasedAgentState {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
+	/*	if (this == obj)
 			return true;
 		if (obj == null)
 			return false;
@@ -217,6 +217,11 @@ public class EstadoAgente extends SearchBasedAgentState {
 		} 
 		else if (!posicionActual.equals(other.posicionActual))
 			return false;
+		return true;*/
+		
+		if(!this.getPosicion().getIdHabitacion().equals(((EstadoAgente)obj).getPosicion().getIdHabitacion())){
+			return false;
+		}
 		return true;
 	}
     
