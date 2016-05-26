@@ -3,11 +3,11 @@ Ingreso,ingreso2,0,entrada por torre,28,606
 Pasillo,p2-0,0,pasillo 2 planta baja,473,364
 Pasillo,p1-0,0,pasillo 1 planta baja,413,540
 Pasillo,p3-0,0,pasillo 3 planta baja,239,371
-Pasillo,p4-0,0,pasillo 4 planta baja,370,206
+Pasillo,p4-0,0,pasillo 4 planta baja,389,273
 Pasillo,p5-0,0,pasillo 5 planta baja,300,205
 Pasillo,p6-0,0,pasillo 6 planta baja,239,226
 escalera,esc1-0,0,escalera 1 nivel 0,480,447
-escalera,esc2-0,0,escalera 2 nivel 0,33,668
+escalera,esc2-0,0,escalera 2 nivel 0,51,666
 escalera,esc3-0,0,escalera 3 nivel 0,46,347
 escalera,esc4-0,0,escalera 4 nivel 0,363,320
 escalera,esc5-0,0,escalera 5 nivel 0,267,346
@@ -36,7 +36,7 @@ Laboratorio,lab2-0,0,Laboratorio de Fluidica,314,239
 Departamento,mecanica,0,Departamento de Mecanica,344,407
 Departamento,electrica,0,Departamento de Electrica,187,279
 Fotocopiadora,fotocopiadora,0,Fotocopiadora FRSF,420,228
-Escalera,esc3-2,2,escalera 3 nivel 2,10,280
+Escalera,esc3-2,2,escalera 3 nivel 2,23,296
 Aula,au9,1,aula9,517,405
 Aula,au10,1,aula10,517,349
 Aula,au11,1,aula11,505,286
@@ -69,7 +69,7 @@ Escalera,esc6-1,1,escalera 6,246,282
 Escalera,esc7-1,1,escalera 7,145,509
 Biblioteca,biblioteca2,1,Biblioteca IRAM,182,293
 Aula,if1,1,Informática 1,413,321
-Aula,if2,2,Informática 2,413,364
+Aula,if2,1,Informática 2,413,364
 Aula,cn1,1,Consulta 1,421,415
 Aula,cn2,1,Consulta 2,421,415
 Aula,cn3,1,Consulta 3,421,415
@@ -87,10 +87,10 @@ Aula,au22,2,Aula 22,164,36
 Aula,au20,2,Aula 20,296,255
 Aula,au21,2,Aula 21,61,205
 Aula,cd1,2,Aula CIDISI,134,105
-Pasillo,p2-2,2,pasillo 2 segundo piso,173,103
-Pasillo,p1-2,2,pasillo 1 segundo piso,169,161
+Pasillo,p2-2,2,pasillo 2 segundo piso,241,98
+Pasillo,p1-2,2,pasillo 1 segundo piso,216,159
 Escalera,esc5-2,2,escalera 5,242,299
-Escalera,esc6-2,2,escalera 6,214,216
+Escalera,esc6-2,2,escalera 6,260,217
 Escalera,esc8-2,2,escalera 8 nivel 2 (entre piso),198,125
 Laboratorio,jvl1,2,JAVALAB,317,164
 Laboratorio,gse1,2,GESE,138,226
