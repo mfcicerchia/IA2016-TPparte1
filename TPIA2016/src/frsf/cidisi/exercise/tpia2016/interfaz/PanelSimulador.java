@@ -15,6 +15,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
 import frsf.cidisi.exercise.tpia2016.modelo.nodos.Escalera;
+import frsf.cidisi.exercise.tpia2016.search.Main;
+
 import javax.swing.JTextPane;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
@@ -51,6 +53,7 @@ public class PanelSimulador{
 	JTextField textField_4;
 	JButton btnAutoStep;
 	JButton btnPause;
+	JButton btnNewSimulation;
 	
 	/**
 	 * Create the application.
@@ -66,7 +69,7 @@ public class PanelSimulador{
 
 
 		frame = new JFrame();
-		frame.setBounds(100, 100, 900, 750);
+		frame.setBounds(100, 100, 1000, 750);
 		frame.getContentPane().setLayout(new MigLayout("", "[grow,fill][grow,fill]", "[grow]"));
 		panel_2 = new JPanel();
 		panel_2.setLayout(new MigLayout("", "[grow,fill]", "[grow][grow][grow]"));
@@ -187,7 +190,7 @@ public class PanelSimulador{
 		
 		panel_6 = new PanelCanvas();
 		JLabel lblLabel_1 = new JLabel("");
-		ImageIcon im = new ImageIcon("images\\p0-F.png");
+		ImageIcon im = new ImageIcon("images\\pbaja.png");
 		Image imsc = im.getImage().getScaledInstance(550, 695, Image.SCALE_DEFAULT);
 		lblLabel_1.setIcon( new ImageIcon(imsc));
 		panel_6.add(lblLabel_1);
@@ -203,7 +206,7 @@ public class PanelSimulador{
 		
 		panel_7 = new PanelCanvas();
 		JLabel lblLabel_2 = new JLabel("");
-		im = new ImageIcon("images\\p1-F.png");
+		im = new ImageIcon("images\\p1.png");
 		imsc = im.getImage().getScaledInstance(550, 695, Image.SCALE_DEFAULT);
 		lblLabel_2.setIcon( new ImageIcon(imsc));
 		panel_7.add(lblLabel_2);
@@ -218,7 +221,7 @@ public class PanelSimulador{
 		
 		panel_8 = new PanelCanvas();
 		JLabel lblLabel_3 = new JLabel("");
-		im = new ImageIcon("images\\p2-F.png");
+		im = new ImageIcon("images\\p2.png");
 		imsc = im.getImage().getScaledInstance(550, 500, Image.SCALE_DEFAULT);
 		lblLabel_3.setIcon( new ImageIcon(im.getImage()));
 		panel_8.add(lblLabel_3);
@@ -247,7 +250,7 @@ public class PanelSimulador{
 		panel_1.add(panel_9);
 	
 		
-		JButton buttonAnterior = new JButton("PREVIOUS");
+		JButton buttonAnterior = new JButton("PREVIOUS IMAGE");
 		buttonAnterior.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(panel_6.isVisible()){
@@ -280,7 +283,7 @@ public class PanelSimulador{
 		panel_5.add(btnAutoStep, "cell 2 0");
 		panel_5.add(buttonAnterior, "flowx,cell 0 1");
 		
-		JButton btnSiguiente = new JButton("NEXT");
+		JButton btnSiguiente = new JButton("NEXT IMAGE");
 		btnSiguiente.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(panel_6.isVisible()){
@@ -302,6 +305,15 @@ public class PanelSimulador{
 			}
 		});
 		panel_5.add(btnSiguiente, "cell 1 1");		
+		
+		btnNewSimulation = new JButton("NEW SIMULATION");
+		btnNewSimulation.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			InterfazManager.close();			
+			}
+		});
+		
+		panel_5.add(btnNewSimulation, "cell 2 1");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLocationRelativeTo(null);
 	}
