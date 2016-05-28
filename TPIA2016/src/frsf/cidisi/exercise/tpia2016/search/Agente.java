@@ -62,7 +62,7 @@ public  class Agente extends SearchBasedAgent {
 		for (Ingreso ingreso : mapa.getIngresos()) {operators.addElement(new IrIngreso(ingreso.getIdHabitacion()));}
         
         // Operador IrBaño
-        for(Baño baño: mapa.getBaños()){operators.addElement(new IrBanio(baño.getIdHabitacion()));}
+        for(Baño baño: mapa.getBaños()){operators.addElement(new IrBaño(baño.getIdHabitacion()));}
         
         // Operador IrPasillo
         for(Pasillo p: mapa.getPasillos()){operators.addElement(new IrPasillo(p.getIdHabitacion()));}

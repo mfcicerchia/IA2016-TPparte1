@@ -120,15 +120,15 @@ public class ConverterHabitaciones {
 				
 			}
 			
-//			if(categoria.equals("Baño")|| categoria.equals("baño")){
-//				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
-//				Habitacion baño = new Baño(listaDeDatos.get(i).get(1),
-//						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
-//						  						   listaDeDatos.get(i).get(3),
-//											       Integer.parseInt(listaDeDatos.get(i).get(4)),
-//											       Integer.parseInt(listaDeDatos.get(i).get(5)));
-//				listaDeHabitaciones.add(baño);
-//			}
+			if(categoria.equals("Baño")|| categoria.equals("baño")){
+				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
+				Habitacion baño = new Baño(listaDeDatos.get(i).get(1),
+						  						   Integer.parseInt(listaDeDatos.get(i).get(2)),
+						  						   listaDeDatos.get(i).get(3),
+											       Integer.parseInt(listaDeDatos.get(i).get(4)),
+											       Integer.parseInt(listaDeDatos.get(i).get(5)));
+				listaDeHabitaciones.add(baño);
+			}
 			if(categoria.equals("Departamento") || categoria.equals("departamento")){
 				//creo una instancia de ascensor y lo agrego a la lista de Habitaciones
 				Habitacion departamento = new Departamento(listaDeDatos.get(i).get(1),
