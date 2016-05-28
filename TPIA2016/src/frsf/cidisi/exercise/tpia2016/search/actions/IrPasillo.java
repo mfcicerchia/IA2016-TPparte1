@@ -121,6 +121,6 @@ public class IrPasillo extends SearchAction {
 	 */
 	@Override
 	public String toString() {
-		return "IrPasillo";
+		return "IrPasillo" + idPasillo;
 	}
 }

@@ -9,11 +9,11 @@ import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
 import frsf.cidisi.faia.state.AgentState;
 import frsf.cidisi.faia.state.EnvironmentState;
 
-public class IrBaño extends SearchAction {
+public class IrBanio extends SearchAction {
 	
-	String idBaño;
-	public IrBaño(String idBaño){
-		this.idBaño = idBaño;
+	String idBanio;
+	public IrBanio(String idBanio){
+		this.idBanio = idBanio;
 	}
 
     /**
@@ -38,7 +38,7 @@ public class IrBaño extends SearchAction {
 		int energiaDisponible = agState.getEnergía_agente();
 		
 		//obtengo la habitacion que cuyo id recibo como parametro
-		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idBaño);
+		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idBanio);
 		
 			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
 				!(agState.getHabitaciones_visitadas().contains(h)) &&
@@ -70,7 +70,7 @@ public class IrBaño extends SearchAction {
 		boolean seMueve = false;
 		
 		//obtengo la habitacion que cuyo id recibo como parametro
-		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idBaño);
+		Habitacion h = agState.getMapa_ambiente().getHabitacionPorID(idBanio);
 		
 			if (agState.getMapa_ambiente().isAdyacente(agState.getPosicion(), h)&& 
 				!(agState.getHabitaciones_visitadas().contains(h)) &&
@@ -110,6 +110,6 @@ public class IrBaño extends SearchAction {
      */
     @Override
     public String toString() {
-        return "IrBaño";
+        return "IrBanio";
     }
 }

@@ -134,6 +134,6 @@ public class IrEscalera extends SearchAction {
      */
     @Override
     public String toString() {
-        return "IrEscalera";
+        return "IrEscalera" + idEscalera;
     }
 }

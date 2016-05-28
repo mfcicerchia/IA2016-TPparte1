@@ -115,6 +115,6 @@ public class IrAula extends SearchAction {
      */
     @Override
     public String toString() {
-        return "IrAula";
+        return "IrAula" + idAula;
     }
 }

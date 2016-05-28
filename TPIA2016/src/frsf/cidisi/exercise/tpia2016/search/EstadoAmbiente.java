@@ -46,7 +46,7 @@ public class EstadoAmbiente extends EnvironmentState {
 //        str = str.substring(0,str.length()-2);
 //        str += "}\n";
         
-        str += "Posición del agente(en el ambiente): ";
+        str += "Posición del agente(en el ambiente):";
         str += posicion_agente.toString();
         
         return str;
