@@ -4,6 +4,7 @@ import java.awt.Point;
 import frsf.cidisi.exercise.tpia2016.search.AgenteEjecutar;
 import frsf.cidisi.exercise.tpia2016.search.EstadoAgente;
 import frsf.cidisi.exercise.tpia2016.search.EstadoAmbiente;
+import frsf.cidisi.exercise.tpia2016.search.Main;
 import frsf.cidisi.exercise.tpia2016.modelo.grafo.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -21,6 +22,7 @@ public class InterfazManager {
 	private static PanelSimulador window;
 	private static Timer autoStep;
 	private static int busquedaAct;
+	static Main main;
 	Edificio edificio;
 	Habitacion origen;
 	Habitacion destino;
@@ -99,6 +101,15 @@ public class InterfazManager {
 			window.terminar();
 			simulador.terminar();
 		}
+	}
+	
+	
+	public static void close() {
+		window.frame.setVisible(false);
+		window.frame.dispose();
+		main=new Main();
+		String[] args={""};
+		Main.main(args);
 	}
 	
 	public static void avanzar2() {
